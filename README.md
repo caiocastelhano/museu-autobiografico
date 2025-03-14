@@ -1,49 +1,45 @@
-🎭 Museu Autobiográfico
+Museu Autobiográfico
 
-Projeto de um site artístico e interativo que explora memória, território e identidade por meio de imagens, vídeos, textos e sons.
+Descrição do Projeto
 
-🌟 Visão geral
+O Museu Autobiográfico é um projeto do setor cultural que vai ganhar uma experiência museológica no digital, combinando arte e inovação. A proposta é transformar memórias e narrativas em uma plataforma interativa e artística.
 
-O site conta com 10 páginas:
+Tecnologias Utilizadas
 
-Home — Navegação principal com seções flutuantes.
+Next.js (com App Router)
 
-Sobre — Informações sobre o idealizador (PT e EN).
+React
 
-Contato — Redes sociais e email.
+CSS Modules (ou outro método de estilização, a definir)
 
-6 seções temáticas — Museu, Autobiográfico, Território, Leste, Corpo e Memória.
+Sanity.io (para gerenciamento de conteúdo)
 
-Agradecimentos — Dentro da seção Memória.
+Git/GitHub
 
-🔧 Tecnologias usadas
+Estrutura do Site
 
-Next.js
+Home: Página principal com 6 seções representadas por constelações.
 
-CSS Modules ou Styled Components
+Sobre/About: Informações sobre o idealizador do projeto.
 
-Deploy na Vercel
+Contato/Contact: Formas de contato e redes sociais.
 
-🚀 Setup local
+Museu, Autobiográfico, Território, Leste, Corpo, Memória: Páginas com fotos, vídeos, textos, gifs e áudios.
 
-Clone o repositório:
+Agradecimentos: Dentro da página Memória, destacando contribuições especiais.
 
-git clone git@github.com:caiocastelhano/museu-autobiografico.git
+Idealizador
 
-Instale as dependências:
+O projeto foi idealizado por Marcelo Maia.
 
-npm install
+Desenvolvedor
 
-Rode o servidor local:
+Criado e desenvolvido por Caio Castelhano.
 
-npm run dev
+Status do Projeto
 
-👨‍💻 Desenvolvido por
+🚧 Em desenvolvimento (março/2025) 🚧
 
-Caio Castelhano — Desenvolvimento
+Deploy
 
-Marcelo Maia — Idealizador do projeto
-
-📌 Status do projeto
-
-🔧 Em desenvolvimento — Entrega prevista: primeira semana de maio/2025.
+O site será hospedado e publicado através da plataforma Vercel, garantindo facilidade no deploy contínuo e suporte para aplicações Next.js.
