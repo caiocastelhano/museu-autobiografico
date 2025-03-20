@@ -47,6 +47,16 @@
     pointer-events: none;
     user-select: none;
   }
+
+  .shapeText {
+    transition: font-size 0.3s ease, fill 0.3s ease;
+    font-size: 14px; /* valor base, ajuste conforme necessário */
+    dominant-baseline: middle; /* para manter a vertical centralização */
+  }
+  
+  .hoverText:hover .shapeText {
+    font-size: 16px; /* aumenta a fonte suavemente */
+  }
   
   @media (max-width: 768px) {
     .sobre {

@@ -23,12 +23,18 @@ export default function Home() {
           <circle cx="115" cy="130" r="2.5" fill="black" />
           <circle cx="193" cy="75" r="2.5" fill="black" />
           <circle cx="275" cy="150" r="4" fill="black" />
-          <circle cx="380" cy="100" r="2.5" fill="black" />
-          <circle cx="450" cy="300" r="3.5" fill="black" />
+          <circle cx="380" cy="100" r="1.75" fill="black" />
+          <circle cx="415" cy="115" r="1.75" fill="black" />
+          <circle cx="450" cy="300" r="2.75" fill="black" />
+          <circle cx="350" cy="260" r="2" fill="black" />
           <circle cx="750" cy="60" r="2.5" fill="black" />
-          <circle cx="815" cy="78" r="1" fill="black" />    
+          <circle cx="815" cy="180" r="1" fill="black" />
+          <circle cx="720" cy="150" r="1" fill="black" /> 
+          <circle cx="700" cy="78" r="1" fill="black" /> 
+          <circle cx="865" cy="210" r="1" fill="black" /> 
+          <circle cx="890" cy="290" r="1" fill="black" />    
           <circle cx="900" cy="120" r="2" fill="black" />
-          <circle cx="1050" cy="80" r="4" fill="black" />
+          <circle cx="1050" cy="80" r="1.75" fill="black" />
           <circle cx="150" cy="400" r="2.5" fill="black" />
           <circle cx="350" cy="500" r="2" fill="black" />
           <circle cx="600" cy="450" r="3" fill="black" />
@@ -36,23 +42,25 @@ export default function Home() {
           <circle cx="850" cy="300" r="2" fill="black" />
           <circle cx="950" cy="400" r="2.5" fill="black" />
           <circle cx="1100" cy="300" r="2" fill="black" />
-          <circle cx="1000" cy="300" r="2" fill="black" />
+          <circle cx="500" cy="300" r="1" fill="black" />
 
           {/* Linhas conectando os centros dos polígonos */}
-          <line x1="275" y1="150" x2="540" y2="175" stroke="black" strokeWidth="1" />
+          <line x1="275" y1="150" x2="528" y2="178" stroke="black" strokeWidth="1" />
           <line x1="275" y1="150" x2="205" y2="210" stroke="black" strokeWidth="1" />
           <line x1="260" y1="365" x2="175" y2="310" stroke="black" strokeWidth="1" />
           <line x1="360" y1="435" x2="470" y2="413" stroke="black" strokeWidth="1" />
-          <line x1="645" y1="120" x2="840" y2="110" stroke="black" strokeWidth="1" />
+          <line x1="654" y1="112" x2="840" y2="110" stroke="black" strokeWidth="1" />
           <line x1="945" y1="124" x2="970" y2="265" stroke="black" strokeWidth="1" />
-          <line x1="600" y1="220" x2="560" y2="383" stroke="black" strokeWidth="1" />
+          <line x1="600" y1="232" x2="560" y2="383" stroke="black" strokeWidth="1" />
           <line x1="940" y1="310" x2="600" y2="450" stroke="black" strokeWidth="1" />
           <line x1="50" y1="80" x2="115" y2="130" stroke="black" strokeWidth="1" />
           <line x1="575" y1="428" x2="600" y2="450" stroke="black" strokeWidth="1" />
+          <line x1="1050" y1="80" x2="1100" y2="300" stroke="black" strokeWidth="1" />
 
           {/* POLÍGONOS e TEXTOS */}
 
           {/* 1. MUSEU */}
+          <g className={styles.hoverText}>
           <polygon
             points="95,210 205,210 235,280 175,310 95,280"
             fill="white"
@@ -68,25 +76,29 @@ export default function Home() {
           <text x="161" y="258" className={styles.shapeText} textAnchor="middle">
             museu
           </text>
+          </g>
 
           {/* 2. AUTOBIOGRÁFICO */}
+          <g className={styles.hoverText}>
           <polygon
-            points="555,105 645,120 660,190 600,220 540,175"
+            points="546,94 654,112 672,196 600,232 528,178"
             fill="white"
             stroke="black"
             strokeWidth="1"
           />
           {/* Pontos nas arestas do polígono, simulando estrelas */}
-          <circle cx="555"  cy="105" r="2" fill="black" />
-          <circle cx="645" cy="120" r="2.5" fill="black" />
-          <circle cx="660" cy="190" r="4" fill="black" />
-          <circle cx="600" cy="220" r="1.5" fill="black" />
-          <circle cx="540"  cy="175" r="2" fill="black" />
+          <circle cx="546" cy="94" r="2" fill="black" />
+          <circle cx="654" cy="112" r="2.5" fill="black" />
+          <circle cx="672" cy="196" r="4" fill="black" />
+          <circle cx="600" cy="232" r="1.5" fill="black" />
+          <circle cx="528" cy="178" r="2" fill="black" />
           <text x="600" y="162" className={styles.shapeText} textAnchor="middle">
             autobiográfico
           </text>
+          </g>
 
           {/* 3. CORPO */}
+          <g className={styles.hoverText}>
           <polygon
             points="870,65 930,80 945,125 885,155 840,110"
             fill="white"
@@ -102,8 +114,10 @@ export default function Home() {
           <text x="895" y="108" className={styles.shapeText} textAnchor="middle">
             corpo
           </text>
+          </g>
 
           {/* 4. LESTE */}
+          <g className={styles.hoverText}>
           <polygon
             points="970,265 1030,280 1045,325 985,355 940,310"
             fill="white"
@@ -119,8 +133,10 @@ export default function Home() {
           <text x="995" y="307" className={styles.shapeText} textAnchor="middle">
             leste
           </text>
+          </g>
 
           {/* 5. TERRITÓRIO */}
+          <g className={styles.hoverText}>
           <polygon
             points="500,368 560,383 575,428 515,458 470,413"
             fill="white"
@@ -136,8 +152,10 @@ export default function Home() {
           <text x="524" y="410" className={styles.shapeText} textAnchor="middle">
             território
           </text>
+          </g>
 
           {/* 6. MEMÓRIA */}
+          <g className={styles.hoverText}>
           <polygon
             points="260,365 340,365 360,435 300,465 260,435"
             fill="white"
@@ -153,6 +171,7 @@ export default function Home() {
           <text x="304" y="413" className={styles.shapeText} textAnchor="middle">
             memória
           </text>
+          </g>
         </svg>
       </div>
 
