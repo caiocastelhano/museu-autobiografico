@@ -27,17 +27,17 @@ export default function Home() {
           <circle cx="50" cy="80" r="2" fill="black" />
           <circle cx="115" cy="130" r="2.5" fill="black" />
           <circle cx="193" cy="75" r="2.5" fill="black" />
-          <circle cx="275" cy="150" r="4" fill="black" />
+          <circle cx="275" cy="150" r="6" fill="black" />
           <circle cx="380" cy="100" r="1.75" fill="black" />
           <circle cx="415" cy="115" r="1.75" fill="black" />
           <circle cx="450" cy="300" r="2.75" fill="black" />
-          <circle cx="350" cy="260" r="2" fill="black" />
+          <circle cx="350" cy="260" r="8" fill="black" />
           <circle cx="750" cy="60" r="2.5" fill="black" />
           <circle cx="815" cy="180" r="1" fill="black" />
           <circle cx="720" cy="150" r="1" fill="black" /> 
           <circle cx="700" cy="78" r="1" fill="black" /> 
           <circle cx="865" cy="210" r="1" fill="black" /> 
-          <circle cx="890" cy="290" r="1" fill="black" />    
+          <circle cx="890" cy="290" r="5" fill="black" />    
           <circle cx="900" cy="120" r="2" fill="black" />
           <circle cx="1050" cy="80" r="1.75" fill="black" />
           <circle cx="150" cy="400" r="2.5" fill="black" />
@@ -52,7 +52,7 @@ export default function Home() {
           {/* Linhas conectando os centros dos polígonos */}
           <line x1="275" y1="150" x2="528" y2="178" stroke="black" strokeWidth="1" />
           <line x1="275" y1="150" x2="205" y2="210" stroke="black" strokeWidth="1" />
-          <line x1="260" y1="365" x2="175" y2="310" stroke="black" strokeWidth="1" />
+          <line x1="260" y1="365" x2="175" y2="310" stroke="black" strokeWidth="2" />
           <line x1="360" y1="435" x2="470" y2="413" stroke="black" strokeWidth="1" />
           <line x1="654" y1="112" x2="840" y2="110" stroke="black" strokeWidth="1" />
           <line x1="945" y1="124" x2="970" y2="265" stroke="black" strokeWidth="1" />
@@ -74,7 +74,7 @@ export default function Home() {
               strokeWidth="1"
             />
             {/* Pontos nas arestas do polígono, simulando estrelas */}
-            <circle cx="95"  cy="210" r="2" fill="black" />
+            <circle cx="95"  cy="210" r="5" fill="black" />
             <circle cx="205" cy="210" r="2.5" fill="black" />
             <circle cx="235" cy="280" r="2" fill="black" />
             <circle cx="175" cy="310" r="1.5" fill="black" />
@@ -127,7 +127,7 @@ export default function Home() {
             </g>
           </Link>
 
-          {/* 4. LESTE */}
+          {/* 4. MEMÓRIA */}
           <Link href="/#">
             <g className={styles.hoverText}>
             <polygon
@@ -143,12 +143,12 @@ export default function Home() {
             <circle cx="985" cy="355" r="2.5" fill="black" />
             <circle cx="940"  cy="310" r="4" fill="black" />
             <text x="995" y="307" className={styles.shapeText} textAnchor="middle">
-              leste
+              memória
             </text>
             </g>
           </Link>
 
-          {/* 5. TERRITÓRIO */}
+          {/* 5. LESTE */}
           <Link href="/#">
             <g className={styles.hoverText}>
             <polygon
@@ -164,12 +164,12 @@ export default function Home() {
             <circle cx="515" cy="458" r="1.5" fill="black" />
             <circle cx="470"  cy="413" r="3" fill="black" />
             <text x="524" y="410" className={styles.shapeText} textAnchor="middle">
-              território
+              leste
             </text>
             </g>
           </Link>
 
-          {/* 6. MEMÓRIA */}
+          {/* 6. TERRITÓRIO */}
           <Link href="/#">
             <g className={styles.hoverText}>
             <polygon
@@ -185,7 +185,7 @@ export default function Home() {
             <circle cx="300" cy="465" r="1.5" fill="black" />
             <circle cx="260" cy="435" r="2" fill="black" />
             <text x="304" y="413" className={styles.shapeText} textAnchor="middle">
-              memória
+              território
             </text>
             </g>
           </Link>
