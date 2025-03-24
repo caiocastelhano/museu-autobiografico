@@ -36,7 +36,7 @@ export default function Home() {
           <circle cx="815" cy="180" r="1" fill="black" />
           <circle cx="720" cy="150" r="1" fill="black" /> 
           <circle cx="700" cy="78" r="1" fill="black" /> 
-          <circle cx="865" cy="210" r="1" fill="black" /> 
+          <circle cx="865" cy="210" r="4" fill="black" /> 
           <circle cx="890" cy="290" r="5" fill="black" />    
           <circle cx="900" cy="120" r="2" fill="black" />
           <circle cx="1050" cy="80" r="1.75" fill="black" />
@@ -47,20 +47,26 @@ export default function Home() {
           <circle cx="850" cy="300" r="2" fill="black" />
           <circle cx="950" cy="400" r="2.5" fill="black" />
           <circle cx="1100" cy="300" r="2" fill="black" />
+          <circle cx="490" cy="300" r="1" fill="black" />
+          <circle cx="500" cy="700" r="1" fill="black" />
+          <circle cx="1050" cy="489" r="1" fill="black" />
+          <circle cx="1100" cy="300" r="1" fill="black" />
+          <circle cx="90" cy="300" r="1" fill="black" />
           <circle cx="500" cy="300" r="1" fill="black" />
-
+          <circle cx="500" cy="300" r="4" fill="black" />
+          
           {/* Linhas conectando os centros dos polígonos */}
-          <line x1="275" y1="150" x2="528" y2="178" stroke="black" strokeWidth="1" />
+          <line x1="275" y1="150" x2="528" y2="178" stroke="black" strokeWidth="1.5" />
           <line x1="275" y1="150" x2="205" y2="210" stroke="black" strokeWidth="1" />
-          <line x1="260" y1="365" x2="175" y2="310" stroke="black" strokeWidth="2" />
+          <line x1="260" y1="365" x2="175" y2="310" stroke="black" strokeWidth="1.5" />
           <line x1="360" y1="435" x2="470" y2="413" stroke="black" strokeWidth="1" />
-          <line x1="654" y1="112" x2="840" y2="110" stroke="black" strokeWidth="1" />
-          <line x1="945" y1="124" x2="970" y2="265" stroke="black" strokeWidth="1" />
+          <line x1="654" y1="112" x2="823" y2="145" stroke="black" strokeWidth="1" />
+          <line x1="953" y1="175" x2="935" y2="250" stroke="black" strokeWidth="1" />
           <line x1="600" y1="232" x2="560" y2="383" stroke="black" strokeWidth="1" />
-          <line x1="940" y1="310" x2="600" y2="450" stroke="black" strokeWidth="1" />
-          <line x1="50" y1="80" x2="115" y2="130" stroke="black" strokeWidth="1" />
+          <line x1="875" y1="340" x2="600" y2="450" stroke="black" strokeWidth="1.75" />
+          <line x1="50" y1="80" x2="115" y2="130" stroke="black" strokeWidth="1.25" />
           <line x1="575" y1="428" x2="600" y2="450" stroke="black" strokeWidth="1" />
-          <line x1="1050" y1="80" x2="1100" y2="300" stroke="black" strokeWidth="1" />
+          <line x1="1050" y1="80" x2="1100" y2="300" stroke="black" strokeWidth="2" />
 
           {/* POLÍGONOS e TEXTOS */}
 
@@ -76,8 +82,8 @@ export default function Home() {
             {/* Pontos nas arestas do polígono, simulando estrelas */}
             <circle cx="95"  cy="210" r="5" fill="black" />
             <circle cx="205" cy="210" r="2.5" fill="black" />
-            <circle cx="235" cy="280" r="2" fill="black" />
-            <circle cx="175" cy="310" r="1.5" fill="black" />
+            <circle cx="235" cy="280" r="4" fill="black" />
+            <circle cx="175" cy="310" r="6" fill="black" />
             <circle cx="95"  cy="280" r="3" fill="black" />
             <text x="161" y="258" className={styles.shapeText} textAnchor="middle">
               museu
@@ -109,44 +115,42 @@ export default function Home() {
           {/* 3. CORPO */}
           <Link href="/#">
             <g className={styles.hoverText}>
-            <polygon
-              points="870,65 930,80 945,125 885,155 840,110"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-            {/* Pontos nas arestas do polígono, simulando estrelas */}
-            <circle cx="870"  cy="65" r="2" fill="black" />
-            <circle cx="930" cy="80" r="2.5" fill="black" />
-            <circle cx="945" cy="124" r="4" fill="black" />
-            <circle cx="885" cy="155" r="1.5" fill="black" />
-            <circle cx="840"  cy="110" r="3" fill="black" />
-            <text x="895" y="108" className={styles.shapeText} textAnchor="middle">
-              corpo
-            </text>
+              <polygon
+                points="843,35 973,65 953,175 823,145"
+                fill="white"
+                stroke="black"
+                strokeWidth="1"
+              />
+              {/* Pontos nas arestas do polígono, simulando estrelas */}
+              <circle cx="843"  cy="35"  r="3"   fill="black" />
+              <circle cx="973"  cy="65"  r="2.5" fill="black" />
+              <circle cx="953"  cy="175" r="4"   fill="black" />
+              <circle cx="823"  cy="145" r="3" fill="black" />
+              <text x="898" y="105" className={styles.shapeText} textAnchor="middle">
+                corpo
+              </text>
             </g>
           </Link>
 
           {/* 4. MEMÓRIA */}
           <Link href="/#">
             <g className={styles.hoverText}>
-            <polygon
-              points="970,265 1030,280 1045,325 985,355 940,310"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-            {/* Pontos nas arestas do polígono, simulando estrelas */}
-            <circle cx="970"  cy="265" r="2" fill="black" />
-            <circle cx="1030" cy="280" r="2" fill="black" />
-            <circle cx="1045" cy="325" r="3" fill="black" />
-            <circle cx="985" cy="355" r="2.5" fill="black" />
-            <circle cx="940"  cy="310" r="4" fill="black" />
-            <text x="995" y="307" className={styles.shapeText} textAnchor="middle">
-              memória
-            </text>
+              <polygon
+                points="935,250 1085,370 875,340"
+                fill="white"
+                stroke="black"
+                strokeWidth="1"
+              />
+              {/* Pontos nas arestas do polígono, simulando estrelas */}
+              <circle cx="935"  cy="250" r="2" fill="black" />
+              <circle cx="1085" cy="370" r="2" fill="black" />
+              <circle cx="875"  cy="340" r="3" fill="black" />
+              <text x="965" y="320" className={styles.shapeText} textAnchor="middle">
+                memória
+              </text>
             </g>
           </Link>
+
 
           {/* 5. LESTE */}
           <Link href="/#">
