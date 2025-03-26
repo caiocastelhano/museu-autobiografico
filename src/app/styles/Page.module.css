@@ -57,7 +57,13 @@
   .hoverText:hover .shapeText {
     font-size: 16px; /* aumenta a fonte suavemente */
   }
-  
+
+  .star {
+    position: absolute;
+    width: 10px;   /* tamanho da estrela */
+    height: 10px;
+  }
+ 
   @media (max-width: 768px) {
     .sobre {
       top: 60px;

@@ -2,6 +2,23 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import styles from "./styles/Page.module.css";
 import Link from 'next/link';
+import Image from 'next/image';
+
+function Star({ top, left }) {
+  return (
+    <div
+      className={styles.star}
+      style={{ top, left }}
+    >
+      <Image
+        src="/images/star.png"     // caminho relativo à pasta public
+        alt="Estrela"
+        fill                // faz a imagem preencher o container
+        style={{ objectFit: 'contain' }}
+      />
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -23,10 +40,13 @@ export default function Home() {
           viewBox="0 0 1200 600"
           preserveAspectRatio="xMidYMid meet"
         >
+          
           {/* Pontos (estrelas) */}
-          <circle cx="50" cy="80" r="2" fill="black" />
-          <circle cx="115" cy="130" r="2.5" fill="black" />
-          <circle cx="193" cy="75" r="2.5" fill="black" />
+          <circle cx="50" cy="80" r="4" fill="black" />
+          <circle cx="115" cy="130" r="3" fill="black" />
+          <circle cx="193" cy="75" r="2.5" fill="black" >
+            {/* <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" calcMode="discrete" /> */}
+          </circle>
           <circle cx="275" cy="150" r="6" fill="black" />
           <circle cx="380" cy="100" r="1.75" fill="black" />
           <circle cx="415" cy="115" r="1.75" fill="black" />
@@ -39,14 +59,14 @@ export default function Home() {
           <circle cx="865" cy="210" r="4" fill="black" /> 
           <circle cx="890" cy="290" r="5" fill="black" />    
           <circle cx="900" cy="120" r="2" fill="black" />
-          <circle cx="1050" cy="80" r="1.75" fill="black" />
+          <circle cx="1050" cy="80" r="3" fill="black" />
           <circle cx="150" cy="400" r="2.5" fill="black" />
           <circle cx="350" cy="500" r="2" fill="black" />
           <circle cx="600" cy="450" r="3" fill="black" />
           <circle cx="700" cy="300" r="2" fill="black" />
           <circle cx="850" cy="300" r="2" fill="black" />
           <circle cx="950" cy="400" r="2.5" fill="black" />
-          <circle cx="1100" cy="300" r="2" fill="black" />
+          <circle cx="1100" cy="300" r="4" fill="black" />
           <circle cx="490" cy="300" r="1" fill="black" />
           <circle cx="500" cy="700" r="1" fill="black" />
           <circle cx="1050" cy="489" r="1" fill="black" />
@@ -64,9 +84,9 @@ export default function Home() {
           <line x1="953" y1="175" x2="935" y2="250" stroke="black" strokeWidth="1" />
           <line x1="600" y1="232" x2="560" y2="383" stroke="black" strokeWidth="1" />
           <line x1="875" y1="340" x2="600" y2="450" stroke="black" strokeWidth="1.75" />
-          <line x1="50" y1="80" x2="115" y2="130" stroke="black" strokeWidth="1.25" />
+          <line x1="50" y1="80" x2="115" y2="130" stroke="black" strokeWidth="1.75" />
           <line x1="575" y1="428" x2="600" y2="450" stroke="black" strokeWidth="1" />
-          <line x1="1050" y1="80" x2="1100" y2="300" stroke="black" strokeWidth="2" />
+          <line x1="1050" y1="80" x2="1100" y2="300" stroke="black" strokeWidth="1.5" />
 
           {/* POLÍGONOS e TEXTOS */}
 
@@ -101,11 +121,11 @@ export default function Home() {
               strokeWidth="1"
             />
             {/* Pontos nas arestas do polígono, simulando estrelas */}
-            <circle cx="546" cy="94" r="2" fill="black" />
-            <circle cx="654" cy="112" r="2.5" fill="black" />
+            <circle cx="546" cy="94" r="3" fill="black" />
+            <circle cx="654" cy="112" r="3.5" fill="black" />
             <circle cx="672" cy="196" r="4" fill="black" />
-            <circle cx="600" cy="232" r="1.5" fill="black" />
-            <circle cx="528" cy="178" r="2" fill="black" />
+            <circle cx="600" cy="232" r="2.5" fill="black" />
+            <circle cx="528" cy="178" r="3" fill="black" />
             <text x="600" y="162" className={styles.shapeText} textAnchor="middle">
               autobiográfico
             </text>
@@ -142,8 +162,8 @@ export default function Home() {
                 strokeWidth="1"
               />
               {/* Pontos nas arestas do polígono, simulando estrelas */}
-              <circle cx="935"  cy="250" r="2" fill="black" />
-              <circle cx="1085" cy="370" r="2" fill="black" />
+              <circle cx="935"  cy="250" r="4" fill="black" />
+              <circle cx="1085" cy="370" r="4.5" fill="black" />
               <circle cx="875"  cy="340" r="3" fill="black" />
               <text x="965" y="320" className={styles.shapeText} textAnchor="middle">
                 memória
@@ -194,6 +214,15 @@ export default function Home() {
             </g>
           </Link>
         </svg>
+
+        {/* Estrelinhas de 4 pontas espalhadas pela tela */}
+          <Star top="600px" left="1000px" />
+          <Star top="150px" left="350px" />
+          <Star top="300px" left="1300px" />
+          <Star top="350px" left="600px" />
+          <Star top="100px" left="900px" />
+          <Star top="600px" left="150px" />
+          <Star top="500px" left="800px" />
       </div>
 
       <Footer />
