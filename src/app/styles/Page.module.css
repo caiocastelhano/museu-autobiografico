@@ -71,10 +71,11 @@
   }
 
   .constellation {
-    width: 150%;
+    width: 120%;
     height: auto;
-    transform: scale(2.2);
+    transform: scale(1.25);
     transform-origin: top center;
+    overflow-x: hidden;
   }
 
   .shapeText {
@@ -92,5 +93,10 @@
     padding: 16px;
     text-align: center;
     background-color: white;
+  }
+
+  .sobre,
+  .contato {
+    display: none;
   }
 }
