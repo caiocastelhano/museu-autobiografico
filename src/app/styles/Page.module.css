@@ -61,19 +61,20 @@
 
 @media (max-width: 768px) {
   .mainContent {
-    padding: 40px 0;
+    padding: clamp(16px, 5vh, 32px) 0;
     margin: 0;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     overflow-y: auto;
+    overflow-x: hidden;
     height: auto;
   }
 
   .constellation {
-    width: 120%;
+    width: 100%;
     height: auto;
-    transform: scale(1.25);
+    transform: scale(1.64);
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -83,7 +84,7 @@
   }
 
   .footer {
-    padding: 20px;
+    padding: 10px;
     font-size: 0.9rem;
     text-align: center;
     background-color: white;
