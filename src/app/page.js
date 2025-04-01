@@ -25,10 +25,10 @@ export default function Home() {
       <Navbar />
 
       {/* "sobre/about" e "contato/contact" */}
-      <Link href="/#">
+      <Link href="/sobre">
         <div className={styles.sobre}>sobre/about</div>
       </Link>
-      <Link href="/#">
+      <Link href="/contato">
         <div className={styles.contato}>contato/contact</div>
       </Link>
 

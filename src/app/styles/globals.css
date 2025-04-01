@@ -3,7 +3,7 @@
 
 /* Definição das cores principais */
 :root {
-  --background: #Ffffff;
+  --background: #ffffff;
   --foreground: #171717;
 }
 
@@ -13,6 +13,12 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     color-scheme: dark;
+  }
+
+  .navbar,
+  .footer {
+    background-color: white !important;
+    color: black !important;
   }
 }
 
