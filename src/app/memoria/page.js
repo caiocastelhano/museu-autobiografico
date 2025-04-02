@@ -143,7 +143,7 @@ export default function MemoriaPage() {
             </p>
             <p>
                 Esse exercício pretende pegar de surpresa participantes para testar a sua escuta, colocar a pessoa em situação 
-                de um “personagem real”, desde o início, e ouvir a maneira como se reconta uma história já apresentada, 
+                de um &quot;personagem real&quot;, desde o início, e ouvir a maneira como se reconta uma história já apresentada, 
                 pretendendo ser a pessoa.
             </p>
         </section>
