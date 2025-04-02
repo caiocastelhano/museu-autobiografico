@@ -45,10 +45,10 @@ export default function MemoriaPage() {
 
             <div className={styles.introText}>
               <p>
-                <i>“Por que alguém se recorda vividamente de alguns eventos e personagens
+                <i>&quot;Por que alguém se recorda vividamente de alguns eventos e personagens
                 enquanto outros não? Como a mente é capaz de selecionar aquilo que se
                 sedimenta fundo na memória e aquilo que ela permite flutuar na
-                superfície?”</i>
+                superfície?&quot;</i>
               </p>
               <p>
                 <i>A <b>memória</b> é seletiva porque nosso cérebro prioriza informações com base
@@ -134,7 +134,7 @@ export default function MemoriaPage() {
                 />
             </div>
             <p>
-                Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo "Se eu fosse você". 
+                Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo &quot;Se eu fosse você&quot;. 
                 Inspirado no documentário <i>Jogo de Cena</i>, do diretor e documentarista Eduardo Coutinho (2007), a 
                 experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando:
                 o que o fez chegar à oficina; qual o seu bairro; a sua idade; os seus desejos como artista e o que 
@@ -152,8 +152,8 @@ export default function MemoriaPage() {
                 <b>MEMÓRIA DE 2024 | Registro em Áudio da 1ª Mediação na rodada 3 da Oficina na Biblioteca Pública Cassiano Ricardo</b>
             </p>
             <p>
-                <b>“Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a 
-                    história, com as canções”, como diz Annie Ernaux.</b>
+                <b>&quot;Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a 
+                    história, com as canções&quot;, como diz Annie Ernaux.</b>
             </p>
             <div>
                 <iframe
