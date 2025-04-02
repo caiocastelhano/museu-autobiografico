@@ -7,6 +7,7 @@ import styles from "./styles/Page.module.css";
 import Link from "next/link";
 import DesktopConstellation from "./components/DesktopConstellation";
 import MobileConstellation from "./components/MobileConstellation";
+import MobileMenu from "./components/MobileMenu";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -15,7 +16,8 @@ export default function Home() {
     function handleResize() {
       setIsMobile(window.innerWidth <= 768); // breakpoint para mobile
     }
-    handleResize(); // checa logo no carregamento
+
+    handleResize(); // verifica ao carregar
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -24,15 +26,19 @@ export default function Home() {
     <div className={styles.pageContainer}>
       <Navbar />
 
-      {/* "sobre/about" e "contato/contact" */}
-      <Link href="/sobre">
-        <div className={styles.sobre}>sobre/about</div>
-      </Link>
-      <Link href="/contato">
-        <div className={styles.contato}>contato/contact</div>
-      </Link>
+      {isMobile && <MobileMenu />}
 
-      {/* Renderiza a constelação de acordo com o dispositivo */}
+      {!isMobile && (
+        <>
+          <Link href="/sobre">
+            <div className={styles.sobre}>sobre/about</div>
+          </Link>
+          <Link href="/contato">
+            <div className={styles.contato}>contato/contact</div>
+          </Link>
+        </>
+      )}
+
       {isMobile ? <MobileConstellation /> : <DesktopConstellation />}
 
       <Footer />
