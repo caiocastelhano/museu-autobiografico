@@ -60,7 +60,7 @@ export default function MobileConstellation() {
 
         {/* Formas com texto e arestas visíveis */}
         {/* 1. MUSEU (ampliado) */}
-          <Link href="/#">
+          <Link href="/museu">
             <g className={styles.hoverText}>
               <polygon points="100,220 360,200 330,400 170,420 120,270" fill="white" stroke="black" strokeWidth="1" />
               <circle cx="100" cy="220" r="3.5" fill="black" />
@@ -73,7 +73,7 @@ export default function MobileConstellation() {
           </Link>
 
           {/* 2. AUTOBIOGRÁFICO (ampliado + espaçado) */}
-          <Link href="/#">
+          <Link href="/autobiografico">
             <g className={styles.hoverText}>
               <polygon points="120,520 330,500 360,700 200,740 150,600" fill="white" stroke="black" strokeWidth="1" />
               <circle cx="120" cy="520" r="3.5" fill="black" />
@@ -86,7 +86,7 @@ export default function MobileConstellation() {
           </Link>
 
           {/* 3. TERRITÓRIO (ampliado + espaçado) */}
-          <Link href="/#">
+          <Link href="/territorio">
             <g className={styles.hoverText}>
               <polygon points="270,800 490,780 510,980 350,1020 280,910" fill="white" stroke="black" strokeWidth="1" />
               <circle cx="270" cy="800" r="3.5" fill="black" />
@@ -99,7 +99,7 @@ export default function MobileConstellation() {
           </Link>
 
                 {/* 4. LESTE (ampliado + reposicionado) */}
-        <Link href="/#">
+        <Link href="/leste">
           <g className={styles.hoverText}>
             <polygon points="90,1080 310,1050 350,1180 200,1220 110,1140" fill="white" stroke="black" strokeWidth="1" />
             <circle cx="90" cy="1080" r="3.5" fill="black" />
@@ -112,7 +112,7 @@ export default function MobileConstellation() {
         </Link>
 
         {/* 5. MEMÓRIA (ampliado + espaçado) */}
-        <Link href="/#">
+        <Link href="/memoria">
           <g className={styles.hoverText}>
             <polygon points="160,1300 390,1280 370,1440 160,1410" fill="white" stroke="black" strokeWidth="1" />
             <circle cx="160" cy="1300" r="3.5" fill="black" />
@@ -124,7 +124,7 @@ export default function MobileConstellation() {
         </Link>
 
         {/* 6. CORPO (ampliado + reposicionado) */}
-        <Link href="/#">
+        <Link href="/corpo">
           <g className={styles.hoverText}>
             <polygon points="260,1520 430,1580 280,1700" fill="white" stroke="black" strokeWidth="1" />
             <circle cx="260" cy="1520" r="3.5" fill="black" />

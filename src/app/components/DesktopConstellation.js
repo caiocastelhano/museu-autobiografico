@@ -75,7 +75,7 @@ export default function DesktopConstellation() {
 
         {/* POLÍGONOS e TEXTOS */}
         {/* 1. MUSEU */}
-        <Link href="/#">
+        <Link href="/museu">
           <g className={styles.hoverText}>
             <polygon
               points="95,210 205,210 235,280 175,310 95,280"
@@ -95,7 +95,7 @@ export default function DesktopConstellation() {
         </Link>
 
         {/* 2. AUTOBIOGRÁFICO */}
-        <Link href="/#">
+        <Link href="/autobiografico">
           <g className={styles.hoverText}>
             <polygon
               points="546,94 654,112 672,196 600,232 528,178"
@@ -115,7 +115,7 @@ export default function DesktopConstellation() {
         </Link>
 
         {/* 3. CORPO */}
-        <Link href="/#">
+        <Link href="/corpo">
           <g className={styles.hoverText}>
             <polygon
               points="843,35 973,65 953,175 823,145"
@@ -134,7 +134,7 @@ export default function DesktopConstellation() {
         </Link>
 
         {/* 4. MEMÓRIA */}
-        <Link href="/#">
+        <Link href="/memoria">
           <g className={styles.hoverText}>
             <polygon
               points="935,250 1085,370 875,340"
@@ -152,7 +152,7 @@ export default function DesktopConstellation() {
         </Link>
 
         {/* 5. LESTE */}
-        <Link href="/#">
+        <Link href="/leste">
           <g className={styles.hoverText}>
             <polygon
               points="500,368 560,383 575,428 515,458 470,413"
@@ -172,7 +172,7 @@ export default function DesktopConstellation() {
         </Link>
 
         {/* 6. TERRITÓRIO */}
-        <Link href="/#">
+        <Link href="/territorio">
           <g className={styles.hoverText}>
             <polygon
               points="260,365 340,365 360,435 300,465 260,435"
