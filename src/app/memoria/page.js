@@ -376,7 +376,7 @@ export default function MemoriaPage() {
                 falando (...)</i>
             </p>
             <p>                                     
-                <b>Wa Thiong'o</b>
+                <b>Wa Thiong&apos;o</b>
             </p>
         </section>
         <section>
