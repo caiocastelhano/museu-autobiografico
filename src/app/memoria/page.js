@@ -4,11 +4,14 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import styles from "@/app/memoria/Memoria.module.css";
 import Image from "next/image";
+import BackToHomeButton from "@/app/components/BackToHomeButton";
+import TopMenu from "@/app/components/TopMenu";
 
 export default function MemoriaPage() {
   return (
     <div className={styles.pageContainer}>
       <Navbar />
+      <TopMenu />
 
       <main className={styles.mainContent}>
         {/* Bloco de abertura com a forma + texto */}
@@ -494,6 +497,8 @@ export default function MemoriaPage() {
                 </p>
             </section>
       </main>
+
+      <BackToHomeButton />
 
       <Footer />
     </div>

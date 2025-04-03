@@ -28,17 +28,22 @@
 
 @media (max-width: 768px) {
   .navbar {
+    position: fixed;
     align-items: flex-start;
-    padding: 16px 12px;
+    padding: 50px 12px;
   }
 
   .navbarTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza perfeitamente */
     font-size: 1.2rem;
     white-space: normal;
     line-height: 1.4;
-    margin-top: 10px;
     text-align: center;
-    width: 100%;
+    width: max-content;
+    margin: 0 auto;
   }
 
   .break {
