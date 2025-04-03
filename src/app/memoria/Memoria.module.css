@@ -88,16 +88,22 @@
   .introContent {
     flex-direction: column;
     gap: 24px;
+    align-items: center; /* centraliza filhos */
     text-align: center;
   }
 
   .memoryShape {
-    max-width: 240px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* <- isso garante o centro real do SVG */
   }
 
   .introText {
-    font-size: 0.95rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* <- isso centraliza o bloco de texto */
     padding: 0 8px;
+    font-size: 0.95rem;
   }
 
   .video {
@@ -224,6 +230,20 @@
   text-align: center;
 }
 
+/* ===== RESPONSIVIDADE MEMÓRIA EM ÁUDIO ===== */
+
+@media (max-width: 768px) {
+  .audioMemorySection {
+    margin-left: 0;
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .audioMemorySection p {
+    text-align: center;
+  }
+}
+
 
 /* ===== SEÇÃO 4: DEPOIMENTOS COLETIVOS ===== */
 .participantTestimoniesSection {
@@ -298,7 +318,6 @@
   margin-left: auto;
 }
 
-
 /* ===== RESPONSIVIDADE ESCADINHA ===== */
 @media (max-width: 768px) {
   .left,
@@ -307,7 +326,6 @@
     margin: 0 auto;
   }
 }
-
 
 /* ===== SEÇÃO SUSANA RAPOSO ===== */
 .susanaSection {
@@ -392,6 +410,19 @@
   margin-bottom: 16px;
 }
 
+/* ===== RESPONSIVIDADE TIA CLAUDETE ===== */
+
+@media (max-width: 768px) {
+  .tiaClaudeteSection {
+    justify-content: center;
+  }
+
+  .tiaClaudeteContent {
+    margin-right: 0;
+    text-align: center;
+    padding: 0 16px;
+  }
+}
 
 /* ===== SEÇÃO WA THIONG’O ===== */
 .memoryReflectionSection {
@@ -431,6 +462,19 @@
   font-weight: bold;
   font-size: 1rem;
   color: black;
+}
+
+/* ===== RESPONSIVIDADE SEÇÃO WA THIONG’O ===== */
+
+@media (max-width: 768px) {
+  .memoryReflectionSection {
+    margin-left: 0;
+    padding: 40px 16px;
+  }
+
+  .memoryCluster {
+    padding: 24px 16px;
+  }
 }
 
 

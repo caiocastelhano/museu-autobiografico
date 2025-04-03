@@ -300,7 +300,7 @@ export default function MemoriaPage() {
 
         {/* Bloco depoimentos em vídeo de Ana Claudia, Francisco e Beatriz */}
         <section className={styles.escalatedTestimoniesSection}>
-            <h4>Depoimentos Pós-Encontros no Centro Cultural da Penha | | | 2022</h4>
+            <h4>Depoimentos Pós-Encontros no Centro Cultural da Penha | 2022</h4>
 
                 <div className={`${styles.mediaBlock} ${styles.left}`}>
                     <p className={styles.caption}>Ana Claudia</p>
@@ -488,7 +488,7 @@ export default function MemoriaPage() {
 
         {/* Bloco com agradecimento - em construção */}
         <section className={styles.acknowledgementsSection}>
-            <h4>Agradecimentos_</h4>
+            <h4>_agradecimentos_</h4>
                 <p>
                     <i>_EM CONSTRUÇÃO_ ideia de colocar o nome de todas as pessoas participantes e envolvidas no projeto.</i>
                 </p>
