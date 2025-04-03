@@ -16,3 +16,19 @@
     background-color: #333;
     cursor: pointer;
   }
+
+  /* ===== Estilo MOBILE ===== */
+@media (max-width: 768px) {
+  .backButton {
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    border-radius: 0px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
