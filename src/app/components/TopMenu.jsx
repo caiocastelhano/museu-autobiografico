@@ -1,27 +1,43 @@
-// components/TopMenu.jsx
+// TopMenu.jsx
 "use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import MobileMenu from "./MobileMenu";
-import styles from "../styles/Page.module.css"; // ou outro css central
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import styles from "../styles/Page.module.css";
 
 export default function TopMenu() {
   const [isMobile, setIsMobile] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 768);
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return isMobile ? (
-    <MobileMenu />
-  ) : (
-    <div className={styles.desktopMenu}>
-      <Link href="/sobre"><div className={styles.sobre}>sobre/about</div></Link>
-      <Link href="/contato"><div className={styles.contato}>contato/contact</div></Link>
-    </div>
+  // Só renderiza o menu se estiver na home
+  if (pathname !== "/") return null;
+
+  return (
+    <>
+      {isMobile ? (
+        <div className={styles.menuMobileWrapper}>
+          {/* MobileMenu já deve estar sendo importado na Home */}
+        </div>
+      ) : (
+        <div className={styles.topLinks}>
+          <Link href="/sobre">
+            <div className={styles.sobre}>sobre/about</div>
+          </Link>
+          <Link href="/contato">
+            <div className={styles.contato}>contato/contact</div>
+          </Link>
+        </div>
+      )}
+    </>
   );
 }
