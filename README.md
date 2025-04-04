@@ -2,7 +2,7 @@
 
 ## 📝 Descrição do Projeto
 
-O **Museu Autobiográfico** é uma iniciativa do setor cultural que propõe uma experiência museológica no ambiente digital, combinando arte e inovação. A proposta é transformar **memórias e narrativas** em uma **plataforma interativa e artística**, acessível e sensível ao toque do tempo.
+O **Museu Autobiográfico** é uma iniciativa do setor cultural que propõe uma experiência museológica no ambiente digital, combinando arte e inovação. A proposta é transformar **memórias e narrativas** em uma **plataforma interativa e artística**.
 
 ---
 
