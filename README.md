@@ -1,45 +1,47 @@
-Museu Autobiográfico
+# 🪐 Museu Autobiográfico
 
-Descrição do Projeto
+## 📝 Descrição do Projeto
 
-O Museu Autobiográfico é um projeto do setor cultural que vai ganhar uma experiência museológica no digital, combinando arte e inovação. A proposta é transformar memórias e narrativas em uma plataforma interativa e artística.
+O **Museu Autobiográfico** é uma iniciativa do setor cultural que propõe uma experiência museológica no ambiente digital, combinando arte e inovação. A proposta é transformar **memórias e narrativas** em uma **plataforma interativa e artística**, acessível e sensível ao toque do tempo.
 
-Tecnologias Utilizadas
+---
 
-Next.js (com App Router)
+## 🧰 Tecnologias Utilizadas
 
-React
+- **Next.js** (com App Router)  
+- **React**  
+- **CSS Modules**  
+- **Sanity.io** *(para gerenciamento de conteúdo)*  
+- **Git/GitHub**  
 
-CSS Modules (ou outro método de estilização, a definir)
+---
 
-Sanity.io (para gerenciamento de conteúdo)
+## 🗂️ Estrutura do Site
 
-Git/GitHub
+- **Home**: Página principal com **6 seções representadas por constelações interativas**.  
+- **Sobre / About**: Informações sobre o projeto.  
+- **Contato / Contact**: Formas de contato e links para redes sociais.  
+- **Museu, Autobiográfico, Território, Leste, Corpo, Memória**: Páginas com **fotos, vídeos, textos, gifs e áudios**.  
+- **Agradecimentos**: Sub-seção dentro da página *Memória*, destacando contribuições especiais.  
 
-Estrutura do Site
+---
 
-Home: Página principal com 6 seções representadas por constelações.
+## 👤 Idealizador
 
-Sobre/About: Informações sobre o idealizador do projeto.
+O projeto foi idealizado por **Marcelo Maia**.
 
-Contato/Contact: Formas de contato e redes sociais.
+## 💻 Desenvolvedor
 
-Museu, Autobiográfico, Território, Leste, Corpo, Memória: Páginas com fotos, vídeos, textos, gifs e áudios.
+Desenvolvido por **Caio Castelhano**.
 
-Agradecimentos: Dentro da página Memória, destacando contribuições especiais.
+---
 
-Idealizador
+## 🚧 Status do Projeto
 
-O projeto foi idealizado por Marcelo Maia.
+**Em desenvolvimento** – *Atualizado em abril de 2025*.
 
-Desenvolvedor
+---
 
-Criado e desenvolvido por Caio Castelhano.
+## 🚀 Deploy
 
-Status do Projeto
-
-🚧 Em desenvolvimento (março/2025) 🚧
-
-Deploy
-
-O site será hospedado e publicado através da plataforma Vercel, garantindo facilidade no deploy contínuo e suporte para aplicações Next.js.
+O site será hospedado e publicado através da plataforma **[Vercel](https://vercel.com/)**, garantindo **deploy contínuo**, **alta performance** e suporte completo para aplicações **Next.js**.
