@@ -33,7 +33,7 @@
 }
 
 .memoryShape {
-  width: 320px;
+  width: 450px;
   height: auto;
 }
 
@@ -87,7 +87,7 @@
 @media (max-width: 768px) {
   .introContent {
     flex-direction: column;
-    gap: 24px;
+    gap: 5px;
     align-items: center; /* centraliza filhos */
     text-align: center;
   }
