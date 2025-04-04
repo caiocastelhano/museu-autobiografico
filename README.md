@@ -1,4 +1,4 @@
-# 🪐 Museu Autobiográfico
+# 🪐 Museu Autobiográfico e Território_Leste
 
 ## 📝 Descrição do Projeto
 
