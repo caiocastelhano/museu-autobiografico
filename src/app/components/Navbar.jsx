@@ -7,7 +7,7 @@ export default function Navbar() {
       <Link href="/">
         <h1 className={styles.navbarTitle}>
           <span className={styles.break}>museu autobiográfico</span>
-          <span className={styles.break}> e território leste</span>
+          <span className={styles.break}> e território_leste</span>
         </h1>
       </Link>
     </nav>

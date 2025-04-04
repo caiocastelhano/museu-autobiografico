@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <footer className={footerClass}>
-      <p>Museu Autobiográfico © 2025 | Todos os direitos reservados | Desenvolvido por Caio Castelhano</p>
+      <p>Museu Autobiográfico © 2025 | Todos os direitos reservados | Criado por Marcelo Rodrigues Maia | Desenvolvido por Caio Castelhano</p>
     </footer>
   );
 }
