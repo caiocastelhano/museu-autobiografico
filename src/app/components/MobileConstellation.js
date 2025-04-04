@@ -36,7 +36,7 @@ export default function MobileConstellation() {
         <circle cx="380" cy="1210" r="1.78" fill="black" />
         <circle cx="580" cy="1440" r="3" fill="black" />
         <circle cx="50" cy="720" r="4" fill="black" />
-        <circle cx="30" cy="1130" r="5" fill="black" />  {/* está em linha */}
+        <circle cx="30" cy="1300" r="5" fill="black" />  {/* está em linha */}
         <circle cx="570" cy="1120" r="2.39" fill="black" />
         <circle cx="520" cy="1225" r="1.92" fill="black" />
         <circle cx="150" cy="1600" r="4" fill="black" />
@@ -143,7 +143,7 @@ export default function MobileConstellation() {
 
 
         {/* Conexões laterais */}
-        <line x1="150" y1="1600" x2="30" y2="1130" stroke="black" strokeWidth="2" />
+        <line x1="150" y1="1600" x2="30" y2="1300" stroke="black" strokeWidth="2" />
         <line x1="430" y1="383" x2="484" y2="191" stroke="black" strokeWidth="2" />
       </svg>
     </div>
