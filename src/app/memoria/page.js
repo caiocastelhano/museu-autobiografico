@@ -198,12 +198,6 @@ export default function MemoriaPage() {
                 Registro em Áudio da <u>1ª Mediação na 3ª rodada</u> da Oficina na Biblioteca Pública Cassiano Ricardo, no Tatuapé
             </p>
 
-            <blockquote className={styles.quoteBox}>
-                <p>
-                    “Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a história, com as canções”, como diz <b>Annie Ernaux</b>.
-                </p>
-            </blockquote>
-
             <figure className={styles.mediaBlock}>
                 <audio controls className={styles.audioPlayer}>
                     <source src="/audio/audio_para_leticia.ogg" type="audio/ogg" />
@@ -213,31 +207,29 @@ export default function MemoriaPage() {
                     Mediação registrada em áudio na Biblioteca Cassiano Ricardo em 2024.
                 </figcaption>
             </figure>
+
+            <blockquote className={styles.quoteBox}>
+                <p>
+                    “Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a história, com as canções”, como diz <b>Annie Ernaux</b>.
+                </p>
+            </blockquote>
         </section>
 
         {/* Bloco sobre Gleice Arruda */}
         <section className={styles.participantTestimoniesSection}>
-        <h3>
-            | MEMÓRIA DAS PESSOAS PARTICIPANTES SOBRE AS OFICINAS | 2022 A 2024
-        </h3>
+        <h2>
+            Algumas memórias das pessoas participantes sobre as oficinas: 2022 a 2024 
+        </h2>
 
         <p>
-            <b>
-            Para fixar essa memória coletiva, trago agora depoimentos de pessoas participantes da Oficina no Centro Cultural da Penha em 2022.
-            </b>
+            Para fixar essa memória coletiva, trago agora depoimentos de pessoas participantes da <u>Oficina no Centro Cultural da Penha em 2022</u>.
         </p>
 
         <p>
-            <b>
             O objetivo destes depoimentos encaminhados por participantes era de manter o trabalho da Oficina no mesmo lugar em 2023.
-            </b>
         </p>
 
-        <h4>Depoimento: Gleice Arruda</h4>
-
-        <p>
-            Moradora da Penha, atriz formada pelo SENAC São Miguel Paulista, poeta e, profissionalmente, atua com figuração em séries e filmes publicitários.
-        </p>
+        <p>Depoimento: <b><u>Gleice Arruda</u></b></p>
 
         <figure className={styles.mediaBlock}>
             <Image
@@ -251,34 +243,49 @@ export default function MemoriaPage() {
             Gleice em frente à sua casa.
             </figcaption>
         </figure>
+
+        <p>
+            Moradora da <u>Penha</u>, atriz formada pelo SENAC São Miguel Paulista, poeta e, profissionalmente, atua com figuração em séries e filmes publicitários.
+        </p>
       
-        <p>
-            <i>
-            Fecho os olhos, respiro, relaxo e me permito lembrar, reviver, viver e me expor. Crio novas memórias a partir de tudo que já vivi e choro. Estou viva. Eu me sinto viva. Eu existo. Ali, onde uma pessoa se permite ser diante de tantas diferenças e individualidades, eu também me permito. Ali é mais fácil. Com você é mais fácil. Juntos a possibilidade é uma certeza.
-            </i>
-        </p>
+        <blockquote className={styles.testimonialBox}>
+            <p>
+                <i>
+                Fecho os olhos, respiro, relaxo e me permito lembrar, reviver, viver e me expor. Crio novas memórias a partir de tudo que já vivi e choro. Estou viva. Eu me sinto viva. Eu existo. Ali, onde uma pessoa se permite ser diante de tantas diferenças e individualidades, eu também me permito. Ali é mais fácil. Com você é mais fácil. Juntos a possibilidade é uma certeza.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                As memórias são vivas, presentes e sinceras. Parei de ignorá-las e evitá-las, esse medo se fez pequeno perto da vontade de criar novas memórias e registrar fisicamente e mentalmente aquilo que não volta mais, pelo menos não da mesma forma em que um dia ela existiu.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                Entre risos e choros, observo admirada e orgulhosa de fazer parte da memória de alguém que jamais sairá da minha. Olho ao meu redor e percebo o quanto foi importante tudo que vivi, com quem vivi e onde vivi. O lugar também faz parte de nós. Me reconheço entre tijolos e sorrio: isso também sou eu. Isso também é nós.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                Desconforto? Se faz quase inexistente quando compartilhamos histórias e criamos memórias com quem também é humano.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                Naquele espaço, o silêncio, o choro, o riso e o grito se fizeram tão presentes quanto nossos corpos. Mas, pra além de qualquer coisa, nos fizeram existir e estar, assim como deve ser.
+                </i>
+            </p>
+        </blockquote>
+
+        <h4>
+            Uma memória minha sobre Gleice 
+        </h4>
 
         <p>
-            <i>
-            As memórias são vivas, presentes e sinceras. Parei de ignorá-las e evitá-las, esse medo se fez pequeno perto da vontade de criar novas memórias e registrar fisicamente e mentalmente aquilo que não volta mais, pelo menos não da mesma forma em que um dia ela existiu.
-            </i>
-        </p>
-
-        <p>
-            <i>
-            Entre risos e choros, observo admirada e orgulhosa de fazer parte da memória de alguém que jamais sairá da minha. Olho ao meu redor e percebo o quanto foi importante tudo que vivi, com quem vivi e onde vivi. O lugar também faz parte de nós. Me reconheço entre tijolos e sorrio: isso também sou eu. Isso também é nós.
-            </i>
-        </p>
-
-        <p>
-            <i>
-            Desconforto? Se faz quase inexistente quando compartilhamos histórias e criamos memórias com quem também é humano.
-            </i>
-        </p>
-
-        <p>
-            <i>
-            Naquele espaço, o silêncio, o choro, o riso e o grito se fizeram tão presentes quanto nossos corpos. Mas, pra além de qualquer coisa, nos fizeram existir e estar, assim como deve ser.
+            <i>A primeira leitura de texto desenvolvido a partir de entrevista com seu pai, que veio da região Nordeste do Brasil.
             </i>
         </p>
 
@@ -296,17 +303,11 @@ export default function MemoriaPage() {
             Gleice lê um texto criado a partir de entrevista com seu pai.
             </figcaption>
         </figure>
-
-        <p>
-            <i>
-            Uma memória minha sobre Gleice: a primeira leitura de texto desenvolvido a partir de entrevista com seu pai, que veio da região Nordeste do Brasil.
-            </i>
-        </p>
         </section>
 
         {/* Bloco depoimentos em vídeo de Ana Claudia, Francisco e Beatriz */}
         <section className={styles.escalatedTestimoniesSection}>
-            <h4>Depoimentos Pós-Encontros no Centro Cultural da Penha | 2022</h4>
+            <h2>Depoimentos Pós-Encontros no Centro Cultural da Penha | 2022</h2>
 
                 <div className={`${styles.mediaBlock} ${styles.left}`}>
                     <p className={styles.caption}>Ana Claudia</p>
@@ -350,11 +351,11 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre Susana Raposo */}
         <section className={styles.susanaSection}>
-            <h4>DEPOIMENTO: SUSANA RAPOSO</h4>
+            <h2>Depoimento de Susana Raposo</h2>
 
             <p>
                 Escritora, poeta, mãe de gêmeas. Susana Raposo se entregava profundamente em cada proposta de improviso, cena e criação de texto. 
-                Tinha problema em participar da roda final, pois não gostava da palavra Merda, que usávamos para encerrar cada encontro como um grito coletivo. 
+                Tinha problema em participar da roda final, pois não gostava da palavra <i>Merda</i>, que usávamos para encerrar cada encontro como um grito coletivo. 
                 Considerava uma palavra que trazia memórias ruins. Posteriormente, nas outras rodadas na Biblioteca Cassiano Ricardo, começou a se integrar, 
                 participando da roda final. Até hoje, Susana é uma das principais apoiadoras da continuidade da oficina.
             </p>
@@ -367,6 +368,9 @@ export default function MemoriaPage() {
                 height={500}
                 className={styles.image}
                 />
+                <figcaption className={styles.caption}>
+                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
+                </figcaption>
             </figure>
 
             <figure className={styles.mediaBlock}>
@@ -378,7 +382,7 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Digitalização de escrita em papel, 2022 | Fonte: acervo do autor
+                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
                 </figcaption>
             </figure>
 
@@ -398,11 +402,9 @@ export default function MemoriaPage() {
                 </p>
             </blockquote>
 
-            <div className={styles.personalMemoryBlock}>
-                <p><b>UMA MEMÓRIA MINHA DE SUSANA</b></p>
-                <p><b>Memória Sonora e Visual do exercício:</b></p>
-                <p><b>Improviso a partir da tela de Edgar Degas, intitulada Antes da Performance</b></p>
-            </div>
+    
+            <h4>Uma memória minha de Susana</h4>
+            <p><i>Memória Sonora e Visual do exercício: improviso a partir da tela de Edgar Degas, intitulada Antes da Performance</i></p>
 
             <figure className={styles.mediaBlock}>
                 <Image
@@ -417,12 +419,12 @@ export default function MemoriaPage() {
                 </figcaption>
             </figure>
 
-            <p><b>UMA LEMBRANÇA</b></p>
             <p>
-                <b>
-                No dia, o grupo tinha que criar um improviso coletivo, tendo menos de 3 minutos para se preparar. 
-                Para essa apresentação, uma aluna de dança do Centro Cultural da Penha se candidatou a participar como espectadora, somando a mim como plateia dessa cena teatral.
-                </b>
+                Em um dos domingos de encontros, o grupo tinha que criar um improviso coletivo, tendo menos de três minutos de preparação. Para essa apresentação, uma aluna de dança do Centro Cultural da Penha se candidatou a participar como espectadora, somando a mim como plateia dessa cena teatral.
+            </p>
+
+            <p>
+                No improviso, Susana tomou o protagonismo para criar a conexão entre o grupo de pessoas e, virando uma bailarina com ego inflado, mostrou sua irritação e soltou um grito, que ecoou em minha memória, e que me recordo até hoje como um momento de engrandecimento dela em cena.
             </p>
 
             <figure className={styles.mediaBlock}>
@@ -444,10 +446,14 @@ export default function MemoriaPage() {
         {/* Bloco A mediação começa em casa */}
         <section className={styles.tiaClaudeteSection}>
             <div className={styles.tiaClaudeteContent}>
-                <h3>A mediação começa em casa</h3>
+                <h2>A mediação começa em casa</h2>
 
                 <p>
-                _EM CONSTRUÇÃO_ MEMÓRIAS DE COMO COMECEI A MEDIAR EM CASA ME RELACIONANDO COM MINHA TIA CLAUDETE
+                    _EM CONSTRUÇÃO_ 
+                </p>
+                
+                <p>
+                    MEMÓRIAS DE COMO COMECEI A MEDIAR EM CASA ME RELACIONANDO COM MINHA TIA CLAUDETE
                 </p>
 
                 <figure className={styles.mediaBlock}>
@@ -469,36 +475,33 @@ export default function MemoriaPage() {
         {/* Bloco A memória é o que nos torna o que somos */}
         <section className={styles.memoryReflectionSection}>
             <div className={styles.memoryCluster}>
-                <div className={styles.starTopLeft}></div>
-                <div className={styles.starTopRight}></div>
-                <div className={styles.starBottomLeft}></div>
-                <div className={styles.starBottomRight}></div>
+                <h2>A memória é o que nos torna quem somos</h2>
 
-                <h4>A memória é o que nos torna quem somos</h4>
-
-                <blockquote>
+                <blockquote className={styles.quoteBox}>
                 <p>
-                    <i>
-                    As memórias do passado são o que nos fazem ser capazes de avaliar o presente como planejamos para viver o amanhã.
+                    "As memórias do passado são o que nos fazem ser capazes de avaliar o presente como planejamos para viver o amanhã.
                     A mais importante das nossas lembranças são, simplesmente, as lembranças de quem somos; de onde viemos; quem 
                     são nossos pais e em qual região nascemos; quais são as histórias que nos contaram; a língua que nascemos 
-                    falando (...)
-                    </i>
+                    falando (...)", diz <b><u>Wa Thiong’o</u></b>
                 </p>
                 </blockquote>
 
-                <p className={styles.author}>Wa Thiong&apos;o</p>
+                <p className={styles.author}></p>
             </div>
         </section>
 
 
         {/* Bloco com agradecimento - em construção */}
         <section className={styles.acknowledgementsSection}>
-            <h4>_agradecimentos_</h4>
-                <p>
-                    <i>_EM CONSTRUÇÃO_ ideia de colocar o nome de todas as pessoas participantes e envolvidas no projeto.</i>
-                </p>
-            </section>
+            <h2>Memória: todas as pessoas que participaram de algum modo para que a Oficina acontecesse</h2>
+
+            <h4>_Agradecimentos_</h4>
+
+            <p>
+                _MEMÓRIA EM CONSTRUÇÃO_ 
+            </p>
+
+        </section>
       </main>
 
       <BackToHomeButton />
