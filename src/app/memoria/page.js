@@ -479,10 +479,10 @@ export default function MemoriaPage() {
 
                 <blockquote className={styles.quoteBox}>
                 <p>
-                    "As memórias do passado são o que nos fazem ser capazes de avaliar o presente como planejamos para viver o amanhã.
+                    &quot;As memórias do passado são o que nos fazem ser capazes de avaliar o presente como planejamos para viver o amanhã.
                     A mais importante das nossas lembranças são, simplesmente, as lembranças de quem somos; de onde viemos; quem 
                     são nossos pais e em qual região nascemos; quais são as histórias que nos contaram; a língua que nascemos 
-                    falando (...)", diz <b><u>Wa Thiong’o</u></b>
+                    falando (...)&quot;, diz <b><u>Wa Thiong’o</u></b>
                 </p>
                 </blockquote>
 
