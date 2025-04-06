@@ -197,17 +197,12 @@ export default function MemoriaPage() {
             </p>
 
             <div className={styles.mediaBlock}>
-                <iframe
-                width="100%"
-                height="400"
-                src="https://www.youtube.com/embed/q8MTtMUAzlw"
-                title="Áudio, Artigo 2 | Mestrado em Artes da Cena (2024) - Oficina Museu Autobiográfico e Território Leste"
-                frameBorder="0"
-                allowFullScreen
-                className={styles.video}
-                ></iframe>
+                <audio controls className={styles.audioPlayer}>
+                    <source src="/audio/audio_para_leticia.ogg" type="audio/ogg" />
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
                 <figcaption className={styles.caption}>
-                Mediação registrada em áudio na Biblioteca Cassiano Ricardo em 2024.
+                    Mediação registrada em áudio na Biblioteca Cassiano Ricardo em 2024.
                 </figcaption>
             </div>
         </section>
