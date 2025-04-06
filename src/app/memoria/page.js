@@ -50,7 +50,7 @@ export default function MemoriaPage() {
                 <blockquote>
                 <p>
                     <i>
-                    &quot;Por que alguém se recorda vividamente de alguns eventos e personagens
+                    &quot;Por que alguém se <u>recorda vividamente</u> de alguns eventos e personagens
                     enquanto outros não? Como a mente é capaz de selecionar aquilo que se
                     sedimenta fundo na memória e aquilo que ela permite flutuar na superfície?&quot;
                     </i>
@@ -59,7 +59,7 @@ export default function MemoriaPage() {
 
                 <p>
                 <i>
-                    A <b>memória</b> é seletiva porque nosso cérebro prioriza informações com base
+                    <u>A <b>memória</b> é seletiva porque nosso cérebro prioriza</u> informações com base
                     na emoção, relevância pessoal e repetição. Eventos carregados de emoção
                     (positiva ou negativa) tendem a ser mais bem armazenados, pois ativam a
                     amígdala, região ligada ao processamento emocional.
@@ -71,10 +71,10 @@ export default function MemoriaPage() {
                     Nas rodadas da oficina <b>Museu Autobiográfico e Território_Leste</b>,
                     momentos, pessoas, sensações, objetos e aprendizados me deram a
                     oportunidade de aprofundar conexões, criando memórias que, mesmo
-                    individuais, se tornaram coletivas. Dentro desse sentido, trago nessa
-                    página algumas memórias de exercícios coletivos, sensações minhas como
+                    individuais, se tornaram coletivas. Dentro desse sentido, essa
+                    página traz <u>algumas memórias de exercícios coletivos, sensações minhas como
                     mediador, relatos de experiências de participantes e lembranças sonoras
-                    e narrativas dos acontecimentos das oficinas.
+                    e narrativas dos acontecimentos das oficinas</u>.
                 </i>
                 </p>
             </div>
@@ -83,18 +83,18 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre o ínicio do projeto */}
         <section className={styles.projectStartSection}>
-            <h2>MEMÓRIAS DO INÍCIO DO PROJETO</h2>
+            <h2>Memórias do início do Projeto</h2>
 
             <p>
                 <i>
-                Das memórias registradas mais bonitas, encontrei recentemente a Lista de Presença das primeiras pessoas 
+                <u>Das memórias registradas mais bonitas</u>, encontrei recentemente a <b>Lista de Presença</b> das primeiras pessoas 
                 participantes de minha oficina.
                 </i>
             </p>
 
             <p>
                 <i>
-                O primeiro encontro aconteceu em 07 de agosto de 2022, dia dos pais. O Centro Cultural da Penha se equivocou e anunciou o 
+                O primeiro encontro aconteceu em 07 de agosto de 2022, dia dos pais. O <u>Centro Cultural da Penha</u> se equivocou e anunciou o 
                 início para o dia 14 de agosto, mas, nas mídias estava como dia 07. Com isso, ganhei dois inícios dessa experiência tão significativa.
                 </i>
             </p>
@@ -107,10 +107,13 @@ export default function MemoriaPage() {
                 height={500}
                 className={styles.image}
                 />
+                <figcaption className={styles.caption}>
+                    Lista de Presença da primeira oficina do Museu Autobiográfico
+                </figcaption>
             </div>
 
             <p>
-                Por ser um período ainda de pandemia, participantes ainda utilizavam máscaras e, como mediador, as questões
+                Por ser um período ainda de pandemia, participantes ainda utilizavam <b>máscaras</b> e, como <b>mediador</b>, as questões
                 de saúde e distanciamento social ainda se apresentavam como partes que compunham os relacionamentos.
             </p>
 
@@ -132,17 +135,15 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre memórias de 2022 */}
         <section className={styles.groupExerciseSection}>
-            <p>
-                <b>MEMÓRIA DE 2022</b>
-            </p>
+            <h2>Memória de 2022</h2>
 
             <p>
-                O exercício de grupo na primeira rodada da <b>Oficina no Centro Cultural da Penha</b> (CCP):<br />
+                O exercício de grupo na primeira rodada da <b>Oficina no Centro Cultural da Penha (CCP):</b><br />
                 <b>Se eu fosse você</b>
             </p>
 
             <p>
-                <b>Como não há registros do exercício em si, encontrei fotos de exercícios de composição do grupo presente no dia da experiência.</b>
+                <u>Como não há registros do exercício em si, encontrei fotos de exercícios de composição do grupo presente no dia da experiência.</u>
             </p>
 
             <div className={styles.mediaBlock}>
@@ -153,6 +154,9 @@ export default function MemoriaPage() {
                 height={500}
                 className={styles.image}
                 />
+                <figcaption className={styles.caption}>
+                    Grupo em exercício coletivo - oficina 2022
+                </figcaption>
             </div>
 
             <div className={styles.mediaBlock}>
@@ -163,40 +167,44 @@ export default function MemoriaPage() {
                 height={500}
                 className={styles.image}
                 />
+                <figcaption className={styles.caption}>
+                    Exercício de improviso - oficina 2022
+                </figcaption>
             </div>
 
-            <p>
-                Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo &quot;Se eu fosse você&quot;. 
-                Inspirado no documentário <i>Jogo de Cena</i>, do diretor e documentarista Eduardo Coutinho (2007), a 
-                experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando:
-                o que o fez chegar à oficina; qual o seu bairro; a sua idade; os seus desejos como artista e o que 
-                mais julgar pertinente. Em seguida, o segundo participante se apresenta como quiser. Apresentados os 
-                relatos dos dois primeiros participantes, eu proponho a troca de papéis.
-            </p>
+            <div className={styles.textBox}>
+                <p>
+                    Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo &quot;Se eu fosse você&quot;. 
+                    Inspirado no documentário <i>Jogo de Cena</i>, do diretor e documentarista Eduardo Coutinho (2007), a 
+                    experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando:
+                    o que o fez chegar à oficina; qual o seu bairro; a sua idade; os seus desejos como artista e o que 
+                    mais julgar pertinente. Em seguida, o segundo participante se apresenta como quiser. Apresentados os 
+                    relatos dos dois primeiros participantes, eu proponho a troca de papéis.
+                </p>
 
-            <p>
-                Esse exercício pretende pegar de surpresa participantes para testar a sua escuta, colocar a pessoa em situação 
-                de um &quot;personagem real&quot;, desde o início, e ouvir a maneira como se reconta uma história já apresentada, 
-                pretendendo ser a pessoa.
-            </p>
+                <p>
+                    Esse exercício pretende pegar de surpresa participantes para testar a sua escuta, colocar a pessoa em situação 
+                    de um &quot;personagem real&quot;, desde o início, e ouvir a maneira como se reconta uma história já apresentada, 
+                    pretendendo ser a pessoa.
+                </p>
+            </div>
         </section>
 
         {/* Bloco sobre memórias de 2024 - áudio */}
         <section className={styles.audioMemorySection}>
+            <h2>Memória de 2024</h2>
+                
             <p>
-                <b>MEMÓRIA DE 2024</b> 
-            </p>
-                Registro em Áudio da 1ª Mediação na rodada 3 da Oficina na <b>Biblioteca Pública Cassiano Ricardo</b>
-            <p>
-
+                Registro em Áudio da <u>1ª Mediação na 3ª rodada</u> da Oficina na Biblioteca Pública Cassiano Ricardo, no Tatuapé
             </p>
 
-            <p>
-                <b>&quot;<i>Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a 
-                história, com as canções&quot;</i>, como diz Annie Ernaux.</b>
-            </p>
+            <blockquote className={styles.quoteBox}>
+                <p>
+                    “Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a história, com as canções”, como diz <b>Annie Ernaux</b>.
+                </p>
+            </blockquote>
 
-            <div className={styles.mediaBlock}>
+            <figure className={styles.mediaBlock}>
                 <audio controls className={styles.audioPlayer}>
                     <source src="/audio/audio_para_leticia.ogg" type="audio/ogg" />
                     Seu navegador não suporta o elemento de áudio.
@@ -204,7 +212,7 @@ export default function MemoriaPage() {
                 <figcaption className={styles.caption}>
                     Mediação registrada em áudio na Biblioteca Cassiano Ricardo em 2024.
                 </figcaption>
-            </div>
+            </figure>
         </section>
 
         {/* Bloco sobre Gleice Arruda */}
