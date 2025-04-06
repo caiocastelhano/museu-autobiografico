@@ -101,7 +101,7 @@ export default function MemoriaPage() {
 
             <div className={styles.mediaBlock}>
                 <Image
-                src="/images/memoria/foto1_listadepresenca.jpg"
+                src="/images/memoria/foto1_listadepresenca_v2.jpg"
                 alt="Lista de Presença da primeira oficina do Museu Autobiográfico"
                 width={800}
                 height={500}
@@ -310,7 +310,7 @@ export default function MemoriaPage() {
                     <iframe
                     width="100%"
                     height="400"
-                    src="https://www.youtube.com/embed/7vNH9tN1BDY"
+                    src="https://www.youtube.com/embed/ctfpTTpgD7g"
                     title="Depoimento Pós Aula - Ana Claudia"
                     frameBorder="0"
                     allowFullScreen
