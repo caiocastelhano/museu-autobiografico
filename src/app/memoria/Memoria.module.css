@@ -15,21 +15,52 @@
 
 
 /* ===== SEÇÃO DE INTRODUÇÃO ===== */
+
+.introWrapper {
+  position: relative;
+  width: 100%;
+  /* Se quiser rolagem horizontal, não use overflow hidden aqui */
+  /* overflow: hidden; <-- se ativar, vai cortar o que passar da tela */
+}
+
+.bgContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px; /* Grande o suficiente para x=5000 */
+  height: 800px; /* Mesma altura do viewBox */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
 .memoryIntroSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 40px;
-  gap: 48px;
-  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px; /* Conteúdo central */
   margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.sectionBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;                   /* Preenche a largura da seção (1200px) */
+  height: 100%;                  /* Preenche a altura definida da seção (aqui, 800px conforme viewBox) */
+  z-index: 0;
+  pointer-events: none;          /* Permite cliques no conteúdo abaixo */
 }
 
 .introContent {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 48px;
+  align-items: center;
 }
 
 .memoryShape {
@@ -114,15 +145,45 @@
 
 /* ===== SEÇÃO 1: INÍCIO DO PROJETO ===== */
 .projectStartSection {
+  position: relative;             /* Necessário para o fundo SVG absoluto */
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* alinhamento à esquerda */
+  align-items: flex-start;        /* Alinhamento à esquerda */
   padding: 40px 40px 20px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
+  overflow: hidden;               /* Esconde partes do SVG que extrapolarem a altura */
 }
 
+/* SVG background container (fundo de pontinhos/estrelas) */
+.bgContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 1000px; /* altura ajustada de acordo com a seção */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* SVG flutuante */
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+/* Garante que o conteúdo fique visível acima do SVG */
+.projectStartSection h2,
+.projectStartSection p,
+.projectStartSection .mediaBlock,
+.projectStartSection figure {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilos específicos */
 .projectStartSection h2 {
   font-size: 1.5rem;
   margin-bottom: 24px;
@@ -136,7 +197,7 @@
 }
 
 .caption {
-  font-size: 0.875rem; /* menor que o texto normal */
+  font-size: 0.875rem;
   color: #666;
   margin-top: 8px;
   text-align: center;
@@ -147,7 +208,6 @@
   width: 100%;
   margin: 32px 0;
 }
-
 
 /* ===== RESPONSIVIDADE (SEÇÃO 1) ===== */
 @media (max-width: 768px) {
@@ -165,7 +225,6 @@
     margin: 24px 0;
   }
 }
-
 
 /* ===== SEÇÃO 2: EXERCÍCIO DE GRUPO ===== */
 .groupExerciseSection {
