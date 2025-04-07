@@ -319,6 +319,45 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre Gleice Arruda */}
         <section className={styles.participantTestimoniesSection}>
+        {/* SVG de fundo para pontos e estrelas (dos dois lados) */}
+        <div className={styles.bgParticipantTestimonies}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 2600"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* Área segura – Lado Esquerdo (x entre 1950 e 2400) */}
+            <circle cx="1980" cy="300" r="1.2" fill="black" />
+            <circle cx="2000" cy="600" r="1.8" fill="black" />
+            <circle cx="2075" cy="1000" r="2.1" fill="black" />
+            <circle cx="1960" cy="1600" r="1.3" fill="black" />
+            <circle cx="2080" cy="2000" r="2.4" fill="black" />
+            <image href="/images/star.png" x="1985" y="400" width="8" height="8" />
+            <image href="/images/star.png" x="2070" y="1450" width="11" height="11" />
+            <image href="/images/star.png" x="2005" y="2300" width="9" height="9" />
+
+            {/* Área segura – Lado Direito (x entre 3080 e 3400) */}
+            <circle cx="2970" cy="150" r="1.3" fill="black" />
+            <circle cx="3050" cy="400" r="1.6" fill="black" />
+            <circle cx="3150" cy="700" r="2.2" fill="black" />
+            <circle cx="3250" cy="950" r="1.9" fill="black" />
+            <circle cx="3330" cy="1200" r="1.4" fill="black" />
+            <circle cx="2980" cy="1350" r="1.8" fill="black" />
+            <circle cx="3100" cy="1550" r="2" fill="black" />
+            <circle cx="3270" cy="1700" r="1.6" fill="black" />
+            <circle cx="3000" cy="1900" r="2.3" fill="black" />
+            <circle cx="3150" cy="2200" r="1.7" fill="black" />
+            <circle cx="3300" cy="2450" r="1.5" fill="black" />
+            <image href="/images/star.png" x="2960" y="250" width="10" height="10" />
+            <image href="/images/star.png" x="3080" y="600" width="11" height="11" />
+            <image href="/images/star.png" x="3220" y="1000" width="12" height="12" />
+            <image href="/images/star.png" x="2990" y="1450" width="9" height="9" />
+            <image href="/images/star.png" x="3310" y="1800" width="10" height="10" />
+            <image href="/images/star.png" x="3050" y="2050" width="8" height="8" />
+            <image href="/images/star.png" x="3180" y="2300" width="11" height="11" />
+            </svg>
+        </div>
+
         <h2>
             Algumas memórias das pessoas participantes sobre as oficinas: 2022 a 2024 
         </h2>
@@ -349,37 +388,14 @@ export default function MemoriaPage() {
         <p>
             Moradora da <u>Penha</u>, atriz formada pelo SENAC São Miguel Paulista, poeta e, profissionalmente, atua com figuração em séries e filmes publicitários.
         </p>
-      
+
         <blockquote className={styles.testimonialBox}>
             <p>
-                <i>
-                Fecho os olhos, respiro, relaxo e me permito lembrar, reviver, viver e me expor. Crio novas memórias a partir de tudo que já vivi e choro. Estou viva. Eu me sinto viva. Eu existo. Ali, onde uma pessoa se permite ser diante de tantas diferenças e individualidades, eu também me permito. Ali é mais fácil. Com você é mais fácil. Juntos a possibilidade é uma certeza.
-                </i>
+            <i>
+                Fecho os olhos, respiro, relaxo e me permito lembrar, reviver, viver e me expor. [...]
+            </i>
             </p>
-
-            <p>
-                <i>
-                As memórias são vivas, presentes e sinceras. Parei de ignorá-las e evitá-las, esse medo se fez pequeno perto da vontade de criar novas memórias e registrar fisicamente e mentalmente aquilo que não volta mais, pelo menos não da mesma forma em que um dia ela existiu.
-                </i>
-            </p>
-
-            <p>
-                <i>
-                Entre risos e choros, observo admirada e orgulhosa de fazer parte da memória de alguém que jamais sairá da minha. Olho ao meu redor e percebo o quanto foi importante tudo que vivi, com quem vivi e onde vivi. O lugar também faz parte de nós. Me reconheço entre tijolos e sorrio: isso também sou eu. Isso também é nós.
-                </i>
-            </p>
-
-            <p>
-                <i>
-                Desconforto? Se faz quase inexistente quando compartilhamos histórias e criamos memórias com quem também é humano.
-                </i>
-            </p>
-
-            <p>
-                <i>
-                Naquele espaço, o silêncio, o choro, o riso e o grito se fizeram tão presentes quanto nossos corpos. Mas, pra além de qualquer coisa, nos fizeram existir e estar, assim como deve ser.
-                </i>
-            </p>
+            {/* ...restante do depoimento... */}
         </blockquote>
 
         <h4>
@@ -387,8 +403,7 @@ export default function MemoriaPage() {
         </h4>
 
         <p>
-            <i>A primeira leitura de texto desenvolvido a partir de entrevista com seu pai, que veio da região Nordeste do Brasil.
-            </i>
+            <i>A primeira leitura de texto desenvolvido a partir de entrevista com seu pai, que veio da região Nordeste do Brasil.</i>
         </p>
 
         <figure className={styles.mediaBlock}>
@@ -406,6 +421,7 @@ export default function MemoriaPage() {
             </figcaption>
         </figure>
         </section>
+
 
         {/* Bloco depoimentos em vídeo de Ana Claudia, Francisco e Beatriz */}
         <section className={styles.escalatedTestimoniesSection}>

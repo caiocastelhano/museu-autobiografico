@@ -413,11 +413,38 @@
 
 /* ===== SEÇÃO 4: DEPOIMENTOS COLETIVOS ===== */
 .participantTestimoniesSection {
+  position: relative; /* necessário para posicionar o SVG */
   align-self: center;
   width: 100%;
   max-width: 800px;
-  padding: 10px 40px;
+  padding: 40px 40px;
   text-align: left;
+  min-height: 2600px; /* altura para acomodar o SVG */
+}
+
+.bgParticipantTestimonies {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 2600px; /* igual ao viewBox do SVG */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.participantTestimoniesSection h2,
+.participantTestimoniesSection h4,
+.participantTestimoniesSection p,
+.participantTestimoniesSection .mediaBlock,
+.participantTestimoniesSection .testimonialBox {
+  position: relative;
+  z-index: 1; /* garante que fiquem sobre o SVG */
 }
 
 .participantTestimoniesSection h2 {
@@ -450,7 +477,7 @@
 }
 
 .testimonialBox {
-  background-color: #f7f7f7; /* cinza bem claro para diferenciar do branco do fundo */
+  background-color: #f7f7f7;
   border-left: 2px solid #444;
   padding: 24px;
   margin: 32px 0;
@@ -466,14 +493,19 @@
 }
 
 /* ===== RESPONSIVIDADE DEPOIMENTOS COLETIVOS ===== */
-
 @media (max-width: 768px) {
+  .participantTestimoniesSection {
+    padding: 40px 16px;
+    text-align: center;
+    min-height: auto; /* evita espaço em branco no mobile */
+  }
+
   .participantTestimoniesSection h2 {
     font-size: 1.4rem;
   }
 
-  .participantTestimoniesSection {
-    padding: 40px 16px;
+  .participantTestimoniesSection h4 {
+    font-size: 1.1rem;
     text-align: center;
   }
 
@@ -484,10 +516,6 @@
   .testimonialBox {
     padding: 16px;
     margin: 24px 0;
-  }
-
-  .participantTestimoniesSection h4 {
-    font-size: 1.1rem;
   }
 }
 
