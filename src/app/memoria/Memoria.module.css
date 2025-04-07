@@ -227,12 +227,38 @@
 
 /* ===== SEÇÃO 2: EXERCÍCIO DE GRUPO ===== */
 .groupExerciseSection {
+  position: relative; /* ADICIONADO para permitir posicionamento absoluto */
   align-self: flex-end; /* ignora o align-items: center do pai */
   width: 100%;
   max-width: 700px;
   margin-right: -100px;
   padding: 40px 0;
   text-align: right;
+  min-height: 2200px; /* ADICIONADO para acomodar a altura do SVG */
+}
+
+.bgGroupExercise {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 2200px; /* mesma do viewBox do SVG */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.groupExerciseSection h2,
+.groupExerciseSection p,
+.groupExerciseSection .mediaBlock,
+.groupExerciseSection .textBox {
+  position: relative; /* garante que fiquem acima do SVG */
+  z-index: 1;
 }
 
 .groupExerciseSection h2 {
@@ -261,12 +287,11 @@
   border: 1px solid #333; /* borda fina e escura */
   padding: 20px 24px;
   margin: 32px 0;
-  border-radius: 0; /* sem cantos arredondados */
+  border-radius: 0;
   font-size: 1rem;
   line-height: 1.6;
-  text-align: justify; /* deixa o texto com alinhamento mais elegante */
+  text-align: justify;
 }
-
 
 /* ===== RESPONSIVIDADE (SEÇÃO 2) ===== */
 @media (max-width: 768px) {
@@ -275,6 +300,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 40px 20px;
+    min-height: auto; /* importante para evitar espaço em branco no mobile */
   }
 
   .groupExerciseSection h2 {
@@ -285,7 +311,6 @@
     max-width: 100%;
   }
 }
-
 
 /* ===== SEÇÃO 3: MEMÓRIA EM ÁUDIO ===== */
 .audioMemorySection {

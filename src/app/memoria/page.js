@@ -190,59 +190,85 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre memórias de 2022 */}
         <section className={styles.groupExerciseSection}>
-            <h2>Memória de 2022</h2>
+        {/* SVG de fundo para pontos e estrelas (lado esquerdo) */}
+        <div className={styles.bgGroupExercise}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 2200"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* Área segura – Lado Esquerdo (x entre 1950 e 2400) */}
+            <circle cx="1700" cy="150" r="1" fill="black" />
+            <circle cx="1800" cy="350" r="5" fill="black" />
+            <circle cx="1900" cy="600" r="2" fill="black" />
+            <circle cx="1750" cy="800" r="1.2" fill="black" />
+            <circle cx="2000" cy="1000" r="1.8" fill="black" />
+            <circle cx="1850" cy="1200" r="2.2" fill="black" />
+            <circle cx="1650" cy="1400" r="1.3" fill="black" />
+            <circle cx="1950" cy="1600" r="4" fill="black" />
+            <circle cx="2050" cy="1800" r="1.6" fill="black" />
+            <circle cx="1780" cy="2000" r="2" fill="black" />
+            <image href="/images/star.png" x="1720" y="250" width="10" height="10" />
+            <image href="/images/star.png" x="1900" y="750" width="12" height="12" />
+            <image href="/images/star.png" x="1680" y="1350" width="9" height="9" />
+            <image href="/images/star.png" x="1850" y="1750" width="11" height="11" />
+            <image href="/images/star.png" x="2000" y="2050" width="10" height="10" />
+            </svg>
+        </div>
 
+        <h2>Memória de 2022</h2>
+
+        <p>
+            O exercício de grupo na primeira rodada da <b>Oficina no Centro Cultural da Penha (CCP):</b><br />
+            <b>Se eu fosse você</b>
+        </p>
+
+        <p>
+            <u>Como não há registros do exercício em si, encontrei fotos de exercícios de composição do grupo presente no dia da experiência.</u>
+        </p>
+
+        <div className={styles.mediaBlock}>
+            <Image
+            src="/images/memoria/foto2_encontros1.jpg"
+            alt="Grupo em exercício coletivo - oficina 2022"
+            width={800}
+            height={500}
+            className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+            Grupo em exercício coletivo - oficina 2022
+            </figcaption>
+        </div>
+
+        <div className={styles.mediaBlock}>
+            <Image
+            src="/images/memoria/foto3_encontros2.jpg"
+            alt="Exercício de improviso - oficina 2022"
+            width={800}
+            height={500}
+            className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+            Exercício de improviso - oficina 2022
+            </figcaption>
+        </div>
+
+        <div className={styles.textBox}>
             <p>
-                O exercício de grupo na primeira rodada da <b>Oficina no Centro Cultural da Penha (CCP):</b><br />
-                <b>Se eu fosse você</b>
+            Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo &quot;Se eu fosse você&quot;. 
+            Inspirado no documentário <i>Jogo de Cena</i>, do diretor e documentarista Eduardo Coutinho (2007), a 
+            experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando:
+            o que o fez chegar à oficina; qual o seu bairro; a sua idade; os seus desejos como artista e o que 
+            mais julgar pertinente. Em seguida, o segundo participante se apresenta como quiser. Apresentados os 
+            relatos dos dois primeiros participantes, eu proponho a troca de papéis.
             </p>
 
             <p>
-                <u>Como não há registros do exercício em si, encontrei fotos de exercícios de composição do grupo presente no dia da experiência.</u>
+            Esse exercício pretende pegar de surpresa participantes para testar a sua escuta, colocar a pessoa em situação 
+            de um &quot;personagem real&quot;, desde o início, e ouvir a maneira como se reconta uma história já apresentada, 
+            pretendendo ser a pessoa.
             </p>
-
-            <div className={styles.mediaBlock}>
-                <Image
-                src="/images/memoria/foto2_encontros1.jpg"
-                alt="Grupo em exercício coletivo - oficina 2022"
-                width={800}
-                height={500}
-                className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                    Grupo em exercício coletivo - oficina 2022
-                </figcaption>
-            </div>
-
-            <div className={styles.mediaBlock}>
-                <Image
-                src="/images/memoria/foto3_encontros2.jpg"
-                alt="Exercício de improviso - oficina 2022"
-                width={800}
-                height={500}
-                className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                    Exercício de improviso - oficina 2022
-                </figcaption>
-            </div>
-
-            <div className={styles.textBox}>
-                <p>
-                    Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo &quot;Se eu fosse você&quot;. 
-                    Inspirado no documentário <i>Jogo de Cena</i>, do diretor e documentarista Eduardo Coutinho (2007), a 
-                    experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando:
-                    o que o fez chegar à oficina; qual o seu bairro; a sua idade; os seus desejos como artista e o que 
-                    mais julgar pertinente. Em seguida, o segundo participante se apresenta como quiser. Apresentados os 
-                    relatos dos dois primeiros participantes, eu proponho a troca de papéis.
-                </p>
-
-                <p>
-                    Esse exercício pretende pegar de surpresa participantes para testar a sua escuta, colocar a pessoa em situação 
-                    de um &quot;personagem real&quot;, desde o início, e ouvir a maneira como se reconta uma história já apresentada, 
-                    pretendendo ser a pessoa.
-                </p>
-            </div>
+        </div>
         </section>
 
         {/* Bloco sobre memórias de 2024 - áudio */}
