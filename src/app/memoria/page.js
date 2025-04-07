@@ -6,6 +6,7 @@ import styles from "@/app/memoria/Memoria.module.css";
 import Image from "next/image";
 import BackToHomeButton from "@/app/components/BackToHomeButton";
 import TopMenu from "@/app/components/TopMenu";
+import FadeInSection from "@/app/components/FadeInSection";
 
 export default function MemoriaPage() {
   return (
@@ -113,7 +114,7 @@ export default function MemoriaPage() {
         </section>
 
         {/* Bloco sobre o ínicio do projeto */}
-        <section className={styles.projectStartSection}>
+        <FadeInSection className={styles.projectStartSection}>
         {/* SVG de fundo para pontos e estrelas */}
         <div className={styles.bgProjectStart}>
             <svg
@@ -186,10 +187,10 @@ export default function MemoriaPage() {
             Beatriz contando sua história com máscara abaixo da boca.
             </figcaption>
         </figure>
-        </section>
+        </FadeInSection>
 
         {/* Bloco sobre memórias de 2022 */}
-        <section className={styles.groupExerciseSection}>
+        <FadeInSection className={styles.groupExerciseSection}>
         {/* SVG de fundo para pontos e estrelas (lado esquerdo) */}
         <div className={styles.bgGroupExercise}>
             <svg
@@ -269,10 +270,10 @@ export default function MemoriaPage() {
             pretendendo ser a pessoa.
             </p>
         </div>
-        </section>
+        </FadeInSection>
 
         {/* Bloco sobre memórias de 2024 - áudio */}
-        <section className={styles.audioMemorySection}>
+        <FadeInSection className={styles.audioMemorySection}>
         {/* SVG de fundo – lado direito */}
         <div className={styles.bgAudioMemory}>
             <svg
@@ -315,10 +316,10 @@ export default function MemoriaPage() {
             “Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a história, com as canções”, como diz <b>Annie Ernaux</b>.
             </p>
         </blockquote>
-        </section>
+        </FadeInSection>
 
         {/* Bloco sobre Gleice Arruda */}
-        <section className={styles.participantTestimoniesSection}>
+        <FadeInSection className={styles.participantTestimoniesSection}>
         {/* SVG de fundo para pontos e estrelas (dos dois lados) */}
         <div className={styles.bgParticipantTestimonies}>
             <svg
@@ -455,11 +456,11 @@ export default function MemoriaPage() {
             Gleice lê um texto criado a partir de entrevista com seu pai.
             </figcaption>
         </figure>
-        </section>
+        </FadeInSection>
 
 
         {/* Bloco depoimentos em vídeo de Ana Claudia, Francisco e Beatriz */}
-        <section className={styles.escalatedTestimoniesSection}>
+        <FadeInSection className={styles.escalatedTestimoniesSection}>
         {/* SVG de fundo com pontos e estrelas */}
         <div className={styles.bgEscalatedTestimonies}>
             <svg
@@ -536,10 +537,10 @@ export default function MemoriaPage() {
             className={styles.video}
             ></iframe>
         </div>
-        </section>
+        </FadeInSection>
 
         {/* Bloco sobre Susana Raposo */}
-        <section className={styles.susanaSection}>
+        <FadeInSection className={styles.susanaSection}>
         {/* SVG de fundo para pontos e estrelas – esquerda e direita */}
         <div className={styles.bgSusana}>
             <svg
@@ -691,10 +692,10 @@ export default function MemoriaPage() {
             Vídeo com registro do exercício inspirado na obra “Antes da Performance”, de Edgar Degas.
             </figcaption>
         </figure>
-        </section>
+        </FadeInSection>
 
         {/* Bloco A mediação começa em casa */}
-        <section className={styles.tiaClaudeteSection}>
+        <FadeInSection className={styles.tiaClaudeteSection}>
         {/* SVG de fundo para pontos e estrelas – lado esquerdo */}
         <div className={styles.bgTiaClaudete}>
             <svg
@@ -741,10 +742,10 @@ export default function MemoriaPage() {
             </figcaption>
             </figure>
         </div>
-        </section>
+        </FadeInSection>
 
         {/* Bloco A memória é o que nos torna o que somos */}
-        <section className={styles.memoryReflectionSection}>
+        <FadeInSection className={styles.memoryReflectionSection}>
         {/* SVG de fundo – lados esquerdo e direito */}
         <div className={styles.bgMemoryReflection}>
             <svg
@@ -780,10 +781,10 @@ export default function MemoriaPage() {
             </blockquote>
             <p className={styles.author}></p>
         </div>
-        </section>
+        </FadeInSection>
 
         {/* Bloco com agradecimento - em construção */}
-        <section className={styles.acknowledgementsSection}>
+        <FadeInSection className={styles.acknowledgementsSection}>
         {/* SVG de fundo para pontos e estrelas */}
         <div className={styles.bgAcknowledgements}>
             <svg
@@ -812,7 +813,7 @@ export default function MemoriaPage() {
         <h4>_Agradecimentos_</h4>
 
         <p>_MEMÓRIA EM CONSTRUÇÃO_</p>
-        </section>
+        </FadeInSection>
       </main>
 
       <BackToHomeButton />
