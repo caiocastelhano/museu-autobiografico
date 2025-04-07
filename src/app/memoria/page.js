@@ -460,46 +460,82 @@ export default function MemoriaPage() {
 
         {/* Bloco depoimentos em vídeo de Ana Claudia, Francisco e Beatriz */}
         <section className={styles.escalatedTestimoniesSection}>
-            <h2>Depoimentos Pós-Encontros no Centro Cultural da Penha | 2022</h2>
+        {/* SVG de fundo com pontos e estrelas */}
+        <div className={styles.bgEscalatedTestimonies}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 1500"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* TOPO - lado direito */}
+            <circle cx="2950" cy="100" r="1.4" fill="black" />
+            <circle cx="3100" cy="250" r="1.2" fill="black" />
+            <circle cx="3300" cy="180" r="2" fill="black" />
+            <image href="/images/star.png" x="3280" y="100" width="10" height="10" />
+            <image href="/images/star.png" x="2900" y="300" width="8" height="8" />
+            <image href="/images/star.png" x="3280" y="500" width="10" height="10" />
 
-                <div className={`${styles.mediaBlock} ${styles.left}`}>
-                    <p className={styles.caption}>Ana Claudia</p>
-                    <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/ctfpTTpgD7g"
-                    title="Depoimento Pós Aula - Ana Claudia"
-                    frameBorder="0"
-                    allowFullScreen
-                    className={styles.video}
-                    ></iframe>
-                </div>
+            {/* MEIO - ambos os lados */}
+            <circle cx="1980" cy="700" r="1.3" fill="black" />
+            <circle cx="2020" cy="900" r="1.7" fill="black" />
+            <image href="/images/star.png" x="2000" y="850" width="9" height="9" />
 
-                <div className={`${styles.mediaBlock} ${styles.center}`}>
-                    <p className={styles.caption}>Francisco</p>
-                    <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/UaqLFaHCkyc"
-                    title="Depoimento Pós Encontro - Francisco"
-                    frameBorder="0"
-                    allowFullScreen
-                    className={styles.video}
-                    ></iframe>
-                </div>
+            <circle cx="3050" cy="720" r="2" fill="black" />
+            <circle cx="3250" cy="800" r="1.6" fill="black" />
+            <image href="/images/star.png" x="3100" y="950" width="12" height="12" />
 
-                <div className={`${styles.mediaBlock} ${styles.right}`}>
-                    <p className={styles.caption}>Beatriz</p>
-                    <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/YC13SR3Hq1g"
-                    title="Depoimento Pós Encontro - Beatriz"
-                    frameBorder="0"
-                    allowFullScreen
-                    className={styles.video}
-                    ></iframe>
-                </div>
+            {/* BASE - lado esquerdo e direito */}
+            <circle cx="1970" cy="1200" r="2.2" fill="black" />
+            <circle cx="2100" cy="1300" r="1.6" fill="black" />
+            <image href="/images/star.png" x="2150" y="1400" width="10" height="10" />
+
+            <circle cx="3120" cy="1150" r="2.5" fill="black" />
+            <circle cx="3200" cy="1250" r="1.4" fill="black" />
+            <circle cx="3340" cy="1400" r="1.8" fill="black" />
+            <image href="/images/star.png" x="3180" y="1380" width="9" height="9" />
+            </svg>
+        </div>
+
+        <h2>Depoimentos Pós-Encontros no Centro Cultural da Penha | 2022</h2>
+
+        <div className={`${styles.mediaBlock} ${styles.left}`}>
+            <p className={styles.caption}>Ana Claudia</p>
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/ctfpTTpgD7g"
+            title="Depoimento Pós Aula - Ana Claudia"
+            frameBorder="0"
+            allowFullScreen
+            className={styles.video}
+            ></iframe>
+        </div>
+
+        <div className={`${styles.mediaBlock} ${styles.center}`}>
+            <p className={styles.caption}>Francisco</p>
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/UaqLFaHCkyc"
+            title="Depoimento Pós Encontro - Francisco"
+            frameBorder="0"
+            allowFullScreen
+            className={styles.video}
+            ></iframe>
+        </div>
+
+        <div className={`${styles.mediaBlock} ${styles.right}`}>
+            <p className={styles.caption}>Beatriz</p>
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/YC13SR3Hq1g"
+            title="Depoimento Pós Encontro - Beatriz"
+            frameBorder="0"
+            allowFullScreen
+            className={styles.video}
+            ></iframe>
+        </div>
         </section>
 
         {/* Bloco sobre Susana Raposo */}
