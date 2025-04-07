@@ -273,27 +273,48 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre memórias de 2024 - áudio */}
         <section className={styles.audioMemorySection}>
-            <h2>Memória de 2024</h2>
-                
+        {/* SVG de fundo – lado direito */}
+        <div className={styles.bgAudioMemory}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 400"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* Área segura – Lado Direito (x entre 3080 e 3400) */}
+            <circle cx="3100" cy="40" r="4" fill="black" />
+            <circle cx="3200" cy="180" r="1.7" fill="black" />
+            <circle cx="3350" cy="250" r="2.1" fill="black" />
+            <circle cx="3150" cy="350" r="1.6" fill="black" />
+            <circle cx="3300" cy="390" r="1.4" fill="black" />
+            <circle cx="2950" cy="200" r="3" fill="black" />
+            <circle cx="3000" cy="390" r="1" fill="black" />
+            <circle cx="3300" cy="390" r="1.4" fill="black" />
+            <image href="/images/star.png" x="3180" y="120" width="10" height="10" />
+            <image href="/images/star.png" x="3300" y="260" width="12" height="12" />
+            </svg>
+        </div>
+
+        <h2>Memória de 2024</h2>
+
+        <p>
+            Registro em Áudio da <u>1ª Mediação na 3ª rodada</u> da Oficina na Biblioteca Pública Cassiano Ricardo, no Tatuapé
+        </p>
+
+        <figure className={styles.mediaBlock}>
+            <audio controls className={styles.audioPlayer}>
+            <source src="/audio/audio_para_leticia.ogg" type="audio/ogg" />
+            Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <figcaption className={styles.caption}>
+            Mediação registrada em áudio na Biblioteca Cassiano Ricardo em 2024.
+            </figcaption>
+        </figure>
+
+        <blockquote className={styles.quoteBox}>
             <p>
-                Registro em Áudio da <u>1ª Mediação na 3ª rodada</u> da Oficina na Biblioteca Pública Cassiano Ricardo, no Tatuapé
+            “Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a história, com as canções”, como diz <b>Annie Ernaux</b>.
             </p>
-
-            <figure className={styles.mediaBlock}>
-                <audio controls className={styles.audioPlayer}>
-                    <source src="/audio/audio_para_leticia.ogg" type="audio/ogg" />
-                    Seu navegador não suporta o elemento de áudio.
-                </audio>
-                <figcaption className={styles.caption}>
-                    Mediação registrada em áudio na Biblioteca Cassiano Ricardo em 2024.
-                </figcaption>
-            </figure>
-
-            <blockquote className={styles.quoteBox}>
-                <p>
-                    “Creio que minha memória individual está sempre conectada com o mundo, com o que se passa nele, com a história, com as canções”, como diz <b>Annie Ernaux</b>.
-                </p>
-            </blockquote>
+        </blockquote>
         </section>
 
         {/* Bloco sobre Gleice Arruda */}

@@ -314,12 +314,38 @@
 
 /* ===== SEÇÃO 3: MEMÓRIA EM ÁUDIO ===== */
 .audioMemorySection {
+  position: relative; /* necessário para posicionar o SVG */
   align-self: flex-start;
   width: 100%;
   max-width: 700px;
   margin-left: 100px;
   padding: 40px 0;
   text-align: left;
+  min-height: 400px; /* mesma altura do viewBox */
+}
+
+.bgAudioMemory {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 400px; /* igual à altura do viewBox do SVG */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.audioMemorySection h2,
+.audioMemorySection p,
+.audioMemorySection .mediaBlock,
+.audioMemorySection .quoteBox {
+  position: relative; /* garante que fiquem acima do SVG */
+  z-index: 1;
 }
 
 .audioMemorySection h2 {
@@ -345,7 +371,7 @@
 .audioPlayer {
   width: 100%;
   max-width: 600px;
-  background-color: black; /* fundo escuro */
+  background-color: black;
   border: none;
   border-radius: 0;
   padding: 8px;
@@ -368,12 +394,12 @@
 }
 
 /* ===== RESPONSIVIDADE MEMÓRIA EM ÁUDIO ===== */
-
 @media (max-width: 768px) {
   .audioMemorySection {
     margin-left: 0;
     padding: 40px 16px;
     text-align: center;
+    min-height: auto; /* evita espaço em branco no mobile */
   }
 
   .audioMemorySection h2 {
@@ -384,7 +410,6 @@
     text-align: center;
   }
 }
-
 
 /* ===== SEÇÃO 4: DEPOIMENTOS COLETIVOS ===== */
 .participantTestimoniesSection {
