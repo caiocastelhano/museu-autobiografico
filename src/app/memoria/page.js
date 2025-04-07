@@ -745,33 +745,73 @@ export default function MemoriaPage() {
 
         {/* Bloco A memória é o que nos torna o que somos */}
         <section className={styles.memoryReflectionSection}>
-            <div className={styles.memoryCluster}>
-                <h2>A memória é o que nos torna quem somos</h2>
+        {/* SVG de fundo – lados esquerdo e direito */}
+        <div className={styles.bgMemoryReflection}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 400"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* LADO ESQUERDO (x entre 1950 e 2400) */}
+            <circle cx="2000" cy="100" r="1.3" fill="black" />
+            <circle cx="2100" cy="220" r="2" fill="black" />
+            <circle cx="2200" cy="350" r="1.7" fill="black" />
+            <image href="/images/star.png" x="1950" y="150" width="11" height="11" />
+            <image href="/images/star.png" x="2250" y="300" width="10" height="10" />
 
-                <blockquote className={styles.quoteBox}>
-                <p>
-                    &quot;As memórias do passado são o que nos fazem ser capazes de avaliar o presente como planejamos para viver o amanhã.
-                    A mais importante das nossas lembranças são, simplesmente, as lembranças de quem somos; de onde viemos; quem 
-                    são nossos pais e em qual região nascemos; quais são as histórias que nos contaram; a língua que nascemos 
-                    falando (...)&quot;, diz <b><u>Wa Thiong’o</u></b>
-                </p>
-                </blockquote>
+            {/* LADO DIREITO (x entre 3000 e 3400) */}
+            <circle cx="3100" cy="80" r="1.6" fill="black" />
+            <circle cx="3200" cy="200" r="2.2" fill="black" />
+            <circle cx="3350" cy="320" r="1.4" fill="black" />
+            <image href="/images/star.png" x="3050" y="100" width="9" height="9" />
+            <image href="/images/star.png" x="3320" y="250" width="12" height="12" />
+            </svg>
+        </div>
 
-                <p className={styles.author}></p>
-            </div>
+        <div className={styles.memoryCluster}>
+            <h2>A memória é o que nos torna quem somos</h2>
+            <blockquote className={styles.quoteBox}>
+            <p>
+                &quot;As memórias do passado são o que nos fazem ser capazes de avaliar o presente como planejamos para viver o amanhã.
+                A mais importante das nossas lembranças são, simplesmente, as lembranças de quem somos; de onde viemos; quem 
+                são nossos pais e em qual região nascemos; quais são as histórias que nos contaram; a língua que nascemos 
+                falando (...)&quot;, diz <b><u>Wa Thiong’o</u></b>
+            </p>
+            </blockquote>
+            <p className={styles.author}></p>
+        </div>
         </section>
-
 
         {/* Bloco com agradecimento - em construção */}
         <section className={styles.acknowledgementsSection}>
-            <h2>Memória: todas as pessoas que participaram de algum modo para que a Oficina acontecesse</h2>
+        {/* SVG de fundo para pontos e estrelas */}
+        <div className={styles.bgAcknowledgements}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 200"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* LADO ESQUERDO (x entre 1950 e 2400) */}
+            <circle cx="2000" cy="100" r="1.3" fill="black" />
+            <image href="/images/star.png" x="2150" y="140" width="10" height="10" />
 
-            <h4>_Agradecimentos_</h4>
+            {/* LADO DIREITO (x entre 3000 e 3400) */}
+            <circle cx="3050" cy="30" r="1.5" fill="black" />
+            <circle cx="3100" cy="70" r="2.1" fill="black" />
+            <circle cx="3200" cy="110" r="1.7" fill="black" />
+            <circle cx="3300" cy="160" r="1.4" fill="black" />
+            <image href="/images/star.png" x="3080" y="50" width="10" height="10" />
+            <image href="/images/star.png" x="3350" y="130" width="11" height="11" />
+            </svg>
+        </div>
 
-            <p>
-                _MEMÓRIA EM CONSTRUÇÃO_ 
-            </p>
+        <h2>
+            Memória: todas as pessoas que participaram de algum modo para que a Oficina acontecesse
+        </h2>
 
+        <h4>_Agradecimentos_</h4>
+
+        <p>_MEMÓRIA EM CONSTRUÇÃO_</p>
         </section>
       </main>
 

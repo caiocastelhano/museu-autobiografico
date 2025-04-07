@@ -795,6 +795,23 @@
   width: 100%;
   padding: 20px 20px;
   position: relative;
+  min-height: 400px; /* altura visual da seção para o SVG */
+}
+
+.bgMemoryReflection {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 400px; /* mesma altura do viewBox */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
 }
 
 .memoryCluster {
@@ -803,6 +820,7 @@
   max-width: 800px;
   padding: 40px 32px;
   text-align: center;
+  z-index: 1; /* conteúdo acima do SVG */
 }
 
 .memoryCluster h2 {
@@ -842,6 +860,7 @@
   .memoryReflectionSection {
     margin-left: 0;
     padding: 40px 16px;
+    min-height: auto;
   }
 
   .memoryCluster {
@@ -853,14 +872,38 @@
   }
 }
 
-
 /* ===== SEÇÃO AGRADECIMENTOS ===== */
 .acknowledgementsSection {
+  position: relative; /* necessário para o fundo decorativo */
   width: 100%;
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
   text-align: center;
+  min-height: 200px; /* altura ajustada conforme informado */
+}
+
+.bgAcknowledgements {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 200px; /* deve coincidir com a min-height */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.acknowledgementsSection h2,
+.acknowledgementsSection h4,
+.acknowledgementsSection p {
+  position: relative; /* mantém o conteúdo visível acima do fundo */
+  z-index: 1;
 }
 
 .acknowledgementsSection h2 {
@@ -886,10 +929,10 @@
 }
 
 /* ===== RESPONSIVIDADE AGRADECIMENTOS ===== */
-
 @media (max-width: 768px) {
   .acknowledgementsSection {
     padding: 40px 16px;
+    min-height: auto; /* evita espaço em branco no mobile */
   }
 
   .acknowledgementsSection h2 {
@@ -905,3 +948,4 @@
     text-align: center;
   }
 }
+
