@@ -114,54 +114,78 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre o ínicio do projeto */}
         <section className={styles.projectStartSection}>
-            <h2>Memórias do início do Projeto</h2>
+        {/* SVG de fundo para pontos e estrelas */}
+        <div className={styles.bgProjectStart}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 2000"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* Área segura – Lado Direito (x entre 3080 e 3400) */}
+            <circle cx="3125" cy="200" r="1.2" fill="black" />
+            <circle cx="3280" cy="360" r="1.4" fill="black" />
+            <circle cx="3100" cy="700" r="1.8" fill="black" />
+            <circle cx="3340" cy="1050" r="2" fill="black" />
+            <circle cx="3180" cy="1350" r="1.6" fill="black" />
+            <circle cx="3290" cy="1600" r="1.9" fill="black" />
+            <circle cx="3360" cy="1850" r="1.3" fill="black" />
+            <circle cx="3090" cy="1580" r="4" fill="black" />
+            <circle cx="3020" cy="920" r="5" fill="black" />
+            <image href="/images/star.png" x="3140" y="250" width="9" height="9" />
+            <image href="/images/star.png" x="3310" y="650" width="11" height="11" />
+            <image href="/images/star.png" x="3160" y="1400" width="10" height="10" />
+            <image href="/images/star.png" x="3040" y="1800" width="8" height="8" />
+            </svg>
+        </div>
 
-            <p>
-                <i>
-                <u>Das memórias registradas mais bonitas</u>, encontrei recentemente a <b>Lista de Presença</b> das primeiras pessoas 
-                participantes de minha oficina.
-                </i>
-            </p>
+        <h2>Memórias do início do Projeto</h2>
 
-            <p>
-                <i>
-                O primeiro encontro aconteceu em 07 de agosto de 2022, dia dos pais. O <u>Centro Cultural da Penha</u> se equivocou e anunciou o 
-                início para o dia 14 de agosto, mas, nas mídias estava como dia 07. Com isso, ganhei dois inícios dessa experiência tão significativa.
-                </i>
-            </p>
+        <p>
+            <i>
+            <u>Das memórias registradas mais bonitas</u>, encontrei recentemente a <b>Lista de Presença</b> das primeiras pessoas
+            participantes de minha oficina.
+            </i>
+        </p>
 
-            <div className={styles.mediaBlock}>
-                <Image
-                src="/images/memoria/foto1_listadepresenca_v2.jpg"
-                alt="Lista de Presença da primeira oficina do Museu Autobiográfico"
-                width={800}
-                height={500}
-                className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                    Lista de Presença da primeira oficina do Museu Autobiográfico
-                </figcaption>
-            </div>
+        <p>
+            <i>
+            O primeiro encontro aconteceu em 07 de agosto de 2022, dia dos pais. O <u>Centro Cultural da Penha</u> se equivocou e anunciou o
+            início para o dia 14 de agosto, mas, nas mídias estava como dia 07. Com isso, ganhei dois inícios dessa experiência tão significativa.
+            </i>
+        </p>
 
-            <p>
-                Por ser um período ainda de pandemia, participantes ainda utilizavam <b>máscaras</b> e, como <b>mediador</b>, as questões
-                de saúde e distanciamento social ainda se apresentavam como partes que compunham os relacionamentos.
-            </p>
+        <div className={styles.mediaBlock}>
+            <Image
+            src="/images/memoria/foto1_listadepresenca_v2.jpg"
+            alt="Lista de Presença da primeira oficina do Museu Autobiográfico"
+            width={800}
+            height={500}
+            className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+            Lista de Presença da primeira oficina do Museu Autobiográfico
+            </figcaption>
+        </div>
 
-            <figure className={styles.mediaBlock}>
-                <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/nmLtOFudadU"
-                    title="Vídeo Beatriz - Centro Cultural da Penha | 2022"
-                    frameBorder="0"
-                    allowFullScreen
-                    className={styles.video}
-                ></iframe>
-                <figcaption className={styles.caption}>
-                    Beatriz contando sua história com máscara abaixo da boca.
-                </figcaption>
-            </figure>
+        <p>
+            Por ser um período ainda de pandemia, participantes ainda utilizavam <b>máscaras</b> e, como <b>mediador</b>, as questões
+            de saúde e distanciamento social ainda se apresentavam como partes que compunham os relacionamentos.
+        </p>
+
+        <figure className={styles.mediaBlock}>
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/nmLtOFudadU"
+            title="Vídeo Beatriz - Centro Cultural da Penha | 2022"
+            frameBorder="0"
+            allowFullScreen
+            className={styles.video}
+            ></iframe>
+            <figcaption className={styles.caption}>
+            Beatriz contando sua história com máscara abaixo da boca.
+            </figcaption>
+        </figure>
         </section>
 
         {/* Bloco sobre memórias de 2022 */}
