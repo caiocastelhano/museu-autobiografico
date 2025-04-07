@@ -11,7 +11,11 @@ export default function Footer() {
 
   return (
     <footer className={footerClass}>
-      <p>Museu Autobiográfico © 2025 | Todos os direitos reservados | Criado por Marcelo Rodrigues Maia | Desenvolvido por Caio Castelhano</p>
+      <p className={styles.footerText}>
+        <span className={styles.break}>Museu Autobiográfico © 2025 | Todos os direitos reservados</span>
+        <span className={styles.separator}> | </span>
+        <span className={styles.break}>Criado por Marcelo Rodrigues Maia | Desenvolvido por Caio Castelhano</span>
+      </p>
     </footer>
   );
 }

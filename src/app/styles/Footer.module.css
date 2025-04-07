@@ -26,6 +26,19 @@
   z-index: 10;
 }
 
+.break {
+  display: inline;
+}
+
+.footerText {
+  line-height: 1.4;
+  margin: 0;
+}
+
+.separator {
+  display: inline;
+}
+
 @media (max-width: 768px) {
   .footerHome {
     position: relative;
@@ -36,5 +49,13 @@
   .footerPage {
     font-size: 0.6rem;
     padding: 12px;
+  }
+
+  .break {
+    display: block;
+  }
+
+  .separator {
+    display: none;
   }
 }
