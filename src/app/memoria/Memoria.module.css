@@ -604,11 +604,38 @@
 
 /* ===== SEÇÃO SUSANA RAPOSO ===== */
 .susanaSection {
+  position: relative; /* necessário para o fundo SVG */
   align-self: center;
   width: 100%;
   max-width: 800px;
   padding: 40px 40px;
   text-align: left;
+  min-height: 4px; /* altura para acomodar o SVG de fundo */
+}
+
+.bgSusana {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 4100px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.susanaSection h2,
+.susanaSection h4,
+.susanaSection p,
+.susanaSection blockquote,
+.susanaSection .mediaBlock {
+  position: relative;
+  z-index: 1;
 }
 
 .susanaSection h2 {
@@ -663,8 +690,12 @@
 }
 
 /* ===== RESPONSIVIDADE SUSANA ===== */
-
 @media (max-width: 768px) {
+  .susanaSection {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
   .susanaSection h2 {
     font-size: 1.4rem;
     text-align: center;
@@ -683,15 +714,41 @@
 
 /* ===== SEÇÃO TIA CLAUDETE ===== */
 .tiaClaudeteSection {
+  position: relative; /* necessário para posicionar o SVG */
   width: 100%;
   padding: 30px 0;
   display: flex;
   justify-content: flex-end;
+  min-height: 1000px; /* altura igual à do viewBox */
+}
+
+.bgTiaClaudete {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 1000px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.tiaClaudeteContent,
+.tiaClaudeteContent h2,
+.tiaClaudeteContent p,
+.tiaClaudeteContent .mediaBlock {
+  position: relative;
+  z-index: 1;
 }
 
 .tiaClaudeteContent {
   max-width: 700px;
-  margin-right: -150px; /* joga o bloco pra fora, à direita */
+  margin-right: -150px;
   text-align: right;
 }
 
@@ -709,10 +766,10 @@
 }
 
 /* ===== RESPONSIVIDADE TIA CLAUDETE ===== */
-
 @media (max-width: 768px) {
   .tiaClaudeteSection {
     justify-content: center;
+    min-height: auto; /* evita espaço extra no mobile */
   }
 
   .tiaClaudeteContent {
@@ -726,6 +783,7 @@
     text-align: center;
   }
 }
+
 
 /* ===== SEÇÃO WA THIONG’O ===== */
 

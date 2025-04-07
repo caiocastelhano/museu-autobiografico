@@ -540,126 +540,208 @@ export default function MemoriaPage() {
 
         {/* Bloco sobre Susana Raposo */}
         <section className={styles.susanaSection}>
-            <h2>Depoimento de Susana Raposo</h2>
+        {/* SVG de fundo para pontos e estrelas – esquerda e direita */}
+        <div className={styles.bgSusana}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 4100"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* LADO ESQUERDO – x entre 1950 e 2100 */}
+            <circle cx="2000" cy="150" r="1.2" fill="black" />
+            <circle cx="1980" cy="400" r="1.6" fill="black" />
+            <circle cx="2100" cy="800" r="1.3" fill="black" />
+            <circle cx="2050" cy="1150" r="2.4" fill="black" />
+            <circle cx="1950" cy="1550" r="1.9" fill="black" />
+            <circle cx="2000" cy="1950" r="2" fill="black" />
+            <circle cx="2090" cy="2350" r="1.5" fill="black" />
+            <circle cx="2020" cy="2750" r="2.1" fill="black" />
+            <circle cx="1980" cy="3150" r="1.8" fill="black" />
+            <circle cx="2070" cy="3550" r="2.2" fill="black" />
+            <circle cx="2100" cy="3900" r="1.6" fill="black" />
+            <image href="/images/star.png" x="2000" y="600" width="10" height="10" />
+            <image href="/images/star.png" x="1960" y="1400" width="11" height="11" />
+            <image href="/images/star.png" x="2050" y="2200" width="8" height="8" />
+            <image href="/images/star.png" x="1970" y="3000" width="10" height="10" />
+            <image href="/images/star.png" x="2000" y="3800" width="12" height="12" />
 
+            {/* LADO DIREITO – x entre 2950 e 3350 */}
+            <circle cx="3000" cy="100" r="1.4" fill="black" />
+            <circle cx="3250" cy="300" r="2" fill="black" />
+            <circle cx="3100" cy="700" r="1.7" fill="black" />
+            <circle cx="3330" cy="1050" r="2.3" fill="black" />
+            <circle cx="2980" cy="1450" r="1.6" fill="black" />
+            <circle cx="3200" cy="1850" r="2.1" fill="black" />
+            <circle cx="3070" cy="2250" r="1.5" fill="black" />
+            <circle cx="3350" cy="2650" r="1.9" fill="black" />
+            <circle cx="3150" cy="3050" r="2.4" fill="black" />
+            <circle cx="3100" cy="3450" r="1.6" fill="black" />
+            <circle cx="3300" cy="3850" r="2.3" fill="black" />
+            <circle cx="2950" cy="200" r="1.5" fill="black" />
+            <circle cx="3300" cy="600" r="2" fill="black" />
+            <circle cx="3050" cy="900" r="1.7" fill="black" />
+            <circle cx="3250" cy="1300" r="2.2" fill="black" />
+            <circle cx="3150" cy="1700" r="1.8" fill="black" />
+            <circle cx="3000" cy="2100" r="1.9" fill="black" />
+            <circle cx="3290" cy="2450" r="2.3" fill="black" />
+            <circle cx="3070" cy="2800" r="1.5" fill="black" />
+            <circle cx="3320" cy="3200" r="2.1" fill="black" />
+            <circle cx="3000" cy="3600" r="1.6" fill="black" />
+            <circle cx="3350" cy="3900" r="2.5" fill="black" />
+            <image href="/images/star.png" x="3080" y="500" width="10" height="10" />
+            <image href="/images/star.png" x="2980" y="1600" width="9" height="9" />
+            <image href="/images/star.png" x="3350" y="2500" width="10" height="10" />
+            <image href="/images/star.png" x="3200" y="3350" width="11" height="11" />
+            <image href="/images/star.png" x="3100" y="4000" width="8" height="8" />
+            <image href="/images/star.png" x="3300" y="800" width="9" height="9" />
+            <image href="/images/star.png" x="3000" y="1200" width="11" height="11" />
+            <image href="/images/star.png" x="2950" y="2000" width="8" height="8" />
+            <image href="/images/star.png" x="3190" y="2700" width="10" height="10" />
+            <image href="/images/star.png" x="3100" y="3500" width="12" height="12" />
+            <image href="/images/star.png" x="3250" y="4050" width="10" height="10" />
+            </svg>
+        </div>
+
+        <h2>Depoimento de Susana Raposo</h2>
+
+        <p>
+            Escritora, poeta, mãe de gêmeas. Susana Raposo se entregava profundamente em cada proposta de improviso, cena e criação de texto. 
+            Tinha problema em participar da roda final, pois não gostava da palavra <i>Merda</i>, que usávamos para encerrar cada encontro como um grito coletivo. 
+            Considerava uma palavra que trazia memórias ruins. Posteriormente, nas outras rodadas na Biblioteca Cassiano Ricardo, começou a se integrar, 
+            participando da roda final. Até hoje, Susana é uma das principais apoiadoras da continuidade da oficina.
+        </p>
+
+        <figure className={styles.mediaBlock}>
+            <Image
+            src="/images/memoria/foto5_depoimentosusana1.jpg"
+            alt="Susana Raposo em improviso durante a oficina"
+            width={800}
+            height={500}
+            className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+            Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
+            </figcaption>
+        </figure>
+
+        <figure className={styles.mediaBlock}>
+            <Image
+            src="/images/memoria/foto6_depoimentosusana2.jpg"
+            alt="Escrita de Susana digitalizada"
+            width={800}
+            height={500}
+            className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+            Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
+            </figcaption>
+        </figure>
+
+        <blockquote>
+            <p>11/12/2022</p>
+            <p>Oficina Museu Autobiográfico</p>
+            <p>Profº Marcelo Maia</p>
             <p>
-                Escritora, poeta, mãe de gêmeas. Susana Raposo se entregava profundamente em cada proposta de improviso, cena e criação de texto. 
-                Tinha problema em participar da roda final, pois não gostava da palavra <i>Merda</i>, que usávamos para encerrar cada encontro como um grito coletivo. 
-                Considerava uma palavra que trazia memórias ruins. Posteriormente, nas outras rodadas na Biblioteca Cassiano Ricardo, começou a se integrar, 
-                participando da roda final. Até hoje, Susana é uma das principais apoiadoras da continuidade da oficina.
+            Uma experiência incrível que veio para ficar. Descobri que o teatro me centra e me tira do universo do ego. 
+            Todos somos um só. E sendo único mas conectados por um objetivo, sobreviver no caos. Eu adorei.
             </p>
-
-            <figure className={styles.mediaBlock}>
-                <Image
-                src="/images/memoria/foto5_depoimentosusana1.jpg"
-                alt="Susana Raposo em improviso durante a oficina"
-                width={800}
-                height={500}
-                className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
-                </figcaption>
-            </figure>
-
-            <figure className={styles.mediaBlock}>
-                <Image
-                src="/images/memoria/foto6_depoimentosusana2.jpg"
-                alt="Escrita de Susana digitalizada"
-                width={800}
-                height={500}
-                className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
-                </figcaption>
-            </figure>
-
-            <blockquote>
-                <p>11/12/2022</p>
-                <p>Oficina Museu Autobiográfico</p>
-                <p>Profº Marcelo Maia</p>
-                <p>
-                Uma experiência incrível que veio para ficar. Descobri que o teatro me centra e me tira do universo do ego. 
-                Todos somos um só. E sendo único mas conectados por um objetivo, sobreviver no caos. Eu adorei.
-                </p>
-                <p>
-                Como laboratório de escrita, mas se tornou muito mais que isso. Avivou meu espírito, elevou minha alma. Obrigada!
-                </p>
-                <p>
-                Não quero parar. Não desligue essa fonte.
-                </p>
-            </blockquote>
-
-    
-            <h4>Uma memória minha de Susana</h4>
-            <p><i>Memória Sonora e Visual do exercício: improviso a partir da tela de Edgar Degas, intitulada Antes da Performance</i></p>
-
-            <figure className={styles.mediaBlock}>
-                <Image
-                src="/images/memoria/foto7_antesdaperformance.jpg"
-                alt="Obra 'Antes da Performance', de Edgar Degas"
-                width={800}
-                height={500}
-                className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                    Antes da Performance, de Edgar Degas
-                </figcaption>
-            </figure>
-
             <p>
-                Em um dos domingos de encontros, o grupo tinha que criar um improviso coletivo, tendo menos de três minutos de preparação. Para essa apresentação, uma aluna de dança do Centro Cultural da Penha se candidatou a participar como espectadora, somando a mim como plateia dessa cena teatral.
+            Como laboratório de escrita, mas se tornou muito mais que isso. Avivou meu espírito, elevou minha alma. Obrigada!
             </p>
-
             <p>
-                No improviso, Susana tomou o protagonismo para criar a conexão entre o grupo de pessoas e, virando uma bailarina com ego inflado, mostrou sua irritação e soltou um grito, que ecoou em minha memória, e que me recordo até hoje como um momento de engrandecimento dela em cena.
+            Não quero parar. Não desligue essa fonte.
             </p>
+        </blockquote>
 
-            <figure className={styles.mediaBlock}>
-                <iframe
-                width="100%"
-                height="400"
-                src="https://www.youtube.com/embed/hDNfJW5vIcw"
-                title="Memória Sonora e Visual"
-                frameBorder="0"
-                allowFullScreen
-                className={styles.video}
-                ></iframe>
-                <figcaption className={styles.caption}>
-                Vídeo com registro do exercício inspirado na obra “Antes da Performance”, de Edgar Degas.
-                </figcaption>
-            </figure>
+        <h4>Uma memória minha de Susana</h4>
+        <p><i>Memória Sonora e Visual do exercício: improviso a partir da tela de Edgar Degas, intitulada Antes da Performance</i></p>
+
+        <figure className={styles.mediaBlock}>
+            <Image
+            src="/images/memoria/foto7_antesdaperformance.jpg"
+            alt="Obra 'Antes da Performance', de Edgar Degas"
+            width={800}
+            height={500}
+            className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+            Antes da Performance, de Edgar Degas
+            </figcaption>
+        </figure>
+
+        <p>
+            Em um dos domingos de encontros, o grupo tinha que criar um improviso coletivo, tendo menos de três minutos de preparação. Para essa apresentação, uma aluna de dança do Centro Cultural da Penha se candidatou a participar como espectadora, somando a mim como plateia dessa cena teatral.
+        </p>
+
+        <p>
+            No improviso, Susana tomou o protagonismo para criar a conexão entre o grupo de pessoas e, virando uma bailarina com ego inflado, mostrou sua irritação e soltou um grito, que ecoou em minha memória, e que me recordo até hoje como um momento de engrandecimento dela em cena.
+        </p>
+
+        <figure className={styles.mediaBlock}>
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/hDNfJW5vIcw"
+            title="Memória Sonora e Visual"
+            frameBorder="0"
+            allowFullScreen
+            className={styles.video}
+            ></iframe>
+            <figcaption className={styles.caption}>
+            Vídeo com registro do exercício inspirado na obra “Antes da Performance”, de Edgar Degas.
+            </figcaption>
+        </figure>
         </section>
 
         {/* Bloco A mediação começa em casa */}
         <section className={styles.tiaClaudeteSection}>
-            <div className={styles.tiaClaudeteContent}>
-                <h2>A mediação começa em casa</h2>
+        {/* SVG de fundo para pontos e estrelas – lado esquerdo */}
+        <div className={styles.bgTiaClaudete}>
+            <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 1000"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            {/* Área segura – Lado Esquerdo (x entre 1950 e 2400) */}
+            <circle cx="2000" cy="120" r="1.2" fill="black" />
+            <circle cx="2150" cy="200" r="1.8" fill="black" />
+            <circle cx="1980" cy="300" r="2.1" fill="black" />
+            <circle cx="2350" cy="400" r="1.6" fill="black" />
+            <circle cx="1950" cy="580" r="2" fill="black" />
+            <circle cx="2200" cy="750" r="1.4" fill="black" />
+            <circle cx="2400" cy="880" r="2.2" fill="black" />
 
-                <p>
-                    _EM CONSTRUÇÃO_ 
-                </p>
-                
-                <p>
-                    MEMÓRIAS DE COMO COMECEI A MEDIAR EM CASA ME RELACIONANDO COM MINHA TIA CLAUDETE
-                </p>
+            <image href="/images/star.png" x="2100" y="250" width="10" height="10" />
+            <image href="/images/star.png" x="1950" y="700" width="12" height="12" />
+            <image href="/images/star.png" x="2250" y="920" width="9" height="9" />
+            </svg>
+        </div>
 
-                <figure className={styles.mediaBlock}>
-                <Image
-                    src="/images/memoria/foto8_tiaclaudete.jpg"
-                    alt="Tia Claudete no jardim de casa"
-                    width={800}
-                    height={500}
-                    className={styles.image}
-                />
-                <figcaption className={styles.caption}>
-                    Foto que fiz no jardim da casa da minha tia Claudete
-                </figcaption>
-                </figure>
-            </div>
+        <div className={styles.tiaClaudeteContent}>
+            <h2>A mediação começa em casa</h2>
+
+            <p>
+            _EM CONSTRUÇÃO_ 
+            </p>
+            
+            <p>
+            MEMÓRIAS DE COMO COMECEI A MEDIAR EM CASA ME RELACIONANDO COM MINHA TIA CLAUDETE
+            </p>
+
+            <figure className={styles.mediaBlock}>
+            <Image
+                src="/images/memoria/foto8_tiaclaudete.jpg"
+                alt="Tia Claudete no jardim de casa"
+                width={800}
+                height={500}
+                className={styles.image}
+            />
+            <figcaption className={styles.caption}>
+                Foto que fiz no jardim da casa da minha tia Claudete
+            </figcaption>
+            </figure>
+        </div>
         </section>
-
 
         {/* Bloco A memória é o que nos torna o que somos */}
         <section className={styles.memoryReflectionSection}>
