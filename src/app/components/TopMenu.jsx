@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "../styles/Page.module.css";
+import MobileMenu from "./MobileMenu";
 
 export default function TopMenu() {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +27,7 @@ export default function TopMenu() {
     <>
       {isMobile ? (
         <div className={styles.menuMobileWrapper}>
-          {/* MobileMenu já deve estar sendo importado na Home */}
+        <MobileMenu />
         </div>
       ) : (
         <div className={styles.topLinks}>
