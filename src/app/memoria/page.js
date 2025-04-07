@@ -323,7 +323,7 @@ export default function MemoriaPage() {
         <div className={styles.bgParticipantTestimonies}>
             <svg
             className={styles.floatingElements}
-            viewBox="0 0 5000 2600"
+            viewBox="0 0 5000 3000"
             xmlns="http://www.w3.org/2000/svg"
             >
             {/* Área segura – Lado Esquerdo (x entre 1950 e 2400) */}
@@ -335,6 +335,12 @@ export default function MemoriaPage() {
             <image href="/images/star.png" x="1985" y="400" width="8" height="8" />
             <image href="/images/star.png" x="2070" y="1450" width="11" height="11" />
             <image href="/images/star.png" x="2005" y="2300" width="9" height="9" />
+            <circle cx="1980" cy="2550" r="1.4" fill="black" />
+            <circle cx="2020" cy="2670" r="2" fill="black" />
+            <circle cx="1955" cy="2780" r="1.2" fill="black" />
+            <circle cx="2100" cy="2890" r="1.8" fill="black" />
+            <image href="/images/star.png" x="2000" y="2610" width="10" height="10" />
+            <image href="/images/star.png" x="2080" y="2950" width="12" height="12" />
 
             {/* Área segura – Lado Direito (x entre 3080 e 3400) */}
             <circle cx="2970" cy="150" r="1.3" fill="black" />
@@ -348,6 +354,12 @@ export default function MemoriaPage() {
             <circle cx="3000" cy="1900" r="2.3" fill="black" />
             <circle cx="3150" cy="2200" r="1.7" fill="black" />
             <circle cx="3300" cy="2450" r="1.5" fill="black" />
+            <circle cx="2980" cy="2520" r="1.5" fill="black" />
+            <circle cx="3100" cy="2640" r="2.3" fill="black" />
+            <circle cx="3250" cy="2760" r="1.6" fill="black" />
+            <circle cx="3350" cy="2880" r="2" fill="black" />
+            <image href="/images/star.png" x="3150" y="2590" width="9" height="9" />
+            <image href="/images/star.png" x="3300" y="2930" width="11" height="11" />
             <image href="/images/star.png" x="2960" y="250" width="10" height="10" />
             <image href="/images/star.png" x="3080" y="600" width="11" height="11" />
             <image href="/images/star.png" x="3220" y="1000" width="12" height="12" />
@@ -391,11 +403,34 @@ export default function MemoriaPage() {
 
         <blockquote className={styles.testimonialBox}>
             <p>
-            <i>
-                Fecho os olhos, respiro, relaxo e me permito lembrar, reviver, viver e me expor. [...]
-            </i>
+                <i>
+                Fecho os olhos, respiro, relaxo e me permito lembrar, reviver, viver e me expor. Crio novas memórias a partir de tudo que já vivi e choro. Estou viva. Eu me sinto viva. Eu existo. Ali, onde uma pessoa se permite ser diante de tantas diferenças e individualidades, eu também me permito. Ali é mais fácil. Com você é mais fácil. Juntos a possibilidade é uma certeza.
+                </i>
             </p>
-            {/* ...restante do depoimento... */}
+
+            <p>
+                <i>
+                As memórias são vivas, presentes e sinceras. Parei de ignorá-las e evitá-las, esse medo se fez pequeno perto da vontade de criar novas memórias e registrar fisicamente e mentalmente aquilo que não volta mais, pelo menos não da mesma forma em que um dia ela existiu.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                Entre risos e choros, observo admirada e orgulhosa de fazer parte da memória de alguém que jamais sairá da minha. Olho ao meu redor e percebo o quanto foi importante tudo que vivi, com quem vivi e onde vivi. O lugar também faz parte de nós. Me reconheço entre tijolos e sorrio: isso também sou eu. Isso também é nós.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                Desconforto? Se faz quase inexistente quando compartilhamos histórias e criamos memórias com quem também é humano.
+                </i>
+            </p>
+
+            <p>
+                <i>
+                Naquele espaço, o silêncio, o choro, o riso e o grito se fizeram tão presentes quanto nossos corpos. Mas, pra além de qualquer coisa, nos fizeram existir e estar, assim como deve ser.
+                </i>
+            </p>
         </blockquote>
 
         <h4>

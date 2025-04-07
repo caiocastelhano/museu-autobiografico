@@ -419,7 +419,7 @@
   max-width: 800px;
   padding: 40px 40px;
   text-align: left;
-  min-height: 2600px; /* altura para acomodar o SVG */
+  min-height: 3000px; /* altura para acomodar o SVG */
 }
 
 .bgParticipantTestimonies {
@@ -428,7 +428,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 5000px;
-  height: 2600px; /* igual ao viewBox do SVG */
+  height: 3000px; /* igual ao viewBox do SVG */
   z-index: 0;
   pointer-events: none;
 }
