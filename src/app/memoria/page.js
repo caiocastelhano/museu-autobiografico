@@ -123,9 +123,9 @@ export default function MemoriaPage() {
             xmlns="http://www.w3.org/2000/svg"
             >
             {/* Área segura – Lado Direito (x entre 3080 e 3400) */}
-            <circle cx="3125" cy="200" r="1.2" fill="black" />
+            <circle cx="3125" cy="200" r="2" fill="black" />
             <circle cx="3280" cy="360" r="1.4" fill="black" />
-            <circle cx="3100" cy="700" r="1.8" fill="black" />
+            <circle cx="3100" cy="700" r="3" fill="black" />
             <circle cx="3340" cy="1050" r="2" fill="black" />
             <circle cx="3180" cy="1350" r="1.6" fill="black" />
             <circle cx="3290" cy="1600" r="1.9" fill="black" />
@@ -136,6 +136,8 @@ export default function MemoriaPage() {
             <image href="/images/star.png" x="3310" y="650" width="11" height="11" />
             <image href="/images/star.png" x="3160" y="1400" width="10" height="10" />
             <image href="/images/star.png" x="3040" y="1800" width="8" height="8" />
+
+            <line x1="3100" y1="700" x2="3125" y2="200" stroke="black" strokeWidth="1.5" />
             </svg>
         </div>
 
@@ -202,8 +204,8 @@ export default function MemoriaPage() {
             <circle cx="1700" cy="150" r="1" fill="black" />
             <circle cx="1800" cy="350" r="5" fill="black" />
             <circle cx="1900" cy="600" r="2" fill="black" />
-            <circle cx="1750" cy="800" r="1.2" fill="black" />
-            <circle cx="2000" cy="1000" r="1.8" fill="black" />
+            <circle cx="1750" cy="800" r="3" fill="black" />
+            <circle cx="2000" cy="1000" r="1.9" fill="black" />
             <circle cx="1850" cy="1200" r="2.2" fill="black" />
             <circle cx="1650" cy="1400" r="1.3" fill="black" />
             <circle cx="1950" cy="1600" r="4" fill="black" />
@@ -214,6 +216,8 @@ export default function MemoriaPage() {
             <image href="/images/star.png" x="1680" y="1350" width="9" height="9" />
             <image href="/images/star.png" x="1850" y="1750" width="11" height="11" />
             <image href="/images/star.png" x="2000" y="2050" width="10" height="10" />
+
+            <line x1="1750" y1="800" x2="2000" y2="1000" stroke="black" strokeWidth="1.5" />
             </svg>
         </div>
 
@@ -348,10 +352,10 @@ export default function MemoriaPage() {
             <circle cx="3050" cy="400" r="1.6" fill="black" />
             <circle cx="3150" cy="700" r="2.2" fill="black" />
             <circle cx="3250" cy="950" r="1.9" fill="black" />
-            <circle cx="3330" cy="1200" r="1.4" fill="black" />
-            <circle cx="2980" cy="1350" r="1.8" fill="black" />
+            <circle cx="3330" cy="1200" r="7" fill="black" />
+            <circle cx="2980" cy="1350" r="4" fill="black" />
             <circle cx="3100" cy="1550" r="2" fill="black" />
-            <circle cx="3270" cy="1700" r="1.6" fill="black" />
+            <circle cx="3270" cy="1700" r="3.75" fill="black" />
             <circle cx="3000" cy="1900" r="2.3" fill="black" />
             <circle cx="3150" cy="2200" r="1.7" fill="black" />
             <circle cx="3300" cy="2450" r="1.5" fill="black" />
@@ -368,6 +372,8 @@ export default function MemoriaPage() {
             <image href="/images/star.png" x="3310" y="1800" width="10" height="10" />
             <image href="/images/star.png" x="3050" y="2050" width="8" height="8" />
             <image href="/images/star.png" x="3180" y="2300" width="11" height="11" />
+
+            <line x1="2980" y1="1350" x2="3270" y2="1700" stroke="black" strokeWidth="1.5" />
             </svg>
         </div>
 
@@ -469,8 +475,8 @@ export default function MemoriaPage() {
             xmlns="http://www.w3.org/2000/svg"
             >
             {/* TOPO - lado direito */}
-            <circle cx="2950" cy="100" r="1.4" fill="black" />
-            <circle cx="3100" cy="250" r="1.2" fill="black" />
+            <circle cx="2950" cy="100" r="4" fill="black" />
+            <circle cx="3100" cy="250" r="3.5" fill="black" />
             <circle cx="3300" cy="180" r="2" fill="black" />
             <image href="/images/star.png" x="3280" y="100" width="10" height="10" />
             <image href="/images/star.png" x="2900" y="300" width="8" height="8" />
@@ -494,6 +500,9 @@ export default function MemoriaPage() {
             <circle cx="3200" cy="1250" r="1.4" fill="black" />
             <circle cx="3340" cy="1400" r="1.8" fill="black" />
             <image href="/images/star.png" x="3180" y="1380" width="9" height="9" />
+
+            <line x1="1970" y1="1200" x2="2100" y2="1300" stroke="black" strokeWidth="1" />
+            <line x1="3100" y1="250" x2="3300" y2="180" stroke="black" strokeWidth="1.5" />
             </svg>
         </div>
 
@@ -582,8 +591,8 @@ export default function MemoriaPage() {
             <circle cx="3300" cy="600" r="2" fill="black" />
             <circle cx="3050" cy="900" r="1.7" fill="black" />
             <circle cx="3250" cy="1300" r="2.2" fill="black" />
-            <circle cx="3150" cy="1700" r="1.8" fill="black" />
-            <circle cx="3000" cy="2100" r="1.9" fill="black" />
+            <circle cx="3150" cy="1700" r="4" fill="black" />
+            <circle cx="3000" cy="2100" r="3.25" fill="black" />
             <circle cx="3290" cy="2450" r="2.3" fill="black" />
             <circle cx="3070" cy="2800" r="1.5" fill="black" />
             <circle cx="3320" cy="3200" r="2.1" fill="black" />
@@ -600,6 +609,8 @@ export default function MemoriaPage() {
             <image href="/images/star.png" x="3190" y="2700" width="10" height="10" />
             <image href="/images/star.png" x="3100" y="3500" width="12" height="12" />
             <image href="/images/star.png" x="3250" y="4050" width="10" height="10" />
+
+            <line x1="3150" y1="1700" x2="3000" y2="2100" stroke="black" strokeWidth="1.75" />
             </svg>
         </div>
 
@@ -706,15 +717,17 @@ export default function MemoriaPage() {
             {/* Área segura – Lado Esquerdo (x entre 1950 e 2400) */}
             <circle cx="2000" cy="120" r="1.2" fill="black" />
             <circle cx="2150" cy="200" r="1.8" fill="black" />
-            <circle cx="1980" cy="300" r="2.1" fill="black" />
-            <circle cx="2350" cy="400" r="1.6" fill="black" />
-            <circle cx="1950" cy="580" r="2" fill="black" />
-            <circle cx="2200" cy="750" r="1.4" fill="black" />
+            <circle cx="1980" cy="300" r="3.5" fill="black" />
+            <circle cx="2350" cy="400" r="4" fill="black" />
+            <circle cx="1990" cy="580" r="2" fill="black" />
+            <circle cx="2200" cy="750" r="5" fill="black" />
             <circle cx="2400" cy="880" r="2.2" fill="black" />
 
             <image href="/images/star.png" x="2100" y="250" width="10" height="10" />
-            <image href="/images/star.png" x="1950" y="700" width="12" height="12" />
+            <image href="/images/star.png" x="2080" y="850" width="12" height="12" />
             <image href="/images/star.png" x="2250" y="920" width="9" height="9" />
+
+            <line x1="2350" y1="400" x2="2200" y2="750" stroke="black" strokeWidth="2" />
             </svg>
         </div>
 
