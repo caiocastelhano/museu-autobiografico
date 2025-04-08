@@ -177,7 +177,7 @@ export default function MemoriaPage() {
             <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/nmLtOFudadU"
+            src="https://www.youtube.com/embed/6O5Y1X9FafM"
             title="Vídeo Beatriz - Centro Cultural da Penha | 2022"
             frameBorder="0"
             allowFullScreen
@@ -446,7 +446,7 @@ export default function MemoriaPage() {
             <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/BPxtGZ1SEDU"
+            src="https://www.youtube.com/embed/v-FisbusyPI"
             title="Gleice Arruda | Leitura de Texto criado a partir de entrevista com o pai"
             frameBorder="0"
             allowFullScreen
@@ -504,7 +504,7 @@ export default function MemoriaPage() {
             <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/ctfpTTpgD7g"
+            src="https://www.youtube.com/embed/yqx_tbHXe9M"
             title="Depoimento Pós Aula - Ana Claudia"
             frameBorder="0"
             allowFullScreen
@@ -517,7 +517,7 @@ export default function MemoriaPage() {
             <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/UaqLFaHCkyc"
+            src="https://www.youtube.com/embed/9Vjjh-YDK10"
             title="Depoimento Pós Encontro - Francisco"
             frameBorder="0"
             allowFullScreen
@@ -530,7 +530,7 @@ export default function MemoriaPage() {
             <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/YC13SR3Hq1g"
+            src="https://www.youtube.com/embed/B2TmhBaayIg"
             title="Depoimento Pós Encontro - Beatriz"
             frameBorder="0"
             allowFullScreen
@@ -682,7 +682,7 @@ export default function MemoriaPage() {
             <iframe
             width="100%"
             height="400"
-            src="https://www.youtube.com/embed/hDNfJW5vIcw"
+            src="https://www.youtube.com/embed/eVCXo4JCV8w"
             title="Memória Sonora e Visual"
             frameBorder="0"
             allowFullScreen
