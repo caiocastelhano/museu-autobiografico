@@ -556,7 +556,7 @@ export default function CorpoPage() {
                 <p>
                   <u>
                     Quer conhecer as músicas que fizeram os corpos dançar, brincar, atuar e devanear nas oficinas do 
-                    Museu Autobiográfico e Terrítório_Leste, acesse:
+                    Museu Autobiográfico e Terrítório_Leste? Acesse:
                   </u>
                 </p>
 

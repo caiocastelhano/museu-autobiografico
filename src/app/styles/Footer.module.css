@@ -39,6 +39,17 @@
   display: inline;
 }
 
+.footerLink {
+  text-decoration: none;
+  color: inherit; /* herda a cor do texto */
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #555; /* ou outra variação suave da cor principal */
+  text-decoration: underline; /* ou apenas sublinhado se quiser um destaque mais visível */
+}
+
 @media (max-width: 768px) {
   .footerHome {
     position: relative;

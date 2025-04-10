@@ -12,9 +12,21 @@ export default function Footer() {
   return (
     <footer className={footerClass}>
       <p className={styles.footerText}>
-        <span className={styles.break}>Museu Autobiográfico © 2025 | Todos os direitos reservados</span>
+        <span className={styles.break}>
+          Museu Autobiográfico © 2025 | Todos os direitos reservados
+        </span>
         <span className={styles.separator}> | </span>
-        <span className={styles.break}>Criado por Marcelo Rodrigues Maia | Desenvolvido por Caio Castelhano</span>
+        <span className={styles.break}>
+          Criado por Marcelo Rodrigues Maia | Desenvolvido por{" "}
+          <a
+            href="https://caiocastelhano.github.io/portfolio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.footerLink}
+          >
+            Caio Castelhano
+          </a>
+        </span>
       </p>
     </footer>
   );
