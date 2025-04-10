@@ -166,65 +166,120 @@ export default function CorpoPage() {
 
           {/* Bloco Corpo é casa */}
             <FadeInSection className={styles.bodyReflectionSection}>
-              <h2>O corpo é a casa</h2>
+              <div className={styles.bgBodyReflection}>
+                <svg
+                  className={styles.floatingElements}
+                  viewBox="0 0 5000 2200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {/* Área segura – Lado esquerdo (x entre 1950 e 2400) */}
+                  <circle cx="2000" cy="100" r="2" fill="black" /> 
+                  <circle cx="2305" cy="320" r="4" fill="black" /> 
+                  <circle cx="2100" cy="250" r="1.5" fill="black" /> 
+                  <circle cx="2200" cy="450" r="2.5" fill="black" /> 
+                  <circle cx="2300" cy="600" r="5" fill="black" /> 
+                  <circle cx="2150" cy="850" r="2" fill="black" /> 
+                  <circle cx="2250" cy="1100" r="2.5" fill="black" /> 
+                  <circle cx="2280" cy="1350" r="1.5" fill="black" /> 
+                  <circle cx="2000" cy="1500" r="1.8" fill="black" /> 
+                  <circle cx="2120" cy="1580" r="1.3" fill="black" /> 
+                  <circle cx="2000" cy="1650" r="2" fill="black" /> 
+                  <circle cx="2180" cy="1720" r="1.5" fill="black" /> 
+                  <circle cx="2220" cy="1900" r="2.2" fill="black" /> 
+                  <circle cx="2300" cy="1950" r="1.7" fill="black" /> 
+                  <image href="/images/star.png" x="2050" y="500" width="10" height="10" />
+                  <image href="/images/star.png" x="2315" y="1300" width="12" height="12" />
+                  <image href="/images/star.png" x="2100" y="1800" width="8" height="8" />
+                  <image href="/images/star.png" x="2300" y="2250" width="10" height="10" />
+                  <image href="/images/star.png" x="1980" y="1550" width="9" height="9" />
+                  <image href="/images/star.png" x="2220" y="2000" width="11" height="11" />
+                  <line x1="2000" y1="100" x2="2305" y2="320" stroke="black" strokeWidth="2" />
+                  <line x1="2305" y1="320" x2="2150" y2="850" stroke="black" strokeWidth="2" />
+                  <line x1="2280" y1="1350" x2="2000" y2="1500" stroke="black" strokeWidth="1.75" />
+                  <line x1="2000" y1="1500" x2="2000" y2="1650" stroke="black" strokeWidth="1.75" />
+                  <line x1="2000" y1="1650" x2="2180" y2="1720" stroke="black" strokeWidth="1.75" />
+                  <line x1="2180" y1="1720" x2="2280" y2="1350" stroke="black" strokeWidth="1.75" />
 
-              <p>
-                <i>
-                  O relato acima é o meu relato. Resultado de uma escrita em fluxo em <b>aula do Mestrado em Artes da Cena 
-                  na Escola Superior de Artes Célia Helena em parceria com a Escola Fundação Itaú.</b>
-                </i>
-              </p>
+                  {/* Área segura – Lado direito (x entre 3200 e 3400) */}
+                  <circle cx="3200" cy="180" r="1.5" fill="black" />
+                  <circle cx="3250" cy="400" r="2" fill="black" />
+                  <circle cx="3300" cy="650" r="2.5" fill="black" />
+                  <circle cx="3350" cy="850" r="1.8" fill="black" />
+                  <circle cx="3220" cy="1000" r="2" fill="black" />
+                  <circle cx="3280" cy="1200" r="2.5" fill="black" />
+                  <circle cx="3380" cy="1400" r="2" fill="black" />
+                  <circle cx="3240" cy="1600" r="1.5" fill="black" />
+                  <circle cx="3320" cy="1800" r="2.2" fill="black" />
+                  <circle cx="3360" cy="2000" r="2" fill="black" />
+                  <image href="/images/star.png" x="3220" y="500" width="10" height="10" />
+                  <image href="/images/star.png" x="3370" y="1300" width="12" height="12" />
+                  <image href="/images/star.png" x="3240" y="1800" width="8" height="8" />
+                  <image href="/images/star.png" x="3340" y="2150" width="10" height="10" />
+                </svg>
+              </div>
 
-              <p>
-                <i>
-                  Não desejo aqui, a partir de um relato singular fundado em minha experiência, reduzir o que é <b>corpo</b> a 
-                  um sentido apenas, mas pretendo intuir que é a partir da minha <b>exposição</b> que consigo transmitir o 
-                  estado de vulnerabilidade, <u>confiança mútua e segurança com o corpo de participantes nos encontros</u>. 
-                  A partir da minha experiência, movo outras pessoas e seus corpos, gerando novas relações e poéticas. 
-                  Parto de mim, caminho para as outras pessoas e, a partir disso, nós interagimos e crescemos com a oficina.
-                </i>
-              </p>
+              <div className={styles.rightWrapper}>
+                <h2>O corpo é a casa</h2>
 
-              <blockquote className={styles.quoteBox}>
                 <p>
-                &quot;Do ponto de vista da experiência, o importante não é nem a posição (nossa maneira de pormos), 
-                nem a &apos;o-posição&apos; (nossa maneira de opormos), nem a &apos;imposição&apos; (nossa maneira de impormos), 
-                nem a &apos;proposição&apos; (nossa maneira de propormos), mas a &apos;exposição&apos;, nossa maneira de &apos;ex-pormos&apos;, 
-                com tudo o que isso tem de vulnerabilidade e de risco. Por isso é incapaz de experiência aquele que se põe, 
-                ou se opõe, ou se impõe, ou se propõe, mas não se &apos;ex põe&apos;.&quot;
+                  <i>
+                    O relato acima é o meu relato. Resultado de uma escrita em fluxo em <b>aula do Mestrado em Artes da Cena 
+                    na Escola Superior de Artes Célia Helena em parceria com a Escola Fundação Itaú.</b>
+                  </i>
                 </p>
+
                 <p>
-                  <b>Jorge Larrosa Bondía</b>
+                  <i>
+                    Não desejo aqui, a partir de um relato singular fundado em minha experiência, reduzir o que é <b>corpo</b> a 
+                    um sentido apenas, mas pretendo intuir que é a partir da minha <b>exposição</b> que consigo transmitir o 
+                    estado de vulnerabilidade, <u>confiança mútua e segurança com o corpo de participantes nos encontros</u>. 
+                    A partir da minha experiência, movo outras pessoas e seus corpos, gerando novas relações e poéticas. 
+                    Parto de mim, caminho para as outras pessoas e, a partir disso, nós interagimos e crescemos com a oficina.
+                  </i>
                 </p>
-              </blockquote>
 
-              <figure>
-                <iframe
-                  width="100%"
-                  height="400"
-                  src="https://www.youtube.com/embed/CpJ1fUp9Aa4"
-                  title="Biblioteca Pública Cassiano Ricardo - Tatuapé | Resumo do 1º Encontro em Março de 2024"
-                  frameBorder="0"
-                  allowFullScreen
-                  className={styles.video}
-                ></iframe>
-                <figcaption>
-                  Registros do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo.
-                </figcaption>
-              </figure>
+                <blockquote className={styles.quoteBox}>
+                  <p>
+                  &quot;Do ponto de vista da experiência, o importante não é nem a posição (nossa maneira de pormos), 
+                  nem a &apos;o-posição&apos; (nossa maneira de opormos), nem a &apos;imposição&apos; (nossa maneira de impormos), 
+                  nem a &apos;proposição&apos; (nossa maneira de propormos), mas a &apos;exposição&apos;, nossa maneira de &apos;ex-pormos&apos;, 
+                  com tudo o que isso tem de vulnerabilidade e de risco. Por isso é incapaz de experiência aquele que se põe, 
+                  ou se opõe, ou se impõe, ou se propõe, mas não se &apos;ex põe&apos;.&quot;
+                  </p>
+                  <p>
+                    <b>Jorge Larrosa Bondía</b>
+                  </p>
+                </blockquote>
 
-              <figure>
-                <Image
-                  src="/images/corpo/foto1_registroencontro.jpg"
-                  alt="Registro de caderno com ordem do primeiro encontro da terceira rodada da oficina"
-                  width={800}
-                  height={500}
-                  className={styles.image}
-                />
-                <figcaption>
-                  Registro de caderno com ordem do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - SP.
-                </figcaption>
-              </figure>
+                <figure>
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/CpJ1fUp9Aa4"
+                    title="Biblioteca Pública Cassiano Ricardo - Tatuapé | Resumo do 1º Encontro em Março de 2024"
+                    frameBorder="0"
+                    allowFullScreen
+                    className={styles.video}
+                  ></iframe>
+                  <figcaption>
+                    Registros do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo.
+                  </figcaption>
+                </figure>
+
+                <figure>
+                  <Image
+                    src="/images/corpo/foto1_registroencontro.jpg"
+                    alt="Registro de caderno com ordem do primeiro encontro da terceira rodada da oficina"
+                    layout="responsive"
+                    width={800}
+                    height={500}
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    Registro de caderno com ordem do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - SP.
+                  </figcaption>
+                </figure>
+              </div>
             </FadeInSection>
 
           {/* Bloco com memórias do corpo */}
