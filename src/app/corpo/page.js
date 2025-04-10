@@ -284,6 +284,26 @@ export default function CorpoPage() {
 
           {/* Bloco com memórias do corpo */}
             <FadeInSection className={styles.bodyMemoriesSection}>
+                <div className={styles.bgBodyMemories}>
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 250"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Pontos e estrelas – Lado esquerdo */}
+                    <circle cx="1950" cy="40" r="1.5" fill="black" />
+                    <circle cx="2150" cy="100" r="1.2" fill="black" />
+                    <circle cx="2300" cy="180" r="2" fill="black" />
+                    <image href="/images/star.png" x="2050" y="5" width="10" height="10" />
+
+                    {/* Pontos e estrelas – Lado direito */}
+                    <circle cx="3000" cy="60" r="1.5" fill="black" />
+                    <circle cx="3340" cy="120" r="1" fill="black" />
+                    <circle cx="3280" cy="210" r="2" fill="black" />
+                    <image href="/images/star.png" x="3100" y="160" width="9" height="9" />
+                  </svg>
+                </div>
+
                 <h2>Memórias do corpo</h2>
 
                 <p>
@@ -298,6 +318,48 @@ export default function CorpoPage() {
 
           {/* Bloco Composição poética */}
             <FadeInSection className={styles.wallPoetrySection}>
+                <div className={styles.bgWallPoetry}>
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 1600"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Lado esquerdo (1950–2400) */}
+                    <circle cx="1975" cy="264" r="1.5" fill="black" />
+                    <circle cx="2080" cy="300" r="2" fill="black" />
+                    <circle cx="2013" cy="550" r="1.8" fill="black" />
+                    <circle cx="2056" cy="750" r="2.2" fill="black" />
+                    <image href="/images/star.png" x="2100" y="400" width="10" height="10" />
+
+                    {/* Lado direito (3080–3400) */}
+                    <circle cx="3250" cy="150" r="3" fill="black" />
+                    <circle cx="3350" cy="350" r="2" fill="black" />
+                    <circle cx="3300" cy="600" r="1.8" fill="black" />
+                    <circle cx="3220" cy="800" r="3.75" fill="black" />
+                    <circle cx="3080" cy="1550" r="5" fill="black" />
+                    <circle cx="3070" cy="950" r="4" fill="black" />
+                    <circle cx="3300" cy="1150" r="2" fill="black" />
+                    <circle cx="3350" cy="1300" r="1.3" fill="black" />
+                    <circle cx="3220" cy="1450" r="1.8" fill="black" />
+                    <circle cx="3380" cy="1580" r="2.2" fill="black" />
+                    <circle cx="3120" cy="200" r="1.2" fill="black" />
+                    <circle cx="3000" cy="420" r="5" fill="black" />
+                    <circle cx="3100" cy="700" r="1.6" fill="black" />
+                    <circle cx="3400" cy="900" r="2" fill="black" />
+                    <circle cx="3150" cy="1230" r="1.3" fill="black" />
+                    <circle cx="3290" cy="1380" r="1.7" fill="black" />
+                    <circle cx="3340" cy="1480" r="2" fill="black" />
+                    <circle cx="3100" cy="1600" r="1.5" fill="black" />
+                    <image href="/images/star.png" x="3270" y="250" width="10" height="10" />
+                    <image href="/images/star.png" x="3340" y="700" width="9" height="9" />
+                    <image href="/images/star.png" x="3230" y="1000" width="10" height="10" />
+                    <image href="/images/star.png" x="3360" y="1350" width="11" height="11" />
+                    <image href="/images/star.png" x="3300" y="1500" width="9" height="9" />
+                    <line x1="3250" y1="150" x2="3000" y2="420" stroke="black" strokeWidth="2" />
+                    <line x1="3000" y1="420" x2="3220" y2="800" stroke="black" strokeWidth="3" />
+                  </svg>
+                </div>
+
                 <h2>Composição poética em parede</h2>
 
                 <p>
@@ -316,31 +378,35 @@ export default function CorpoPage() {
                   </i>
                 </p>
 
-                <figure>
-                  <Image
-                    src="/images/corpo/foto2_composicao.jpg"
-                    alt="Registro de grupo antes de realizar exercício de composição corporal em parede"
-                    width={800}
-                    height={500}
-                    className={styles.image}
-                  />
-                  <figcaption>
-                    Registro de grupo antes de realizar exercício de composição corporal em parede.
-                  </figcaption>
-                </figure>
+                <div className={styles.imageGrid}>
+                  <figure className={styles.smallImage}>
+                    <Image
+                      src="/images/corpo/foto2_composicao.jpg"
+                      alt="Registro de grupo antes de realizar exercício de composição corporal em parede"
+                      width={800}
+                      height={500}
+                      layout="responsive"
+                      className={styles.image}
+                    />
+                    <figcaption>
+                      Registro de grupo antes de realizar exercício de composição corporal em parede.
+                    </figcaption>
+                  </figure>
 
-                <figure>
-                  <Image
-                    src="/images/corpo/foto3_composicao.jpg"
-                    alt="Registro de grupo após realizar exercício de composição corporal em parede"
-                    width={800}
-                    height={500}
-                    className={styles.image}
-                  />
-                  <figcaption>
-                    Registro de grupo após realizar exercício de composição corporal em parede.
-                  </figcaption>
-                </figure>
+                  <figure className={styles.largeImage}>
+                    <Image
+                      src="/images/corpo/foto3_composicao.jpg"
+                      alt="Registro de grupo após realizar exercício de composição corporal em parede"
+                      width={800}
+                      height={500}
+                      layout="responsive"
+                      className={styles.image}
+                    />
+                    <figcaption>
+                      Registro de grupo após realizar exercício de composição corporal em parede.
+                    </figcaption>
+                  </figure>
+                </div>
               </FadeInSection>
 
             {/* Bloco Corpo estático e corpo em movimento */}

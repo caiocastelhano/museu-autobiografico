@@ -369,6 +369,137 @@
   opacity: 0.8;
 }
 
+.bgBodyMemories {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 250px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.bodyMemoriesSection {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== SEÇÃO: COMPOSIÇÃO POÉTICA ===== */
+.wallPoetrySection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.wallPoetrySection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: none;
+}
+
+.wallPoetrySection p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.wallPoetrySection b {
+  font-weight: bold;
+}
+
+.wallPoetrySection u {
+  text-decoration: underline;
+}
+
+.imageGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.smallImage {
+  max-width: 700px;
+}
+
+.largeImage {
+  max-width: 1000px;
+  transform: scale(1.02); /* leve destaque visual */
+}
+
+.imageGrid figcaption {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+}
+
+.largeImage img {
+  border: 4px solid black;
+  padding: 4px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bgWallPoetry {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 1600px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+.wallPoetrySection {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== RESPONSIVIDADE (COMPOSIÇÃO POÉTICA) ===== */
+
+@media (max-width: 768px) {
+  .wallPoetrySection {
+    padding: 0 20px;
+  }
+
+  .imageGrid {
+    gap: 32px;
+  }
+
+  .smallImage,
+  .largeImage {
+    max-width: 100%;
+  }
+
+  .largeImage img {
+    border-width: 2px;
+    padding: 2px;
+  }
+}
+
+
 
 
 
