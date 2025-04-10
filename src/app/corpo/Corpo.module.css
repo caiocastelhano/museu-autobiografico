@@ -323,6 +323,54 @@
   }
 }
 
+/* ===== SEÇÃO: MEMÓRIAS DO CORPO ===== */
+.bodyMemoriesSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.bodyMemoriesSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: none;
+  text-align: center;
+}
+
+.bodyMemoriesSection p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  max-width: 1000px;  
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bodyMemoriesSection b {
+  font-weight: bold;
+}
+
+.bodyMemoriesSection u {
+  text-decoration: underline;
+}
+
+.bodyMemoriesSection a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bodyMemoriesSection a:hover u {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+
+
 
 
 
