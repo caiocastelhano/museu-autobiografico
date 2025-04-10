@@ -110,9 +110,31 @@ export default function CorpoPage() {
           </section>
 
         {/* Bloco com dois vídeos */}
-            <FadeInSection className={styles.bodyVideoSection}>
-              <div>
-                <figure>
+            <FadeInSection>
+              <div className={styles.bodyVideoSection}>
+                <div className={styles.bgBodyVideo}>
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 900"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Área segura - Lado Esquerdo (x entre 1950 e 2400) */}
+                    <circle cx="2300" cy="500" r="4" fill="black" />
+
+                    {/* Área segura - Lado Direito (x entre 3080 e 3400) */}
+                    <circle cx="3100" cy="150" r="2" fill="black" />
+                    <circle cx="3200" cy="270" r="1.5" fill="black" />
+                    <circle cx="3300" cy="420" r="2.5" fill="black" />
+                    <circle cx="3100" cy="333" r="2" fill="black" />
+                    <circle cx="3325" cy="50" r="5" fill="black" />
+                    <circle cx="3201" cy="420" r="3.75" fill="black" />
+                    <image href="/images/star.png" x="3150" y="500" width="10" height="10" />
+                    <image href="/images/star.png" x="3320" y="300" width="8" height="8" />
+                    <line x1="3201" y1="420" x2="3325" y2="50" stroke="black" strokeWidth="1.5" />
+                  </svg>
+                </div>
+
+                <figure className={styles.leftVideo}>
                   <iframe
                     width="100%"
                     height="400"
@@ -126,7 +148,7 @@ export default function CorpoPage() {
                   </figcaption>
                 </figure>
 
-                <figure>
+                <figure className={styles.rightVideo}>
                   <iframe
                     width="100%"
                     height="400"
@@ -136,7 +158,7 @@ export default function CorpoPage() {
                     allowFullScreen
                   ></iframe>
                   <figcaption>
-                    Marcelinho brincando no chiqueiro no dia seguinte a festa de aniversário de um ano | Gravação em HVS feita por meu pai, Marcelo Moraes Maia | 1992
+                    Marcelinho brincando no chiqueiro no dia seguinte a festa de aniversário de um ano | Gravação em HVS feita por meu pai, Marcelo Moraes Maia | 1992.
                   </figcaption>
                 </figure>
               </div>
