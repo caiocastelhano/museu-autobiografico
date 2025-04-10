@@ -49,67 +49,67 @@ export default function MemoriaPage() {
             </div>
 
             <div className={styles.introContent}>
-            <svg
-                className={styles.memoryShape}
-                viewBox="800 200 400 300"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <g>
-                <polygon
-                    points="935,250 1085,370 875,340"
-                    fill="white"
-                    stroke="black"
-                    strokeWidth="1.5"
-                />
-                <circle cx="935" cy="250" r="5" fill="black" />
-                <circle cx="1085" cy="370" r="6" fill="black" />
-                <circle cx="875" cy="340" r="4" fill="black" />
-                <text
-                    x="965"
-                    y="320"
-                    textAnchor="middle"
-                    alignmentBaseline="middle"
-                    fontSize="22"
-                    fontFamily="Inter, sans-serif"
-                    fill="black"
+                <svg
+                    className={styles.memoryShape}
+                    viewBox="800 200 400 300"
+                    xmlns="http://www.w3.org/2000/svg"
                 >
-                    memória
-                </text>
-                </g>
-            </svg>
+                    <g>
+                    <polygon
+                        points="935,250 1085,370 875,340"
+                        fill="white"
+                        stroke="black"
+                        strokeWidth="1.5"
+                    />
+                    <circle cx="935" cy="250" r="5" fill="black" />
+                    <circle cx="1085" cy="370" r="6" fill="black" />
+                    <circle cx="875" cy="340" r="4" fill="black" />
+                    <text
+                        x="965"
+                        y="320"
+                        textAnchor="middle"
+                        alignmentBaseline="middle"
+                        fontSize="22"
+                        fontFamily="Inter, sans-serif"
+                        fill="black"
+                    >
+                        memória
+                    </text>
+                    </g>
+                </svg>
 
-            <div className={styles.introText}>
-                <blockquote>
-                <p>
+                <div className={styles.introText}>
+                    <blockquote>
+                    <p>
+                        <i>
+                        &quot;Por que alguém se <u>recorda vividamente</u> de alguns eventos e personagens
+                        enquanto outros não? Como a mente é capaz de selecionar aquilo que se
+                        sedimenta fundo na memória e aquilo que ela permite flutuar na superfície?&quot;
+                        </i>
+                    </p>
+                    </blockquote>
+
+                    <p>
                     <i>
-                    &quot;Por que alguém se <u>recorda vividamente</u> de alguns eventos e personagens
-                    enquanto outros não? Como a mente é capaz de selecionar aquilo que se
-                    sedimenta fundo na memória e aquilo que ela permite flutuar na superfície?&quot;
+                        <u>A <b>memória</b> é seletiva porque nosso cérebro prioriza</u> informações com base
+                        na emoção, relevância pessoal e repetição. Eventos carregados de emoção
+                        (positiva ou negativa) tendem a ser mais bem armazenados, pois ativam a
+                        amígdala, região ligada ao processamento emocional.
                     </i>
-                </p>
-                </blockquote>
+                    </p>
 
-                <p>
-                <i>
-                    <u>A <b>memória</b> é seletiva porque nosso cérebro prioriza</u> informações com base
-                    na emoção, relevância pessoal e repetição. Eventos carregados de emoção
-                    (positiva ou negativa) tendem a ser mais bem armazenados, pois ativam a
-                    amígdala, região ligada ao processamento emocional.
-                </i>
-                </p>
-
-                <p>
-                <i>
-                    Nas rodadas da oficina <b>Museu Autobiográfico e Território_Leste</b>,
-                    momentos, pessoas, sensações, objetos e aprendizados me deram a
-                    oportunidade de aprofundar conexões, criando memórias que, mesmo
-                    individuais, se tornaram coletivas. Dentro desse sentido, essa
-                    página traz <u>algumas memórias de exercícios coletivos, sensações minhas como
-                    mediador, relatos de experiências de participantes e lembranças sonoras
-                    e narrativas dos acontecimentos das oficinas</u>.
-                </i>
-                </p>
-            </div>
+                    <p>
+                    <i>
+                        Nas rodadas da oficina <b>Museu Autobiográfico e Território_Leste</b>,
+                        momentos, pessoas, sensações, objetos e aprendizados me deram a
+                        oportunidade de aprofundar conexões, criando memórias que, mesmo
+                        individuais, se tornaram coletivas. Dentro desse sentido, essa
+                        página traz <u>algumas memórias de exercícios coletivos, sensações minhas como
+                        mediador, relatos de experiências de participantes e lembranças sonoras
+                        e narrativas dos acontecimentos das oficinas</u>.
+                    </i>
+                    </p>
+                </div>
             </div>
         </section>
 

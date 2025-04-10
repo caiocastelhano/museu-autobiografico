@@ -1,10 +1,581 @@
-// app/corpo/page.js
+"use client";
+
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import BackToHomeButton from "@/app/components/BackToHomeButton";
+import TopMenu from "@/app/components/TopMenu";
+import styles from "@/app/corpo/Corpo.module.css";
+import Image from "next/image";
+import Link from "next/link";
+import FadeInSection from "@/app/components/FadeInSection";
+
 export default function CorpoPage() {
-    return (
-      <main style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Página Corpo</h1>
-        <p>Este é um texto de marcação temporário para a página Corpo.</p>
+  return (
+    <div className={styles.pageContainer}>
+      <Navbar />
+      <TopMenu />
+
+      <main className={styles.mainContent}>
+        {/* Bloco de abertura com a forma + texto */}
+          <section className={styles.bodyIntroSection}>
+            <div className={styles.introContent}>
+              <svg
+                className={styles.bodyShape}
+                viewBox="800 0 300 250"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <polygon
+                    points="843,35 973,65 953,175 823,145"
+                    fill="white"
+                    stroke="black"
+                    strokeWidth="1"
+                  />
+                  <circle cx="843" cy="35" r="3" fill="black" />
+                  <circle cx="973" cy="65" r="2.5" fill="black" />
+                  <circle cx="953" cy="175" r="4" fill="black" />
+                  <circle cx="823" cy="145" r="3" fill="black" />
+                  <text
+                    x="898"
+                    y="105"
+                    textAnchor="middle"
+                    alignmentBaseline="middle"
+                    fontSize="22"
+                    fontFamily="Inter, sans-serif"
+                    fill="black"
+                  >
+                    corpo
+                  </text>
+                </g>
+              </svg>
+
+              <div className={styles.introText}>
+                  <h2>
+                    Meu corpo sendo mapa, me faz passar por onde?
+                  </h2>
+
+                <blockquote>
+                <p>
+                  <i>
+                    &quot;Eu tenho pensado nos meus primeiros momentos de vida, que me foram narrados. Diz que passei dias sozinho
+                     numa incubadora, era uma pele de icterícia, não sei como escreve, mas minha avó fala assim. Aí corta pra 
+                     hoje. Na terapia disseram que essa sensação de solidão, muito bem escondida por mim, vem de lá. 
+                     De um berço caixa. Fui filho de pais jovens da periferia, cresci sendo a sombra do meu pai ausente. 
+                     Pois é, tenho o mesmo nome, nasci no mesmo dia e mês e cresci sem ele. Aí meu corpo, hoje, diz que 
+                     lembra o dele.  Hoje tento fazer desse corpo o meu corpo, e unir a mente e corpo a um só. Mas esse 
+                     corpo solitário já se deixou - seria deixou? - invadir. Eu já vivi o não poder controlar sobre o que 
+                     iam fazer com meu corpo. Eu acho que não sabia dizer não. Mas não era isso.&quot;
+                  </i>
+                </p>
+                </blockquote>
+
+                <p>
+                  <i>
+                    Texto retirado do Memorial de Marcelo Rodrigues Maia (eu mesmo), criador da oficina Museu Autobiográfico 
+                    e Território_Leste
+                  </i>
+                </p>
+              </div>
+            </div>
+          </section>
+
+        {/* Bloco com dois vídeos */}
+            <FadeInSection className={styles.bodyVideoSection}>
+              <div>
+                <figure>
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VdMzheSTwbU"
+                    title="Marcelinho e Claudia"
+                    frameBorder="0"
+                    allowFullScreen
+                  ></iframe>
+                  <figcaption>
+                    Marcelinho e Claudia | Gravação em VHS feita por meu pai, Marcelo Moraes Maia | 1992.
+                  </figcaption>
+                </figure>
+
+                <figure>
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/WI0BYZ20Oko"
+                    title="Marcelinho no chiqueiro; dia seguinte ao aniversário"
+                    frameBorder="0"
+                    allowFullScreen
+                  ></iframe>
+                  <figcaption>
+                    Marcelinho brincando no chiqueiro no dia seguinte a festa de aniversário de um ano | Gravação em HVS feita por meu pai, Marcelo Moraes Maia | 1992
+                  </figcaption>
+                </figure>
+              </div>
+            </FadeInSection>
+
+          {/* Bloco Corpo é casa */}
+            <FadeInSection className={styles.bodyReflectionSection}>
+              <h2>O corpo é a casa</h2>
+
+              <p>
+                <i>
+                  O relato acima é o meu relato. Resultado de uma escrita em fluxo em <b>aula do Mestrado em Artes da Cena 
+                  na Escola Superior de Artes Célia Helena em parceria com a Escola Fundação Itaú.</b>
+                </i>
+              </p>
+
+              <p>
+                <i>
+                  Não desejo aqui, a partir de um relato singular fundado em minha experiência, reduzir o que é <b>corpo</b> a 
+                  um sentido apenas, mas pretendo intuir que é a partir da minha <b>exposição</b> que consigo transmitir o 
+                  estado de vulnerabilidade, <u>confiança mútua e segurança com o corpo de participantes nos encontros</u>. 
+                  A partir da minha experiência, movo outras pessoas e seus corpos, gerando novas relações e poéticas. 
+                  Parto de mim, caminho para as outras pessoas e, a partir disso, nós interagimos e crescemos com a oficina.
+                </i>
+              </p>
+
+              <blockquote className={styles.quoteBox}>
+                <p>
+                &quot;Do ponto de vista da experiência, o importante não é nem a posição (nossa maneira de pormos), 
+                nem a &apos;o-posição&apos; (nossa maneira de opormos), nem a &apos;imposição&apos; (nossa maneira de impormos), 
+                nem a &apos;proposição&apos; (nossa maneira de propormos), mas a &apos;exposição&apos;, nossa maneira de &apos;ex-pormos&apos;, 
+                com tudo o que isso tem de vulnerabilidade e de risco. Por isso é incapaz de experiência aquele que se põe, 
+                ou se opõe, ou se impõe, ou se propõe, mas não se &apos;ex põe&apos;.&quot;
+                </p>
+                <p>
+                  <b>Jorge Larrosa Bondía</b>
+                </p>
+              </blockquote>
+
+              <figure>
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://www.youtube.com/embed/CpJ1fUp9Aa4"
+                  title="Biblioteca Pública Cassiano Ricardo - Tatuapé | Resumo do 1º Encontro em Março de 2024"
+                  frameBorder="0"
+                  allowFullScreen
+                  className={styles.video}
+                ></iframe>
+                <figcaption>
+                  Registros do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <Image
+                  src="/images/corpo/foto1_registroencontro.jpg"
+                  alt="Registro de caderno com ordem do primeiro encontro da terceira rodada da oficina"
+                  width={800}
+                  height={500}
+                  className={styles.image}
+                />
+                <figcaption>
+                  Registro de caderno com ordem do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - SP.
+                </figcaption>
+              </figure>
+            </FadeInSection>
+
+          {/* Bloco com memórias do corpo */}
+            <FadeInSection className={styles.bodyMemoriesSection}>
+                <h2>Memórias do corpo</h2>
+
+                <p>
+                  <i>
+                    <b>Constelando os conteúdos</b> das oficinas realizadas, apresento nesta página alguns <u>gestos, rostos, mãos, 
+                    performances e depoimentos</u> que ficaram gravados em minha memória a partir do corpo de participantes. 
+                    Para saber mais sobre os exercícios que resultaram nas imagens abaixo, acesse a página:{" "}
+                    <Link href="/museu"><u>Museu</u></Link>.
+                  </i>
+                </p>
+            </FadeInSection>
+
+          {/* Bloco Composição poética */}
+            <FadeInSection className={styles.wallPoetrySection}>
+                <h2>Composição poética em parede</h2>
+
+                <p>
+                  <i>
+                    Me lembro que o exercício foi inspirado na prática de <b>Viewpoints e Composição</b> de quadro-paisagem. Para 
+                    esse propósito, antes do encontro, solicitei, via caixa de perguntas nos <u>stories do meu perfil do 
+                    Instagram</u>, sugestões de improviso, e foi esse o momento que usei um título sugerido por uma amiga 
+                    professora: <b>Regando as plantas</b>.
+                  </i>
+                </p>
+
+                <p>
+                  <i>
+                    O resultado foi muito positivo para o grupo, que relatou o prazer e, ao mesmo tempo, a dificuldade de 
+                    ficar estático, como em um quadro, aceitando serem vistos de fora.
+                  </i>
+                </p>
+
+                <figure>
+                  <Image
+                    src="/images/corpo/foto2_composicao.jpg"
+                    alt="Registro de grupo antes de realizar exercício de composição corporal em parede"
+                    width={800}
+                    height={500}
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    Registro de grupo antes de realizar exercício de composição corporal em parede.
+                  </figcaption>
+                </figure>
+
+                <figure>
+                  <Image
+                    src="/images/corpo/foto3_composicao.jpg"
+                    alt="Registro de grupo após realizar exercício de composição corporal em parede"
+                    width={800}
+                    height={500}
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    Registro de grupo após realizar exercício de composição corporal em parede.
+                  </figcaption>
+                </figure>
+              </FadeInSection>
+
+            {/* Bloco Corpo estático e corpo em movimento */}
+              <FadeInSection className={styles.stillVsMotionSection}>
+                <h2>O corpo estático e o corpo em movimento</h2>
+
+                <p>
+                  <i>
+                    Após <b>relaxamento e aquecimento corporal no espaço</b>, o grupo composto deveria recriar o momento de uma 
+                    foto como uma cena/improviso.
+                  </i>
+                </p>
+
+                <p>
+                  <i>
+                    No dia, as pessoas puderam escolher entre duas fotografias e optaram pela figura abaixo. Além disso, 
+                    trabalharam em grupo com a inversão de <b>papéis de gênero</b>, com o participante Rafael fazendo o papel 
+                    da pessoa que dança.
+                  </i>
+                </p>
+
+                <figure>
+                  <Image
+                    src="/images/corpo/foto4_gettyimages.jpg"
+                    alt="A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan"
+                    width={800}
+                    height={500}
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan, esposa de Mackey (1927). Hulton Archive via Getty Images.
+                  </figcaption>
+                </figure>
+
+                <p>
+                  <i>
+                    <u>Eu me lembro que, sem saber como trazer som à cena, participantes trocaram os saxofones por palmas, 
+                    criando um ritmo de palmas</u> para que Rafael dançasse. A <b>cumplicidade das mãos</b> batendo deram o impulso
+                     para a dança e, consequentemente, o resultado da cena.
+                  </i>
+                </p>
+
+                <div className={styles.tripleImageBlock}>
+                  <Image
+                    src="/images/corpo/foto5.jpg"
+                    alt="Registro de exercício de composição e improviso"
+                    width={300}
+                    height={200}
+                    className={styles.tripleImage}
+                  />
+                  <Image
+                    src="/images/corpo/foto6.jpg"
+                    alt="Registro de exercício de composição e improviso"
+                    width={300}
+                    height={200}
+                    className={styles.tripleImage}
+                  />
+                  <Image
+                    src="/images/corpo/foto7.jpg"
+                    alt="Registro de exercício de composição e improviso"
+                    width={300}
+                    height={200}
+                    className={styles.tripleImage}
+                  />
+                  <figcaption className={styles.caption}>
+                    Registro de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
+                    Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
+                  </figcaption>
+                </div>
+              </FadeInSection>
+
+            {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
+              <FadeInSection className={styles.dancingBodySection}>
+                <h2>Corpos dançantes em uma Biblioteca Pública</h2>
+
+                <p>
+                  No dia desse exercício realizado, ainda não sabia, mas estava com dengue. <u>Me lembro que</u>, ao chegar no 
+                  espaço, a sala de ensaio tradicional havia sido emprestada para outra pessoa sem meu aviso e meu <b>corpo 
+                  doía</b>.
+                </p>
+
+                <figure>
+                  <Image
+                    src="/images/corpo/foto8.jpg"
+                    alt="Conversa em roda sobre corpo, memória e território"
+                    width={800}
+                    height={500}
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    Conversa em roda sobre corpo, memória e território em chegada ao encontro na Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2023.
+                  </figcaption>
+                </figure>
+
+                <p>
+                  Sendo assim, pensei que poderia ser uma oportunidade positiva para a biblioteca <b>trazer som e movimento
+                   por entre as prateleiras</b>. Com livros variados, todas as práticas e momentos foram realizados 
+                   no espaço e, apesar do cansaço do dia, a <b>energia das participantes me envolveu</b>, gerando belos 
+                   registros e momentos.
+                </p>
+
+                <div className={styles.carouselBlock}>
+                  <Image src="/images/corpo/foto9.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
+                  <Image src="/images/corpo/foto10.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
+                  <Image src="/images/corpo/foto11.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
+                  <Image src="/images/corpo/foto12.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
+                  <figcaption className={styles.caption}>
+                    Registros de encontro realizado entre as prateleiras da Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo,  2023.
+                  </figcaption>
+                </div>
+
+                <blockquote className={styles.quoteBox}>
+                  <p>
+                    &quot;Como irradiar acontecimentos? Cada corpo, território fértil para pousar experiências, é um portador 
+                    de memórias, e é com elas que desenvolve sua trajetória. Ativado pelos sentidos, principalmente pelo de 
+                    sobrevivência, inerente a tudo que pulsa, segue cotidianamente organizando as matérias ao seu redor, 
+                    sendo um pouco a cada dia, corpos-gerúndios em manutenção da existência.&quot;
+                  </p>
+                  <p>
+                    <b>Luaa Gabanini</b>
+                  </p>
+                </blockquote>
+
+                <figure>
+                  <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/xD2WnT3Q9w8"
+                    title="Título do vídeo"
+                    frameBorder="0"
+                    allowFullScreen
+                    className={styles.video}
+                  ></iframe>
+                  <figcaption>
+                    Trabalhando a visão, o sensorial e o espaço com aquecimento corporal musicalizado.
+                  </figcaption>
+                </figure>
+
+                <p>
+                  <i>
+                    Após a experiência <b>de corpo na sala de livros da Biblioteca, a participante Grazi relatou sua 
+                    experiência dançando com um livro sobre a guerra</b>.
+                  </i>
+                </p>
+
+                <div className={styles.carouselBlock}>
+                  <Image src="/images/corpo/foto13.jpg" alt="Imagem 1" width={300} height={200} className={styles.carouselImage} />
+                  <Image src="/images/corpo/foto14.jpg" alt="Imagem 2" width={300} height={200} className={styles.carouselImage} />
+                  <Image src="/images/corpo/foto15.jpg" alt="Imagem 3" width={300} height={200} className={styles.carouselImage} />
+                  <figcaption className={styles.caption}>
+                    Participante Grazi em vivência na biblioteca dançando com livro sobre a guerra.
+                  </figcaption>
+                </div>
+
+                <p>
+                  <u>A partir dessa</u> <b>cena/dança</b> <u>feita em improviso, aproveitamos o título e o contexto político do momento, 
+                  em que os conflitos fortes entre Israel e Irã voltavam a trazer preocupações mundiais</u>.
+                </p>
+              </FadeInSection>
+
+            {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
+              <FadeInSection className={styles.danceWithWarSection}>
+                <h2>Dançar com a Guerra</h2>
+
+                <p>
+                  Carregando o contexto externo, <i>a <b>visão poética de Grazi Viana</b></i> e o gosto pela literatura e
+                  poesia de participantes, foi sugerida a produção de um texto sob o título
+                  <br />
+                  <br />
+                  <span style={{ textDecoration: "underline", fontWeight: "bold" }}>
+                    “Dançar com a Guerra”.
+                  </span>
+                </p>
+
+                <p>
+                  <i>
+                    <b>
+                      O resultado da produção movimentou o grupo no último encontro e, em nossa
+                      confraternização final, foi relatada a sensação{" "}
+                      <u>coletiva de afeto e pertencimento</u>.
+                    </b>
+                  </i>
+                </p>
+
+                <p>
+                  Com essa vivência, palavras-chave ficaram latentes:{" "}
+                  <b>
+                    Pertencimento; Vínculo; Afeto; Resistência; Memórias e Corpo.
+                  </b>
+                </p>
+              </FadeInSection>
+
+            {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
+              <FadeInSection className={styles.participantTextsSection}>
+                <h2>Texto das participantes que dançaram com a guerra</h2>
+
+                <h3>Graziele Viana - Solitária</h3>
+
+                <Image
+                  src="/images/corpo/foto16_graziele.JPG"
+                  alt="Graziele Viana"
+                  width={800}
+                  height={500}
+                  className={styles.image}
+                />
+
+                <div className={styles.textBlock}>
+                  <p>Entenda! Não quero que vá para sempre, apenas um alívio, um suspiro, uma brecha de saudades.</p>
+                  <p>Seu olhar era fixo e penetrante. Sua mão firme, cuidadosa apoiava-se nas minhas costas suadas. A outra mão segurava delicadamente a minha mão direita tentando manter-se firme.</p>
+                  <p>Ela avançou com o pé direito, eu recuei com o esquerdo. O salão estava vazio. Embriaguei-me com seu perfume. Um perfume de mulher.</p>
+                  <p>Entenda! Cansei de momentos clandestinos, de intimidades sem destinos.</p>
+                  <p><b>Solitária</b></p>
+                  <p>Enamorar-se, ter o coração destruído como a bomba de Hiroshima, o olhar desejoso de uma criança quando se encontra com o seu doce preferido, a ardência dos lábios, dos puros se misturando de-li-ci-o-sa-men-te com a pureza do desejo do outro.</p>
+                  <p>Seu olhar persistente misturava-se com o tango ao fundo. Acelerou. Ela avançou em minha direção ao centro com o pé esquerdo, recuei com o passo para trás. Preparou-me e fizemos um giro, giro, giro. A leveza, a maciez do seu vestido girava em tons sóbrios e determinantes. Conduzia-me. Uma respiração longa, paciente. Compreensão no olhar.</p>
+                  <p>A música desacelerou. Meu corpo molhou. Seguia o seu ritmo consciente, seu olhar de carvão travado na minha pupila. O perfume de mulher permanecia. Permanecia a música ao fundo. Soltos dançava pelo ar os meus pensamentos, o encantamento por aquele corpo, o convite do seu olhar. Uma granada sorrindo dentro de mim. Pedia silenciosamente para os minutos durarem, durarem, durarem. Uma trégua nessa minha vida de tragicomédia.</p>
+                  <p><b>Entenda, senhora (sol)idão. Por favor, me tire da</b></p>
+                  <p><b>(Sol)itária</b></p>
+                </div>
+
+                <h3>Estefani Moura - sem título</h3>
+
+                <Image
+                  src="/images/corpo/foto17_estefani.JPG"
+                  alt="Estefani Moura"
+                  width={800}
+                  height={500}
+                  className={styles.image}
+                />
+
+                <div className={styles.poemBlock}>
+                  <p>Ainda é cedo, amor</p>
+                  <p>Mal começaste a conhecer a vida</p>
+                  <p>Já anuncias a hora de partida</p>
+                  <p>Sem saber mesmo o rumo que irás tomar</p>
+
+                  <br />
+
+                  <p>Presta atenção, querida</p>
+                  <p>Embora eu saiba que estás resolvida</p>
+                  <p>Em cada esquina cai um pouco tua vida</p>
+                  <p>Em pouco tempo não serás mais o que és</p>
+
+                  <br />
+
+                  <p>Pensei o bastante pra entender o que seria o suficiente,</p>
+                  <p>Um mundo onde tudo está se desmoronando, e aqui dentro não costuma ser tão diferente.</p>
+                  <p>Um peito que decai para um lado onde a vida não parece mais a mesma,</p>
+                  <p>uma despedida quase grotesca</p>
+                  <p>a saudade no toc toc na porta, como se quisesse sempre entrar, sempre participar, sempre, sempre...</p>
+                  <p>e no fim é quase nada, nulo, em branco total.</p>
+
+                  <br />
+
+                  <p>A única certeza que temos sempre é a do final,</p>
+                  <p>a morte do corpo o descanso de uma alma quase supérflua.</p>
+                  <p>Um sentimento de contínua queda, sem sinal de vida, sem sinal de nada.</p>
+                  <p>Pipipi é isso, e aí?</p>
+                  <p>É tanto tempo pensando no quanto tudo isso passa, e passa</p>
+                  <p>Mas quando passa de verdade?</p>
+                  <p>São tantas dúvidas que não cabem em um texto, em uma mensagem.</p>
+
+                  <br />
+
+                  <p>Eu tô cansada dessa incoerência sentimental,</p>
+                  <p>De pensar que tô em um outro plano astral,</p>
+                  <p>Não se enxergar no espelho, na compra em uma loja.</p>
+                  <p>É cedo demais pra pensar em uma vida quase chegando ao fim,</p>
+                  <p>É cedo o bastante pra ter tanto, tanto medo do fim?</p>
+                  <p>Irresponsável, grossa demais, não pode nunca fazer nada?</p>
+                  <p>Imatura o suficiente pra não se entender, pra se arrepender de qualquer coisa que faça.</p>
+                  <p>É sempre, nada nada nada.</p>
+
+                  <br />
+
+                  <p>Eu tô dançando, sapateando, entendo o que eu tenho e o que sou.</p>
+                  <p>Crescendo a cada dia, querendo voltar pra um lugar que eu sei que eu não tô.</p>
+                  <p>Eu juro que tô tentando amor, mas tá difícil,</p>
+                  <p>Eu danço com a guerra pra tentar acabar com isso, é quase impossível.</p>
+                  <p>Meus pés se cansam, a voz se cala e no fim é sempre o mesmo nada, nada, nada.</p>
+
+                  <br />
+
+                  <p>A vida é um moinho cartola, passa rápido demais, esmagando o que nos resta de paz.</p>
+                  <p>Lembro sempre dos meus pais juntos fazendo o almoço de domingo.</p>
+                  <p>As idas à igreja como de costume.</p>
+                  <p>E os sonhos que pareciam se reconstruir,</p>
+                  <p>Mas onde eles estão agora?</p>
+                  <p>Onde eu tô agora?</p>
+                  <p>Tudo se foi, se findou em um fim de semana, em um ano ou dois</p>
+                  <p>Eu não entendo esse completo desespero,</p>
+                  <p>O anseio de uma vida sem motivação,</p>
+                  <p>Onde eu tô onde eu quero chegar?</p>
+
+                  <br />
+
+                  <p>Por que tanta pergunta sem resposta?</p>
+                  <p>Tanta música sem nota?</p>
+                  <p>Eu não entendo, eu fujo desse tal entendimento.</p>
+                  <p>Eu sinto aqui dentro,</p>
+                  <p>Algo desmoronando</p>
+                  <p>Bombardeado de sensação,</p>
+                  <p>A metralhadora lotada de mágoa,</p>
+                  <p>Atirando pra todo lado nessa estrada</p>
+                  <p>Ainda não me acostumei a dançar essa valsa.</p>
+
+                  <br />
+
+                  <p>Mas eu entendo, eu entendo cartola, quando você diz devagar demais</p>
+                  <p>Que tudo isso é passageiro demais,</p>
+                  <p>E que essa vida nada fica como começou</p>
+                  <p>e por fim enquanto danço ao som da sua música (a minha favorita)</p>
+                  <p>Entendo um pouco dessa vida, que às vezes passa rápido o suficiente pra não se entender.</p>
+                  <p>Um dia, lá pra frente quem sabe eu venço a guerra que é</p>
+                  <p><b>Você</b></p>
+                </div>
+              </FadeInSection>
+
+            {/* Bloco Playlist da Oficina */}
+              <FadeInSection className={styles.playlistSection}>
+                <p>
+                  <u>
+                    Quer conhecer as músicas que fizeram os corpos dançar, brincar, atuar e devanear nas oficinas do 
+                    Museu Autobiográfico e Terrítório_Leste, acesse:
+                  </u>
+                </p>
+
+                <div className={styles.spotifyEmbed}>
+                  <iframe
+                    style={{ borderRadius: "12px" }}
+                    src="https://open.spotify.com/embed/playlist/392kcC9vjcMaAB1BVJLsnm"
+                    width="100%"
+                    height="152"
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </FadeInSection>
       </main>
-    );
-  }
-  
+
+      <BackToHomeButton />
+      <Footer />
+    </div>
+  );
+}
