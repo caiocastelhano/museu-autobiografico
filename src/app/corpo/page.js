@@ -18,6 +18,36 @@ export default function CorpoPage() {
       <main className={styles.mainContent}>
         {/* Bloco de abertura com a forma + texto */}
           <section className={styles.bodyIntroSection}>
+            <div className={styles.bgBodyIntro}>
+              <svg
+                className={styles.floatingElements}
+                viewBox="0 0 5000 800"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Área segura - Lado Esquerdo (x entre 1950 e 2400) */}
+                <circle cx="2111" cy="100" r="1" fill="black" />
+                <circle cx="2298" cy="150" r="1.25" fill="black" />
+                <circle cx="2100" cy="300" r="3" fill="black" />
+                <circle cx="2250" cy="450" r="2.5" fill="black" />
+                <circle cx="2300" cy="487" r="1" fill="black" />
+                <circle cx="2069" cy="375" r="1.25" fill="black" />
+                <image href="/images/star.png" x="2050" y="400" width="12" height="12" />
+                <image href="/images/star.png" x="2350" y="200" width="9" height="9" />
+
+                {/* Área segura - Lado Direito (x entre 3080 e 3400) */}
+                <circle cx="3111" cy="244" r="4" fill="black" />
+                <circle cx="3100" cy="100" r="1" fill="black" />
+                <circle cx="3200" cy="150" r="1.5" fill="black" />
+                <circle cx="3300" cy="200" r="1.25" fill="black" />
+                <circle cx="3350" cy="300" r="2" fill="black" />
+                <circle cx="3100" cy="400" r="2" fill="black" />
+                <circle cx="3200" cy="500" r="3" fill="black" />
+                <circle cx="3300" cy="420" r="2.5" fill="black" />
+                <image href="/images/star.png" x="3150" y="400" width="12" height="12" />
+                <image href="/images/star.png" x="3320" y="200" width="8" height="8" />
+              </svg>
+            </div>
+
             <div className={styles.introContent}>
               <svg
                 className={styles.bodyShape}
