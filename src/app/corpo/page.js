@@ -596,18 +596,41 @@ export default function CorpoPage() {
                 </p>
               </FadeInSection>
 
-            {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
+            {/* Bloco Dançar com a Guerra */}
               <FadeInSection className={styles.danceWithWarSection}>
+              <div className={styles.bgDanceWithWar}>
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 300"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Lado esquerdo (x entre 1950–2400) */}
+                    <circle cx="1950" cy="150" r="1.5" fill="black" />
+                    <circle cx="2000" cy="180" r="2" fill="black" />
+                    <circle cx="2042" cy="230" r="1.8" fill="black" />
+                    <image href="/images/star.png" x="1980" y="200" width="10" height="10" />
+                    <image href="/images/star.png" x="1970" y="250" width="9" height="9" />
+
+                    {/* Lado direito (x entre 3080–3400) */}
+                    <circle cx="2900" cy="90" r="1.5" fill="black" />
+                    <circle cx="3100" cy="140" r="1.8" fill="black" />
+                    <circle cx="3000" cy="190" r="4" fill="black" />
+                    <circle cx="3280" cy="150" r="1.6" fill="black" />
+                    <circle cx="3340" cy="200" r="1.4" fill="black" />
+                    <circle cx="3200" cy="240" r="1.8" fill="black" />
+                    <circle cx="3300" cy="260" r="1.7" fill="black" />
+                    <circle cx="3050" cy="285" r="3" fill="black" />
+                    <image href="/images/star.png" x="3180" y="170" width="10" height="10" />
+                    <image href="/images/star.png" x="3100" y="50" width="9" height="9" />
+                    <line x1="3280" y1="150" x2="3050" y2="285" stroke="black" strokeWidth="1.25" />
+                  </svg>
+                </div>
+
                 <h2>Dançar com a Guerra</h2>
 
                 <p>
                   Carregando o contexto externo, <i>a <b>visão poética de Grazi Viana</b></i> e o gosto pela literatura e
-                  poesia de participantes, foi sugerida a produção de um texto sob o título
-                  <br />
-                  <br />
-                  <span style={{ textDecoration: "underline", fontWeight: "bold" }}>
-                    “Dançar com a Guerra”.
-                  </span>
+                  poesia de participantes, foi sugerida a produção de um texto sob o título “<u>DANÇAR COM A GUERRA</u>”.
                 </p>
 
                 <p>
@@ -628,7 +651,7 @@ export default function CorpoPage() {
                 </p>
               </FadeInSection>
 
-            {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
+            {/* Bloco Texto das participantes */}
               <FadeInSection className={styles.participantTextsSection}>
                 <h2>Texto das participantes que dançaram com a guerra</h2>
 
