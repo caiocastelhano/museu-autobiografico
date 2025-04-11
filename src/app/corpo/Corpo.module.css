@@ -561,7 +561,7 @@
   font-size: 0.875rem;
   font-style: italic;
   color: #666;
-  margin-top: 8px;
+  margin-top: 0.8rem;
   text-align: center;
   padding: 0 12px;
 }
@@ -585,7 +585,7 @@
 }
 
 .caption {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   margin-top: 0.8rem;
   text-align: center;
   font-style: italic;
@@ -649,6 +649,77 @@
 
   .tripleImage {
     max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/* ===== SEÇÃO: PLAYLIST DA OFICINA ===== */
+.playlistSection {
+  width: 100%;
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.playlistSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: none;
+}
+
+.playlistSection p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.spotifyEmbed {
+  margin-top: 24px;
+}
+
+.bgPlaylist {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 400px; /* ajuste conforme a altura visual do bloco */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== RESPONSIVIDADE (PLAYLIST DA OFICINA) ===== */
+
+@media (max-width: 768px) {
+  .playlistSection {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .playlistSection p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .spotifyEmbed iframe {
+    height: 152px;
+    width: 100%;
   }
 }
 

@@ -477,34 +477,34 @@ export default function CorpoPage() {
                       </i>
                     </p>
 
-                    <div className={styles.tripleImageBlock}>
-                      <Image
-                        src="/images/corpo/foto6.jpg"
-                        alt="Registro de exercício de composição e improviso"
-                        width={300}
-                        height={200}
-                        className={`${styles.tripleImage} ${styles.mirroredImage}`}
-                      />
-                      <Image
-                        src="/images/corpo/foto5.jpg"
-                        alt="Registro de exercício de composição e improviso"
-                        width={300}
-                        height={200}
-                        className={styles.tripleImage}
-                      />
-                      <Image
-                        src="/images/corpo/foto7.jpg"
-                        alt="Registro de exercício de composição e improviso"
-                        width={300}
-                        height={200}
-                        className={styles.tripleImage}
-                      />
-                      <figcaption className={styles.caption}>
-                        Registros de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
-                        Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
-                      </figcaption>
+                      <div className={styles.tripleImageBlock}>
+                        <Image
+                          src="/images/corpo/foto6.jpg"
+                          alt="Registro de exercício de composição e improviso"
+                          width={300}
+                          height={200}
+                          className={`${styles.tripleImage} ${styles.mirroredImage}`}
+                        />
+                        <Image
+                          src="/images/corpo/foto5.jpg"
+                          alt="Registro de exercício de composição e improviso"
+                          width={300}
+                          height={200}
+                          className={styles.tripleImage}
+                        />
+                        <Image
+                          src="/images/corpo/foto7.jpg"
+                          alt="Registro de exercício de composição e improviso"
+                          width={300}
+                          height={200}
+                          className={styles.tripleImage}
+                        />
+                        <figcaption className={styles.caption}>
+                          Registros de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
+                          Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
+                        </figcaption>
+                      </div>
                     </div>
-                  </div>
               </FadeInSection>
 
             {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
@@ -755,6 +755,30 @@ export default function CorpoPage() {
 
             {/* Bloco Playlist da Oficina */}
               <FadeInSection className={styles.playlistSection}>
+                <div className={styles.bgPlaylist}>
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 400"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Pontos e estrelas – Lado esquerdo (x entre 1950–2400) */}
+                    <circle cx="1980" cy="80" r="1.5" fill="black" />
+                    <circle cx="2100" cy="150" r="2.5" fill="black" />
+                    <circle cx="2250" cy="350" r="4" fill="black" />
+                    <image href="/images/star.png" x="2200" y="100" width="10" height="10" />
+
+                    {/* Pontos e estrelas – Lado direito (x entre 3080–3400) */}
+                    <circle cx="3100" cy="100" r="1.2" fill="black" />
+                    <circle cx="3220" cy="180" r="2" fill="black" />
+                    <circle cx="3300" cy="250" r="1.6" fill="black" />
+                    <circle cx="2900" cy="111" r="1.2" fill="black" />
+                    <circle cx="3000" cy="190" r="2" fill="black" />
+                    <circle cx="3030" cy="233" r="4" fill="black" />
+                    <image href="/images/star.png" x="3280" y="150" width="9" height="9" />
+                  </svg>
+                </div>
+
+                <h2>Playlist da Oficina</h2>
                 <p>
                   <u>
                     Quer conhecer as músicas que fizeram os corpos dançar, brincar, atuar e devanear nas oficinas do 
