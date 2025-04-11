@@ -349,7 +349,7 @@ export default function CorpoPage() {
                     <circle cx="3150" cy="1230" r="1.3" fill="black" />
                     <circle cx="3290" cy="1380" r="1.7" fill="black" />
                     <circle cx="3340" cy="1480" r="2" fill="black" />
-                    <circle cx="3100" cy="1600" r="1.5" fill="black" />
+                    <circle cx="3100" cy="1500" r="1.5" fill="black" />
                     <image href="/images/star.png" x="3270" y="250" width="10" height="10" />
                     <image href="/images/star.png" x="3340" y="700" width="9" height="9" />
                     <image href="/images/star.png" x="3230" y="1000" width="10" height="10" />
@@ -411,71 +411,100 @@ export default function CorpoPage() {
 
             {/* Bloco Corpo estático e corpo em movimento */}
               <FadeInSection className={styles.stillVsMotionSection}>
-                <h2>O corpo estático e o corpo em movimento</h2>
+                <div className={styles.bgStillVsMotion}>
+                      <svg viewBox="0 0 5000 1400" className={styles.floatingElements}>
+                        {/* Lado esquerdo (1950–2400) */}
+                        <circle cx="1975" cy="264" r="1.5" fill="black" />
+                        <circle cx="2080" cy="300" r="2" fill="black" />
+                        <circle cx="2013" cy="550" r="1.8" fill="black" />
+                        <circle cx="2056" cy="750" r="2.2" fill="black" />
+                        <circle cx="2150" cy="1250" r="2" fill="black" />
+                        <circle cx="2000" cy="1300" r="2" fill="black" />
+                        <image href="/images/star.png" x="2100" y="400" width="10" height="10" />
+                        <image href="/images/star.png" x="2000" y="900" width="10" height="10" />
+                        
+                        {/* Lado direito (3080–3400) */}
+                        <circle cx="3150" cy="200" r="1.8" fill="black" />
+                        <circle cx="3250" cy="400" r="2.2" fill="black" />
+                        <circle cx="3100" cy="700" r="2" fill="black" />
+                        <circle cx="3350" cy="900" r="1.6" fill="black" />
+                        <circle cx="3300" cy="1300" r="2" fill="black" />
+                        <circle cx="3400" cy="1350" r="1.5" fill="black" />
+                        <image href="/images/star.png" x="3220" y="500" width="10" height="10" />
+                        <image href="/images/star.png" x="3080" y="1150" width="10" height="10" />
+                      </svg>
+                  </div>
+                
+                  <div className={styles.rightAlignedWrapper}>
+                    <h2>O corpo estático e o corpo em movimento</h2>
 
-                <p>
-                  <i>
-                    Após <b>relaxamento e aquecimento corporal no espaço</b>, o grupo composto deveria recriar o momento de uma 
-                    foto como uma cena/improviso.
-                  </i>
-                </p>
+                    <p>
+                      <i>
+                        Após <b>relaxamento e aquecimento corporal no espaço</b>, o grupo composto deveria recriar o momento de uma 
+                        foto como uma cena/improviso.
+                      </i>
+                    </p>
 
-                <p>
-                  <i>
-                    No dia, as pessoas puderam escolher entre duas fotografias e optaram pela figura abaixo. Além disso, 
-                    trabalharam em grupo com a inversão de <b>papéis de gênero</b>, com o participante Rafael fazendo o papel 
-                    da pessoa que dança.
-                  </i>
-                </p>
+                    <p>
+                      <i>
+                        No dia, as pessoas puderam escolher entre duas fotografias e optaram pela figura abaixo. Além disso, 
+                        trabalharam em grupo com a inversão de <b>papéis de gênero</b>, com o participante Rafael fazendo o papel 
+                        da pessoa que dança.
+                      </i>
+                    </p>
 
-                <figure>
-                  <Image
-                    src="/images/corpo/foto4_gettyimages.jpg"
-                    alt="A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan"
-                    width={800}
-                    height={500}
-                    className={styles.image}
-                  />
-                  <figcaption>
-                    A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan, esposa de Mackey (1927). Hulton Archive via Getty Images.
-                  </figcaption>
-                </figure>
+                    <figure>
+                      <div className={styles.imageWrapper}>
+                        <Image
+                          src="/images/corpo/foto4_gettyimages.jpg"
+                          alt="A banda de Percival Mackey..."
+                          fill
+                          style={{ objectFit: 'contain' }}
+                          sizes="(max-width: 768px) 100vw, 800px"
+                          className={styles.image}
+                        />
+                      </div>
+                      <figcaption>
+                        A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan, esposa de Mackey (1927). Hulton Archive via Getty Images.
+                      </figcaption>
+                    </figure>
 
-                <p>
-                  <i>
-                    <u>Eu me lembro que, sem saber como trazer som à cena, participantes trocaram os saxofones por palmas, 
-                    criando um ritmo de palmas</u> para que Rafael dançasse. A <b>cumplicidade das mãos</b> batendo deram o impulso
-                     para a dança e, consequentemente, o resultado da cena.
-                  </i>
-                </p>
+                    <p>
+                      <i>
+                        <u>Eu me lembro que, sem saber como trazer som à cena, participantes trocaram os saxofones por palmas, 
+                        criando um ritmo de palmas</u> para que Rafael dançasse. A <b>cumplicidade das mãos</b> batendo deram o impulso
+                        para a dança e, consequentemente, o resultado da cena.
+                      </i>
+                    </p>
 
-                <div className={styles.tripleImageBlock}>
-                  <Image
-                    src="/images/corpo/foto5.jpg"
-                    alt="Registro de exercício de composição e improviso"
-                    width={300}
-                    height={200}
-                    className={styles.tripleImage}
-                  />
-                  <Image
-                    src="/images/corpo/foto6.jpg"
-                    alt="Registro de exercício de composição e improviso"
-                    width={300}
-                    height={200}
-                    className={styles.tripleImage}
-                  />
-                  <Image
-                    src="/images/corpo/foto7.jpg"
-                    alt="Registro de exercício de composição e improviso"
-                    width={300}
-                    height={200}
-                    className={styles.tripleImage}
-                  />
-                  <figcaption className={styles.caption}>
-                    Registro de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
-                    Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
-                  </figcaption>
-                </div>
+                    <div className={styles.tripleImageBlock}>
+                      <Image
+                        src="/images/corpo/foto6.jpg"
+                        alt="Registro de exercício de composição e improviso"
+                        width={300}
+                        height={200}
+                        className={`${styles.tripleImage} ${styles.mirroredImage}`}
+                      />
+                      <Image
+                        src="/images/corpo/foto5.jpg"
+                        alt="Registro de exercício de composição e improviso"
+                        width={300}
+                        height={200}
+                        className={styles.tripleImage}
+                      />
+                      <Image
+                        src="/images/corpo/foto7.jpg"
+                        alt="Registro de exercício de composição e improviso"
+                        width={300}
+                        height={200}
+                        className={styles.tripleImage}
+                      />
+                      <figcaption className={styles.caption}>
+                        Registros de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
+                        Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
+                      </figcaption>
+                    </div>
+                  </div>
               </FadeInSection>
 
             {/* Bloco Corpos dançantes em uma Biblioteca Pública */}

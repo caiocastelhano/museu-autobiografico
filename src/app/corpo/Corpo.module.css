@@ -499,6 +499,159 @@
   }
 }
 
+/* ===== SEÇÃO: CORPO ESTÁTICO E MOVIMENTO ===== */
+
+.stillVsMotionSection {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* empurra o wrapper pro lado direito */
+}
+
+.rightAlignedWrapper {
+  max-width: 1000px;
+  margin-right: -10px; /* ajuste fino para distanciar da borda direita */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stillVsMotionSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-transform: none;
+  text-align: center;
+}
+
+.stillVsMotionSection p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: justify;
+  margin-bottom: 16px;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.stillVsMotionSection i {
+  display: block;
+}
+
+.stillVsMotionSection b {
+  font-weight: bold;
+}
+
+.stillVsMotionSection u {
+  text-decoration: underline;
+}
+
+.stillVsMotionSection figure {
+  margin: 32px 0;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.stillVsMotionSection figcaption {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.tripleImageBlock {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding: 0 20px;
+}
+
+.tripleImage {
+  background-color: white;
+  padding: 4px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  padding: 0 12px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 10;
+  margin: 0 auto;
+}
+
+.image {
+  background-color: white;
+  padding: 4px;
+}
+
+.mirroredImage {
+  transform: scaleX(-1);
+}
+
+.bgStillVsMotion {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 1400px; /* deve bater com a altura do viewBox */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== RESPONSIVIDADE (CORPO ESTÁTICO E MOVIMENTO) ===== */
+
+@media (max-width: 768px) {
+  .stillVsMotionSection {
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .rightAlignedWrapper {
+    margin-right: 0;
+    padding: 0 16px;
+  }
+
+  .stillVsMotionSection h2 {
+    font-size: 1.4rem;
+  }
+
+  .stillVsMotionSection p {
+    font-size: 0.95rem;
+  }
+
+  .tripleImage {
+    max-width: 100%;
+  }
+}
+
 
 
 
