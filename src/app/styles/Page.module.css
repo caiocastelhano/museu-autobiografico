@@ -59,6 +59,33 @@
   height: 10px;
 }
 
+.topLinks {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  padding: 16px 32px;
+}
+
+.menuMobileWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+
+.linkInterna {
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.menuWrapperInterna {
+  position: fixed;
+  top: 7.5px;
+  right: 24px;
+  z-index: 10;
+}
+
 @media (max-width: 768px) {
   .mainContent {
     padding: clamp(16px, 5vh, 32px) 0;
@@ -92,5 +119,10 @@
   .sobre,
   .contato {
     display: none;
+  }
+
+  .menuWrapperInterna {
+    top: 24px;      /* mais próximo do topo no mobile */
+    right: 16px;    /* alinhado com o padding da navbar mobile */
   }
 }

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import styles from "../styles/Page.module.css";
 import MobileMenu from "./MobileMenu";
+import InternalMenu from "./InternalMenu";
 
 export default function TopMenu() {
   const [isMobile, setIsMobile] = useState(false);
@@ -20,25 +21,36 @@ export default function TopMenu() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Só renderiza o menu se estiver na home
-  if (pathname !== "/") return null;
+  // SEÇÕES DO SITE (sem "agradecimentos")
+  const sections = [
+    { label: "museu", href: "/museu" },
+    { label: "autobiográfico", href: "/autobiografico" },
+    { label: "território", href: "/territorio" },
+    { label: "leste", href: "/leste" },
+    { label: "corpo", href: "/corpo" },
+    { label: "memória", href: "/memoria" },
+    { label: "sobre/about", href: "/sobre" },
+    { label: "contato/contact", href: "/contato" },
+  ];
+
+  // Home na versão desktop: sem menu
+  if (pathname === "/" && !isMobile) return null;
+
+  // Home no mobile: só sobre e contato
+  if (pathname === "/" && isMobile) {
+    return (
+      <div className={styles.menuMobileWrapper}>
+        <MobileMenu />
+      </div>
+    );
+  }
+
+  // Internas (desktop e mobile): todas as seções menos a atual
+  const filteredSections = sections.filter(section => section.href !== pathname);
 
   return (
-    <>
-      {isMobile ? (
-        <div className={styles.menuMobileWrapper}>
-        <MobileMenu />
-        </div>
-      ) : (
-        <div className={styles.topLinks}>
-          <Link href="/sobre">
-            <div className={styles.sobre}>sobre/about</div>
-          </Link>
-          <Link href="/contato">
-            <div className={styles.contato}>contato/contact</div>
-          </Link>
-        </div>
-      )}
-    </>
+    <div className={styles.menuWrapperInterna}>
+      <InternalMenu />
+    </div>
   );
 }

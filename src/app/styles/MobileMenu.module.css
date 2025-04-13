@@ -50,16 +50,3 @@
     padding-left: 16px;
   }
   
-  /* Ponto antes do link 
-  .dropdown a::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background-color: black;
-    border-radius: 50%;
-  } */
-  
