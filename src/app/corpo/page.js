@@ -537,15 +537,15 @@ export default function CorpoPage() {
                    registros e momentos.
                 </p>
 
-                <div className={styles.carouselBlock}>
-                  <Image src="/images/corpo/foto9.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
-                  <Image src="/images/corpo/foto10.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
-                  <Image src="/images/corpo/foto11.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
-                  <Image src="/images/corpo/foto12.jpg" alt="Registros de encontro realizado entre as prateleiras" width={300} height={200} className={styles.carouselImage} />
+                <figure className={styles.gridTwoByTwo}>
+                  <Image src="/images/corpo/foto9.jpg" alt="Imagem 1" width={300} height={200} layout="responsive" />
+                  <Image src="/images/corpo/foto10.jpg" alt="Imagem 2" width={300} height={200} layout="responsive" />
+                  <Image src="/images/corpo/foto11.jpg" alt="Imagem 3" width={300} height={200} layout="responsive" />
+                  <Image src="/images/corpo/foto12.jpg" alt="Imagem 4" width={300} height={200} layout="responsive" />
                   <figcaption className={styles.caption}>
-                    Registros de encontro realizado entre as prateleiras da Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo,  2023.
+                    Registros de encontro realizado entre as prateleiras da Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2023.
                   </figcaption>
-                </div>
+                </figure>
 
                 <blockquote className={styles.quoteBox}>
                   <p>
@@ -581,14 +581,14 @@ export default function CorpoPage() {
                   </i>
                 </p>
 
-                <div className={styles.carouselBlock}>
-                  <Image src="/images/corpo/foto13.jpg" alt="Imagem 1" width={300} height={200} className={styles.carouselImage} />
-                  <Image src="/images/corpo/foto14.jpg" alt="Imagem 2" width={300} height={200} className={styles.carouselImage} />
-                  <Image src="/images/corpo/foto15.jpg" alt="Imagem 3" width={300} height={200} className={styles.carouselImage} />
+                <figure className={styles.gridOneRow}>
+                  <Image src="/images/corpo/foto13.jpg" alt="Imagem 1" width={300} height={200} layout="responsive" />
+                  <Image src="/images/corpo/foto14.jpg" alt="Imagem 2" width={300} height={200} layout="responsive" />
+                  <Image src="/images/corpo/foto15.jpg" alt="Imagem 3" width={300} height={200} layout="responsive" />
                   <figcaption className={styles.caption}>
                     Participante Grazi em vivência na biblioteca dançando com livro sobre a guerra.
                   </figcaption>
-                </div>
+                </figure>
 
                 <p>
                   <u>A partir dessa</u> <b>cena/dança</b> <u>feita em improviso, aproveitamos o título e o contexto político do momento, 
