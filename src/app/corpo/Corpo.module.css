@@ -727,7 +727,89 @@
 }
 
 /* ===== SEÇÃO: TEXTO DAS PARTICIPANTES ===== */
+
+.participantTextsSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.participantTextsSection {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.textWithFloatingImage {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+}
+
+.textWithFloatingImage h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.textWithFloatingImage p {
+  margin-bottom: 16px;
+}
+
+.floatingImage {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin: 0 24px 24px 0;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+.estefaniPoem p {
+  margin-bottom: 1.7px;
+  line-height: 1.5;
+}
+
+.svgWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 2900px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
+}
+
 /* ===== RESPONSIVIDADE (TEXTO DAS PARTICIPANTES) ===== */
+
+@media (max-width: 768px) {
+  .floatingImage {
+    float: none;
+    display: block;
+    margin: 0 auto 24px;
+    width: 100%;
+  }
+
+  .textWithFloatingImage {
+    text-align: left;
+  }
+
+  .textWithFloatingImage h3 {
+    text-align: center;
+  }
+}
 
 /* ===== SEÇÃO: PLAYLIST DA OFICINA ===== */
 .playlistSection {

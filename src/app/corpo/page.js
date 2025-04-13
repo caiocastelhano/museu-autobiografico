@@ -652,20 +652,57 @@ export default function CorpoPage() {
               </FadeInSection>
 
             {/* Bloco Texto das participantes */}
-              <FadeInSection className={styles.participantTextsSection}>
-                <h2>Texto das participantes que dançaram com a guerra</h2>
+            <FadeInSection className={styles.participantTextsSection}>
+              <h2>Texto das participantes que dançaram com a guerra</h2>
 
-                <h3>Graziele Viana - Solitária</h3>
+                <div className={styles.svgWrapper}>
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 2900"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Pontos e estrelas no lado direito */}
+                    <circle cx="3050" cy="150" r="1.5" fill="black" />
+                    <circle cx="3120" cy="300" r="1.8" fill="black" />
+                    <circle cx="3200" cy="500" r="2.2" fill="black" />
+                    <circle cx="3280" cy="750" r="1.9" fill="black" />
+                    <circle cx="3350" cy="1000" r="2.1" fill="black" />
+                    <circle cx="3080" cy="1250" r="1.4" fill="black" />
+                    <circle cx="3150" cy="1500" r="1.6" fill="black" />
+                    <circle cx="3240" cy="1750" r="3" fill="black" />
+                    <circle cx="3090" cy="2000" r="2.5" fill="black" />
+                    <circle cx="3180" cy="2250" r="4" fill="black" />
+                    <circle cx="3040" cy="2400" r="1.6" fill="black" />
+                    <circle cx="3300" cy="2550" r="2.1" fill="black" />
+                    <circle cx="3370" cy="2670" r="1.7" fill="black" />
+                    <circle cx="3100" cy="2750" r="1.9" fill="black" />
+                    <circle cx="3000" cy="2850" r="1.4" fill="black" />
+                    <image href="/images/star.png" x="3060" y="400" width="10" height="10" />
+                    <image href="/images/star.png" x="3080" y="900" width="12" height="12" />
+                    <image href="/images/star.png" x="3100" y="1400" width="9" height="9" />
+                    <image href="/images/star.png" x="3240" y="1850" width="11" height="11" />
+                    <image href="/images/star.png" x="3180" y="2300" width="10" height="10" />
+                    <image href="/images/star.png" x="3000" y="2450" width="9" height="9" />
+                    <image href="/images/star.png" x="3360" y="2600" width="11" height="11" />
+                    <image href="/images/star.png" x="3120" y="2700" width="10" height="10" />
+                    <image href="/images/star.png" x="3290" y="2850" width="12" height="12" />
+                    <line x1="3240" y1="1750" x2="3090" y2="2000" stroke="black" strokeWidth="1.25" />
+                    <line x1="3090" y1="2000" x2="3180" y2="2250" stroke="black" strokeWidth="1.75" />
+                    <line x1="3180" y1="2250" x2="3040" y2="2400" stroke="black" strokeWidth="1.25" />
+                  </svg>
+                </div>
 
-                <Image
-                  src="/images/corpo/foto16_graziele.JPG"
-                  alt="Graziele Viana"
-                  width={800}
-                  height={500}
-                  className={styles.image}
-                />
+                <div className={styles.textWithFloatingImage}>
+                  <Image
+                    src="/images/corpo/foto16_graziele.JPG"
+                    alt="Graziele Viana"
+                    width={800}
+                    height={500}
+                    className={styles.floatingImage}
+                  />
 
-                <div className={styles.textBlock}>
+                  <h3>Graziele Viana - Solitária</h3>
+
                   <p>Entenda! Não quero que vá para sempre, apenas um alívio, um suspiro, uma brecha de saudades.</p>
                   <p>Seu olhar era fixo e penetrante. Sua mão firme, cuidadosa apoiava-se nas minhas costas suadas. A outra mão segurava delicadamente a minha mão direita tentando manter-se firme.</p>
                   <p>Ela avançou com o pé direito, eu recuei com o esquerdo. O salão estava vazio. Embriaguei-me com seu perfume. Um perfume de mulher.</p>
@@ -677,102 +714,105 @@ export default function CorpoPage() {
                   <p><b>Entenda, senhora (sol)idão. Por favor, me tire da</b></p>
                   <p><b>(Sol)itária</b></p>
                 </div>
+              </FadeInSection>
 
-                <h3>Estefani Moura - sem título</h3>
+              <FadeInSection className={styles.estefaniSection}>
+                <div className={styles.textWithFloatingImage}>
+                  <Image
+                    src="/images/corpo/foto17_estefani.JPG"
+                    alt="Estefani Moura"
+                    width={800}
+                    height={500}
+                    className={styles.floatingImage}
+                  />
 
-                <Image
-                  src="/images/corpo/foto17_estefani.JPG"
-                  alt="Estefani Moura"
-                  width={800}
-                  height={500}
-                  className={styles.image}
-                />
+                  <h3>Estefani Moura - sem título</h3>
+                    <div className={styles.estefaniPoem}>
+                      <p>Ainda é cedo, amor</p>
+                      <p>Mal começaste a conhecer a vida</p>
+                      <p>Já anuncias a hora de partida</p>
+                      <p>Sem saber mesmo o rumo que irás tomar</p>
 
-                <div className={styles.poemBlock}>
-                  <p>Ainda é cedo, amor</p>
-                  <p>Mal começaste a conhecer a vida</p>
-                  <p>Já anuncias a hora de partida</p>
-                  <p>Sem saber mesmo o rumo que irás tomar</p>
+                      <br />
 
-                  <br />
+                      <p>Presta atenção, querida</p>
+                      <p>Embora eu saiba que estás resolvida</p>
+                      <p>Em cada esquina cai um pouco tua vida</p>
+                      <p>Em pouco tempo não serás mais o que és</p>
 
-                  <p>Presta atenção, querida</p>
-                  <p>Embora eu saiba que estás resolvida</p>
-                  <p>Em cada esquina cai um pouco tua vida</p>
-                  <p>Em pouco tempo não serás mais o que és</p>
+                      <br />
 
-                  <br />
+                      <p>Pensei o bastante pra entender o que seria o suficiente,</p>
+                      <p>Um mundo onde tudo está se desmoronando, e aqui dentro não costuma ser tão diferente.</p>
+                      <p>Um peito que decai para um lado onde a vida não parece mais a mesma,</p>
+                      <p>uma despedida quase grotesca</p>
+                      <p>a saudade no toc toc na porta, como se quisesse sempre entrar, sempre participar, sempre, sempre...</p>
+                      <p>e no fim é quase nada, nulo, em branco total.</p>
 
-                  <p>Pensei o bastante pra entender o que seria o suficiente,</p>
-                  <p>Um mundo onde tudo está se desmoronando, e aqui dentro não costuma ser tão diferente.</p>
-                  <p>Um peito que decai para um lado onde a vida não parece mais a mesma,</p>
-                  <p>uma despedida quase grotesca</p>
-                  <p>a saudade no toc toc na porta, como se quisesse sempre entrar, sempre participar, sempre, sempre...</p>
-                  <p>e no fim é quase nada, nulo, em branco total.</p>
+                      <br />
 
-                  <br />
+                      <p>A única certeza que temos sempre é a do final,</p>
+                      <p>a morte do corpo o descanso de uma alma quase supérflua.</p>
+                      <p>Um sentimento de contínua queda, sem sinal de vida, sem sinal de nada.</p>
+                      <p>Pipipi é isso, e aí?</p>
+                      <p>É tanto tempo pensando no quanto tudo isso passa, e passa</p>
+                      <p>Mas quando passa de verdade?</p>
+                      <p>São tantas dúvidas que não cabem em um texto, em uma mensagem.</p>
 
-                  <p>A única certeza que temos sempre é a do final,</p>
-                  <p>a morte do corpo o descanso de uma alma quase supérflua.</p>
-                  <p>Um sentimento de contínua queda, sem sinal de vida, sem sinal de nada.</p>
-                  <p>Pipipi é isso, e aí?</p>
-                  <p>É tanto tempo pensando no quanto tudo isso passa, e passa</p>
-                  <p>Mas quando passa de verdade?</p>
-                  <p>São tantas dúvidas que não cabem em um texto, em uma mensagem.</p>
+                      <br />
 
-                  <br />
+                      <p>Eu tô cansada dessa incoerência sentimental,</p>
+                      <p>De pensar que tô em um outro plano astral,</p>
+                      <p>Não se enxergar no espelho, na compra em uma loja.</p>
+                      <p>É cedo demais pra pensar em uma vida quase chegando ao fim,</p>
+                      <p>É cedo o bastante pra ter tanto, tanto medo do fim?</p>
+                      <p>Irresponsável, grossa demais, não pode nunca fazer nada?</p>
+                      <p>Imatura o suficiente pra não se entender, pra se arrepender de qualquer coisa que faça.</p>
+                      <p>É sempre, nada nada nada.</p>
 
-                  <p>Eu tô cansada dessa incoerência sentimental,</p>
-                  <p>De pensar que tô em um outro plano astral,</p>
-                  <p>Não se enxergar no espelho, na compra em uma loja.</p>
-                  <p>É cedo demais pra pensar em uma vida quase chegando ao fim,</p>
-                  <p>É cedo o bastante pra ter tanto, tanto medo do fim?</p>
-                  <p>Irresponsável, grossa demais, não pode nunca fazer nada?</p>
-                  <p>Imatura o suficiente pra não se entender, pra se arrepender de qualquer coisa que faça.</p>
-                  <p>É sempre, nada nada nada.</p>
+                      <br />
 
-                  <br />
+                      <p>Eu tô dançando, sapateando, entendo o que eu tenho e o que sou.</p>
+                      <p>Crescendo a cada dia, querendo voltar pra um lugar que eu sei que eu não tô.</p>
+                      <p>Eu juro que tô tentando amor, mas tá difícil,</p>
+                      <p>Eu danço com a guerra pra tentar acabar com isso, é quase impossível.</p>
+                      <p>Meus pés se cansam, a voz se cala e no fim é sempre o mesmo nada, nada, nada.</p>
 
-                  <p>Eu tô dançando, sapateando, entendo o que eu tenho e o que sou.</p>
-                  <p>Crescendo a cada dia, querendo voltar pra um lugar que eu sei que eu não tô.</p>
-                  <p>Eu juro que tô tentando amor, mas tá difícil,</p>
-                  <p>Eu danço com a guerra pra tentar acabar com isso, é quase impossível.</p>
-                  <p>Meus pés se cansam, a voz se cala e no fim é sempre o mesmo nada, nada, nada.</p>
+                      <br />
 
-                  <br />
+                      <p>A vida é um moinho cartola, passa rápido demais, esmagando o que nos resta de paz.</p>
+                      <p>Lembro sempre dos meus pais juntos fazendo o almoço de domingo.</p>
+                      <p>As idas à igreja como de costume.</p>
+                      <p>E os sonhos que pareciam se reconstruir,</p>
+                      <p>Mas onde eles estão agora?</p>
+                      <p>Onde eu tô agora?</p>
+                      <p>Tudo se foi, se findou em um fim de semana, em um ano ou dois</p>
+                      <p>Eu não entendo esse completo desespero,</p>
+                      <p>O anseio de uma vida sem motivação,</p>
+                      <p>Onde eu tô onde eu quero chegar?</p>
 
-                  <p>A vida é um moinho cartola, passa rápido demais, esmagando o que nos resta de paz.</p>
-                  <p>Lembro sempre dos meus pais juntos fazendo o almoço de domingo.</p>
-                  <p>As idas à igreja como de costume.</p>
-                  <p>E os sonhos que pareciam se reconstruir,</p>
-                  <p>Mas onde eles estão agora?</p>
-                  <p>Onde eu tô agora?</p>
-                  <p>Tudo se foi, se findou em um fim de semana, em um ano ou dois</p>
-                  <p>Eu não entendo esse completo desespero,</p>
-                  <p>O anseio de uma vida sem motivação,</p>
-                  <p>Onde eu tô onde eu quero chegar?</p>
+                      <br />
 
-                  <br />
+                      <p>Por que tanta pergunta sem resposta?</p>
+                      <p>Tanta música sem nota?</p>
+                      <p>Eu não entendo, eu fujo desse tal entendimento.</p>
+                      <p>Eu sinto aqui dentro,</p>
+                      <p>Algo desmoronando</p>
+                      <p>Bombardeado de sensação,</p>
+                      <p>A metralhadora lotada de mágoa,</p>
+                      <p>Atirando pra todo lado nessa estrada</p>
+                      <p>Ainda não me acostumei a dançar essa valsa.</p>
 
-                  <p>Por que tanta pergunta sem resposta?</p>
-                  <p>Tanta música sem nota?</p>
-                  <p>Eu não entendo, eu fujo desse tal entendimento.</p>
-                  <p>Eu sinto aqui dentro,</p>
-                  <p>Algo desmoronando</p>
-                  <p>Bombardeado de sensação,</p>
-                  <p>A metralhadora lotada de mágoa,</p>
-                  <p>Atirando pra todo lado nessa estrada</p>
-                  <p>Ainda não me acostumei a dançar essa valsa.</p>
+                      <br />
 
-                  <br />
-
-                  <p>Mas eu entendo, eu entendo cartola, quando você diz devagar demais</p>
-                  <p>Que tudo isso é passageiro demais,</p>
-                  <p>E que essa vida nada fica como começou</p>
-                  <p>e por fim enquanto danço ao som da sua música (a minha favorita)</p>
-                  <p>Entendo um pouco dessa vida, que às vezes passa rápido o suficiente pra não se entender.</p>
-                  <p>Um dia, lá pra frente quem sabe eu venço a guerra que é</p>
-                  <p><b>Você</b></p>
+                      <p>Mas eu entendo, eu entendo cartola, quando você diz devagar demais</p>
+                      <p>Que tudo isso é passageiro demais,</p>
+                      <p>E que essa vida nada fica como começou</p>
+                      <p>e por fim enquanto danço ao som da sua música (a minha favorita)</p>
+                      <p>Entendo um pouco dessa vida, que às vezes passa rápido o suficiente pra não se entender.</p>
+                      <p>Um dia, lá pra frente quem sabe eu venço a guerra que é</p>
+                      <p><b>Você</b></p>
+                    </div>
                 </div>
               </FadeInSection>
 
