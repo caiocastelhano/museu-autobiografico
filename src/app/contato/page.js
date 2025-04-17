@@ -52,20 +52,25 @@ export default function ContatoPage() {
 
         {/* Imagens */}
         <section className={styles.imageBlock}>
-          <Image
-            src="/images/contato/foto1_oficina.JPG"
-            alt="Descrição da foto 1"
-            width={400}
-            height={300}
-            className={styles.contactImage}
-          />
-          <Image
-            src="/images/contato/foto2_oficina.JPG"
-            alt="Descrição da foto 2"
-            width={400}
-            height={300}
-            className={styles.contactImage}
-          />
+          <figure className={styles.imageGroup}>
+            <Image
+              src="/images/contato/foto1_oficina.JPG"
+              alt="Equipe Centro Cultural da Penha em foto de 2022 da oficina"
+              width={400}
+              height={300}
+              className={styles.contactImage}
+            />
+            <Image
+              src="/images/contato/foto2_oficina.JPG"
+              alt="Equipe Centro Cultural da Penha em foto de 2022 da oficina"
+              width={400}
+              height={300}
+              className={styles.contactImage}
+            />
+            <figcaption className={styles.caption}>
+              Equipe Centro Cultural da Penha (2022).
+            </figcaption>
+          </figure>
         </section>
 
         {/* Ícones de redes sociais */}
