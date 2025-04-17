@@ -1,0 +1,32 @@
+.pageContainer {
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainContent {
+    margin-top: 80px;
+    padding: 40px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contactIntroSection {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .contactIntroSection h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+  
+  .contactIntroSection p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
