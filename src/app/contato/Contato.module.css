@@ -1,32 +1,110 @@
 .pageContainer {
     position: relative;
     min-height: 100vh;
-    background: #fff;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
   }
   
   .mainContent {
-    margin-top: 80px;
-    padding: 40px 16px;
     flex: 1;
+    padding: 80px 24px;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 48px;
   }
   
-  .contactIntroSection {
+  /* Texto inicial */
+  .textBlock {
+    font-size: 1.1rem;
+    line-height: 1.6;
     text-align: center;
-    max-width: 800px;
   }
   
-  .contactIntroSection h2 {
-    font-size: 1.6rem;
+  .textBlock p {
     margin-bottom: 16px;
   }
   
-  .contactIntroSection p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  /* Formulário */
+  .formBlock {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form label {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .form button:hover {
+    background-color: #333;
+  }
+  
+  /* Imagens */
+  .imageBlock {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .imageGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .contactImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 8px;
+  }
+  
+  /* Ícones */
+  .iconsBlock {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 1.5rem;
+  }
+  
+  .iconsBlock a {
+    color: black;
+    transition: transform 0.2s ease;
+  }
+  
+  .iconsBlock a:hover {
+    transform: scale(1.1);
   }
   

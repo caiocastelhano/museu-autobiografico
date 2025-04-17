@@ -24,7 +24,7 @@ export default function ContatoPage() {
             expandindo territórios físicos</b> e proporcionando novos pontos de contato com pessoas de todo o Brasil.</p>
 
           <p><u>Se quiser saber mais sobre o projeto, propor uma oficina em parceria, colaborar ou compartilhar sua 
-            experiência, entre em contato:</u></p>
+            experiência, preencha o formulário:</u></p>
         </section>
 
         {/* Formulário */}
