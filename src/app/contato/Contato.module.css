@@ -65,6 +65,21 @@
   .form button:hover {
     background-color: #333;
   }
+
+  .formStatus {
+    margin-top: 16px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .successMessage {
+    color: green;
+  }
+  
+  .errorMessage {
+    color: red;
+  }
   
   /* Imagens */
   .imageBlock {

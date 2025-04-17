@@ -7,8 +7,35 @@ import TopMenu from "@/app/components/TopMenu";
 import styles from "@/app/contato/Contato.module.css";
 import Image from "next/image";
 import { FaInstagram, FaWhatsapp, FaYoutube, FaEnvelope } from "react-icons/fa";
+import { useState } from "react";
 
 export default function ContatoPage() {
+  const [status, setStatus] = useState(null);
+  const [isError, setIsError] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const response = await fetch("https://formsubmit.co/ajax/museuautobiografico@gmail.com", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: formData,
+    });
+
+    if (response.ok) {
+      setStatus("Mensagem enviada com sucesso!");
+      setIsError(false);
+      e.target.reset();
+    } else {
+      setStatus("Ocorreu um erro. Tente novamente.");
+      setIsError(true);
+    }
+  };
+
   return (
     <div className={styles.pageContainer}>
       <Navbar />
@@ -29,11 +56,7 @@ export default function ContatoPage() {
 
         {/* Formulário */}
         <section className={styles.formBlock}>
-          <form
-            className={styles.form}
-            action="https://formsubmit.co/museuautobiografico@gmail.com"
-            method="POST"
-          >
+          <form className={styles.form} onSubmit={handleSubmit}>
             <label htmlFor="name">Nome</label>
             <input type="text" id="name" name="name" required />
 
@@ -43,9 +66,18 @@ export default function ContatoPage() {
             <label htmlFor="message">Mensagem</label>
             <textarea id="message" name="message" rows="5" required />
 
-            <input type="hidden" name="_captcha" value="false" />
-
             <button type="submit">Enviar</button>
+
+            {status && (
+              <p
+                className={`${styles.formStatus} ${
+                  isError ? styles.errorMessage : styles.successMessage
+                }`}
+              >
+                {status}
+              </p>
+            )}
+
           </form>
         </section>
 
