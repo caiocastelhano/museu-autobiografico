@@ -646,15 +646,14 @@ export default function CorpoPage() {
                 <p>
                   Com essa vivência, palavras-chave ficaram latentes:{" "}
                   <b>
-                    Pertencimento; Vínculo; Afeto; Resistência; Memórias e Corpo.
-                  </b>
+                    Pertencimento; Vínculo; Afeto; Resistência; Memórias e Corpo. 
+                  </b>{" "}
+                  Abaixo, os textos produzidos por duas participantes:
                 </p>
               </FadeInSection>
 
             {/* Bloco Texto das participantes */}
             <FadeInSection className={styles.participantTextsSection}>
-              <h2>Texto das participantes que dançaram com a guerra</h2>
-
                 <div className={styles.svgWrapper}>
                   <svg
                     className={styles.floatingElements}
