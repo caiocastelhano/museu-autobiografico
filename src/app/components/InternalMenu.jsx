@@ -9,7 +9,8 @@ import styles from "../styles/InternalMenu.module.css";
 export default function InternalMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const dropdownRef = useRef(null); // Ref para detectar clique fora
+  const dropdownRef = useRef(null);
+  const buttonRef = useRef(null); // NOVO
 
   const sections = [
     { label: "museu", href: "/museu" },
@@ -26,10 +27,14 @@ export default function InternalMenu() {
     (section) => section.href !== pathname
   );
 
-  // Fecha o menu ao clicar fora
   useEffect(() => {
     function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
         setIsOpen(false);
       }
     }
@@ -46,7 +51,8 @@ export default function InternalMenu() {
   return (
     <div className={styles.menuContainer}>
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        ref={buttonRef} // ← ref adicionado
+        onClick={() => setIsOpen((prev) => !prev)} // ← toggle real
         className={styles.burger}
         aria-label="Abrir menu"
       >
