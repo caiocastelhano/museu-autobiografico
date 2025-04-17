@@ -33,8 +33,19 @@ export default function TopMenu() {
     { label: "contato", href: "/contato" },
   ];
 
-  // Home na versão desktop: sem menu
-  if (pathname === "/" && !isMobile) return null;
+  // Home na versão desktop: mostrar "sobre" e "contato"
+    if (pathname === "/" && !isMobile) {
+      return (
+        <>
+          <Link href="/sobre" className={styles.sobre}>
+            sobre
+          </Link>
+          <Link href="/contato" className={styles.contato}>
+            contato
+          </Link>
+        </>
+      );
+    }
 
   // Home no mobile: só sobre e contato
   if (pathname === "/" && isMobile) {
