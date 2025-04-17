@@ -18,8 +18,8 @@ export default function InternalMenu() {
     { label: "leste", href: "/leste" },
     { label: "corpo", href: "/corpo" },
     { label: "memória", href: "/memoria" },
-    { label: "sobre/about", href: "/sobre" },
-    { label: "contato/contact", href: "/contato" },
+    { label: "sobre", href: "/sobre" },
+    { label: "contato", href: "/contato" },
   ];
 
   const filteredSections = sections.filter(

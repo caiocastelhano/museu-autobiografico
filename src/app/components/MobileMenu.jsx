@@ -17,8 +17,8 @@ export default function MobileMenu() {
 
       {isOpen && (
         <div className={styles.dropdown}>
-          <Link href="/sobre" onClick={() => setIsOpen(false)}>sobre/about</Link>
-          <Link href="/contato" onClick={() => setIsOpen(false)}>contato/contact</Link>
+          <Link href="/sobre" onClick={() => setIsOpen(false)}>sobre</Link>
+          <Link href="/contato" onClick={() => setIsOpen(false)}>contato</Link>
         </div>
       )}
     </div>

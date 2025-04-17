@@ -29,8 +29,8 @@ export default function TopMenu() {
     { label: "leste", href: "/leste" },
     { label: "corpo", href: "/corpo" },
     { label: "memória", href: "/memoria" },
-    { label: "sobre/about", href: "/sobre" },
-    { label: "contato/contact", href: "/contato" },
+    { label: "sobre", href: "/sobre" },
+    { label: "contato", href: "/contato" },
   ];
 
   // Home na versão desktop: sem menu
