@@ -15,7 +15,7 @@ export default function ContatoPage() {
       <TopMenu />
 
       <main className={styles.mainContent}>
-        {/* Título + Parágrafos */}
+        {/* Texto */}
         <section className={styles.textBlock}>
           <p>O <b>museu autobiográfico</b> é parte do percurso de uma <b><u>oficina teatral</u></b> e do trabalho de oficineiro, nascido e 
             criado na Zona Leste de São Paulo.</p>
@@ -43,7 +43,6 @@ export default function ContatoPage() {
             <label htmlFor="message">Mensagem</label>
             <textarea id="message" name="message" rows="5" required />
 
-            {/* Anti-spam (opcional) */}
             <input type="hidden" name="_captcha" value="false" />
 
             <button type="submit">Enviar</button>
