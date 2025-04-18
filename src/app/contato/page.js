@@ -108,7 +108,7 @@ export default function ContatoPage() {
               <a href="https://wa.me/5511981036621" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp size={40} />
               </a>
-              <a href="https://instagram.com/SEUUSUARIO" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/museuautobiografico" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={40} />
               </a>
               <a href="https://youtube.com/@museuautobiográfico" target="_blank" rel="noopener noreferrer">
