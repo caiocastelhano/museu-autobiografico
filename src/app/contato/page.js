@@ -42,6 +42,28 @@ export default function ContatoPage() {
       <TopMenu />
 
       <main className={styles.mainContent}>
+
+        <svg
+          viewBox="0 0 5000 4000"
+          xmlns="http://www.w3.org/2000/svg"
+          className={styles.floatingElements}
+        >
+          {/* Círculos */}
+          <circle cx="2750" cy="200" r="50" fill="black" />
+          <circle cx="2750" cy="600" r="50" fill="black" />
+          <circle cx="2750" cy="1000" r="50" fill="black" />
+          <circle cx="2750" cy="300" r="50" fill="black" />
+          <circle cx="2750" cy="900" r="50" fill="black" />
+          <circle cx="2750" cy="4000" r="50" fill="black" />
+
+          {/* Estrelas */}
+          <image href="/images/star.png" x="2750" y="800" width="100" height="100" />
+          <image href="/images/star.png" x="2750" y="1200" width="100" height="100" />
+
+          {/* Linha entre dois pontos */}
+          <line x1="2100" y1="600" x2="2200" y2="1000" stroke="black" strokeWidth="0.5" /> 
+        </svg>
+
         <div className={styles.twoColumns}>
           {/* Coluna 1: texto + formulário */}
           <div className={styles.leftColumn}>
@@ -70,9 +92,10 @@ export default function ContatoPage() {
               <label htmlFor="subject">Assunto:</label>
               <select id="subject" name="subject" required defaultValue="">
                 <option value="" disabled hidden>Selecione uma opção:</option>
-                <option value="dúvidas">Dúvidas</option>
-                <option value="parceria">Parcerias</option>
-                <option value="feedback">Sugestões</option>
+                <option value="dúvidas">Quero tirar uma dúvida</option>
+                <option value="parceria">Quero propor uma parceria</option>
+                <option value="feedback">Quero fazer uma sugestão</option>
+                <option value="história">Quero contar minha história</option>
               </select>
 
               <label htmlFor="message">Mensagem:</label>
