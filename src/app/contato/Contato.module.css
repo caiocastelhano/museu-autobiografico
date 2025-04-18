@@ -1,125 +1,175 @@
 .pageContainer {
-    position: relative;
-    min-height: 100vh;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-  
+  position: relative;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.twoColumns {
+  display: flex;
+  gap: 55px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Coluna da esquerda (texto + formulário) */
+.leftColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.textBlock {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.textBlock p {
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form button:hover {
+  background-color: #333;
+}
+
+.form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.formStatus {
+  margin-top: 16px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.successMessage {
+  color: green;
+}
+
+.errorMessage {
+  color: red;
+}
+
+/* Coluna da direita (imagens + ícones) */
+.rightColumn {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.imageGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contactImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.iconsBlock {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 1.5rem;
+  margin-top: 24px;
+}
+
+.iconsBlock a {
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+.iconsBlock a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
   .mainContent {
-    flex: 1;
-    padding: 80px 24px;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
-  
-  /* Texto inicial */
-  .textBlock {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: center;
-  }
-  
-  .textBlock p {
-    margin-bottom: 16px;
-  }
-  
-  /* Formulário */
-  .formBlock {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .form {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .form label {
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-  
-  .form input,
-  .form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
-  
-  .form button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .form button:hover {
-    background-color: #333;
+    padding: 100px 16px 40px; /* top | sides | bottom */
   }
 
-  .formStatus {
-    margin-top: 16px;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 500;
-  }
-  
-  .successMessage {
-    color: green;
-  }
-  
-  .errorMessage {
-    color: red;
-  }
-  
-  /* Imagens */
-  .imageBlock {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .imageGroup {
-    display: flex;
+  .twoColumns {
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    gap: 40px;
   }
-  
-  .contactImage {
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+    align-items: center;
+  }
+
+  .textBlock {
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
     max-width: 100%;
+  }
+
+  .contactImage {
+    width: 100%;
+    max-width: 400px;
     height: auto;
   }
-  
-  .caption {
-    font-size: 0.95rem;
-    color: #444;
-    margin-top: 4px;
-  }
-  
-  /* Ícones */
+
   .iconsBlock {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    font-size: 1.5rem;
+    flex-wrap: wrap;
+    gap: 16px;
   }
-  
-  .iconsBlock a {
-    color: black;
-    transition: transform 0.2s ease;
-  }
-  
-  .iconsBlock a:hover {
-    transform: scale(1.1);
-  }
-  
+}
