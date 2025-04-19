@@ -4,10 +4,14 @@ import styles from '../styles/Page.module.css';
 export default function MobileConstellation() {
   return (
     <div className={styles.mainContent}>
+      {/* Título oculto para leitores de tela */}
+      <h1 className={styles.visuallyHidden}>Página inicial - Museu Autobiográfico (versão mobile)</h1>
+
       <svg
         className={styles.constellation}
         viewBox="0 0 600 1900"
         preserveAspectRatio="xMidYMid meet"
+        aria-hidden="true"
       >
         {/* Pontinhos variados */}
         <circle cx="60" cy="970" r="5" fill="black" className={styles.blinkingStar} />
@@ -60,7 +64,7 @@ export default function MobileConstellation() {
 
         {/* Formas com texto e arestas visíveis */}
         {/* 1. MUSEU (ampliado) */}
-          <Link href="/museu">
+          <Link href="/museu" aria-label="Ir para a seção Museu">
             <g className={styles.hoverText}>
               <polygon points="100,220 360,200 330,400 170,420 120,270" fill="white" stroke="black" strokeWidth="1" />
               <circle cx="100" cy="220" r="3.5" fill="black" />
@@ -72,8 +76,8 @@ export default function MobileConstellation() {
             </g>
           </Link>
 
-          {/* 2. AUTOBIOGRÁFICO (ampliado + espaçado) */}
-          <Link href="/autobiografico">
+        {/* 2. AUTOBIOGRÁFICO (ampliado + espaçado) */}
+          <Link href="/autobiografico" aria-label="Ir para a seção Autobiográfico">
             <g className={styles.hoverText}>
               <polygon points="120,520 330,500 360,700 200,740 150,600" fill="white" stroke="black" strokeWidth="1" />
               <circle cx="120" cy="520" r="3.5" fill="black" />
@@ -85,8 +89,8 @@ export default function MobileConstellation() {
             </g>
           </Link>
 
-          {/* 3. TERRITÓRIO (ampliado + espaçado) */}
-          <Link href="/territorio">
+        {/* 3. TERRITÓRIO (ampliado + espaçado) */}
+          <Link href="/territorio" aria-label="Ir para a seção Território">
             <g className={styles.hoverText}>
               <polygon points="270,800 490,780 510,980 350,1020 280,910" fill="white" stroke="black" strokeWidth="1" />
               <circle cx="270" cy="800" r="3.5" fill="black" />
@@ -98,41 +102,41 @@ export default function MobileConstellation() {
             </g>
           </Link>
 
-                {/* 4. LESTE (ampliado + reposicionado) */}
-        <Link href="/leste">
-          <g className={styles.hoverText}>
-            <polygon points="90,1080 310,1050 350,1180 200,1220 110,1140" fill="white" stroke="black" strokeWidth="1" />
-            <circle cx="90" cy="1080" r="3.5" fill="black" />
-            <circle cx="310" cy="1050" r="3.5" fill="black" />
-            <circle cx="350" cy="1180" r="4.5" fill="black" />
-            <circle cx="200" cy="1220" r="4.5" fill="black" />
-            <circle cx="110" cy="1140" r="3.5" fill="black" />
-            <text x="210" y="1130" className={styles.shapeText} textAnchor="middle">leste</text>
-          </g>
-        </Link>
+        {/* 4. LESTE (ampliado + reposicionado) */}
+          <Link href="/leste" aria-label="Ir para a seção Leste">
+            <g className={styles.hoverText}>
+              <polygon points="90,1080 310,1050 350,1180 200,1220 110,1140" fill="white" stroke="black" strokeWidth="1" />
+              <circle cx="90" cy="1080" r="3.5" fill="black" />
+              <circle cx="310" cy="1050" r="3.5" fill="black" />
+              <circle cx="350" cy="1180" r="4.5" fill="black" />
+              <circle cx="200" cy="1220" r="4.5" fill="black" />
+              <circle cx="110" cy="1140" r="3.5" fill="black" />
+              <text x="210" y="1130" className={styles.shapeText} textAnchor="middle">leste</text>
+            </g>
+          </Link>
 
         {/* 5. MEMÓRIA (ampliado + espaçado) */}
-        <Link href="/memoria">
-          <g className={styles.hoverText}>
-            <polygon points="160,1300 390,1280 370,1440 160,1410" fill="white" stroke="black" strokeWidth="1" />
-            <circle cx="160" cy="1300" r="3.5" fill="black" />
-            <circle cx="390" cy="1280" r="3.5" fill="black" />
-            <circle cx="370" cy="1440" r="4.5" fill="black" />
-            <circle cx="160" cy="1410" r="4.5" fill="black" />
-            <text x="260" y="1360" className={styles.shapeText} textAnchor="middle">memória</text>
-          </g>
-        </Link>
+          <Link href="/memoria" aria-label="Ir para a seção Memória">
+            <g className={styles.hoverText}>
+              <polygon points="160,1300 390,1280 370,1440 160,1410" fill="white" stroke="black" strokeWidth="1" />
+              <circle cx="160" cy="1300" r="3.5" fill="black" />
+              <circle cx="390" cy="1280" r="3.5" fill="black" />
+              <circle cx="370" cy="1440" r="4.5" fill="black" />
+              <circle cx="160" cy="1410" r="4.5" fill="black" />
+              <text x="260" y="1360" className={styles.shapeText} textAnchor="middle">memória</text>
+            </g>
+          </Link>
 
         {/* 6. CORPO (ampliado + reposicionado) */}
-        <Link href="/corpo">
-          <g className={styles.hoverText}>
-            <polygon points="260,1520 430,1580 280,1700" fill="white" stroke="black" strokeWidth="1" />
-            <circle cx="260" cy="1520" r="3.5" fill="black" />
-            <circle cx="430" cy="1580" r="4.5" fill="black" />
-            <circle cx="280" cy="1700" r="3.5" fill="black" />
-            <text x="320" y="1590" className={styles.shapeText} textAnchor="middle">corpo</text>
-          </g>
-        </Link>
+          <Link href="/corpo" aria-label="Ir para a seção Corpo">
+            <g className={styles.hoverText}>
+              <polygon points="260,1520 430,1580 280,1700" fill="white" stroke="black" strokeWidth="1" />
+              <circle cx="260" cy="1520" r="3.5" fill="black" />
+              <circle cx="430" cy="1580" r="4.5" fill="black" />
+              <circle cx="280" cy="1700" r="3.5" fill="black" />
+              <text x="320" y="1590" className={styles.shapeText} textAnchor="middle">corpo</text>
+            </g>
+          </Link>
 
         {/* Linhas conectando as arestas */}
         <line x1="330" y1="400" x2="330" y2="500" stroke="black" strokeWidth="1.5" />

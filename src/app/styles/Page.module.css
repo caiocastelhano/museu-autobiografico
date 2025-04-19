@@ -111,6 +111,12 @@
   animation: blink 2.8s infinite ease-in-out;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .blinkingStar {
+    animation: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .mainContent {
     padding: clamp(16px, 5vh, 32px) 0;
