@@ -1,10 +1,31 @@
-// app/museu/page.js
+"use client";
+
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import BackToHomeButton from "@/app/components/BackToHomeButton";
+import TopMenu from "@/app/components/TopMenu";
+import styles from "@/app/museu/Museu.module.css";
+{/* import Image from "next/image"; */}
+{/* import Link from "next/link"; */}
+{/* import FadeInSection from "@/app/components/FadeInSection"; */}
+
 export default function MuseuPage() {
-    return (
-      <main style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Página Museu</h1>
-        <p>Este é um texto de marcação temporário para a página Museu.</p>
+  return (
+    <div className={styles.pageContainer}>
+      <Navbar />
+      <TopMenu />
+
+      <main className={styles.mainContent}>
+
+        <h1 className={styles.visuallyHidden}>Página Museu</h1>
+
+              
       </main>
-    );
-  }
-  
+
+      <BackToHomeButton />
+      <Footer />
+    </div>
+  );
+}
+
+

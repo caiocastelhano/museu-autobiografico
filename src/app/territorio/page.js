@@ -1,10 +1,26 @@
-// app/territorio/page.js
+"use client";
+
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import BackToHomeButton from "@/app/components/BackToHomeButton";
+import TopMenu from "@/app/components/TopMenu";
+import styles from "@/app/territorio/Territorio.module.css";
+// import Image from "next/image";
+// import Link from "next/link";
+// import FadeInSection from "@/app/components/FadeInSection";
+
 export default function TerritorioPage() {
-    return (
-      <main style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Página Território</h1>
-        <p>Este é um texto de marcação temporário para a página Território.</p>
+  return (
+    <div className={styles.pageContainer}>
+      <Navbar />
+      <TopMenu />
+
+      <main className={styles.mainContent}>
+        <h1 className={styles.visuallyHidden}>Página Território</h1>
       </main>
-    );
-  }
-  
+
+      <BackToHomeButton />
+      <Footer />
+    </div>
+  );
+}
