@@ -1,4 +1,3 @@
-// components/InternalMenu.jsx
 "use client";
 
 import Link from "next/link";
@@ -10,7 +9,7 @@ export default function InternalMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const dropdownRef = useRef(null);
-  const buttonRef = useRef(null); // NOVO
+  const buttonRef = useRef(null);
 
   const sections = [
     { label: "museu", href: "/museu" },
@@ -51,10 +50,12 @@ export default function InternalMenu() {
   return (
     <div className={styles.menuContainer}>
       <button
-        ref={buttonRef} // ← ref adicionado
-        onClick={() => setIsOpen((prev) => !prev)} // ← toggle real
+        ref={buttonRef}
+        onClick={() => setIsOpen((prev) => !prev)}
         className={styles.burger}
-        aria-label="Abrir menu"
+        aria-label="Abrir menu de navegação"
+        aria-expanded={isOpen}
+        aria-controls="menu-interno"
       >
         <span className={styles.line}></span>
         <span className={styles.line}></span>
@@ -62,15 +63,21 @@ export default function InternalMenu() {
       </button>
 
       {isOpen && (
-        <div ref={dropdownRef} className={styles.dropdown}>
+        <div
+          ref={dropdownRef}
+          className={styles.dropdown}
+          id="menu-interno"
+          role="menu"
+        >
           {filteredSections.map((section) => (
-            <Link key={section.href} href={section.href}>
-              <div
+            <Link key={section.href} href={section.href} legacyBehavior>
+              <a
                 className={styles.menuItem}
                 onClick={() => setIsOpen(false)}
+                role="menuitem"
               >
                 {section.label}
-              </div>
+              </a>
             </Link>
           ))}
         </div>

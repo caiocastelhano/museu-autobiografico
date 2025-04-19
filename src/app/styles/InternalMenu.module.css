@@ -46,6 +46,14 @@
   padding-left: 16px;
 }
 
+/* 🔍 Acessibilidade: foco visível no teclado */
+.menuItem:focus-visible {
+  outline: 2px dashed black;
+  outline-offset: 4px;
+  background-color: rgba(0, 0, 0, 0.05); /* leve contraste */
+  border-radius: 4px;
+}
+
 @media (min-width: 769px) {
   .menuContainer {
     top: 1px;    /* exemplo: pode ajustar livremente no desktop */
