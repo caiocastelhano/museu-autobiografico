@@ -34,18 +34,26 @@ export default function TopMenu() {
   ];
 
   // Home na versão desktop: mostrar "sobre" e "contato"
-    if (pathname === "/" && !isMobile) {
-      return (
-        <>
-          <Link href="/sobre" className={styles.sobre}>
-            sobre
-          </Link>
-          <Link href="/contato" className={styles.contato}>
-            contato
-          </Link>
-        </>
-      );
-    }
+  if (pathname === "/" && !isMobile) {
+    return (
+      <>
+        <Link
+          href="/sobre"
+          className={styles.sobre}
+          aria-label="Ir para a seção Sobre"
+        >
+          sobre
+        </Link>
+        <Link
+          href="/contato"
+          className={styles.contato}
+          aria-label="Ir para a seção Contato"
+        >
+          contato
+        </Link>
+      </>
+    );
+  }
 
   // Home no mobile: só sobre e contato
   if (pathname === "/" && isMobile) {
@@ -60,7 +68,11 @@ export default function TopMenu() {
   const filteredSections = sections.filter(section => section.href !== pathname);
 
   return (
-    <div className={styles.menuWrapperInterna}>
+    <div
+      className={styles.menuWrapperInterna}
+      role="navigation"
+      aria-label="Menu de navegação entre seções internas"
+    >
       <InternalMenu />
     </div>
   );
