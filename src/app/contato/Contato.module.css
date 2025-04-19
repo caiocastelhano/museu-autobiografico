@@ -181,4 +181,8 @@
     flex-wrap: wrap;
     gap: 16px;
   }
+
+  .floatingElements {
+    display: none;
+  }
 }

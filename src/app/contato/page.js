@@ -49,25 +49,25 @@ export default function ContatoPage() {
           aria-hidden="true"
         >
           {/* Círculos */}
-          <circle cx="3500" cy="3900" r="16" fill="black" />
-          <circle cx="2450" cy="300" r="25" fill="black" />
+          <circle cx="3500" cy="3900" r="12" fill="black" />
+          <circle cx="2450" cy="300" r="16" fill="black" />
           <circle cx="2550" cy="500" r="10" fill="black" />
-          <circle cx="2480" cy="1300" r="18" fill="black" />
-          <circle cx="2590" cy="1900" r="22" fill="black" />
-          <circle cx="2680" cy="2700" r="40" fill="black" />
-          <circle cx="2500" cy="3500" r="22" fill="black" />
-          <circle cx="2750" cy="3700" r="10" fill="black" />
-          <circle cx="4700" cy="150" r="10" fill="black" />
-          <circle cx="4725" cy="600" r="8" fill="black" />
-          <circle cx="4780" cy="1100" r="20" fill="black" />
-          <circle cx="4800" cy="2000" r="15" fill="black" />
-          <circle cx="4900" cy="2500" r="28" fill="black" />
-          <circle cx="4680" cy="3100" r="40" fill="black" />
-          <circle cx="4950" cy="3900" r="14" fill="black" />
+          <circle cx="2480" cy="1300" r="8" fill="black" />
+          <circle cx="2590" cy="1900" r="7" fill="black" />
+          <circle cx="2680" cy="2700" r="11" fill="black" />
+          <circle cx="2500" cy="3500" r="12" fill="black" />
+          <circle cx="2750" cy="3700" r="13" fill="black" />
+          <circle cx="3700" cy="350" r="9" fill="black" />
+          <circle cx="4725" cy="600" r="18" fill="black" />
+          <circle cx="4780" cy="1100" r="10.5" fill="black" />
+          <circle cx="4800" cy="2000" r="12.25" fill="black" />
+          <circle cx="4900" cy="2500" r="8.75" fill="black" />
+          <circle cx="4680" cy="3100" r="10" fill="black" />
+          <circle cx="4950" cy="3900" r="10" fill="black" />
 
           {/* Estrelas */}
-          <image href="/images/star.png" x="2750" y="800" width="100" height="100" />
-          <image href="/images/star.png" x="2750" y="1200" width="100" height="100" />
+          <image href="/images/star.png" x="2750" y="800" width="50" height="50" />
+          <image href="/images/star.png" x="4800" y="1300" width="50" height="50" />
 
           {/* Linha entre dois pontos */}
           <line x1="2100" y1="600" x2="2200" y2="1000" stroke="black" strokeWidth="0.5" />
