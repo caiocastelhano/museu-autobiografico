@@ -21,10 +21,14 @@ function Star({ top, left, className }) {
 export default function DesktopConstellation() {
   return (
     <div className={styles.mainContent}>
+      {/* Título oculto para leitores de tela */}
+      <h1 className={styles.visuallyHidden}>Página inicial - Museu Autobiográfico</h1>
+
       <svg
         className={styles.constellation}
         viewBox="0 0 1200 600"
         preserveAspectRatio="xMidYMid meet"
+        aria-hidden="true"
       >
         {/* Pontos (estrelas) */}
         <circle cx="50" cy="80" r="4" fill="black" />
@@ -73,124 +77,82 @@ export default function DesktopConstellation() {
 
         {/* POLÍGONOS e TEXTOS */}
         {/* 1. MUSEU */}
-        <Link href="/museu">
+        <Link href="/museu" aria-label="Ir para a seção Museu">
           <g className={styles.hoverText}>
-            <polygon
-              points="95,210 205,210 235,280 175,310 95,280"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
+            <polygon points="95,210 205,210 235,280 175,310 95,280" fill="white" stroke="black" strokeWidth="1" />
             <circle cx="95"  cy="210" r="5" fill="black" />
             <circle cx="205" cy="210" r="2.5" fill="black" />
             <circle cx="235" cy="280" r="4" fill="black" />
             <circle cx="175" cy="310" r="6" fill="black" />
             <circle cx="95"  cy="280" r="3" fill="black" />
-            <text x="161" y="258" className={styles.shapeText} textAnchor="middle">
-              museu
-            </text>
+            <text x="161" y="258" className={styles.shapeText} textAnchor="middle">museu</text>
           </g>
         </Link>
 
         {/* 2. AUTOBIOGRÁFICO */}
-        <Link href="/autobiografico">
+        <Link href="/autobiografico" aria-label="Ir para a seção Autobiográfico">
           <g className={styles.hoverText}>
-            <polygon
-              points="546,94 654,112 672,196 600,232 528,178"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
+            <polygon points="546,94 654,112 672,196 600,232 528,178" fill="white" stroke="black" strokeWidth="1" />
             <circle cx="546" cy="94" r="3" fill="black" />
             <circle cx="654" cy="112" r="3.5" fill="black" />
             <circle cx="672" cy="196" r="4" fill="black" />
             <circle cx="600" cy="232" r="2.5" fill="black" />
             <circle cx="528" cy="178" r="3" fill="black" />
-            <text x="600" y="162" className={styles.shapeText} textAnchor="middle">
-              autobiográfico
-            </text>
+            <text x="600" y="162" className={styles.shapeText} textAnchor="middle">autobiográfico</text>
           </g>
         </Link>
 
         {/* 3. CORPO */}
-        <Link href="/corpo">
+        <Link href="/corpo" aria-label="Ir para a seção Corpo">
           <g className={styles.hoverText}>
-            <polygon
-              points="843,35 973,65 953,175 823,145"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-            <circle cx="843"  cy="35"  r="3" fill="black" />
-            <circle cx="973"  cy="65"  r="2.5" fill="black" />
-            <circle cx="953"  cy="175" r="4" fill="black" />
-            <circle cx="823"  cy="145" r="3" fill="black" />
-            <text x="898" y="105" className={styles.shapeText} textAnchor="middle">
-              corpo
-            </text>
+            <polygon points="843,35 973,65 953,175 823,145" fill="white" stroke="black" strokeWidth="1" />
+            <circle cx="843" cy="35" r="3" fill="black" />
+            <circle cx="973" cy="65" r="2.5" fill="black" />
+            <circle cx="953" cy="175" r="4" fill="black" />
+            <circle cx="823" cy="145" r="3" fill="black" />
+            <text x="898" y="105" className={styles.shapeText} textAnchor="middle">corpo</text>
           </g>
         </Link>
 
         {/* 4. MEMÓRIA */}
-        <Link href="/memoria">
+        <Link href="/memoria" aria-label="Ir para a seção Memória">
           <g className={styles.hoverText}>
-            <polygon
-              points="935,250 1085,370 875,340"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-            <circle cx="935"  cy="250" r="4" fill="black" />
+            <polygon points="935,250 1085,370 875,340" fill="white" stroke="black" strokeWidth="1" />
+            <circle cx="935" cy="250" r="4" fill="black" />
             <circle cx="1085" cy="370" r="4.5" fill="black" />
-            <circle cx="875"  cy="340" r="3" fill="black" />
-            <text x="965" y="320" className={styles.shapeText} textAnchor="middle">
-              memória
-            </text>
+            <circle cx="875" cy="340" r="3" fill="black" />
+            <text x="965" y="320" className={styles.shapeText} textAnchor="middle">memória</text>
           </g>
         </Link>
 
         {/* 5. LESTE */}
-        <Link href="/leste">
+        <Link href="/leste" aria-label="Ir para a seção Leste">
           <g className={styles.hoverText}>
-            <polygon
-              points="500,368 560,383 575,428 515,458 470,413"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-            <circle cx="500"  cy="368" r="2" fill="black" />
+            <polygon points="500,368 560,383 575,428 515,458 470,413" fill="white" stroke="black" strokeWidth="1" />
+            <circle cx="500" cy="368" r="2" fill="black" />
             <circle cx="560" cy="383" r="2.5" fill="black" />
             <circle cx="575" cy="428" r="4" fill="black" />
             <circle cx="515" cy="458" r="1.5" fill="black" />
-            <circle cx="470"  cy="413" r="3" fill="black" />
-            <text x="524" y="410" className={styles.shapeText} textAnchor="middle">
-              leste
-            </text>
+            <circle cx="470" cy="413" r="3" fill="black" />
+            <text x="524" y="410" className={styles.shapeText} textAnchor="middle">leste</text>
           </g>
         </Link>
 
         {/* 6. TERRITÓRIO */}
-        <Link href="/territorio">
+        <Link href="/territorio" aria-label="Ir para a seção Território">
           <g className={styles.hoverText}>
-            <polygon
-              points="260,365 340,365 360,435 300,465 260,435"
-              fill="white"
-              stroke="black"
-              strokeWidth="1"
-            />
-            <circle cx="260"  cy="365" r="3" fill="black" />
+            <polygon points="260,365 340,365 360,435 300,465 260,435" fill="white" stroke="black" strokeWidth="1" />
+            <circle cx="260" cy="365" r="3" fill="black" />
             <circle cx="340" cy="365" r="2" fill="black" />
             <circle cx="360" cy="435" r="3.5" fill="black" />
             <circle cx="300" cy="465" r="1.5" fill="black" />
             <circle cx="260" cy="435" r="2" fill="black" />
-            <text x="304" y="413" className={styles.shapeText} textAnchor="middle">
-              território
-            </text>
+            <text x="304" y="413" className={styles.shapeText} textAnchor="middle">território</text>
           </g>
         </Link>
       </svg>
 
-      {/* Estrelinhas de 4 pontas espalhadas */}
+      {/* Estrelinhas PNG (decorativas) */}
       <Star top="600px" left="1000px" className={styles.blinkingStar} />
       <Star top="150px" left="350px" />
       <Star top="300px" left="1300px" className={styles.blinkingStar} />
