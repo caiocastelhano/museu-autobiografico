@@ -2,21 +2,21 @@ import Link from 'next/link';
 import styles from '../styles/Page.module.css';
 import Image from 'next/image';
 
-function Star({ top, left }) {
-    return (
-      <div
-        className={styles.star}
-        style={{ top, left }}
-      >
-        <Image
-          src="/images/star.png"     // caminho relativo à pasta public
-          alt="Estrela"
-          fill                // faz a imagem preencher o container
-          style={{ objectFit: 'contain' }}
-        />
-      </div>
-    );
-  }
+function Star({ top, left, className }) {
+  return (
+    <div
+      className={`${styles.star} ${className || ''}`}
+      style={{ top, left }}
+    >
+      <Image
+        src="/images/star.png"
+        alt="Estrela"
+        fill
+        style={{ objectFit: 'contain' }}
+      />
+    </div>
+  );
+}
 
 export default function DesktopConstellation() {
   return (
@@ -29,31 +29,29 @@ export default function DesktopConstellation() {
         {/* Pontos (estrelas) */}
         <circle cx="50" cy="80" r="4" fill="black" />
         <circle cx="115" cy="130" r="3" fill="black" />
-        <circle cx="193" cy="75" r="2.5" fill="black" >
-          {/* <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" calcMode="discrete" /> */}
-        </circle>
+        <circle cx="193" cy="75" r="2.5" fill="black" className={styles.blinkingStar} />
         <circle cx="275" cy="150" r="6" fill="black" />
-        <circle cx="380" cy="100" r="1.75" fill="black" />
-        <circle cx="415" cy="115" r="1.75" fill="black" />
+        <circle cx="380" cy="100" r="1.75" fill="black" className={styles.blinkingStar} />
+        <circle cx="415" cy="115" r="1.75" fill="black" className={styles.blinkingStar} />
         <circle cx="450" cy="300" r="2.75" fill="black" />
-        <circle cx="350" cy="260" r="8" fill="black" />
-        <circle cx="750" cy="60" r="2.5" fill="black" />
-        <circle cx="815" cy="180" r="1" fill="black" />
-        <circle cx="720" cy="150" r="1" fill="black" /> 
-        <circle cx="700" cy="78" r="1" fill="black" /> 
-        <circle cx="865" cy="210" r="4" fill="black" /> 
-        <circle cx="890" cy="290" r="5" fill="black" />    
-        <circle cx="900" cy="120" r="2" fill="black" />
+        <circle cx="350" cy="260" r="8" fill="black" className={styles.blinkingStar} />
+        <circle cx="750" cy="60" r="2.5" fill="black" className={styles.blinkingStar} />
+        <circle cx="815" cy="180" r="1" fill="black" className={styles.blinkingStar} />
+        <circle cx="720" cy="150" r="1" fill="black" />
+        <circle cx="700" cy="78" r="1" fill="black" className={styles.blinkingStar} />
+        <circle cx="865" cy="210" r="4" fill="black" />
+        <circle cx="890" cy="290" r="5" fill="black" />
+        <circle cx="900" cy="120" r="2" fill="black" className={styles.blinkingStar} />
         <circle cx="1050" cy="80" r="3" fill="black" />
-        <circle cx="150" cy="400" r="2.5" fill="black" />
-        <circle cx="350" cy="500" r="2" fill="black" />
+        <circle cx="150" cy="400" r="2.5" fill="black" className={styles.blinkingStar} />
+        <circle cx="350" cy="500" r="2" fill="black" className={styles.blinkingStar} />
         <circle cx="600" cy="450" r="3" fill="black" />
         <circle cx="700" cy="300" r="2" fill="black" />
         <circle cx="850" cy="300" r="2" fill="black" />
-        <circle cx="950" cy="400" r="2.5" fill="black" />
+        <circle cx="950" cy="400" r="2.5" fill="black" className={styles.blinkingStar} />
         <circle cx="1100" cy="300" r="4" fill="black" />
         <circle cx="490" cy="300" r="1" fill="black" />
-        <circle cx="500" cy="700" r="1" fill="black" />
+        <circle cx="500" cy="700" r="1" fill="black" className={styles.blinkingStar} />
         <circle cx="1050" cy="489" r="1" fill="black" />
         <circle cx="1100" cy="300" r="1" fill="black" />
         <circle cx="90" cy="300" r="1" fill="black" />
@@ -193,13 +191,13 @@ export default function DesktopConstellation() {
       </svg>
 
       {/* Estrelinhas de 4 pontas espalhadas */}
-      <Star top="600px" left="1000px" />
+      <Star top="600px" left="1000px" className={styles.blinkingStar} />
       <Star top="150px" left="350px" />
-      <Star top="300px" left="1300px" />
+      <Star top="300px" left="1300px" className={styles.blinkingStar} />
       <Star top="350px" left="600px" />
-      <Star top="100px" left="900px" />
+      <Star top="100px" left="900px" className={styles.blinkingStar} />
       <Star top="600px" left="150px" />
-      <Star top="500px" left="800px" />
+      <Star top="500px" left="800px" className={styles.blinkingStar} />
     </div>
   );
 }
