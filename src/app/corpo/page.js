@@ -16,9 +16,13 @@ export default function CorpoPage() {
       <TopMenu />
 
       <main className={styles.mainContent}>
+
+        {/* Título principal apenas para leitores de tela */}
+        <h1 className={styles.visuallyHidden}>Página Corpo</h1>
+
         {/* Bloco de abertura com a forma + texto */}
           <section className={styles.bodyIntroSection}>
-            <div className={styles.bgBodyIntro}>
+            <div className={styles.bgBodyIntro} aria-hidden="true">
               <svg
                 className={styles.floatingElements}
                 viewBox="0 0 5000 800"
@@ -80,28 +84,26 @@ export default function CorpoPage() {
               </svg>
 
               <div className={styles.introText}>
-                  <h2>
-                    Meu corpo sendo mapa, me faz passar por onde?
-                  </h2>
+                <h2>Meu corpo sendo mapa, me faz passar por onde?</h2>
 
                 <blockquote>
-                <p>
-                  <i>
-                    &quot;Eu tenho pensado nos meus primeiros momentos de vida, que me foram narrados. Diz que passei dias sozinho
-                     numa incubadora, era uma pele de icterícia, não sei como escreve, mas minha avó fala assim. Aí corta pra 
-                     hoje. Na terapia disseram que essa sensação de solidão, muito bem escondida por mim, vem de lá. 
-                     De um berço caixa. Fui filho de pais jovens da periferia, cresci sendo a sombra do meu pai ausente. 
-                     Pois é, tenho o mesmo nome, nasci no mesmo dia e mês e cresci sem ele. Aí meu corpo, hoje, diz que 
-                     lembra o dele.  Hoje tento fazer desse corpo o meu corpo, e unir a mente e corpo a um só. Mas esse 
-                     corpo solitário já se deixou - seria deixou? - invadir. Eu já vivi o não poder controlar sobre o que 
-                     iam fazer com meu corpo. Eu acho que não sabia dizer não. Mas não era isso.&quot;
-                  </i>
-                </p>
+                  <p>
+                    <i>
+                      &quot;Eu tenho pensado nos meus primeiros momentos de vida, que me foram narrados. Diz que passei dias sozinho
+                      numa incubadora, era uma pele de icterícia, não sei como escreve, mas minha avó fala assim. Aí corta pra
+                      hoje. Na terapia disseram que essa sensação de solidão, muito bem escondida por mim, vem de lá.
+                      De um berço caixa. Fui filho de pais jovens da periferia, cresci sendo a sombra do meu pai ausente.
+                      Pois é, tenho o mesmo nome, nasci no mesmo dia e mês e cresci sem ele. Aí meu corpo, hoje, diz que
+                      lembra o dele. Hoje tento fazer desse corpo o meu corpo, e unir a mente e corpo a um só. Mas esse
+                      corpo solitário já se deixou - seria deixou? - invadir. Eu já vivi o não poder controlar sobre o que
+                      iam fazer com meu corpo. Eu acho que não sabia dizer não. Mas não era isso.&quot;
+                    </i>
+                  </p>
                 </blockquote>
 
                 <p>
                   <i>
-                    Texto retirado do Memorial de Marcelo Rodrigues Maia (eu mesmo), criador da oficina Museu Autobiográfico 
+                    Texto retirado do Memorial de Marcelo Rodrigues Maia (eu mesmo), criador da oficina Museu Autobiográfico
                     e Território_Leste
                   </i>
                 </p>
@@ -110,63 +112,67 @@ export default function CorpoPage() {
           </section>
 
         {/* Bloco com dois vídeos */}
-            <FadeInSection>
-              <div className={styles.bodyVideoSection}>
-                <div className={styles.bgBodyVideo}>
-                  <svg
-                    className={styles.floatingElements}
-                    viewBox="0 0 5000 900"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* Área segura - Lado Esquerdo (x entre 1950 e 2400) */}
-                    <circle cx="2300" cy="500" r="4" fill="black" />
+          <FadeInSection>
+            <div className={styles.bodyVideoSection} role="region" aria-labelledby="bodyVideosTitle">
+              <div className={styles.bgBodyVideo} aria-hidden="true">
+                <svg
+                  className={styles.floatingElements}
+                  viewBox="0 0 5000 900"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {/* Área segura - Lado Esquerdo (x entre 1950 e 2400) */}
+                  <circle cx="2300" cy="500" r="4" fill="black" />
 
-                    {/* Área segura - Lado Direito (x entre 3080 e 3400) */}
-                    <circle cx="3100" cy="150" r="2" fill="black" />
-                    <circle cx="3200" cy="270" r="1.5" fill="black" />
-                    <circle cx="3300" cy="420" r="2.5" fill="black" />
-                    <circle cx="3100" cy="333" r="2" fill="black" />
-                    <circle cx="3325" cy="50" r="5" fill="black" />
-                    <circle cx="3201" cy="420" r="3.75" fill="black" />
-                    <image href="/images/star.png" x="3150" y="500" width="10" height="10" />
-                    <image href="/images/star.png" x="3320" y="300" width="8" height="8" />
-                    <line x1="3201" y1="420" x2="3325" y2="50" stroke="black" strokeWidth="1.5" />
-                  </svg>
-                </div>
-
-                <figure className={styles.leftVideo}>
-                  <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/VdMzheSTwbU"
-                    title="Marcelinho e Claudia"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                  <figcaption>
-                    Marcelinho e Claudia | Gravação em VHS feita por meu pai, Marcelo Moraes Maia | 1992.
-                  </figcaption>
-                </figure>
-
-                <figure className={styles.rightVideo}>
-                  <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/WI0BYZ20Oko"
-                    title="Marcelinho no chiqueiro; dia seguinte ao aniversário"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                  <figcaption>
-                    Marcelinho brincando no chiqueiro no dia seguinte a festa de aniversário de um ano | Gravação em HVS feita por meu pai, Marcelo Moraes Maia | 1992.
-                  </figcaption>
-                </figure>
+                  {/* Área segura - Lado Direito (x entre 3080 e 3400) */}
+                  <circle cx="3100" cy="150" r="2" fill="black" />
+                  <circle cx="3200" cy="270" r="1.5" fill="black" />
+                  <circle cx="3300" cy="420" r="2.5" fill="black" />
+                  <circle cx="3100" cy="333" r="2" fill="black" />
+                  <circle cx="3325" cy="50" r="5" fill="black" />
+                  <circle cx="3201" cy="420" r="3.75" fill="black" />
+                  <image href="/images/star.png" x="3150" y="500" width="10" height="10" />
+                  <image href="/images/star.png" x="3320" y="300" width="8" height="8" />
+                  <line x1="3201" y1="420" x2="3325" y2="50" stroke="black" strokeWidth="1.5" />
+                </svg>
               </div>
-            </FadeInSection>
+
+              {/* Vídeo 1 */}
+              <figure className={styles.leftVideo}>
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://www.youtube.com/embed/VdMzheSTwbU"
+                  title="Marcelinho e Claudia - gravação caseira de 1992"
+                  aria-label="Vídeo de Marcelinho e Claudia, gravação em VHS feita por seu pai, Marcelo Moraes Maia, em 1992"
+                  style={{ border: "none" }}
+                  allowFullScreen
+                ></iframe>
+                <figcaption>
+                  Marcelinho e Claudia | Gravação em VHS feita por meu pai, Marcelo Moraes Maia | 1992.
+                </figcaption>
+              </figure>
+
+              {/* Vídeo 2 */}
+              <figure className={styles.rightVideo}>
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://www.youtube.com/embed/WI0BYZ20Oko"
+                  title="Marcelinho brincando no chiqueiro - gravação de 1992"
+                  aria-label="Vídeo de Marcelinho brincando no chiqueiro no dia seguinte à festa de um ano, gravado por seu pai, Marcelo Moraes Maia, em 1992"
+                  style={{ border: "none" }}
+                  allowFullScreen
+                ></iframe>
+                <figcaption>
+                  Marcelinho brincando no chiqueiro no dia seguinte à festa de aniversário de um ano | Gravação em VHS feita por meu pai, Marcelo Moraes Maia | 1992.
+                </figcaption>
+              </figure>
+            </div>
+          </FadeInSection>
 
           {/* Bloco Corpo é casa */}
-            <FadeInSection className={styles.bodyReflectionSection}>
-              <div className={styles.bgBodyReflection}>
+            <FadeInSection className={styles.bodyReflectionSection} role="region" aria-labelledby="corpoCasaTitle">
+              <div className={styles.bgBodyReflection} aria-hidden="true">
                 <svg
                   className={styles.floatingElements}
                   viewBox="0 0 5000 2200"
@@ -219,7 +225,7 @@ export default function CorpoPage() {
               </div>
 
               <div className={styles.rightWrapper}>
-                <h2>O corpo é a casa</h2>
+                <h2 id="corpoCasaTitle">O corpo é a casa</h2>
 
                 <p>
                   <i>
@@ -257,7 +263,8 @@ export default function CorpoPage() {
                     height="400"
                     src="https://www.youtube.com/embed/CpJ1fUp9Aa4"
                     title="Biblioteca Pública Cassiano Ricardo - Tatuapé | Resumo do 1º Encontro em Março de 2024"
-                    frameBorder="0"
+                    aria-label="Vídeo com resumo do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo em março de 2024"
+                    style={{ border: "none" }}
                     allowFullScreen
                     className={styles.video}
                   ></iframe>
@@ -284,232 +291,243 @@ export default function CorpoPage() {
 
           {/* Bloco com memórias do corpo */}
             <FadeInSection className={styles.bodyMemoriesSection}>
-                <div className={styles.bgBodyMemories}>
-                  <svg
-                    className={styles.floatingElements}
-                    viewBox="0 0 5000 250"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    {/* Pontos e estrelas – Lado esquerdo */}
-                    <circle cx="1950" cy="40" r="1.5" fill="black" />
-                    <circle cx="2150" cy="100" r="1.2" fill="black" />
-                    <circle cx="2300" cy="180" r="2" fill="black" />
-                    <image href="/images/star.png" x="2050" y="5" width="10" height="10" />
+              <div className={styles.bgBodyMemories} aria-hidden="true">
+                <svg
+                  className={styles.floatingElements}
+                  viewBox="0 0 5000 250"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {/* Pontos e estrelas – Lado esquerdo */}
+                  <circle cx="1950" cy="40" r="1.5" fill="black" />
+                  <circle cx="2150" cy="100" r="1.2" fill="black" />
+                  <circle cx="2300" cy="180" r="2" fill="black" />
+                  <image href="/images/star.png" x="2050" y="5" width="10" height="10" />
 
-                    {/* Pontos e estrelas – Lado direito */}
-                    <circle cx="3000" cy="60" r="1.5" fill="black" />
-                    <circle cx="3340" cy="120" r="1" fill="black" />
-                    <circle cx="3280" cy="210" r="2" fill="black" />
-                    <image href="/images/star.png" x="3100" y="160" width="9" height="9" />
-                  </svg>
-                </div>
+                  {/* Pontos e estrelas – Lado direito */}
+                  <circle cx="3000" cy="60" r="1.5" fill="black" />
+                  <circle cx="3340" cy="120" r="1" fill="black" />
+                  <circle cx="3280" cy="210" r="2" fill="black" />
+                  <image href="/images/star.png" x="3100" y="160" width="9" height="9" />
+                </svg>
+              </div>
 
-                <h2>Memórias do corpo</h2>
+              <h2>Memórias do corpo</h2>
 
-                <p>
-                  <i>
-                    <b>Constelando os conteúdos</b> das oficinas realizadas, apresento nesta página alguns <u>gestos, rostos, mãos, 
-                    performances e depoimentos</u> que ficaram gravados em minha memória a partir do corpo de participantes. 
-                    Para saber mais sobre os exercícios que resultaram nas imagens abaixo, acesse a página:{" "}
-                    <Link href="/museu"><u>Museu</u></Link>.
-                  </i>
-                </p>
+              <p>
+                <i>
+                  <b>Constelando os conteúdos</b> das oficinas realizadas, apresento nesta página alguns{" "}
+                  <u>gestos, rostos, mãos, performances e depoimentos</u> que ficaram gravados em minha memória
+                  a partir do corpo de participantes. Para saber mais sobre os exercícios que resultaram nas
+                  imagens abaixo, acesse a página:{" "}
+                  <Link href="/museu"><u>Museu</u></Link>.
+                </i>
+              </p>
             </FadeInSection>
 
           {/* Bloco Composição poética */}
-            <FadeInSection className={styles.wallPoetrySection}>
-                <div className={styles.bgWallPoetry}>
-                  <svg
-                    className={styles.floatingElements}
-                    viewBox="0 0 5000 1600"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+            <FadeInSection className={styles.wallPoetrySection} aria-labelledby="wallPoetryTitle">
+              <div className={styles.bgWallPoetry} aria-hidden="true">
+                <svg
+                  className={styles.floatingElements}
+                  viewBox="0 0 5000 1600"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {/* Lado esquerdo (1950–2400) */}
+                  <circle cx="1975" cy="264" r="1.5" fill="black" />
+                  <circle cx="2080" cy="300" r="2" fill="black" />
+                  <circle cx="2013" cy="550" r="1.8" fill="black" />
+                  <circle cx="2056" cy="750" r="2.2" fill="black" />
+                  <image href="/images/star.png" x="2100" y="400" width="10" height="10" />
+
+                  {/* Lado direito (3080–3400) */}
+                  <circle cx="3250" cy="150" r="3" fill="black" />
+                  <circle cx="3350" cy="350" r="2" fill="black" />
+                  <circle cx="3300" cy="600" r="1.8" fill="black" />
+                  <circle cx="3220" cy="800" r="3.75" fill="black" />
+                  <circle cx="3080" cy="1550" r="5" fill="black" />
+                  <circle cx="3070" cy="950" r="4" fill="black" />
+                  <circle cx="3300" cy="1150" r="2" fill="black" />
+                  <circle cx="3350" cy="1300" r="1.3" fill="black" />
+                  <circle cx="3220" cy="1450" r="1.8" fill="black" />
+                  <circle cx="3380" cy="1580" r="2.2" fill="black" />
+                  <circle cx="3120" cy="200" r="1.2" fill="black" />
+                  <circle cx="3000" cy="420" r="5" fill="black" />
+                  <circle cx="3100" cy="700" r="1.6" fill="black" />
+                  <circle cx="3400" cy="900" r="2" fill="black" />
+                  <circle cx="3150" cy="1230" r="1.3" fill="black" />
+                  <circle cx="3290" cy="1380" r="1.7" fill="black" />
+                  <circle cx="3340" cy="1480" r="2" fill="black" />
+                  <circle cx="3100" cy="1500" r="1.5" fill="black" />
+                  <image href="/images/star.png" x="3270" y="250" width="10" height="10" />
+                  <image href="/images/star.png" x="3340" y="700" width="9" height="9" />
+                  <image href="/images/star.png" x="3230" y="1000" width="10" height="10" />
+                  <image href="/images/star.png" x="3360" y="1350" width="11" height="11" />
+                  <image href="/images/star.png" x="3300" y="1500" width="9" height="9" />
+                  <line x1="3250" y1="150" x2="3000" y2="420" stroke="black" strokeWidth="2" />
+                  <line x1="3000" y1="420" x2="3220" y2="800" stroke="black" strokeWidth="3" />
+                </svg>
+              </div>
+
+              <h2 id="wallPoetryTitle">Composição poética em parede</h2>
+
+              <p>
+                <i>
+                  Me lembro que o exercício foi inspirado na prática de <b>Viewpoints e Composição</b> de quadro-paisagem. Para 
+                  esse propósito, antes do encontro, solicitei, via caixa de perguntas nos <u>stories do meu perfil do 
+                  Instagram</u>, sugestões de improviso, e foi esse o momento que usei um título sugerido por uma amiga 
+                  professora: <b>Regando as plantas</b>.
+                </i>
+              </p>
+
+              <p>
+                <i>
+                  O resultado foi muito positivo para o grupo, que relatou o prazer e, ao mesmo tempo, a dificuldade de 
+                  ficar estático, como em um quadro, aceitando serem vistos de fora.
+                </i>
+              </p>
+
+              <div className={styles.imageGrid}>
+                <figure className={styles.smallImage}>
+                  <Image
+                    src="/images/corpo/foto2_composicao.jpg"
+                    alt="Registro de grupo antes de realizar exercício de composição corporal em parede"
+                    width={800}
+                    height={500}
+                    layout="responsive"
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    Registro de grupo antes de realizar exercício de composição corporal em parede.
+                  </figcaption>
+                </figure>
+
+                <figure className={styles.largeImage}>
+                  <Image
+                    src="/images/corpo/foto3_composicao.jpg"
+                    alt="Registro de grupo após realizar exercício de composição corporal em parede"
+                    width={800}
+                    height={500}
+                    layout="responsive"
+                    className={styles.image}
+                  />
+                  <figcaption>
+                    Registro de grupo após realizar exercício de composição corporal em parede.
+                  </figcaption>
+                </figure>
+              </div>
+            </FadeInSection>
+
+          {/* Bloco Corpo estático e corpo em movimento */}
+              <FadeInSection className={styles.stillVsMotionSection} aria-labelledby="stillVsMotionTitle">
+                <div className={styles.bgStillVsMotion} aria-hidden="true">
+                  <svg viewBox="0 0 5000 1400" className={styles.floatingElements}>
                     {/* Lado esquerdo (1950–2400) */}
                     <circle cx="1975" cy="264" r="1.5" fill="black" />
                     <circle cx="2080" cy="300" r="2" fill="black" />
                     <circle cx="2013" cy="550" r="1.8" fill="black" />
                     <circle cx="2056" cy="750" r="2.2" fill="black" />
+                    <circle cx="2150" cy="1250" r="2" fill="black" />
+                    <circle cx="2000" cy="1300" r="2" fill="black" />
                     <image href="/images/star.png" x="2100" y="400" width="10" height="10" />
-
+                    <image href="/images/star.png" x="2000" y="900" width="10" height="10" />
+                    
                     {/* Lado direito (3080–3400) */}
-                    <circle cx="3250" cy="150" r="3" fill="black" />
-                    <circle cx="3350" cy="350" r="2" fill="black" />
-                    <circle cx="3300" cy="600" r="1.8" fill="black" />
-                    <circle cx="3220" cy="800" r="3.75" fill="black" />
-                    <circle cx="3080" cy="1550" r="5" fill="black" />
-                    <circle cx="3070" cy="950" r="4" fill="black" />
-                    <circle cx="3300" cy="1150" r="2" fill="black" />
-                    <circle cx="3350" cy="1300" r="1.3" fill="black" />
-                    <circle cx="3220" cy="1450" r="1.8" fill="black" />
-                    <circle cx="3380" cy="1580" r="2.2" fill="black" />
-                    <circle cx="3120" cy="200" r="1.2" fill="black" />
-                    <circle cx="3000" cy="420" r="5" fill="black" />
-                    <circle cx="3100" cy="700" r="1.6" fill="black" />
-                    <circle cx="3400" cy="900" r="2" fill="black" />
-                    <circle cx="3150" cy="1230" r="1.3" fill="black" />
-                    <circle cx="3290" cy="1380" r="1.7" fill="black" />
-                    <circle cx="3340" cy="1480" r="2" fill="black" />
-                    <circle cx="3100" cy="1500" r="1.5" fill="black" />
-                    <image href="/images/star.png" x="3270" y="250" width="10" height="10" />
-                    <image href="/images/star.png" x="3340" y="700" width="9" height="9" />
-                    <image href="/images/star.png" x="3230" y="1000" width="10" height="10" />
-                    <image href="/images/star.png" x="3360" y="1350" width="11" height="11" />
-                    <image href="/images/star.png" x="3300" y="1500" width="9" height="9" />
-                    <line x1="3250" y1="150" x2="3000" y2="420" stroke="black" strokeWidth="2" />
-                    <line x1="3000" y1="420" x2="3220" y2="800" stroke="black" strokeWidth="3" />
+                    <circle cx="3150" cy="200" r="1.8" fill="black" />
+                    <circle cx="3250" cy="400" r="2.2" fill="black" />
+                    <circle cx="3100" cy="700" r="2" fill="black" />
+                    <circle cx="3350" cy="900" r="1.6" fill="black" />
+                    <circle cx="3300" cy="1300" r="2" fill="black" />
+                    <circle cx="3400" cy="1350" r="1.5" fill="black" />
+                    <image href="/images/star.png" x="3220" y="500" width="10" height="10" />
+                    <image href="/images/star.png" x="3080" y="1150" width="10" height="10" />
                   </svg>
                 </div>
 
-                <h2>Composição poética em parede</h2>
+                <div className={styles.rightAlignedWrapper}>
+                  <h2 id="stillVsMotionTitle">O corpo estático e o corpo em movimento</h2>
 
-                <p>
-                  <i>
-                    Me lembro que o exercício foi inspirado na prática de <b>Viewpoints e Composição</b> de quadro-paisagem. Para 
-                    esse propósito, antes do encontro, solicitei, via caixa de perguntas nos <u>stories do meu perfil do 
-                    Instagram</u>, sugestões de improviso, e foi esse o momento que usei um título sugerido por uma amiga 
-                    professora: <b>Regando as plantas</b>.
-                  </i>
-                </p>
+                  <p>
+                    <i>
+                      Após <b>relaxamento e aquecimento corporal no espaço</b>, o grupo composto deveria recriar o momento de uma 
+                      foto como uma cena/improviso.
+                    </i>
+                  </p>
 
-                <p>
-                  <i>
-                    O resultado foi muito positivo para o grupo, que relatou o prazer e, ao mesmo tempo, a dificuldade de 
-                    ficar estático, como em um quadro, aceitando serem vistos de fora.
-                  </i>
-                </p>
+                  <p>
+                    <i>
+                      No dia, as pessoas puderam escolher entre duas fotografias e optaram pela figura abaixo. Além disso, 
+                      trabalharam em grupo com a inversão de <b>papéis de gênero</b>, com o participante Rafael fazendo o papel 
+                      da pessoa que dança.
+                    </i>
+                  </p>
 
-                <div className={styles.imageGrid}>
-                  <figure className={styles.smallImage}>
-                    <Image
-                      src="/images/corpo/foto2_composicao.jpg"
-                      alt="Registro de grupo antes de realizar exercício de composição corporal em parede"
-                      width={800}
-                      height={500}
-                      layout="responsive"
-                      className={styles.image}
-                    />
+                  <figure>
+                    <div className={styles.imageWrapper}>
+                      <Image
+                        src="/images/corpo/foto4_gettyimages.jpg"
+                        alt="A banda de Percival Mackey..."
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        sizes="(max-width: 768px) 100vw, 800px"
+                        className={styles.image}
+                      />
+                    </div>
                     <figcaption>
-                      Registro de grupo antes de realizar exercício de composição corporal em parede.
+                      A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan, esposa de Mackey (1927). Hulton Archive via Getty Images.
                     </figcaption>
                   </figure>
 
-                  <figure className={styles.largeImage}>
+                  <p>
+                    <i>
+                      <u>Eu me lembro que, sem saber como trazer som à cena, participantes trocaram os saxofones por palmas, 
+                      criando um ritmo de palmas</u> para que Rafael dançasse. A <b>cumplicidade das mãos</b> batendo deram o impulso
+                      para a dança e, consequentemente, o resultado da cena.
+                    </i>
+                  </p>
+
+                  <div className={styles.tripleImageBlock}>
                     <Image
-                      src="/images/corpo/foto3_composicao.jpg"
-                      alt="Registro de grupo após realizar exercício de composição corporal em parede"
-                      width={800}
-                      height={500}
-                      layout="responsive"
-                      className={styles.image}
+                      src="/images/corpo/foto6.jpg"
+                      alt="Registro de exercício de composição e improviso"
+                      width={300}
+                      height={200}
+                      className={`${styles.tripleImage} ${styles.mirroredImage}`}
                     />
-                    <figcaption>
-                      Registro de grupo após realizar exercício de composição corporal em parede.
+                    <Image
+                      src="/images/corpo/foto5.jpg"
+                      alt="Registro de exercício de composição e improviso"
+                      width={300}
+                      height={200}
+                      className={styles.tripleImage}
+                    />
+                    <Image
+                      src="/images/corpo/foto7.jpg"
+                      alt="Registro de exercício de composição e improviso"
+                      width={300}
+                      height={200}
+                      className={styles.tripleImage}
+                    />
+                    <figcaption className={styles.caption}>
+                      Registros de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
+                      Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
                     </figcaption>
-                  </figure>
+                  </div>
                 </div>
               </FadeInSection>
 
-            {/* Bloco Corpo estático e corpo em movimento */}
-              <FadeInSection className={styles.stillVsMotionSection}>
-                <div className={styles.bgStillVsMotion}>
-                      <svg viewBox="0 0 5000 1400" className={styles.floatingElements}>
-                        {/* Lado esquerdo (1950–2400) */}
-                        <circle cx="1975" cy="264" r="1.5" fill="black" />
-                        <circle cx="2080" cy="300" r="2" fill="black" />
-                        <circle cx="2013" cy="550" r="1.8" fill="black" />
-                        <circle cx="2056" cy="750" r="2.2" fill="black" />
-                        <circle cx="2150" cy="1250" r="2" fill="black" />
-                        <circle cx="2000" cy="1300" r="2" fill="black" />
-                        <image href="/images/star.png" x="2100" y="400" width="10" height="10" />
-                        <image href="/images/star.png" x="2000" y="900" width="10" height="10" />
-                        
-                        {/* Lado direito (3080–3400) */}
-                        <circle cx="3150" cy="200" r="1.8" fill="black" />
-                        <circle cx="3250" cy="400" r="2.2" fill="black" />
-                        <circle cx="3100" cy="700" r="2" fill="black" />
-                        <circle cx="3350" cy="900" r="1.6" fill="black" />
-                        <circle cx="3300" cy="1300" r="2" fill="black" />
-                        <circle cx="3400" cy="1350" r="1.5" fill="black" />
-                        <image href="/images/star.png" x="3220" y="500" width="10" height="10" />
-                        <image href="/images/star.png" x="3080" y="1150" width="10" height="10" />
-                      </svg>
-                  </div>
-                
-                  <div className={styles.rightAlignedWrapper}>
-                    <h2>O corpo estático e o corpo em movimento</h2>
-
-                    <p>
-                      <i>
-                        Após <b>relaxamento e aquecimento corporal no espaço</b>, o grupo composto deveria recriar o momento de uma 
-                        foto como uma cena/improviso.
-                      </i>
-                    </p>
-
-                    <p>
-                      <i>
-                        No dia, as pessoas puderam escolher entre duas fotografias e optaram pela figura abaixo. Além disso, 
-                        trabalharam em grupo com a inversão de <b>papéis de gênero</b>, com o participante Rafael fazendo o papel 
-                        da pessoa que dança.
-                      </i>
-                    </p>
-
-                    <figure>
-                      <div className={styles.imageWrapper}>
-                        <Image
-                          src="/images/corpo/foto4_gettyimages.jpg"
-                          alt="A banda de Percival Mackey..."
-                          fill
-                          style={{ objectFit: 'contain' }}
-                          sizes="(max-width: 768px) 100vw, 800px"
-                          className={styles.image}
-                        />
-                      </div>
-                      <figcaption>
-                        A banda de Percival Mackey posa no telhado do London Palladium com a atriz Monti Ryan, esposa de Mackey (1927). Hulton Archive via Getty Images.
-                      </figcaption>
-                    </figure>
-
-                    <p>
-                      <i>
-                        <u>Eu me lembro que, sem saber como trazer som à cena, participantes trocaram os saxofones por palmas, 
-                        criando um ritmo de palmas</u> para que Rafael dançasse. A <b>cumplicidade das mãos</b> batendo deram o impulso
-                        para a dança e, consequentemente, o resultado da cena.
-                      </i>
-                    </p>
-
-                      <div className={styles.tripleImageBlock}>
-                        <Image
-                          src="/images/corpo/foto6.jpg"
-                          alt="Registro de exercício de composição e improviso"
-                          width={300}
-                          height={200}
-                          className={`${styles.tripleImage} ${styles.mirroredImage}`}
-                        />
-                        <Image
-                          src="/images/corpo/foto5.jpg"
-                          alt="Registro de exercício de composição e improviso"
-                          width={300}
-                          height={200}
-                          className={styles.tripleImage}
-                        />
-                        <Image
-                          src="/images/corpo/foto7.jpg"
-                          alt="Registro de exercício de composição e improviso"
-                          width={300}
-                          height={200}
-                          className={styles.tripleImage}
-                        />
-                        <figcaption className={styles.caption}>
-                          Registros de exercício de composição e improviso a partir da fotografia de Hulton Archive. 
-                          Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo, 2024.
-                        </figcaption>
-                      </div>
-                    </div>
-              </FadeInSection>
-
             {/* Bloco Corpos dançantes em uma Biblioteca Pública */}
-              <FadeInSection className={styles.dancingBodySection}>
-                <h2>Corpos dançantes em uma Biblioteca Pública</h2>
+              <FadeInSection className={styles.dancingBodySection} aria-labelledby="dancingBodiesTitle">
+                <div className={styles.bgDancingBody} aria-hidden="true">
+                  <svg
+                    className={styles.floatingElements}
+                    viewBox="0 0 5000 800"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* Você pode inserir aqui os pontos e estrelas, se houver nesse bloco */}
+                  </svg>
+                </div>
+
+                <h2 id="dancingBodiesTitle">Corpos dançantes em uma Biblioteca Pública</h2>
 
                 <p>
                   No dia desse exercício realizado, ainda não sabia, mas estava com dengue. <u>Me lembro que</u>, ao chegar no 
@@ -532,9 +550,9 @@ export default function CorpoPage() {
 
                 <p>
                   Sendo assim, pensei que poderia ser uma oportunidade positiva para a biblioteca <b>trazer som e movimento
-                   por entre as prateleiras</b>. Com livros variados, todas as práticas e momentos foram realizados 
-                   no espaço e, apesar do cansaço do dia, a <b>energia das participantes me envolveu</b>, gerando belos 
-                   registros e momentos.
+                  por entre as prateleiras</b>. Com livros variados, todas as práticas e momentos foram realizados 
+                  no espaço e, apesar do cansaço do dia, a <b>energia das participantes me envolveu</b>, gerando belos 
+                  registros e momentos.
                 </p>
 
                 <figure className={styles.gridTwoByTwo}>
@@ -597,8 +615,8 @@ export default function CorpoPage() {
               </FadeInSection>
 
             {/* Bloco Dançar com a Guerra */}
-              <FadeInSection className={styles.danceWithWarSection}>
-              <div className={styles.bgDanceWithWar}>
+              <FadeInSection className={styles.danceWithWarSection} aria-labelledby="danceWithWarTitle">
+                <div className={styles.bgDanceWithWar} aria-hidden="true">
                   <svg
                     className={styles.floatingElements}
                     viewBox="0 0 5000 300"
@@ -626,7 +644,7 @@ export default function CorpoPage() {
                   </svg>
                 </div>
 
-                <h2>Dançar com a Guerra</h2>
+                <h2 id="danceWithWarTitle">Dançar com a Guerra</h2>
 
                 <p>
                   Carregando o contexto externo, <i>a <b>visão poética de Grazi Viana</b></i> e o gosto pela literatura e
@@ -653,8 +671,11 @@ export default function CorpoPage() {
               </FadeInSection>
 
             {/* Bloco Texto das participantes */}
-            <FadeInSection className={styles.participantTextsSection}>
-                <div className={styles.svgWrapper}>
+              <FadeInSection
+                className={styles.participantTextsSection}
+                aria-labelledby="participantTextsTitle"
+              >
+                <div className={styles.svgWrapper} aria-hidden="true">
                   <svg
                     className={styles.floatingElements}
                     viewBox="0 0 5000 2900"
@@ -691,6 +712,10 @@ export default function CorpoPage() {
                   </svg>
                 </div>
 
+                <h2 id="participantTextsTitle" className={styles.visuallyHidden}>
+                  Textos das participantes
+                </h2>
+
                 <div className={styles.textWithFloatingImage}>
                   <Image
                     src="/images/corpo/foto16_graziele.JPG"
@@ -715,7 +740,11 @@ export default function CorpoPage() {
                 </div>
               </FadeInSection>
 
-              <FadeInSection className={styles.estefaniSection}>
+              <FadeInSection className={styles.estefaniSection} aria-labelledby="estefaniTitle">
+                <h2 id="estefaniTitle" className={styles.visuallyHidden}>
+                  Texto da participante Estefani Moura
+                </h2>
+
                 <div className={styles.textWithFloatingImage}>
                   <Image
                     src="/images/corpo/foto17_estefani.JPG"
@@ -726,98 +755,102 @@ export default function CorpoPage() {
                   />
 
                   <h3>Estefani Moura - sem título</h3>
-                    <div className={styles.estefaniPoem}>
-                      <p>Ainda é cedo, amor</p>
-                      <p>Mal começaste a conhecer a vida</p>
-                      <p>Já anuncias a hora de partida</p>
-                      <p>Sem saber mesmo o rumo que irás tomar</p>
+                  <div className={styles.estefaniPoem}>
+                    <p>Ainda é cedo, amor</p>
+                    <p>Mal começaste a conhecer a vida</p>
+                    <p>Já anuncias a hora de partida</p>
+                    <p>Sem saber mesmo o rumo que irás tomar</p>
 
-                      <br />
+                    <br />
 
-                      <p>Presta atenção, querida</p>
-                      <p>Embora eu saiba que estás resolvida</p>
-                      <p>Em cada esquina cai um pouco tua vida</p>
-                      <p>Em pouco tempo não serás mais o que és</p>
+                    <p>Presta atenção, querida</p>
+                    <p>Embora eu saiba que estás resolvida</p>
+                    <p>Em cada esquina cai um pouco tua vida</p>
+                    <p>Em pouco tempo não serás mais o que és</p>
 
-                      <br />
+                    <br />
 
-                      <p>Pensei o bastante pra entender o que seria o suficiente,</p>
-                      <p>Um mundo onde tudo está se desmoronando, e aqui dentro não costuma ser tão diferente.</p>
-                      <p>Um peito que decai para um lado onde a vida não parece mais a mesma,</p>
-                      <p>uma despedida quase grotesca</p>
-                      <p>a saudade no toc toc na porta, como se quisesse sempre entrar, sempre participar, sempre, sempre...</p>
-                      <p>e no fim é quase nada, nulo, em branco total.</p>
+                    <p>Pensei o bastante pra entender o que seria o suficiente,</p>
+                    <p>Um mundo onde tudo está se desmoronando, e aqui dentro não costuma ser tão diferente.</p>
+                    <p>Um peito que decai para um lado onde a vida não parece mais a mesma,</p>
+                    <p>uma despedida quase grotesca</p>
+                    <p>a saudade no toc toc na porta, como se quisesse sempre entrar, sempre participar, sempre, sempre...</p>
+                    <p>e no fim é quase nada, nulo, em branco total.</p>
 
-                      <br />
+                    <br />
 
-                      <p>A única certeza que temos sempre é a do final,</p>
-                      <p>a morte do corpo o descanso de uma alma quase supérflua.</p>
-                      <p>Um sentimento de contínua queda, sem sinal de vida, sem sinal de nada.</p>
-                      <p>Pipipi é isso, e aí?</p>
-                      <p>É tanto tempo pensando no quanto tudo isso passa, e passa</p>
-                      <p>Mas quando passa de verdade?</p>
-                      <p>São tantas dúvidas que não cabem em um texto, em uma mensagem.</p>
+                    <p>A única certeza que temos sempre é a do final,</p>
+                    <p>a morte do corpo o descanso de uma alma quase supérflua.</p>
+                    <p>Um sentimento de contínua queda, sem sinal de vida, sem sinal de nada.</p>
+                    <p>Pipipi é isso, e aí?</p>
+                    <p>É tanto tempo pensando no quanto tudo isso passa, e passa</p>
+                    <p>Mas quando passa de verdade?</p>
+                    <p>São tantas dúvidas que não cabem em um texto, em uma mensagem.</p>
 
-                      <br />
+                    <br />
 
-                      <p>Eu tô cansada dessa incoerência sentimental,</p>
-                      <p>De pensar que tô em um outro plano astral,</p>
-                      <p>Não se enxergar no espelho, na compra em uma loja.</p>
-                      <p>É cedo demais pra pensar em uma vida quase chegando ao fim,</p>
-                      <p>É cedo o bastante pra ter tanto, tanto medo do fim?</p>
-                      <p>Irresponsável, grossa demais, não pode nunca fazer nada?</p>
-                      <p>Imatura o suficiente pra não se entender, pra se arrepender de qualquer coisa que faça.</p>
-                      <p>É sempre, nada nada nada.</p>
+                    <p>Eu tô cansada dessa incoerência sentimental,</p>
+                    <p>De pensar que tô em um outro plano astral,</p>
+                    <p>Não se enxergar no espelho, na compra em uma loja.</p>
+                    <p>É cedo demais pra pensar em uma vida quase chegando ao fim,</p>
+                    <p>É cedo o bastante pra ter tanto, tanto medo do fim?</p>
+                    <p>Irresponsável, grossa demais, não pode nunca fazer nada?</p>
+                    <p>Imatura o suficiente pra não se entender, pra se arrepender de qualquer coisa que faça.</p>
+                    <p>É sempre, nada nada nada.</p>
 
-                      <br />
+                    <br />
 
-                      <p>Eu tô dançando, sapateando, entendo o que eu tenho e o que sou.</p>
-                      <p>Crescendo a cada dia, querendo voltar pra um lugar que eu sei que eu não tô.</p>
-                      <p>Eu juro que tô tentando amor, mas tá difícil,</p>
-                      <p>Eu danço com a guerra pra tentar acabar com isso, é quase impossível.</p>
-                      <p>Meus pés se cansam, a voz se cala e no fim é sempre o mesmo nada, nada, nada.</p>
+                    <p>Eu tô dançando, sapateando, entendo o que eu tenho e o que sou.</p>
+                    <p>Crescendo a cada dia, querendo voltar pra um lugar que eu sei que eu não tô.</p>
+                    <p>Eu juro que tô tentando amor, mas tá difícil,</p>
+                    <p>Eu danço com a guerra pra tentar acabar com isso, é quase impossível.</p>
+                    <p>Meus pés se cansam, a voz se cala e no fim é sempre o mesmo nada, nada, nada.</p>
 
-                      <br />
+                    <br />
 
-                      <p>A vida é um moinho cartola, passa rápido demais, esmagando o que nos resta de paz.</p>
-                      <p>Lembro sempre dos meus pais juntos fazendo o almoço de domingo.</p>
-                      <p>As idas à igreja como de costume.</p>
-                      <p>E os sonhos que pareciam se reconstruir,</p>
-                      <p>Mas onde eles estão agora?</p>
-                      <p>Onde eu tô agora?</p>
-                      <p>Tudo se foi, se findou em um fim de semana, em um ano ou dois</p>
-                      <p>Eu não entendo esse completo desespero,</p>
-                      <p>O anseio de uma vida sem motivação,</p>
-                      <p>Onde eu tô onde eu quero chegar?</p>
+                    <p>A vida é um moinho cartola, passa rápido demais, esmagando o que nos resta de paz.</p>
+                    <p>Lembro sempre dos meus pais juntos fazendo o almoço de domingo.</p>
+                    <p>As idas à igreja como de costume.</p>
+                    <p>E os sonhos que pareciam se reconstruir,</p>
+                    <p>Mas onde eles estão agora?</p>
+                    <p>Onde eu tô agora?</p>
+                    <p>Tudo se foi, se findou em um fim de semana, em um ano ou dois</p>
+                    <p>Eu não entendo esse completo desespero,</p>
+                    <p>O anseio de uma vida sem motivação,</p>
+                    <p>Onde eu tô onde eu quero chegar?</p>
 
-                      <br />
+                    <br />
 
-                      <p>Por que tanta pergunta sem resposta?</p>
-                      <p>Tanta música sem nota?</p>
-                      <p>Eu não entendo, eu fujo desse tal entendimento.</p>
-                      <p>Eu sinto aqui dentro,</p>
-                      <p>Algo desmoronando</p>
-                      <p>Bombardeado de sensação,</p>
-                      <p>A metralhadora lotada de mágoa,</p>
-                      <p>Atirando pra todo lado nessa estrada</p>
-                      <p>Ainda não me acostumei a dançar essa valsa.</p>
+                    <p>Por que tanta pergunta sem resposta?</p>
+                    <p>Tanta música sem nota?</p>
+                    <p>Eu não entendo, eu fujo desse tal entendimento.</p>
+                    <p>Eu sinto aqui dentro,</p>
+                    <p>Algo desmoronando</p>
+                    <p>Bombardeado de sensação,</p>
+                    <p>A metralhadora lotada de mágoa,</p>
+                    <p>Atirando pra todo lado nessa estrada</p>
+                    <p>Ainda não me acostumei a dançar essa valsa.</p>
 
-                      <br />
+                    <br />
 
-                      <p>Mas eu entendo, eu entendo cartola, quando você diz devagar demais</p>
-                      <p>Que tudo isso é passageiro demais,</p>
-                      <p>E que essa vida nada fica como começou</p>
-                      <p>e por fim enquanto danço ao som da sua música (a minha favorita)</p>
-                      <p>Entendo um pouco dessa vida, que às vezes passa rápido o suficiente pra não se entender.</p>
-                      <p>Um dia, lá pra frente quem sabe eu venço a guerra que é</p>
-                      <p><b>Você</b></p>
-                    </div>
+                    <p>Mas eu entendo, eu entendo cartola, quando você diz devagar demais</p>
+                    <p>Que tudo isso é passageiro demais,</p>
+                    <p>E que essa vida nada fica como começou</p>
+                    <p>e por fim enquanto danço ao som da sua música (a minha favorita)</p>
+                    <p>Entendo um pouco dessa vida, que às vezes passa rápido o suficiente pra não se entender.</p>
+                    <p>Um dia, lá pra frente quem sabe eu venço a guerra que é</p>
+                    <p><b>Você</b></p>
+                  </div>
                 </div>
               </FadeInSection>
 
             {/* Bloco Playlist da Oficina */}
-              <FadeInSection className={styles.playlistSection}>
-                <div className={styles.bgPlaylist}>
+              <FadeInSection className={styles.playlistSection} aria-labelledby="playlistTitle">
+                <h2 id="playlistTitle" className={styles.visuallyHidden}>
+                  Playlist da Oficina
+                </h2>
+
+                <div className={styles.bgPlaylist} aria-hidden="true">
                   <svg
                     className={styles.floatingElements}
                     viewBox="0 0 5000 400"
@@ -857,9 +890,11 @@ export default function CorpoPage() {
                     frameBorder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"
+                    title="Playlist da Oficina no Spotify"
                   ></iframe>
                 </div>
               </FadeInSection>
+              
       </main>
 
       <BackToHomeButton />
