@@ -6,7 +6,7 @@ import BackToHomeButton from "@/app/components/BackToHomeButton";
 import TopMenu from "@/app/components/TopMenu";
 import styles from "@/app/contato/Contato.module.css";
 import Image from "next/image";
-import { FaInstagram, FaWhatsapp, FaYoutube, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaYoutube, FaEnvelope, FaSpotify } from "react-icons/fa";
 import { useState } from "react";
 
 export default function ContatoPage() {
@@ -41,27 +41,36 @@ export default function ContatoPage() {
       <Navbar />
       <TopMenu />
 
-      <main className={styles.mainContent}>
-
+      <main className={styles.mainContent} role="main" aria-label="Página de contato">
         <svg
           viewBox="0 0 5000 4000"
           xmlns="http://www.w3.org/2000/svg"
           className={styles.floatingElements}
+          aria-hidden="true"
         >
           {/* Círculos */}
-          <circle cx="2750" cy="200" r="50" fill="black" />
-          <circle cx="2750" cy="600" r="50" fill="black" />
-          <circle cx="2750" cy="1000" r="50" fill="black" />
-          <circle cx="2750" cy="300" r="50" fill="black" />
-          <circle cx="2750" cy="900" r="50" fill="black" />
-          <circle cx="2750" cy="4000" r="50" fill="black" />
+          <circle cx="3500" cy="3900" r="16" fill="black" />
+          <circle cx="2450" cy="300" r="25" fill="black" />
+          <circle cx="2550" cy="500" r="10" fill="black" />
+          <circle cx="2480" cy="1300" r="18" fill="black" />
+          <circle cx="2590" cy="1900" r="22" fill="black" />
+          <circle cx="2680" cy="2700" r="40" fill="black" />
+          <circle cx="2500" cy="3500" r="22" fill="black" />
+          <circle cx="2750" cy="3700" r="10" fill="black" />
+          <circle cx="4700" cy="150" r="10" fill="black" />
+          <circle cx="4725" cy="600" r="8" fill="black" />
+          <circle cx="4780" cy="1100" r="20" fill="black" />
+          <circle cx="4800" cy="2000" r="15" fill="black" />
+          <circle cx="4900" cy="2500" r="28" fill="black" />
+          <circle cx="4680" cy="3100" r="40" fill="black" />
+          <circle cx="4950" cy="3900" r="14" fill="black" />
 
           {/* Estrelas */}
           <image href="/images/star.png" x="2750" y="800" width="100" height="100" />
           <image href="/images/star.png" x="2750" y="1200" width="100" height="100" />
 
           {/* Linha entre dois pontos */}
-          <line x1="2100" y1="600" x2="2200" y2="1000" stroke="black" strokeWidth="0.5" /> 
+          <line x1="2100" y1="600" x2="2200" y2="1000" stroke="black" strokeWidth="0.5" />
         </svg>
 
         <div className={styles.twoColumns}>
@@ -82,7 +91,14 @@ export default function ContatoPage() {
               </p>
             </section>
 
-            <form className={styles.form} onSubmit={handleSubmit}>
+            <form
+              className={styles.form}
+              onSubmit={handleSubmit}
+              role="form"
+              aria-labelledby="contato-titulo"
+            >
+              <h2 id="contato-titulo" className="sr-only">Formulário de Contato</h2>
+
               <label htmlFor="name">Nome:</label>
               <input type="text" id="name" name="name" required />
 
@@ -101,7 +117,7 @@ export default function ContatoPage() {
               <label htmlFor="message">Mensagem:</label>
               <textarea id="message" name="message" rows="5" required />
 
-              <button type="submit">Enviar</button>
+              <button type="submit" aria-label="Enviar mensagem pelo formulário">Enviar</button>
 
               {status && (
                 <p className={`${styles.formStatus} ${isError ? styles.errorMessage : styles.successMessage}`}>
@@ -121,21 +137,48 @@ export default function ContatoPage() {
                 height={300}
                 className={styles.contactImage}
               />
-              {/* <figcaption className={styles.caption}>Equipe Centro Cultural da Penha (2022).</figcaption> */}
             </figure>
 
-            <section className={styles.iconsBlock}>
-              <a href="mailto:museuautobiografico@gmail.com" target="_blank" rel="noopener noreferrer">
+            <section className={styles.iconsBlock} aria-label="Redes sociais e contato">
+              <a
+                href="mailto:museuautobiografico@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Enviar e-mail para museuautobiografico@gmail.com"
+              >
                 <FaEnvelope size={40} />
               </a>
-              <a href="https://wa.me/5511981036621" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/5511981036621"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Enviar mensagem via WhatsApp"
+              >
                 <FaWhatsapp size={40} />
               </a>
-              <a href="https://instagram.com/museuautobiografico" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://instagram.com/museuautobiografico"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar o perfil do Museu Autobiográfico no Instagram"
+              >
                 <FaInstagram size={40} />
               </a>
-              <a href="https://youtube.com/@museuautobiográfico" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://youtube.com/@museuautobiográfico"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar o canal do Museu Autobiográfico no YouTube"
+              >
                 <FaYoutube size={40} />
+              </a>
+              <a
+                href="https://open.spotify.com/user/31gbqydgyefxass2gfzubdmofsqm"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar o perfil do Museu Autobiográfico no Spotify"
+              >
+                <FaSpotify size={40} />
               </a>
             </section>
 
@@ -147,7 +190,6 @@ export default function ContatoPage() {
                 height={300}
                 className={styles.contactImage}
               />
-              {/* <figcaption className={styles.caption}>Participantes da oficina teatral (2022).</figcaption> */}
             </figure>
           </div>
         </div>

@@ -851,7 +851,7 @@ export default function CorpoPage() {
                 <div className={styles.spotifyEmbed}>
                   <iframe
                     style={{ borderRadius: "12px" }}
-                    src="https://open.spotify.com/embed/playlist/392kcC9vjcMaAB1BVJLsnm"
+                    src="https://open.spotify.com/embed/playlist/7nB0P5WBxg9QRqSXvrXvJT"
                     width="100%"
                     height="152"
                     frameBorder="0"
@@ -867,3 +867,5 @@ export default function CorpoPage() {
     </div>
   );
 }
+
+
