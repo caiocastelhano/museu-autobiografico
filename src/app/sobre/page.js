@@ -210,6 +210,148 @@ export default function SobrePage() {
           </Accordion>
         </section>
 
+        <section className={styles.officeOneSection} aria-labelledby="officeOneTitle">
+          <h2 id="officeOneTitle" className={styles.visuallyHidden}>
+            Registros visuais da oficina 1
+          </h2>
+
+          <figure className={styles.officeOneFigure}>
+            <div className={styles.officeOnePhotos}>
+              <Image
+                src="/images/sobre/foto1.JPG"
+                alt="Participantes da oficina em roda de conversa"
+                width={600}
+                height={400}
+                className={styles.officeOnePhoto}
+              />
+              <Image
+                src="/images/sobre/foto2.png"
+                alt="Expressão corporal durante improviso teatral"
+                width={600}
+                height={400}
+                className={styles.officeOnePhoto}
+              />
+            </div>
+
+            <figcaption className={styles.officeOneCaption}>
+              Centro Cultural da Penha, 2022.
+            </figcaption> 
+          </figure>
+        </section>
+
+        <section className={styles.officeTwoSection} aria-labelledby="officeTwoTitle">
+          <h2 id="officeTwoTitle" className={styles.visuallyHidden}>
+            Registro visual da oficina 2
+          </h2>
+
+          <figure className={styles.officeTwoFigure}>
+              <Image
+                src="/images/sobre/foto3.jpg"
+                alt="Participantes da oficina"
+                width={600}
+                height={400}
+                className={styles.officeTwoPhoto}
+              />
+
+            <figcaption className={styles.officeTwoCaption}>
+              Biblioteca Pública Cassiano Ricardo, 2023.
+            </figcaption> 
+          </figure>
+        </section>
+
+        <section className={styles.officeThreeSection} aria-labelledby="officeThreeTitle">
+          <h2 id="officeThreeTitle" className={styles.visuallyHidden}>
+            Registro em vídeo da oficina 3
+          </h2>
+
+          <figure className={styles.phoneMockup}>
+            <div className={styles.videoContainer}>
+              <iframe
+                src="https://www.youtube.com/embed/T5E46NPDf7s"
+                title="Vídeo da oficina 3 - Museu Autobiográfico"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <figcaption className={styles.officeThreeCaption}>
+              Biblioteca Pública Cassiano Ricardo, 2024.
+            </figcaption>
+          </figure>
+        </section>
+
+        <section className={styles.officeFourSection} aria-labelledby="officeFourTitle">
+          <h2 id="officeFourTitle" className={styles.visuallyHidden}>
+            Registros visuais da oficina 4
+          </h2>
+
+          <figure className={styles.officeFourFigure}>
+            <div className={styles.officeFourPhotos}>
+              <Image
+                src="/images/sobre/foto4.jpg"
+                alt="Participantes da oficina em roda de conversa"
+                width={600}
+                height={400}
+                className={styles.officeFourPhoto}
+              />
+              <Image
+                src="/images/sobre/foto5.jpg"
+                alt="Expressão corporal durante improviso teatral"
+                width={600}
+                height={400}
+                className={styles.officeFourPhoto}
+              />
+            </div>
+
+            <figcaption className={styles.officeFourCaption}>
+              Oficina no Festival de Curitiba, Casa Eliseu Voronkoff, 2025.
+            </figcaption> 
+          </figure>
+        </section>
+
+        <section className={styles.officeFiveSection} aria-labelledby="officeFiveTitle">
+          <h2 id="officeFiveTitle" className={styles.visuallyHidden}>
+            Registro visual da oficina 5
+          </h2>
+
+          <figure className={styles.officeFiveFigure}>
+              <Image
+                src="/images/sobre/foto6.jpg"
+                alt="Participantes da oficina"
+                width={600}
+                height={400}
+                className={styles.officeFivePhoto}
+              />
+
+            <figcaption className={styles.officeFiveCaption}>
+             Primeira versão do museu na Casa Florescer 2.
+            </figcaption> 
+          </figure>
+        </section>
+
+        <section className={styles.finalQuoteSection} aria-labelledby="finalQuoteTitle">
+          <h2 id="finalQuoteTitle" className={styles.visuallyHidden}>
+            Citação final sobre o Museu Autobiográfico
+          </h2>
+
+          <div className={styles.quoteBox}>
+            <p>
+              Este é um museu feito de encontros, um museu polifônico. 
+              <br />
+              Feito de palavras que dançam, de histórias que se tocam, de corpos diversos que se lembram, se conectam e atuam, encontrando prazer em brincar sempre com o que é ficção e o que pode ser — ou é — realidade.
+            </p>
+
+            <p>
+              Um museu que se move a partir de mim para encontrar outras pessoas, e que tem como ensinamento compartilhado algo que sempre saí pensando ao fim dos encontros que mediava:
+            </p>
+
+            <p><b>As pessoas só precisam e querem ser ouvidas.</b></p>
+
+            <p>Marcelo</p>
+          </div>
+        </section>
+
       </main>
 
       <BackToHomeButton />
