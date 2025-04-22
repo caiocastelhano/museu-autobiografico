@@ -119,6 +119,25 @@ export default function SobrePage() {
             Registro visual da oficina 2
           </h2>
 
+          <div className={styles.bgOfficeTwo} aria-hidden="true">
+            <svg
+              className={styles.floatingElements}
+              viewBox="0 0 5000 1600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="900" cy="500" r="8" fill="black" />
+              <circle cx="1200" cy="950" r="9" fill="black" />
+              <circle cx="1100" cy="1400" r="6" fill="black" />
+              <image href="/images/star.png" x="500" y="200" width="20" height="20" />
+              
+              <circle cx="4420" cy="300" r="4" fill="black" />
+              <circle cx="3900" cy="670" r="5.5" fill="black" />
+              <circle cx="3700" cy="1200" r="2.8" fill="black" />
+              <circle cx="4600" cy="900" r="6" fill="black" />
+              <image href="/images/star.png" x="3980" y="1400" width="12" height="12" />
+            </svg>
+          </div>
+
           <figure className={styles.officeTwoFigure}>
               <Image
                 src="/images/sobre/foto3.jpg"
@@ -260,11 +279,40 @@ export default function SobrePage() {
             </p>
           </Accordion>
         </section>
-
+        
         <section className={styles.officeThreeSection} aria-labelledby="officeThreeTitle">
           <h2 id="officeThreeTitle" className={styles.visuallyHidden}>
             Registro em vídeo da oficina 3
           </h2>
+
+          <div className={styles.bgOfficeThree} aria-hidden="true">
+            <svg
+              className={styles.floatingElements}
+              viewBox="0 0 5000 2000"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="300" cy="150" r="10" fill="black" />
+              <circle cx="900" cy="500" r="8" fill="black" />
+              <circle cx="1200" cy="950" r="9" fill="black" />
+              <circle cx="1500" cy="1400" r="6" fill="black" />
+              <circle cx="450" cy="1800" r="5" fill="black" />
+              <image href="/images/star.png" x="700" y="400" width="20" height="20" />
+              <image href="/images/star.png" x="1600" y="800" width="25" height="25" />
+              
+              <circle cx="3380" cy="150" r="2.5" fill="black" />
+              <circle cx="4420" cy="300" r="4" fill="black" />
+              <circle cx="3550" cy="850" r="3" fill="black" />
+              <circle cx="4300" cy="670" r="5.5" fill="black" />
+              <circle cx="3400" cy="1450" r="3.8" fill="black" />
+              <circle cx="3700" cy="1200" r="2.8" fill="black" />
+              <circle cx="4600" cy="900" r="6" fill="black" />
+              <circle cx="3900" cy="1800" r="4.2" fill="black" />
+              <circle cx="3350" cy="1900" r="3" fill="black" />
+              <image href="/images/star.png" x="3450" y="500" width="14" height="14" />
+              <image href="/images/star.png" x="3980" y="1400" width="12" height="12" />
+              <image href="/images/star.png" x="4500" y="1700" width="10" height="10" />
+            </svg>
+          </div>
 
           <figure className={styles.phoneMockup}>
             <div className={styles.videoContainer}>
@@ -310,11 +358,31 @@ export default function SobrePage() {
             </figcaption> 
           </figure>
         </section>
-
+        
         <section className={styles.officeFiveSection} aria-labelledby="officeFiveTitle">
           <h2 id="officeFiveTitle" className={styles.visuallyHidden}>
             Registro visual da oficina 5
           </h2>
+
+          <div className={styles.bgOfficeFive} aria-hidden="true">
+            <svg
+              className={styles.floatingElements}
+              viewBox="0 0 5000 1600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="650" cy="800" r="10" fill="black" />
+              <circle cx="900" cy="500" r="8" fill="black" />
+              <circle cx="1200" cy="950" r="9" fill="black" />
+              <circle cx="1100" cy="1400" r="6" fill="black" />
+              <image href="/images/star.png" x="700" y="400" width="20" height="20" />
+              
+              <circle cx="4420" cy="300" r="4" fill="black" />
+              <circle cx="3900" cy="670" r="5.5" fill="black" />
+              <circle cx="3700" cy="1200" r="2.8" fill="black" />
+              <circle cx="4600" cy="900" r="6" fill="black" />
+              <image href="/images/star.png" x="3980" y="1400" width="12" height="12" />
+            </svg>
+          </div>
 
           <figure className={styles.officeFiveFigure}>
               <Image

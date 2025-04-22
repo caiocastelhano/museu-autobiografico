@@ -105,18 +105,34 @@
   max-width: 800px;
 }
 
-/* ===== OFICINA 2: UMA FOTO CENTRALIZADA ===== */
+/* ===== OFICINA 2: UMA FOTO CENTRALIZADA COM PONTOS/ESTRELAS ===== */
 .officeTwoSection {
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.bgOfficeTwo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
 }
 
 .officeTwoFigure {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .officeTwoPhoto {
@@ -139,14 +155,24 @@
 .officeThreeSection {
   padding: 40px 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  position: relative; /* necessário para posicionar o SVG */
+  z-index: 1;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.officeThreeContent {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .phoneMockup {
   width: 320px;
-  height: auto;
   aspect-ratio: 9 / 16;
   background: #000;
   border-radius: 40px;
@@ -178,6 +204,23 @@
   padding: 0 10px;
   max-width: 800px;
   margin-top: 16px;
+}
+
+.bgOfficeThree {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ===== OFICINA 4: DUAS FOTOS (ESQUERDA E DIREITA) ===== */
@@ -219,6 +262,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .officeFiveFigure {
@@ -241,6 +288,23 @@
   text-align: center;
   margin-top: 16px;
   max-width: 1600px;
+}
+
+.bgOfficeFive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ===== BLOCO DE CITAÇÃO FINAL (QUOTE) ===== */
