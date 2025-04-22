@@ -36,6 +36,35 @@ export default function SobrePage() {
           </p>
         </section>
 
+        <section className={styles.officeOneSection} aria-labelledby="officeOneTitle">
+          <h2 id="officeOneTitle" className={styles.visuallyHidden}>
+            Registros visuais da oficina 1
+          </h2>
+
+          <figure className={styles.officeOneFigure}>
+            <div className={styles.officeOnePhotos}>
+              <Image
+                src="/images/sobre/foto1.JPG"
+                alt="Participantes da oficina em roda de conversa"
+                width={600}
+                height={400}
+                className={styles.officeOnePhoto}
+              />
+              <Image
+                src="/images/sobre/foto2.png"
+                alt="Expressão corporal durante improviso teatral"
+                width={600}
+                height={400}
+                className={styles.officeOnePhoto}
+              />
+            </div>
+
+            <figcaption className={styles.officeOneCaption}>
+              Centro Cultural da Penha, 2022.
+            </figcaption> 
+          </figure>
+        </section>
+
         <h2 id="accordionSectionTitle" className={styles.visuallyHidden}>
             Perguntas frequentes sobre o Museu Autobiográfico
         </h2>
@@ -83,7 +112,29 @@ export default function SobrePage() {
               Ser um museu assim é estar em movimento constante: criar presença no ato de contar — e recontar — a própria história.
             </p>
           </Accordion>
+        </section>
 
+        <section className={styles.officeTwoSection} aria-labelledby="officeTwoTitle">
+          <h2 id="officeTwoTitle" className={styles.visuallyHidden}>
+            Registro visual da oficina 2
+          </h2>
+
+          <figure className={styles.officeTwoFigure}>
+              <Image
+                src="/images/sobre/foto3.jpg"
+                alt="Participantes da oficina"
+                width={600}
+                height={400}
+                className={styles.officeTwoPhoto}
+              />
+
+            <figcaption className={styles.officeTwoCaption}>
+              Biblioteca Pública Cassiano Ricardo, 2023.
+            </figcaption> 
+          </figure>
+        </section>
+
+        <section className={styles.accordionSection} aria-labelledby="accordionSectionTitle">
           <Accordion title="Origem e Histórico da Oficina">
             <p>
               O projeto teve sua primeira versão em 2019, como trabalho final do curso de Educador Social no SENAC Aclimação. Intitulada <i>Museu Biográfico e Pertencimento à Cidade</i>, a oficina aconteceu na Casa Florescer II, espaço de acolhimento para mulheres trans, travestis e pessoas não binárias. Entre conversas, jogos teatrais e partilhas íntimas, nasceu ali a ideia do que viria a se tornar o <b>Museu Autobiográfico</b>: uma oficina sobre pertencimento, memória e a potência criativa a partir de si..
@@ -210,55 +261,6 @@ export default function SobrePage() {
           </Accordion>
         </section>
 
-        <section className={styles.officeOneSection} aria-labelledby="officeOneTitle">
-          <h2 id="officeOneTitle" className={styles.visuallyHidden}>
-            Registros visuais da oficina 1
-          </h2>
-
-          <figure className={styles.officeOneFigure}>
-            <div className={styles.officeOnePhotos}>
-              <Image
-                src="/images/sobre/foto1.JPG"
-                alt="Participantes da oficina em roda de conversa"
-                width={600}
-                height={400}
-                className={styles.officeOnePhoto}
-              />
-              <Image
-                src="/images/sobre/foto2.png"
-                alt="Expressão corporal durante improviso teatral"
-                width={600}
-                height={400}
-                className={styles.officeOnePhoto}
-              />
-            </div>
-
-            <figcaption className={styles.officeOneCaption}>
-              Centro Cultural da Penha, 2022.
-            </figcaption> 
-          </figure>
-        </section>
-
-        <section className={styles.officeTwoSection} aria-labelledby="officeTwoTitle">
-          <h2 id="officeTwoTitle" className={styles.visuallyHidden}>
-            Registro visual da oficina 2
-          </h2>
-
-          <figure className={styles.officeTwoFigure}>
-              <Image
-                src="/images/sobre/foto3.jpg"
-                alt="Participantes da oficina"
-                width={600}
-                height={400}
-                className={styles.officeTwoPhoto}
-              />
-
-            <figcaption className={styles.officeTwoCaption}>
-              Biblioteca Pública Cassiano Ricardo, 2023.
-            </figcaption> 
-          </figure>
-        </section>
-
         <section className={styles.officeThreeSection} aria-labelledby="officeThreeTitle">
           <h2 id="officeThreeTitle" className={styles.visuallyHidden}>
             Registro em vídeo da oficina 3
@@ -348,7 +350,7 @@ export default function SobrePage() {
             <p><b>As pessoas só precisam e querem ser ouvidas.</b></p>
 
             <br />
-            
+
             <p>Marcelo</p>
           </div>
         </section>
