@@ -55,11 +55,6 @@ main {
   min-height: 100vh; /* Mantém o conteúdo na altura total da tela */
 }
 
-.spacer {
-  height: 80px; /* ou ajuste fino: 72px */
-  width: 100%;
-}
-
 /* Links padrão */
 a {
   color: inherit;

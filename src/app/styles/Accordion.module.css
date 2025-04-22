@@ -1,0 +1,30 @@
+.accordion {
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .header {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0;
+    color: var(--foreground);
+    border-bottom: 1px solid black;
+  }
+  
+  .icon {
+    font-size: 1rem;
+  }
+  
+  .content {
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  

@@ -1,3 +1,4 @@
+/* ===== ESTRUTURA GERAL ===== */
 .pageContainer {
     width: 100%;
     min-height: 100vh;
@@ -6,52 +7,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 40px;
   }
   
   .mainContent {
     width: 100%;
     max-width: 1200px;
-    padding: 80px 20px 40px; /* 👈 corrigido aqui */
+    padding: 80px 20px 40px;
     box-sizing: border-box;
-    margin-top: 0 !important;
-    padding-top: 0;
-  
-    /* 🔍 Diagnóstico visual */
-    border: 2px solid green;
-  }
-
-  .spacer {
-    height: 80px;
-    width: 100%;
   }
   
-  .aboutIntroSection {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 60px;
-    margin-top: 0;
-    padding-top: 0;
-  
-    /* 🔍 Diagnóstico visual */
-    border: 2px solid blue;
-  
-    /* ✅ Garante que não há espaço extra no topo da seção */
-    margin-top: 0;
-    padding-top: 0;
-  }
-  
-  .aboutIntroSection p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-  }
-  
-  /* ✅ Remove margin automática do primeiro parágrafo */
-  .aboutIntroSection p:first-of-type {
-    margin-top: 0;
-  }
-  
-  /* Acessibilidade: oculta visualmente sem remover da navegação */
   .visuallyHidden {
     position: absolute;
     left: -10000px;
@@ -61,8 +26,64 @@
     overflow: hidden;
   }
   
-  /* 🔍 Diagnóstico visual */
-  .navbar {
-    border: 2px solid red;
+  /* ===== BLOCO DE INTRODUÇÃO ===== */
+  .aboutIntroSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+    font-size: 1rem;
+    line-height: 1.8;
   }
   
+  /* ===== SEÇÃO DOS ACCORDIONS ===== */
+  .accordionSection {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  }
+  
+  .accordionSection p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  
+  .accordionSection ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .accordionSection li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .accordionSection img,
+  .accordionSection .image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 24px;
+  }
+  
+  /* ===== RESPONSIVIDADE ===== */
+  @media (max-width: 768px) {
+    .mainContent {
+      padding: 60px 16px 32px;
+    }
+  
+    .accordionSection {
+      gap: 24px;
+    }
+  
+    .accordionSection p,
+    .accordionSection li {
+      font-size: 0.95rem;
+    }
+  }
