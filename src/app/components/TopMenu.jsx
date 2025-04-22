@@ -67,12 +67,6 @@ export default function TopMenu() {
   // Internas (desktop e mobile): todas as seções menos a atual
   const filteredSections = sections.filter(section => section.href !== pathname);
 
-  const shouldHideMenu = pathname === "/sobre" || pathname === "/contato";
-
-  if (shouldHideMenu) {
-    return null;
-  }
-
   return (
     <div
       className={styles.menuWrapperInterna}
