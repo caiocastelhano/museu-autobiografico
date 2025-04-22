@@ -1,0 +1,40 @@
+.pageContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mainContent {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 20px 40px; /* reduz o padding-top */
+    box-sizing: border-box;
+  }
+  
+  .aboutIntroSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .aboutIntroSection p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  /* Esconde o título visualmente mas mantém acessível */
+  .visuallyHidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  
