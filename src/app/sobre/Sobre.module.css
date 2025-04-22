@@ -240,7 +240,7 @@
   color: #333;
   text-align: center;
   margin-top: 16px;
-  max-width: 800px;
+  max-width: 1600px;
 }
 
 /* ===== BLOCO DE CITAÇÃO FINAL (QUOTE) ===== */
@@ -254,6 +254,10 @@
   line-height: 1.6;
   color: black;
   text-align: justify;
+}
+
+.quoteBox p + p {
+  margin-top: 16px;
 }
 
 /* ===== RESPONSIVIDADE ===== */
