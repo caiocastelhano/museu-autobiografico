@@ -1,30 +1,51 @@
 .accordion {
-    margin-bottom: 16px;
-    width: 100%;
-    max-width: 800px;
-  }
-  
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Botão do cabeçalho com layout flexível para título + ícone */
+.header {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* garante alinhamento vertical com ícone */
+  width: 100%;
+  padding: 12px 0;
+  color: var(--foreground);
+  border-bottom: 1px solid black;
+  text-align: left; /* impede centralização indesejada de texto */
+  gap: 12px; /* opcional: evita que o ícone grude no texto quebrado */
+}
+
+/* Ícone ▼/▲ com tamanho adequado */
+.icon {
+  font-size: 1rem;
+  flex-shrink: 0; /* impede que ele fique menor ou desalinhado */
+}
+
+/* Conteúdo interno do accordion */
+.content {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
   .header {
-    background-color: transparent;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 12px 0;
-    color: var(--foreground);
-    border-bottom: 1px solid black;
+    font-size: 1rem;
+    gap: 8px;
   }
-  
+
   .icon {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  
+
   .content {
-    margin-top: 12px;
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
   }
-  
+}

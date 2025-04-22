@@ -274,11 +274,10 @@ export default function SobrePage() {
                 allowFullScreen
               ></iframe>
             </div>
-
-            <figcaption className={styles.officeThreeCaption}>
+          </figure>
+          <figcaption className={styles.officeThreeCaption}>
               Biblioteca Pública Cassiano Ricardo, 2024.
             </figcaption>
-          </figure>
         </section>
 
         <section className={styles.officeFourSection} aria-labelledby="officeFourTitle">
@@ -348,6 +347,8 @@ export default function SobrePage() {
 
             <p><b>As pessoas só precisam e querem ser ouvidas.</b></p>
 
+            <br />
+            
             <p>Marcelo</p>
           </div>
         </section>
