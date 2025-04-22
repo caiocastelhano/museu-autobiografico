@@ -11,11 +11,18 @@
   .mainContent {
     width: 100%;
     max-width: 1200px;
-    padding: 0px 20px 40px;
+    padding: 80px 20px 40px; /* 👈 corrigido aqui */
     box-sizing: border-box;
+    margin-top: 0 !important;
+    padding-top: 0;
   
     /* 🔍 Diagnóstico visual */
     border: 2px solid green;
+  }
+
+  .spacer {
+    height: 80px;
+    width: 100%;
   }
   
   .aboutIntroSection {
@@ -23,6 +30,8 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 60px;
+    margin-top: 0;
+    padding-top: 0;
   
     /* 🔍 Diagnóstico visual */
     border: 2px solid blue;

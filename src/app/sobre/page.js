@@ -13,6 +13,7 @@ export default function SobrePage() {
   return (
     <div className={styles.pageContainer}>
       <Navbar />
+      <div className="spacer" />
       <TopMenu />
 
       <main className={styles.mainContent}>
