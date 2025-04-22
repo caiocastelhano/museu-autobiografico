@@ -11,7 +11,7 @@
   .mainContent {
     width: 100%;
     max-width: 1200px;
-    padding: 0px 20px 40px; /* reduz o padding-top */
+    padding: 0px 20px 40px;
     box-sizing: border-box;
   }
   
@@ -26,6 +26,10 @@
     font-size: 1.1rem;
     line-height: 1.7;
   }
+
+  .aboutIntroSection p:first-of-type {
+    margin-top: 0;
+  }
   
   /* Esconde o título visualmente mas mantém acessível */
   .visuallyHidden {
@@ -35,6 +39,18 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+  }
+
+  .navbar {
+    border: 2px solid red;
+  }
+  
+  .mainContent {
+    border: 2px solid green;
+  }
+  
+  .aboutIntroSection {
+    border: 2px solid blue;
   }
 
   
