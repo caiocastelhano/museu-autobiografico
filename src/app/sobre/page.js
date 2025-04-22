@@ -156,13 +156,20 @@ export default function SobrePage() {
         <section className={styles.accordionSection} aria-labelledby="accordionSectionTitle">
           <Accordion title="Origem e Histórico da Oficina">
             <p>
-              O projeto teve sua primeira versão em 2019, como trabalho final do curso de Educador Social no SENAC Aclimação. Intitulada <i>Museu Biográfico e Pertencimento à Cidade</i>, a oficina aconteceu na Casa Florescer II, espaço de acolhimento para mulheres trans, travestis e pessoas não binárias. Entre conversas, jogos teatrais e partilhas íntimas, nasceu ali a ideia do que viria a se tornar o <b>Museu Autobiográfico</b>: uma oficina sobre pertencimento, memória e a potência criativa a partir de si..
+              O projeto teve sua primeira versão em 2019, como trabalho final do curso de Educador Social no SENAC Aclimação. Intitulada <i>Museu Biográfico e Pertencimento à Cidade</i>, a oficina aconteceu na Casa Florescer II (foto abaixo), espaço de acolhimento para mulheres trans, travestis e pessoas não binárias. Entre conversas, jogos teatrais e partilhas íntimas, nasceu ali a ideia do que viria a se tornar o <b>Museu Autobiográfico</b>: uma oficina sobre pertencimento, memória e a potência criativa a partir de si.
             </p>
+            <Image
+              src="/images/sobre/foto6.jpg"
+              alt="Foto de Marcelo Rodrigues Maia"
+              width={600}
+              height={400}
+              style={{ marginBottom: "20px" }}
+            />
             <p>
               Essa primeira edição contou com a parceria do <b>Professor Doutor Fabio Ortolano, também colega de turma no SENAC</b>. Desde então, o projeto vem sendo atravessado por uma inquietação constante com os limites da representação e por um desejo de ativar potências reais no encontro com o outro.
             </p>
             <p>
-              A oficina também se nutre de experiências de mediação cultural no <b>Museu da Imagem e do Som – MIS Experience</b>. Foi nesse contexto, durante o período da pandemia de Covid-19, que escuta e afeto passaram a se consolidar como práticas pedagógicas e estéticas em propostas imersivas e mediações digitais..
+              A oficina também se nutre de experiências de mediação cultural no <b>Museu da Imagem e do Som – MIS Experience</b>. Foi nesse contexto, durante o período da pandemia de Covid-19, que escuta e afeto passaram a se consolidar como práticas pedagógicas e estéticas em propostas imersivas e mediações digitais.
             </p>
             <p>
               Em 2020, o projeto ganhou corpo ao ser estruturado dentro dos critérios do <b>Edital de Oficineiros da Prefeitura de São Paulo</b>. Após ser habilitada, a oficina teve como primeira residência oficial o <b>Centro Cultural da Penha</b>, dentro dos critérios de oficina de média duração (4 meses).
@@ -359,7 +366,7 @@ export default function SobrePage() {
           </figure>
         </section>
         
-        <section className={styles.officeFiveSection} aria-labelledby="officeFiveTitle">
+        {/* <section className={styles.officeFiveSection} aria-labelledby="officeFiveTitle">
           <h2 id="officeFiveTitle" className={styles.visuallyHidden}>
             Registro visual da oficina 5
           </h2>
@@ -397,7 +404,7 @@ export default function SobrePage() {
              Primeira versão do museu na Casa Florescer 2.
             </figcaption> 
           </figure>
-        </section>
+        </section> */}
 
         <section className={styles.finalQuoteSection} aria-labelledby="finalQuoteTitle">
           <h2 id="finalQuoteTitle" className={styles.visuallyHidden}>
