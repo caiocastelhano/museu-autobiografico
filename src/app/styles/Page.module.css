@@ -157,3 +157,19 @@
     right: 16px;    /* alinhado com o padding da navbar mobile */
   }
 }
+
+/* Escala leve apenas para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .constellation {
+    transform: scale(1.15);
+    transform-origin: center top;
+  }
+
+  .shapeText {
+    font-size: 15px;
+  }
+
+  .hoverText:hover .shapeText {
+    font-size: 17px;
+  }
+}
