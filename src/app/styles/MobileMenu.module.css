@@ -57,3 +57,33 @@
     border-radius: 4px;
   }
   
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .mobileMenuContainer {
+      top: 18px;
+      right: 24px;
+    }
+  
+    .burger {
+      top: 24px;
+      right: 24px;
+      gap: 5px;
+    }
+  
+    .line {
+      width: 24px;
+      height: 2.5px;
+    }
+  
+    .dropdown {
+      top: 64px;
+      right: 14px;
+      padding: 12px 16px;
+      gap: 14px;
+    }
+  
+    .dropdown a {
+      font-size: 1rem;
+      padding-left: 18px;
+    }
+  }
+  
