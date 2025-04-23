@@ -365,46 +365,6 @@ export default function SobrePage() {
             </figcaption> 
           </figure>
         </section>
-        
-        {/* <section className={styles.officeFiveSection} aria-labelledby="officeFiveTitle">
-          <h2 id="officeFiveTitle" className={styles.visuallyHidden}>
-            Registro visual da oficina 5
-          </h2>
-
-          <div className={styles.bgOfficeFive} aria-hidden="true">
-            <svg
-              className={styles.floatingElements}
-              viewBox="0 0 5000 1600"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="650" cy="800" r="10" fill="black" />
-              <circle cx="900" cy="500" r="8" fill="black" />
-              <circle cx="1200" cy="950" r="9" fill="black" />
-              <circle cx="1100" cy="1400" r="6" fill="black" />
-              <image href="/images/star.png" x="700" y="400" width="20" height="20" />
-              
-              <circle cx="4420" cy="300" r="4" fill="black" />
-              <circle cx="3900" cy="670" r="5.5" fill="black" />
-              <circle cx="3700" cy="1200" r="2.8" fill="black" />
-              <circle cx="4600" cy="900" r="6" fill="black" />
-              <image href="/images/star.png" x="3980" y="1400" width="12" height="12" />
-            </svg>
-          </div>
-
-          <figure className={styles.officeFiveFigure}>
-              <Image
-                src="/images/sobre/foto6.jpg"
-                alt="Participantes da oficina"
-                width={600}
-                height={400}
-                className={styles.officeFivePhoto}
-              />
-
-            <figcaption className={styles.officeFiveCaption}>
-             Primeira versão do museu na Casa Florescer 2.
-            </figcaption> 
-          </figure>
-        </section> */}
 
         <section className={styles.finalQuoteSection} aria-labelledby="finalQuoteTitle">
           <h2 id="finalQuoteTitle" className={styles.visuallyHidden}>
