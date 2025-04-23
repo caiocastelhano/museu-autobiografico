@@ -49,3 +49,24 @@
     font-size: 0.95rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .accordion {
+    max-width: 90%; /* ocupa mais da tela em tablet, sem colar nas bordas */
+  }
+
+  .header {
+    font-size: 1.05rem;
+    gap: 10px;
+    padding: 14px 0;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .content {
+    font-size: 1.05rem;
+  }
+}
+
