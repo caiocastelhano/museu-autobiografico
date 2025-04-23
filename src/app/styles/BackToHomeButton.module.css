@@ -32,3 +32,16 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .backButton {
+    bottom: 22px;
+    right: 22px;
+    padding: 10px 14px;
+    font-size: 1.1rem;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    border-radius: 0px;
+  }
+}
