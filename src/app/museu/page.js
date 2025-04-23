@@ -16,10 +16,7 @@ export default function MuseuPage() {
       <TopMenu />
 
       <main className={styles.mainContent}>
-
-        <h1 className={styles.visuallyHidden}>Página Museu</h1>
-
-              
+     
       </main>
 
       <BackToHomeButton />
