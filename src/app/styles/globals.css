@@ -4,9 +4,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light;
 }
 
-/* Modo escuro */
+/* Modo escuro
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,7 +20,7 @@
     background-color: white !important;
     color: black !important;
   }
-}
+} */
 
 /* Reset básico */
 * {
