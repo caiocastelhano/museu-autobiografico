@@ -50,7 +50,7 @@ export default function ContatoPage() {
         >
           {/* Círculos */}
           <circle cx="3500" cy="3900" r="12" fill="black" />
-          <circle cx="2450" cy="300" r="16" fill="black" />
+          <circle cx="2450" cy="450" r="16" fill="black" />
           <circle cx="2550" cy="500" r="10" fill="black" />
           <circle cx="2480" cy="1300" r="8" fill="black" />
           <circle cx="2590" cy="1900" r="7" fill="black" />
@@ -69,8 +69,6 @@ export default function ContatoPage() {
           <image href="/images/star.png" x="2750" y="800" width="50" height="50" />
           <image href="/images/star.png" x="4800" y="1300" width="50" height="50" />
 
-          {/* Linha entre dois pontos */}
-          <line x1="2100" y1="600" x2="2200" y2="1000" stroke="black" strokeWidth="0.5" />
         </svg>
 
         <div className={styles.twoColumns}>

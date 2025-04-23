@@ -186,3 +186,51 @@
     display: none;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainContent {
+    padding: 100px 32px 48px;
+  }
+
+  .twoColumns {
+    flex-direction: row;
+    gap: 45px;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    min-width: 280px;
+  }
+
+  .textBlock {
+    font-size: 1.05rem;
+    text-align: left;
+  }
+
+  .form {
+    max-width: 100%;
+    gap: 14px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .contactImage {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .iconsBlock {
+    gap: 20px;
+    font-size: 1.6rem;
+  }
+}
+
