@@ -960,3 +960,109 @@
   }
 }
 
+/* ===== RESPONSIVIDADE GERAL - TABLETS ===== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainContent {
+    padding: 40px 24px;
+  }
+
+  .memoryIntroSection {
+    padding: 48px 32px;
+  }
+
+  .introContent {
+    gap: 32px;
+  }
+
+  .introText {
+    font-size: 1.05rem;
+    max-width: 500px;
+  }
+
+  .memoryShape {
+    width: 400px;
+  }
+
+  .video {
+    height: 320px;
+  }
+
+  .projectStartSection,
+  .groupExerciseSection,
+  .audioMemorySection,
+  .participantTestimoniesSection,
+  .susanaSection,
+  .tiaClaudeteSection {
+    padding: 40px 24px;
+    text-align: left;
+    min-height: auto;
+    justify-content: center;
+  }
+
+  .groupExerciseSection,
+  .audioMemorySection,
+  .participantTestimoniesSection,
+  .susanaSection {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .participantTestimoniesSection h4,
+  .susanaSection h4 {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .testimonialBox,
+  .textBox,
+  .quoteBox,
+  .susanaSection blockquote {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .mediaBlock {
+    margin: 24px 0;
+  }
+
+  .caption {
+    font-size: 0.875rem;
+  }
+
+  .memoryReflectionSection {
+    margin-left: 0;
+    padding: 40px 24px;
+  }
+
+  .memoryCluster {
+    padding: 32px 24px;
+  }
+
+  .escalatedTestimoniesSection {
+    padding: 40px 24px;
+  }
+
+  .acknowledgementsSection {
+    padding: 40px 24px;
+  }
+
+  .memoryCluster h2,
+  .participantTestimoniesSection h2,
+  .susanaSection h2,
+  .tiaClaudeteContent h2,
+  .acknowledgementsSection h2 {
+    font-size: 1.45rem;
+  }
+
+  .introText p,
+  .participantTestimoniesSection p,
+  .susanaSection p,
+  .tiaClaudeteContent p,
+  .acknowledgementsSection p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+}
+
+
