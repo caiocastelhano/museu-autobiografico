@@ -319,7 +319,9 @@ export default function CorpoPage() {
                   <u>gestos, rostos, mãos, performances e depoimentos</u> que ficaram gravados em minha memória
                   a partir do corpo de participantes. Para saber mais sobre os exercícios que resultaram nas
                   imagens abaixo, acesse a página:{" "}
-                  <Link href="/museu"><u>Museu</u></Link>.
+                  <Link href="/museu" legacyBehavior>
+                    <a target="_blank" rel="noopener noreferrer"><u>Museu</u></a>
+                  </Link>.
                 </i>
               </p>
             </FadeInSection>

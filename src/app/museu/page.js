@@ -7,6 +7,7 @@ import TopMenu from "@/app/components/TopMenu";
 import styles from "@/app/museu/Museu.module.css";
 import Image from "next/image";
 import FadeInSection from "@/app/components/FadeInSection";
+import Link from "next/link";
 
 export default function MuseuPage() {
   return (
@@ -15,7 +16,7 @@ export default function MuseuPage() {
       <TopMenu />
 
       <main className={styles.mainContent}>
-        
+
         {/* Título da página - visível apenas para leitores de tela */}
         <h1 className={styles.visuallyHidden}>Página Museu</h1>
 
@@ -310,8 +311,12 @@ export default function MuseuPage() {
             <figcaption id="video3-caption">Encontro no Centro Cultural da Penha, 2022</figcaption>
           </figure>
 
-          <p>Por fim, alguns exercícios de composição que podem ser conhecidos em mais detalhes na página {" "}
-          <a href="/memoria" target="_blank" rel="noopener noreferrer" className={styles.inlineLink}>Memória</a>.</p>
+          <p>
+            Por fim, alguns exercícios de composição que podem ser conhecidos em mais detalhes na página:{" "}
+            <Link href="/memoria" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer"><u>Memória</u></a>
+            </Link>.
+          </p>
 
           <p>Abaixo, excertos de experiências de composição feitas em roda que geraram imagens coletivas significativas para minha memória:</p>
 
@@ -370,18 +375,13 @@ export default function MuseuPage() {
           </figure>
 
           <p>
-            <u>
-              Para você que está aqui conhecendo o Museu Autobiográfico, desejamos saber mais de sua história. Acesse a página {" "}
-              <a
-                href="/contato"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.inlineLink}
-              >
-                Contato
-              </a>{" "}
+            <i>
+              Para você que está aqui conhecendo o Museu Autobiográfico, desejamos saber mais de sua história. Acesse a página:{" "}
+              <Link href="/contato" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer"><u>Contato</u></a>
+              </Link>{" "}
               e acrescente seus objetos e memórias de sua vida.
-            </u>
+            </i>
           </p>
 
           <p><b>_Em breve: faremos uma galeria digital de objetos pessoais__</b></p>
