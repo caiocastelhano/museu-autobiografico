@@ -335,6 +335,34 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .rightWrapper {
+    margin: 0 auto 0 0 !important; /* Alinha à esquerda */
+    padding-left: 32px !important;
+    padding-right: 16px !important;
+    text-align: left !important;
+    max-width: 95% !important;
+  }
+
+  .rightWrapper h2 {
+    text-align: left;
+  }
+
+  .rightWrapper figure {
+    align-items: flex-start !important;
+  }
+
+  .rightWrapper figcaption {
+    text-align: left;
+  }
+
+  .floatingElements,
+  .bgBodyReflection,
+  .svgWrapper {
+    display: none !important;
+  }
+}
+
 /* ===== SEÇÃO: MEMÓRIAS DO CORPO ===== */
 .bodyMemoriesSection {
   width: 100%;
@@ -991,13 +1019,3 @@
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
