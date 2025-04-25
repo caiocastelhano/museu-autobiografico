@@ -25,7 +25,7 @@ export default function MuseuPage() {
           <div className={styles.introContentWrapper}>
             <svg
               className={styles.svgShapeIntro}
-              viewBox="0 0 300 250"
+              viewBox="0 130 300 250"
               xmlns="http://www.w3.org/2000/svg"
               role="img"
               aria-labelledby="introSvgTitle"
@@ -150,7 +150,7 @@ export default function MuseuPage() {
             nova museologia e museologia social no Brasil</b>.
           </p>
 
-          <blockquote>
+          <blockquote className={styles.highlightedQuote}>
             <p>
               &quot;Museus são instituições de memória de um país, que conservam, investigam, comunicam, interpretam e expõem, 
               para fins de preservação, estudo, pesquisa, educação, contemplação e turismo, conjuntos e coleções de 
