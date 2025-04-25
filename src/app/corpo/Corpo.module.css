@@ -335,7 +335,8 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1080px),
+       (min-width: 1081px) and (max-width: 1366px) and (orientation: landscape) {
   .rightWrapper {
     margin: 0 auto 0 0 !important; /* Alinha à esquerda */
     padding-left: 32px !important;
@@ -798,6 +799,12 @@
   .gridOneRow {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 1080px) {
+  .gridOneRow img {
+    max-width: 48%;
   }
 }
 
