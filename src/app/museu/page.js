@@ -357,8 +357,8 @@ export default function MuseuPage() {
               Redesenhar velhos traçados<br />
               Todo passado está presente&quot;
             </p>
-            <footer><b>— Manifesto - Museu Nacional - todas as vozes do fogo</b></footer>
-            <footer><b>Excerto de peça teatral desenvolvida pela Barca dos Corações Partidos</b></footer>
+            <footer><b>— Manifesto — Museu Nacional — Todas as vozes do fogo</b></footer>
+            <footer><b>— Excerto de peça teatral desenvolvida pela <i>Barca dos Corações Partidos</i></b></footer>
           </blockquote>
 
           <figure>
