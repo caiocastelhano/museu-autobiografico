@@ -128,7 +128,7 @@
     margin-top: 12px;
     font-size: 0.85rem;
     text-align: center;
-    color: #000;
+    color: #666;
     font-style: italic;
     line-height: 1.4;
   }
@@ -147,6 +147,7 @@
     .singleVideoSection figcaption {
       font-size: 0.85rem;
       padding: 0 8px;
+      color: #666;
     }
   }
   
@@ -311,7 +312,7 @@
     text-align: center;
     font-style: italic;
     margin-bottom: 48px;
-    color: black;
+    color: #666;
   }
   
   /* ===== RESPONSIVIDADE ===== */
@@ -339,6 +340,7 @@
     .photoGridCaption {
       font-size: 0.85rem;
       padding: 0 8px;
+      color: #666;
     }
   }
   
@@ -395,7 +397,7 @@
     text-align: center;
     font-style: italic;
     margin-bottom: 40px;
-    color: black;
+    color: #666;
   }
   
   /* Box de destaque com dois parágrafos */
@@ -432,7 +434,7 @@
     text-align: center;
     font-style: italic;
     margin-bottom: 40px;
-    color: black;
+    color: #666;
   }
   
   /* Citação poética */
