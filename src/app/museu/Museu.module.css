@@ -302,6 +302,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    border: 2.5px solid black;
   }
   
   /* Legenda da galeria */
@@ -352,6 +353,156 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  /* ===== BLOCO EXERCÍCIOS: "O Museu de Nós" ===== */
+
+.exercisesSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .exercisesSection h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-transform: none;
+    color: black;
+  }
+  
+  .exercisesSection p {
+    margin-bottom: 16px;
+    color: black;
+  }
+  
+  .exercisesSection figure {
+    margin: 40px 0 12px;
+  }
+  
+  .video {
+    width: 100%;
+    height: 400px;
+    border: none;
+    display: block;
+  }
+  
+  .exercisesSection figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  /* Box de destaque com dois parágrafos */
+  .highlightBox {
+    border: 1px solid black;
+    padding: 24px;
+    margin: 32px auto;
+    max-width: 800px;
+    box-sizing: border-box;
+  }
+  
+  .highlightBox p {
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* Linha com dois vídeos */
+  .videoRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px 0 8px;
+  }
+  
+  .videoRow iframe {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+  }
+  
+  .videoRowCaption {
+    font-size: 0.85rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  /* Citação poética */
+  .poeticQuote {
+    max-width: 800px;
+    margin: 40px auto;
+    padding-left: 16px;
+    border-left: 2px solid black;
+    font-style: italic;
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    line-height: 1.8;
+  }
+  
+  .poeticQuote footer {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* ===== RESPONSIVIDADE ===== */
+  @media (max-width: 768px) {
+    .exercisesSection {
+      padding: 0 16px;
+      font-size: 0.95rem;
+    }
+  
+    .exercisesSection h2 {
+      font-size: 1.4rem;
+    }
+  
+    .highlightBox {
+      padding: 16px;
+    }
+  
+    .highlightBox p {
+      font-size: 0.9rem;
+    }
+  
+    .video {
+      height: 240px;
+    }
+  
+    .videoRow iframe {
+      min-width: 100%;
+      height: 240px;
+    }
+  
+    .poeticQuote {
+      padding-left: 12px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1080px) {
+    .exercisesSection {
+      padding: 0 24px;
+    }
+  
+    .video {
+      height: 320px;
+    }
+  
+    .videoRow iframe {
+      height: 280px;
+    }
+  }
+  
   
   
   

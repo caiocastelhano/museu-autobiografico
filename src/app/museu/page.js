@@ -65,11 +65,11 @@ export default function MuseuPage() {
                   fez pensar na criação de uma oficina/espaço possível para <b>fortalecer memórias da minha região,
                   memórias <u>do lugar de onde vim</u></b>:
                 </p>
+                <p>
+                  Ermelino Matarazzo, periferia da Zona Leste de São Paulo.
+              </p>
               </blockquote>
 
-              <p>
-                Ermelino Matarazzo, periferia da Zona Leste de São Paulo.
-              </p>
             </div>
           </div>
         </section>
@@ -113,9 +113,9 @@ export default function MuseuPage() {
           <blockquote>
             <p>
               <u><i>
-                Discutir a importância do museu dentro de nossa cultura, questionando o que nos afasta de equipamentos 
-                culturais muitas vezes elitizados. Possibilitar a ressignificação e pertencimentos aos espaços museais
-              </i></u>.
+                &quot;Discutir a importância do museu dentro de nossa cultura, questionando o que nos afasta de equipamentos 
+                culturais muitas vezes elitizados. Possibilitar a ressignificação e pertencimentos aos espaços museais.&quot;
+              </i></u>
             </p>
           </blockquote>
 
@@ -127,7 +127,7 @@ export default function MuseuPage() {
           <blockquote>
             <p>
               <i>
-                Trabalhando com mediações dentro do <u>Museu</u> da Imagem e do Som Experience, notei que a experiência em teatro 
+                &quot;Trabalhando com mediações dentro do <u>Museu</u> da Imagem e do Som Experience, notei que a experiência em teatro 
                 foi um ponto chave para aprofundar vivências em um <u>espaço culturalmente percebido como elitizado</u>. 
                 No percurso dos meses, compreendi que ferramentas e dispositivos teatrais performativos e os exercícios 
                 autobiográficos eram muito bem recebidos durante os encontros com escolas, grupos de centros de 
@@ -135,7 +135,7 @@ export default function MuseuPage() {
                 <u>realizar a oficina dentro de um equipamento cultural</u> será importante para proporcionar experiências 
                 afetivas individuais e coletivas com o território em que vivem, compartilhando experiências com outras 
                 pessoas que habitam o mesmo espaço
-              </i>.
+              </i>.&quot;
             </p>
           </blockquote>
         </FadeInSection>
@@ -286,7 +286,7 @@ export default function MuseuPage() {
               className={styles.video}
               aria-describedby="video2-caption"
             ></iframe>
-            <figcaption id="video2-caption">Encontro no Centro Cultural da Penha, 2022</figcaption>
+            <figcaption id="video2-caption">Encontro no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
 
           <div className={styles.highlightBox}>
@@ -308,7 +308,7 @@ export default function MuseuPage() {
               className={styles.video}
               aria-describedby="video3-caption"
             ></iframe>
-            <figcaption id="video3-caption">Encontro no Centro Cultural da Penha, 2022</figcaption>
+            <figcaption id="video3-caption">Encontro no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
 
           <p>
@@ -357,7 +357,8 @@ export default function MuseuPage() {
               Redesenhar velhos traçados<br />
               Todo passado está presente&quot;
             </p>
-            <footer><b>— Manifesto - Museu Nacional - todas as vozes do fogo | excerto de peça teatral desenvolvida pela Barca dos Corações Partidos</b></footer>
+            <footer><b>— Manifesto - Museu Nacional - todas as vozes do fogo</b></footer>
+            <footer><b>Excerto de peça teatral desenvolvida pela Barca dos Corações Partidos</b></footer>
           </blockquote>
 
           <figure>
@@ -371,7 +372,7 @@ export default function MuseuPage() {
               className={styles.video}
               aria-describedby="video6-caption"
             ></iframe>
-            <figcaption id="video6-caption">Aquecimento em Roda no Centro Cultural da Penha, 2022</figcaption>
+            <figcaption id="video6-caption">Aquecimento em Roda no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
 
           <p>
@@ -384,7 +385,7 @@ export default function MuseuPage() {
             </i>
           </p>
 
-          <p><b>_Em breve: faremos uma galeria digital de objetos pessoais__</b></p>
+          <p><b>_Em breve: uma galeria digital de objetos pessoais__</b></p>
         </FadeInSection>
 
       </main>
