@@ -107,12 +107,27 @@
   }
 }
 
-.blinkingStar {
-  animation: blink 2.8s infinite ease-in-out;
+.blinkingStar1 {
+  animation: blink 2.5s infinite ease-in-out;
+}
+
+.blinkingStar2 {
+  animation: blink 3.4s infinite ease-in-out;
+}
+
+.blinkingStar3 {
+  animation: blink 4.1s infinite ease-in-out;
+}
+
+.blinkingStar4 {
+  animation: blink 5.6s infinite ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .blinkingStar {
+  .blinkingStar1,
+  .blinkingStar2,
+  .blinkingStar3,
+  .blinkingStar4 {
     animation: none !important;
   }
 }
