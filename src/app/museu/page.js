@@ -198,27 +198,6 @@ export default function MuseuPage() {
             individuais que, quando apresentadas coletivamente, ressignificam a história de um bairro ou cidade.
           </p>
 
-          <blockquote aria-label="Citação de autora">
-            <p>
-              &quot;A gente pensa muito na palavra mediação em relação com um público, né, então ela, quase que 
-              obrigatoriamente, está sempre muito colada a uma noção institucional. Pela minha experiência, 
-              <b>também de uma pessoa que nasceu e cresceu numa cidade como São Paulo, que é conhecida também como 
-              uma capital cultural, que concentra um número enorme de instituições</b>, o quanto que a maioria destas 
-              instituições estão <u>centralizadas numa parte da cidade e o quanto estão distantes de um público que 
-              realmente precisa dessas instituições</u>. 
-            </p>
-            <p>
-              Em outros países você encontra museus em lugares que são periferia, assim, que tem um grande museu num 
-              lugar como <b>Arthur Alvim, na zona leste de São Paulo. Então eu acho que falta esse pensamento 
-              como prática do que a gente tem chamado de descolonizar. Descolonizar o saber, as práticas, 
-              mas acho que, efetivar a descolonização da prática é entender que esses territórios também 
-              são merecedores desse tipo de empreendimento, de investimento</b>.&quot;
-            </p>
-            <footer>
-              <b>— Renata Felinto</b>
-            </footer>
-          </blockquote>
-
           <p>
             Partindo da <u>simbologia que a palavra carrega</u>, o projeto surge como uma <b>oportunidade de deslocar 
             sentidos e positivar experiências</b>, fazendo com que as pessoas participantes percebam que, 
