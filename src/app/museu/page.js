@@ -23,6 +23,29 @@ export default function MuseuPage() {
         {/* Bloco Forma geométrica + texto inicial */}
         <section className={styles.introSection}>
           <div className={styles.introContentWrapper}>
+
+            {/* SVG com pontos e estrelas */}
+            <svg
+              className={styles.floatingElementsIntro}
+              viewBox="0 0 5000 1000"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              {/* Lado esquerdo (x entre 1950–2400) */}
+              <circle cx="1850" cy="100" r="13" fill="black" />
+              <circle cx="90" cy="420" r="6" fill="black" />
+              <circle cx="220" cy="550" r="12" fill="black" />
+              <circle cx="380" cy="350" r="5" fill="black" />
+              <circle cx="333" cy="900" r="4.9" fill="black" />
+              <circle cx="70" cy="700" r="9.5" fill="black" />
+              <image href="/images/star.png" x="1970" y="400" width="35" height="35" />
+              
+              {/* Lado direito (x entre 3080–3400) */}
+              <circle cx="4985" cy="50" r="8" fill="black" />
+              <circle cx="4800" cy="800" r="7" fill="black" />
+              <image href="/images/star.png" x="4920" y="350" width="25" height="25" />
+            </svg>
+
             <svg
               className={styles.svgShapeIntro}
               viewBox="0 130 300 250"
@@ -124,6 +147,29 @@ export default function MuseuPage() {
             trazendo o universo que culmina em seu nome:
           </p>
 
+          <div className={styles.textBlockWrapper}>
+
+          {/* SVG de pontos e estrelas no lado esquerdo */}
+          <svg
+            className={styles.floatingElementsLeft}
+            viewBox="0 0 5000 1000"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            {/* Pontinhos lado esquerdo */}
+            <circle cx="500" cy="200" r="21" fill="black" />
+            <circle cx="150" cy="550" r="15" fill="black" />
+            <circle cx="1200" cy="700" r="11" fill="black" />
+            <line x1="500" y1="200" x2="150" y2="550" stroke="black" strokeWidth="6" />
+            <line x1="150" y1="550" x2="1200" y2="700" stroke="black" strokeWidth="6" />
+            <line x1="1200" y1="700" x2="500" y2="200" stroke="black" strokeWidth="6" />
+
+            {/* Estrelas lado esquerdo */}
+            <image href="/images/star.png" x="200" y="250" width="25" height="25" />
+            <image href="/images/star.png" x="1300" y="500" width="18" height="18" />
+          </svg>
+
+          {/* O bloco de texto */}
           <blockquote>
             <p>
               <i>
@@ -138,6 +184,8 @@ export default function MuseuPage() {
               </i>.&quot;
             </p>
           </blockquote>
+        </div>
+
         </FadeInSection>
 
         {/* Bloco O que é um museu? */}
