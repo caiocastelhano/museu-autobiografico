@@ -146,6 +146,7 @@ export default function CorpoPage() {
                   aria-label="Vídeo de Marcelinho e Claudia, gravação em VHS feita por seu pai, Marcelo Moraes Maia, em 1992"
                   style={{ border: "none" }}
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
                 <figcaption>
                   Marcelinho e Claudia | Gravação em VHS feita por meu pai, Marcelo Moraes Maia | 1992.
@@ -162,6 +163,7 @@ export default function CorpoPage() {
                   aria-label="Vídeo de Marcelinho brincando no chiqueiro no dia seguinte à festa de um ano, gravado por seu pai, Marcelo Moraes Maia, em 1992"
                   style={{ border: "none" }}
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
                 <figcaption>
                   Marcelinho brincando no chiqueiro no dia seguinte à festa de aniversário de um ano | Gravação em VHS feita por meu pai, Marcelo Moraes Maia | 1992.
@@ -267,6 +269,7 @@ export default function CorpoPage() {
                     style={{ border: "none" }}
                     allowFullScreen
                     className={styles.video}
+                    loading="lazy"
                   ></iframe>
                   <figcaption>
                     Registros do primeiro encontro da terceira rodada da oficina na Biblioteca Pública Cassiano Ricardo, Tatuapé - São Paulo.
@@ -588,6 +591,7 @@ export default function CorpoPage() {
                     frameBorder="0"
                     allowFullScreen
                     className={styles.video}
+                    loading="lazy"
                   ></iframe>
                   <figcaption>
                     Trabalhando a visão, o sensorial e o espaço com aquecimento corporal musicalizado.
