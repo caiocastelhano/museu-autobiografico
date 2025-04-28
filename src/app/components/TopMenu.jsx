@@ -1,5 +1,5 @@
-// TopMenu.jsx
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -12,28 +12,23 @@ export default function TopMenu() {
   const pathname = usePathname();
 
   useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 768);
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    function handleMediaChange(e) {
+      setIsMobile(e.matches);
     }
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    // Já define no carregamento
+    handleMediaChange(mediaQuery);
+
+    // Escuta mudanças de viewport
+    mediaQuery.addEventListener("change", handleMediaChange);
+
+    // Limpa ao desmontar
+    return () => mediaQuery.removeEventListener("change", handleMediaChange);
   }, []);
 
-  // SEÇÕES DO SITE (sem "agradecimentos")
-  const sections = [
-    { label: "museu", href: "/museu" },
-    { label: "autobiográfico", href: "/autobiografico" },
-    { label: "território", href: "/territorio" },
-    { label: "leste", href: "/leste" },
-    { label: "corpo", href: "/corpo" },
-    { label: "memória", href: "/memoria" },
-    { label: "sobre", href: "/sobre" },
-    { label: "contato", href: "/contato" },
-  ];
-
-  // Home na versão desktop: mostrar "sobre" e "contato"
+  // Home (desktop): mostrar "sobre" e "contato"
   if (pathname === "/" && !isMobile) {
     return (
       <>
@@ -55,7 +50,7 @@ export default function TopMenu() {
     );
   }
 
-  // Home no mobile: só sobre e contato
+  // Home (mobile): mostrar menu hambúrguer
   if (pathname === "/" && isMobile) {
     return (
       <div className={styles.menuMobileWrapper}>
@@ -64,9 +59,7 @@ export default function TopMenu() {
     );
   }
 
-  // Internas (desktop e mobile): todas as seções menos a atual
-  const filteredSections = sections.filter(section => section.href !== pathname);
-
+  // Páginas internas (desktop e mobile): mostrar InternalMenu
   return (
     <div
       className={styles.menuWrapperInterna}
