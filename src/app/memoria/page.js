@@ -465,6 +465,7 @@ export default function MemoriaPage() {
                 style={{ border: "none" }}
                 allowFullScreen
                 className={styles.video}
+                loading="lazy"
                 ></iframe>
                 <figcaption className={styles.caption}>
                 Gleice lê um texto criado a partir de entrevista com seu pai.
@@ -525,6 +526,7 @@ export default function MemoriaPage() {
                 style={{ border: "none" }}   
                 allowFullScreen
                 className={styles.video}
+                loading="lazy"
                 ></iframe>
             </div>
 
@@ -538,6 +540,7 @@ export default function MemoriaPage() {
                 style={{ border: "none" }}
                 allowFullScreen
                 className={styles.video}
+                loading="lazy"
                 ></iframe>
             </div>
 
@@ -551,6 +554,7 @@ export default function MemoriaPage() {
                 style={{ border: "none" }}
                 allowFullScreen
                 className={styles.video}
+                loading="lazy"
                 ></iframe>
             </div>
         </FadeInSection>
@@ -708,6 +712,7 @@ export default function MemoriaPage() {
                 style={{ border: "none" }}
                 allowFullScreen
                 className={styles.video}
+                loading="lazy"
                 ></iframe>
                 <figcaption className={styles.caption}>
                 Vídeo com registro do exercício inspirado na obra “Antes da Performance”, de Edgar Degas.
