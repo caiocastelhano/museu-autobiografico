@@ -141,10 +141,11 @@ export default function SobrePage() {
           <figure className={styles.officeTwoFigure}>
               <Image
                 src="/images/sobre/foto3.jpg"
-                alt="Participantes da oficina"
+                alt="Participantes da oficina 2"
                 width={600}
                 height={400}
                 className={styles.officeTwoPhoto}
+                loading="lazy"
               />
 
             <figcaption className={styles.officeTwoCaption}>
@@ -164,6 +165,7 @@ export default function SobrePage() {
               width={600}
               height={400}
               style={{ marginBottom: "20px" }}
+              loading="lazy"
             />
             <p>
               Essa primeira edição contou com a parceria do <b>Professor Doutor Fabio Ortolano, também colega de turma no SENAC</b>. Desde então, o projeto vem sendo atravessado por uma inquietação constante com os limites da representação e por um desejo de ativar potências reais no encontro com o outro.
@@ -329,6 +331,7 @@ export default function SobrePage() {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                tabIndex="-1"
               ></iframe>
             </div>
           </figure>
@@ -350,6 +353,7 @@ export default function SobrePage() {
                 width={600}
                 height={400}
                 className={styles.officeFourPhoto}
+                loading="lazy"
               />
               <Image
                 src="/images/sobre/foto5.jpg"
@@ -357,6 +361,7 @@ export default function SobrePage() {
                 width={600}
                 height={400}
                 className={styles.officeFourPhoto}
+                loading="lazy"
               />
             </div>
 
