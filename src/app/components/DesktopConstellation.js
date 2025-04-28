@@ -10,7 +10,7 @@ function Star({ top, left, className }) {
     >
       <Image
         src="/images/star.png"
-        alt="Estrela"
+        alt=""
         fill
         style={{ objectFit: 'contain' }}
       />
