@@ -41,7 +41,7 @@ export default function ContatoPage() {
       <Navbar />
       <TopMenu />
 
-      <main className={styles.mainContent} role="main" aria-label="Página de contato">
+      <main className={styles.mainContent} role="main" aria-labelledby="contato-titulo">
         <svg
           viewBox="0 0 5000 4000"
           xmlns="http://www.w3.org/2000/svg"
@@ -134,6 +134,7 @@ export default function ContatoPage() {
                 width={400}
                 height={300}
                 className={styles.contactImage}
+                loading="lazy"
               />
             </figure>
 
@@ -187,6 +188,7 @@ export default function ContatoPage() {
                 width={400}
                 height={300}
                 className={styles.contactImage}
+                loading="lazy"
               />
             </figure>
           </div>
