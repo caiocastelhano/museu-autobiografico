@@ -53,7 +53,7 @@ export default function InternalMenu() {
         ref={buttonRef}
         onClick={() => setIsOpen((prev) => !prev)}
         className={styles.burger}
-        aria-label="Abrir menu de navegação"
+        aria-label={isOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
         aria-expanded={isOpen}
         aria-controls="menu-interno"
       >
@@ -70,15 +70,14 @@ export default function InternalMenu() {
           role="menu"
         >
           {filteredSections.map((section) => (
-            <Link key={section.href} href={section.href} legacyBehavior>
-              <a
-                className={styles.menuItem}
-                onClick={() => setIsOpen(false)}
-                role="menuitem"
-              >
-                {section.label}
-              </a>
-            </Link>
+            <Link 
+              key={section.href} 
+              href={section.href} 
+              className={styles.menuItem} 
+              onClick={() => setIsOpen(false)} 
+              role="menuitem">
+            {section.label}
+          </Link>
           ))}
         </div>
       )}
