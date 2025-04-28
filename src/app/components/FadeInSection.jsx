@@ -8,7 +8,7 @@ export default function FadeInSection({ children, className }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.1 }}
-      className={className}
+      className={className || ""}
     >
       {children}
     </motion.section>
