@@ -49,17 +49,17 @@ export default function MobileConstellation() {
         <circle cx="480" cy="1680" r="1" fill="black" className={styles.blinkingStar1} />
 
         {/* Estrelinhas PNG */}
-        <image href="/images/star.png" x="100" y="40" width="12" height="12" className={styles.blinkingStar2} />
+        <image href="/images/star.png" x="100" y="40" width="12" height="12" class={styles.blinkingStar2} />
         <image href="/images/star.png" x="20" y="200" width="12" height="12" />
-        <image href="/images/star.png" x="500" y="350" width="15" height="15" className={styles.blinkingStar3} />
+        <image href="/images/star.png" x="500" y="350" width="15" height="15" class={styles.blinkingStar3} />
         <image href="/images/star.png" x="250" y="440" width="12" height="12" />
         <image href="/images/star.png" x="400" y="670" width="12" height="12" />
-        <image href="/images/star.png" x="60" y="750" width="12" height="12" className={styles.blinkingStar2} />
-        <image href="/images/star.png" x="150" y="900" width="12" height="12" className={styles.blinkingStar1} />
+        <image href="/images/star.png" x="60" y="750" width="12" height="12" class={styles.blinkingStar2} />
+        <image href="/images/star.png" x="150" y="900" width="12" height="12" class={styles.blinkingStar1} />
         <image href="/images/star.png" x="480" y="1050" width="12" height="12" />
         <image href="/images/star.png" x="100" y="1150" width="12" height="12" />
-        <image href="/images/star.png" x="300" y="1300" width="18" height="18" className={styles.blinkingStar4} />
-        <image href="/images/star.png" x="280" y="1750" width="12" height="12" className={styles.blinkingStar1} />
+        <image href="/images/star.png" x="300" y="1300" width="18" height="18" class={styles.blinkingStar4} />
+        <image href="/images/star.png" x="280" y="1750" width="12" height="12" class={styles.blinkingStar1} />
         <image href="/images/star.png" x="100" y="1800" width="12" height="12" />
 
         {/* Formas com texto e arestas visíveis */}
