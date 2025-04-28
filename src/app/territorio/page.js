@@ -105,15 +105,141 @@ export default function TerritorioPage() {
         </section>
 
         {/* Bloco Viewpoints e Composição */}
+        <section>
+          <h2>VIEWPOINTS E COMPOSIÇÃO</h2>
+          <h3>Uma das mais relevantes bases criativas da oficina</h3>
+
+          <p>
+            Para chegar a esse trabalho coletivo, é essencial dar espaço  ao trabalho com <b>Viewpoints e Composição</b>. Uma descoberta de um caminho potente de criação e escuta coletiva.
+          </p>
+
+          <p>
+            Essas práticas se incorporaram naturalmente à rotina dos encontros desde a primeira rodada da oficina – presentes nos <b>aquecimentos</b>, nos <b>jogos com o espaço</b> e, principalmente, nas <b>“cheganças”</b> a cada novo ambiente.
+          </p>
+
+          <p>
+            Mais do que técnica, Viewpoints <b>virou linguagem de pertencimento a um território e de criação compartilhada</b>.
+          </p>
+
+          <blockquote>
+            <p>
+              &quot;<i>Viewpoints são uma série de nomes dados a certos princípios de movimento através do tempo e do espaço; esses nomes constituem uma linguagem para falar sobre o que acontece no palco</i>.&quot;
+            </p>
+            <footer><b>— Anne Bogart e Tina Landau.</b></footer>
+          </blockquote>
+
+          <p>
+            Desenvolvidas a partir dos <b>Six Viewpoints</b> de <i>Mary Overlie</i> (1970), e sistematizadas por Bogart e Landau, essas ferramentas estimulam a criação teatral a partir do corpo, da escuta e da improvisação. <b>Elas rompem com hierarquias tradicionais e fortalecem o coletivo</b>.
+          </p>
+
+          <p>
+            Durante minha formação, aprendi os <b>nove Viewpoints físicos</b>, divididos entre os eixos de <b>Tempo e Espaço</b>:
+          </p>
+
+          <figure>
+            <Image
+              src="/images/territorio/aula_nucleoexperimental.jpg"
+              alt="Mapa afetivo do território"
+              width={500}
+              height={300}
+              className={styles.image}
+            />
+            <figcaption> Fim de aula da 15ª turma do Núcleo Experimental de Artes Cênicas do SESI-SP montando composição coletiva(2015).</figcaption>
+          </figure>
+        </section>
 
         {/* Bloco Duas Colunas: espaço e tempo */}
+        <section className={styles.twoColumnSection}>
+          <div className={styles.column}>
+            <h3>Tempo</h3>
 
+            <h4>Andamento</h4>
+            <p>A medida da velocidade na qual um movimento acontece.</p>
+
+            <h4>Duração</h4>
+            <p>Quanto dura um movimento ou sequência de movimentos.</p>
+
+            <h4>Resposta Cinestésica</h4>
+            <p>Reação impulsiva ao movimento externo, no tempo do agora.</p>
+
+            <h4>Repetição</h4>
+            <p>Repetição de movimentos internos ou externos (formas, gestos, ritmos).</p>
+          </div>
+
+          <div className={styles.column}>
+            <h3>Espaço</h3>
+
+            <h4>Forma</h4>
+            <p>O desenho que o corpo cria no espaço.</p>
+
+            <h4>Gesto</h4>
+            <p>Movimento com começo, meio e fim. Pode ser: Comportamental (realista) ou Expressivo (poético, simbólico).</p>
+
+            <h4>Arquitetura</h4>
+            <p>Como o corpo se relaciona com o espaço físico — sua massa, textura, luz, cor, som.</p>
+
+            <h4>Relação Espacial</h4>
+            <p>Distâncias entre corpos, entre grupos ou com o espaço arquitetônico.</p>
+
+            <h4>Topografia</h4>
+            <p>Os caminhos que o corpo traça no chão, o padrão da movimentação.</p>
+          </div>
+        </section>
 
         {/* Bloco Uma Coluna: composição */}
+        <section className={styles.centered}>
+          <div className={styles.highlightBox}>
+            <h3>E a Composição?</h3>
 
+            <p>
+              Composição é uma forma de pensar e organizar a criação cênica.
+              É liberdade com escuta. Impulso com intenção.
+            </p>
+
+            <p>
+              Segundo Bogart e Landau, Composição é:
+            </p>
+
+            <ul>
+              <li>Um método para gerar e desenvolver vocabulário teatral.</li>
+              <li>Um processo para acessar pensamentos e sentimentos escondidos.</li>
+              <li>Um campo de diálogo com outras linguagens (música, pintura, fotografia).</li>
+              <li>Uma prática para quem cria — seja diretor, ator, performer, designer.</li>
+            </ul>
+
+            <figure>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/VBSihaGzDf8"
+                title="Exercício de Composição"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className={styles.video}
+              ></iframe>
+              <figcaption>Centro Cultural da Penha | Exercício de Composição | 2022.</figcaption>
+            </figure>
+          </div>
+        </section>
 
         {/* Bloco Texto + Quote do Marcelo */}
+        <section className={styles.leftAligned}>
+          <p>
+            <b>Essas ferramentas foram adaptadas com escuta ao contexto territorial e às vivências e corpos das pessoas participantes.</b>
+          </p>
 
+          <p>
+            A escolha pelo uso de Viewpoints como coluna vertebral de todos os encontros ajudaram a criar um ambiente acessível, intuitivo e sensível, facilitando a integração das pessoas para que, nos exercícios de memória, se tornasse mais fácil e menos racional o compartilhamento de histórias.
+          </p>
+
+          <blockquote>
+            <p>
+              &quot;No território do Museu Autobiográfico, é proposto um lugar onde novos corpos, gestos e histórias podem se desenvolver a partir do chão em que estão. Ao mover o corpo em um espaço, move-se também os pensamentos criativos que se unem, criando um coletivo com maior senso de pertencimento e confiança em contar a própria história.&quot;
+            </p>
+            <footer><b>Marcelo, mediador da oficina</b></footer>
+          </blockquote>
+        </section>
       </main>
 
       <BackToHomeButton />
