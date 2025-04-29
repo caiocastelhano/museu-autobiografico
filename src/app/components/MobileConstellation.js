@@ -3,7 +3,7 @@ import styles from '../styles/Page.module.css';
 
 export default function MobileConstellation() {
   return (
-    <div className={styles.mobileConstellationWrapper}>
+    <div className={styles.mainContent}>
       {/* Título oculto para leitores de tela */}
       <h1 className={styles.visuallyHidden}>Página inicial - Museu Autobiográfico (versão mobile)</h1>
 

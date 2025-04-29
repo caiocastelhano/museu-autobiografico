@@ -98,13 +98,6 @@
   z-index: 10;
 }
 
-.mobileConstellationWrapper {
-  width: 100%;
-  min-height: 250vh; /* ou mais, se precisar de mais rolagem */
-  position: relative;
-  overflow: visible;
-}
-
 @keyframes blink {
   0%, 100% {
     opacity: 0.9;
@@ -149,13 +142,6 @@
     overflow-y: auto;
     overflow-x: hidden;
     height: auto;
-  }
-
-  .pageContainer {
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: visible;
   }
 
   .constellation {
