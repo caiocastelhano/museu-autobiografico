@@ -59,6 +59,7 @@ export default function TerritorioPage() {
                   width={500}
                   height={300}
                   className={styles.image}
+                  priority
                 />
               </figure>
 
@@ -189,6 +190,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -200,6 +202,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
               </figure>
             </div>
@@ -238,6 +241,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -249,6 +253,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -260,6 +265,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -271,6 +277,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -282,6 +289,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -293,6 +301,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
               </figure>
             </div>
@@ -331,6 +340,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -342,6 +352,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -353,6 +364,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -364,6 +376,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -375,6 +388,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
               </figure>
 
@@ -422,6 +436,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
 
                 <iframe
@@ -433,6 +448,7 @@ export default function TerritorioPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.timelineVideo}
+                  loading="lazy"
                 ></iframe>
               </figure>
 
@@ -587,6 +603,7 @@ export default function TerritorioPage() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className={styles.video}
+                loading="lazy"
               ></iframe>
               <figcaption>
                 Centro Cultural da Penha | Exercício de Composição | 2022.
