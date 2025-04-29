@@ -53,6 +53,8 @@
 @media (max-width: 768px) {
   .footerHome {
     position: relative;
+    bottom: auto;
+    left: auto;
     padding: 12px;
     font-size: 0.6rem;
   }
