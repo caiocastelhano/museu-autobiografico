@@ -257,12 +257,12 @@ export default function MuseuPage() {
             className={styles.photoGrid}
             aria-labelledby="photoGridCaption"
           >
-            <Image src="/images/museu/foto1.JPG" alt="Aula aberta no Centro Cultural da Penha, 2022" width={500} height={300} className={styles.image} />
-            <Image src="/images/museu/foto2.JPG" alt="Aula aberta no Centro Cultural da Penha, 2022" width={500} height={300} className={styles.image} />
-            <Image src="/images/museu/foto3.JPG" alt="Aula aberta no Centro Cultural da Penha, 2022" width={500} height={300} className={styles.image} />
-            <Image src="/images/museu/foto4.JPG" alt="Aula aberta no Centro Cultural da Penha, 2022" width={500} height={300} className={styles.image} />
-            <Image src="/images/museu/foto5.JPG" alt="Aula aberta no Centro Cultural da Penha, 2022" width={500} height={300} className={styles.image} />
-            <Image src="/images/museu/foto6.JPG" alt="Aula aberta no Centro Cultural da Penha, 2022" width={500} height={300} className={styles.image} />
+            <Image src="/images/museu/foto1.jpg" alt="Aula aberta no Centro Cultural da Penha, 2022" priority width={500} height={300} className={styles.image} />
+            <Image src="/images/museu/foto2.jpg" alt="Aula aberta no Centro Cultural da Penha, 2022" priority width={500} height={300} className={styles.image} />
+            <Image src="/images/museu/foto3.jpg" alt="Aula aberta no Centro Cultural da Penha, 2022" priority width={500} height={300} className={styles.image} />
+            <Image src="/images/museu/foto4.jpg" alt="Aula aberta no Centro Cultural da Penha, 2022" priority width={500} height={300} className={styles.image} />
+            <Image src="/images/museu/foto5.jpg" alt="Aula aberta no Centro Cultural da Penha, 2022" priority width={500} height={300} className={styles.image} />
+            <Image src="/images/museu/foto6.jpg" alt="Aula aberta no Centro Cultural da Penha, 2022" priority width={500} height={300} className={styles.image} />
           </div>
 
           <figcaption id="photoGridCaption" className={styles.photoGridCaption}>
@@ -284,6 +284,7 @@ export default function MuseuPage() {
               allowFullScreen
               className={styles.video}
               aria-describedby="video1-caption"
+              loading="lazy"
             ></iframe>
             <figcaption id="video1-caption">
               Gravação de Álbum de Fotografias feitas por Gleice. Álbum apresentado como objeto importante de sua história no Centro Cultural da Penha, 2022.
@@ -312,6 +313,7 @@ export default function MuseuPage() {
               allowFullScreen
               className={styles.video}
               aria-describedby="video2-caption"
+              loading="lazy"
             ></iframe>
             <figcaption id="video2-caption">Encontro no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
@@ -334,6 +336,7 @@ export default function MuseuPage() {
               allowFullScreen
               className={styles.video}
               aria-describedby="video3-caption"
+              loading="lazy"
             ></iframe>
             <figcaption id="video3-caption">Encontro no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
@@ -357,6 +360,7 @@ export default function MuseuPage() {
               allowFullScreen
               className={styles.video}
               aria-describedby="videoRowCaption"
+              loading="lazy"
             ></iframe>
             <iframe
               width="100%"
@@ -367,6 +371,7 @@ export default function MuseuPage() {
               allowFullScreen
               className={styles.video}
               aria-describedby="videoRowCaption"
+              loading="lazy"
             ></iframe>
           </div>
           <figcaption id="videoRowCaption" className={styles.videoRowCaption}>
@@ -398,6 +403,7 @@ export default function MuseuPage() {
               allowFullScreen
               className={styles.video}
               aria-describedby="video6-caption"
+              loading="lazy"
             ></iframe>
             <figcaption id="video6-caption">Aquecimento em Roda no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
@@ -412,7 +418,7 @@ export default function MuseuPage() {
             </i>
           </p>
 
-          <p><b>_Em breve: uma galeria digital de objetos pessoais__</b></p>
+          <p><b>_Em breve: uma galeria digital de objetos pessoais_</b></p>
         </FadeInSection>
 
       </main>
