@@ -702,6 +702,7 @@
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
+  position: relative;
 }
 
 .dancingBodySection h2 {
@@ -787,6 +788,22 @@
   border: 2px solid black;
   margin-top: 16px;
   margin-bottom: 12px;
+}
+
+.bgDancingBody {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 3400px; /* Aqui a altura é maior porque você usou viewBox maior */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingElements {
+  width: 100%;
+  height: 100%;
 }
 
 /* ===== RESPONSIVIDADE (CORPOS DANÇANTES) ===== */

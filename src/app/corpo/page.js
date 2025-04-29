@@ -525,10 +525,40 @@ export default function CorpoPage() {
                 <div className={styles.bgDancingBody} aria-hidden="true">
                   <svg
                     className={styles.floatingElements}
-                    viewBox="0 0 5000 800"
+                    viewBox="0 0 5000 3400"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
-                    {/* Você pode inserir aqui os pontos e estrelas, se houver nesse bloco */}
+                    {/* Lado direito (área segura entre 3000–3390 no eixo X) */}
+                    <circle cx="3050" cy="100" r="2" fill="black" />
+                    <circle cx="3120" cy="200" r="2.5" fill="black" />
+                    <circle cx="3280" cy="250" r="1.8" fill="black" />
+                    <circle cx="3350" cy="300" r="2" fill="black" />
+                    <circle cx="3180" cy="400" r="2" fill="black" />
+                    <circle cx="3100" cy="550" r="1.5" fill="black" />
+                    <circle cx="3300" cy="600" r="1.8" fill="black" />
+                    <circle cx="3220" cy="750" r="2" fill="black" />
+                    <circle cx="3050" cy="900" r="1.5" fill="black" />
+                    <circle cx="3380" cy="950" r="2" fill="black" />
+                    <circle cx="3120" cy="1200" r="2.2" fill="black" />
+                    <circle cx="3250" cy="1350" r="1.8" fill="black" />
+                    <circle cx="3070" cy="1600" r="1.6" fill="black" />
+                    <circle cx="3330" cy="1800" r="1.7" fill="black" />
+                    <circle cx="3200" cy="2000" r="2.2" fill="black" />
+                    <circle cx="3100" cy="2200" r="2" fill="black" />
+                    <circle cx="3300" cy="2400" r="1.8" fill="black" />
+                    <circle cx="3050" cy="2600" r="2" fill="black" />
+                    <circle cx="3180" cy="2800" r="1.6" fill="black" />
+                    <circle cx="3360" cy="3000" r="2" fill="black" />
+                    <circle cx="3100" cy="3200" r="1.8" fill="black" />
+                    <circle cx="3390" cy="3350" r="2.5" fill="black" />
+
+                    {/* Estrelas PNG no lado direito */}
+                    <image href="/images/star.png" x="3200" y="180" width="16" height="16" />
+                    <image href="/images/star.png" x="3300" y="500" width="12" height="12" />
+                    <image href="/images/star.png" x="3100" y="900" width="18" height="18" />
+                    <image href="/images/star.png" x="3250" y="1700" width="10" height="10" />
+                    <image href="/images/star.png" x="3350" y="2900" width="22" height="22" />
                   </svg>
                 </div>
 
@@ -630,19 +660,15 @@ export default function CorpoPage() {
                   >
                     {/* Lado esquerdo (x entre 1950–2400) */}
                     <circle cx="1950" cy="150" r="1.5" fill="black" />
-                    <circle cx="2000" cy="180" r="2" fill="black" />
                     <circle cx="2042" cy="230" r="1.8" fill="black" />
                     <image href="/images/star.png" x="1980" y="200" width="10" height="10" />
                     <image href="/images/star.png" x="1970" y="250" width="9" height="9" />
 
                     {/* Lado direito (x entre 3080–3400) */}
-                    <circle cx="2900" cy="90" r="1.5" fill="black" />
                     <circle cx="3100" cy="140" r="1.8" fill="black" />
                     <circle cx="3000" cy="190" r="4" fill="black" />
                     <circle cx="3280" cy="150" r="1.6" fill="black" />
                     <circle cx="3340" cy="200" r="1.4" fill="black" />
-                    <circle cx="3200" cy="240" r="1.8" fill="black" />
-                    <circle cx="3300" cy="260" r="1.7" fill="black" />
                     <circle cx="3050" cy="285" r="3" fill="black" />
                     <image href="/images/star.png" x="3180" y="170" width="10" height="10" />
                     <image href="/images/star.png" x="3100" y="50" width="9" height="9" />
