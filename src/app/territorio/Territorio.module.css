@@ -393,4 +393,10 @@
       gap: 16px;
     }
   }
+
+  @media (min-width: 1025px) and (max-width: 1199px) {
+    .timelineItem:nth-of-type(even) {
+      padding-left: calc(50vw - 230px); /* ou outro valor que fique harmônico */
+    }
+  }
   
