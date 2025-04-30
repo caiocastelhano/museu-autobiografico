@@ -1,3 +1,5 @@
+/* ===== ESTRUTURA BASE DA PÁGINA ===== */
+
 .pageContainer {
     position: relative;
     display: flex;
@@ -24,5 +26,371 @@
     clip: rect(0 0 0 0);
     white-space: nowrap;
     border: 0;
+  }
+
+  .videoThumbnail {
+    position: relative;
+    border: 2px solid black;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .thumbnailImage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .playOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 12px 20px;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* ===== INTRO SECTION ===== */
+  .introSection {
+    margin: 80px auto;
+    padding: 0 16px;
+    max-width: 1200px;
+  }
+  
+  .introContentWrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .svgShapeIntro {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .introTextBlock {
+    flex: 1;
+    max-width: 700px;
+  }
+  
+  .image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .introAudioQuoteWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+  }
+  
+  .audio {
+    width: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    padding: 8px;
+  }
+  
+  .introAudioQuoteWrapper blockquote {
+    border-left: 4px solid black;
+    padding-left: 16px;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .introHeaderRow {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    gap: 32px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .headerText {
+    flex: 1;
+  }
+  
+  .headerText h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  
+  .headerText h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  /* ===== RESPONSIVIDADE: INTRO SECTION ===== */
+
+  @media (max-width: 1024px) {
+    .introContentWrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .svgShapeIntro {
+      width: 260px;
+    }
+  
+    .introTextBlock {
+      text-align: center;
+    }
+  
+    .introTextBlock blockquote {
+      text-align: left;
+    }
+
+    .introHeaderRow {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .headerText h2 {
+      font-size: 1.2rem;
+    }
+  
+    .headerText h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* ===== CONTEXT SECTION ===== */
+
+  .contextSection {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  
+  .contextSection p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  /* ===== RESPONSIVIDADE: CONTEXT SECTION ===== */
+
+  @media (max-width: 1024px) {
+    .contextSection {
+      margin: 40px auto; /* Centraliza no mobile/tablet */
+      padding: 0 16px;
+    }
+  }
+
+  /* ===== TIMELINE SECTION ===== */
+
+  .timelineSection {
+    position: relative;
+    width: 100%;         /* ocupa toda a largura */
+    max-width: 1200px;   /* limite de leitura */
+    margin: 0 auto;
+    padding: 10px 16px;
+  }
+  
+  /* Linha central */
+  .timelineLine {
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+  }
+
+  /* Bolinha no topo */
+  .timelineLine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  /* Bolinha na base */
+  .timelineLine::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  /* Cada item da timeline */
+  .timelineItem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* default para pares */
+    margin: 80px 0;
+    z-index: 2;
+  }
+  
+  /* Quando item aparecer no FadeInSection */
+  .timelineItem.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ÍMPARES: aparecem na direita */
+  .timelineItem:nth-of-type(odd) {
+    justify-content: flex-end;
+    padding-right: calc(50vw - 400px); /* 270px = 500/2 + 20px de distância da linha */
+  }
+  
+  .timelineItem:nth-of-type(odd)::before {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  /* Quando ativar */
+  .timelineItem.fadeIn:nth-of-type(odd)::before {
+    transform: translateX(50%) scaleX(1);
+  }
+  
+  /* PARES: aparecem na esquerda */
+  .timelineItem:nth-of-type(even) {
+    justify-content: flex-end;
+    padding-left: calc(50vw - 270px);
+  }
+  
+  .timelineItem:nth-of-type(even)::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Quando ativar */
+  .timelineItem.fadeIn:nth-of-type(even)::before {
+    transform: translateX(-50%) scaleX(1);
+  }
+  
+  /* Conteúdo interno do item */
+  .timelineContent {
+    width: 500px;
+    padding: 24px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+  
+  /* Ícone no topo */
+  .timelineIcon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+  }
+
+  /* Título */
+  .timelineLocation {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  /* Parágrafos */
+  .timelineContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Destaque (como h3 interno com estilo especial) */
+  .highlightedTitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+
+  /* Imagens */
+  .timelineImage {
+    width: 100%;
+    height: auto;
+    margin: 16px 0 8px;
+  }
+
+  /* Legenda da imagem */
+  .timelineCaption {
+    font-size: 0.875rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 8px;
+    color: #666;
+  }
+
+  /* Vídeos */
+  .timelineVideo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  /* Linha de vídeos em grid */
+  .videoRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  /* Bloco de citação */
+  .timelineContent blockquote {
+    border-left: 4px solid black;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 16px 0;
+    line-height: 1.6;
+  }
+
+  /* ===== RESPONSIVIDADE: TIMELINE SECTION ===== */
+
+  @media (max-width: 1080px) {
+    .timelineItem {
+      justify-content: center;
+      padding: 0;
+      margin: 48px 0;
+    }
+  
+    .timelineContent {
+      width: 100%;
+      padding: 16px;
+    }
+  
+    .timelineLine {
+      transform: none;
+      justify-content: center;
+    }
+  
+    .timelineLine::before,
+    .timelineLine::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .videoRow {
+      grid-template-columns: 1fr; /* vídeos em uma coluna só */
+      gap: 16px;
+    }
   }
   
