@@ -1,8 +1,6 @@
-'use client'; // precisa estar no topo para usar hooks
-
-import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
+import ClientRedirectWrapper from "./client-redirect-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,16 +18,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    if (window.location.hostname === "museuautobiografico.vercel.app") {
-      window.location.href = "https://museuautobiografico.org";
-    }
-  }, []);
-
   return (
     <html lang="pt">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <ClientRedirectWrapper>{children}</ClientRedirectWrapper>
       </body>
     </html>
   );
