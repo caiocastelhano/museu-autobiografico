@@ -1,3 +1,6 @@
+'use client'; // precisa estar no topo para usar hooks
+
+import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 
@@ -17,8 +20,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    if (window.location.hostname === "museuautobiografico.vercel.app") {
+      window.location.href = "https://museuautobiografico.org";
+    }
+  }, []);
+
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
