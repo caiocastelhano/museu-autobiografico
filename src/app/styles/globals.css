@@ -35,7 +35,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   padding: 0 16px;
   padding-top: 80px; /* Empurra o conteúdo para baixo da navbar fixa */
 }

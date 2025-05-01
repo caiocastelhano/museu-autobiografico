@@ -156,571 +156,574 @@ export default function TerritorioPage() {
           
           <div className={styles.timelineLine}></div>
 
-          {/* Item 01 da linha do tempo */}
-          <FadeInSection className={styles.timelineItem} aria-labelledby="item01Title">
-            <div className={styles.timelineContent}>
+          <div className={styles.timelineWrapper}>
+              
+              {/* Item 01 da linha do tempo */}
+              <FadeInSection className={styles.timelineItem} aria-labelledby="item01Title">
+                <div className={styles.timelineContent}>
 
-              <Image
-                src="/images/territorio/mappin.svg"
-                alt="Ícone de bússola indicando o local"
-                width={30}
-                height={30}
-                className={styles.timelineIcon}
-              />
+                  <Image
+                    src="/images/territorio/mappin.svg"
+                    alt="Ícone de bússola indicando o local"
+                    width={30}
+                    height={30}
+                    className={styles.timelineIcon}
+                  />
 
-              <p id="item01Title">
-                Com esse depoimento, marco aqui o início da página sobre a <b>palavra Território</b>, que traz os locais pelos quais a oficina esteve e a prática de Viewpoints e Composição, que aprendi como ator quando fui aluno de <b>Miriam Rinaldi no Núcleo Experimental de Artes Cênicas do SESI-SP</b>.
-              </p>
+                  <p id="item01Title">
+                    Com esse depoimento, marco aqui o início da página sobre a <b>palavra Território</b>, que traz os locais pelos quais a oficina esteve e a prática de Viewpoints e Composição, que aprendi como ator quando fui aluno de <b>Miriam Rinaldi no Núcleo Experimental de Artes Cênicas do SESI-SP</b>.
+                  </p>
 
-              <figure>
+                  <figure>
+                    <Image
+                      src="/images/territorio/nucleo_experimental.jpg"
+                      alt="Ensaio fotográfico de Murillo Basso para exercício de abertura do Núcleo Experimental na Avenida Paulista"
+                      width={500}
+                      height={300}
+                      className={styles.timelineImage}
+                    />
+                    <figcaption className={styles.timelineCaption}>
+                      Ensaio fotográfico de Murillo Basso — Núcleo Experimental: Rascunhos e Rasantes (Avenida Paulista).
+                    </figcaption>
+                  </figure>
+
+                  <h3 className={styles.highlightedTitle}>Um território em ação</h3>
+
+                  <p>
+                    O trabalho da oficina sempre se deu em <b>movimento</b>. A cada edição, deslocamos corpos e escutas para outros pontos dos Centros Culturais e Bibliotecas, criando presença <b>para além da sala de ensaio</b> habitual.
+                  </p>
+
+                  <p>
+                    Estar em <b>espaços culturais distintos dentro do mesmo território expandido</b> – bibliotecas, centros culturais, casas abertas – foi uma escolha metodológica e política. Cada deslocamento criava uma nova ambiência, revelava outras potências, instaurava encontros.
+                  </p>
+
+                  <p>
+                    A seguir, excertos em vídeo mostram trechos das oficinas entre 2022 e 2025, sem cortes, para que conheçam a atmosfera de cada território e coletivo:
+                  </p>
+
+                  <p>
+                    <b>Esses registros não são apenas documentação: são <u>gesto estético e político</u>. São presença. São paisagem. São território.</b>
+                  </p>
+                </div>
+              </FadeInSection>
+
+              {/* Item 02 da linha do tempo */}
+              <FadeInSection className={styles.timelineItem} aria-labelledby="item02Title">
+                <div className={styles.timelineContent}>
+
+                  <Image
+                    src="/images/territorio/mappin.svg"
+                    alt="Ícone de bússola indicando o local"
+                    width={30}
+                    height={30}
+                    className={styles.timelineIcon}
+                  />
+
+                  <h3 id="item02Title" className={styles.timelineLocation}>
+                    SÃO PAULO | Centro Cultural da Penha — 2022
+                  </h3>
+
+                  <figure>
+                    <Image
+                      src="/images/territorio/centroculturaldapenha.png"
+                      alt="Centro Cultural da Penha - Encontro nos fundos do espaço cultural"
+                      width={500}
+                      height={300}
+                      className={styles.timelineImage}
+                    />
+                  </figure>
+
+                  <figure className={styles.videoRow} aria-label="Vídeos do encontro no Centro Cultural da Penha">
+                    {isDesktop ? (
+                      <>
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/HTd7ECPbQJI")}>
+                          <Image
+                            src="/images/thumbs/thumb1_resized.jpg"
+                            alt="Centro Cultural da Penha - Vídeo 1"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/NhR4dX222-Y")}>
+                          <Image
+                            src="/images/thumbs/thumb2_resized.jpg"
+                            alt="Centro Cultural da Penha - Vídeo 2"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/HTd7ECPbQJI"
+                          title="Centro Cultural da Penha - Vídeo 1"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                          loading="lazy"
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/NhR4dX222-Y"
+                          title="Centro Cultural da Penha - Vídeo 2"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                          loading="lazy"
+                        ></iframe>
+                      </>
+                    )}
+                  </figure>
+
+                  <figcaption className={styles.timelineCaption}>
+                      Centro Cultural da Penha | Encontro nos fundos do CCP | 2022.
+                    </figcaption>
+                </div>
+              </FadeInSection>
+
+              {/* Item 03 da linha do tempo */}
+              <FadeInSection className={styles.timelineItem} aria-labelledby="item03Title">
+                <div className={styles.timelineContent}>
+
+                  <Image
+                    src="/images/territorio/mappin.svg"
+                    alt="Ícone de bússola indicando o local"
+                    width={30}
+                    height={30}
+                    className={styles.timelineIcon}
+                  />
+
+                  <h3 id="item03Title" className={styles.timelineLocation}>
+                    SÃO PAULO | Biblioteca Pública Cassiano Ricardo — 2023 e 2024
+                  </h3>
+
+                  <figure>
+                    <Image
+                      src="/images/territorio/bibliotecacassianoricardo.png"
+                      alt="Biblioteca Pública Cassiano Ricardo, vista da área externa"
+                      width={500}
+                      height={300}
+                      className={styles.timelineImage}
+                    />
+                  </figure>
+
+                  <figure className={styles.videoRow} aria-label="Vídeos dos encontros na Biblioteca Pública Cassiano Ricardo">
+                    {isDesktop ? (
+                      <>
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/0C30aDrW0ow")}>
+                          <Image
+                            src="/images/thumbs/thumb3_resized.jpg"
+                            alt="Biblioteca Pública Cassiano Ricardo - Vídeo 1"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/ZO2Lj8r0cV4")}>
+                          <Image
+                            src="/images/thumbs/thumb4_resized.jpg"
+                            alt="Biblioteca Pública Cassiano Ricardo - Vídeo 2"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/zFEK2H7rauE")}>
+                          <Image
+                            src="/images/thumbs/thumb5_resized.jpg"
+                            alt="Biblioteca Pública Cassiano Ricardo - Vídeo 3"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/51fRzDRGpOM")}>
+                          <Image
+                            src="/images/thumbs/thumb6_resized.jpg"
+                            alt="Biblioteca Pública Cassiano Ricardo - Vídeo 4"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/zleEK0uQh4U")}>
+                          <Image
+                            src="/images/thumbs/thumb7_resized.jpg"
+                            alt="Biblioteca Pública Cassiano Ricardo - Vídeo 5"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/uoHMzUJ-6z8")}>
+                          <Image
+                            src="/images/thumbs/thumb8_resized.jpg"
+                            alt="Biblioteca Pública Cassiano Ricardo - Vídeo 6"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/0C30aDrW0ow"
+                          title="Vídeo 1"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/ZO2Lj8r0cV4"
+                          title="Vídeo 2"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/zFEK2H7rauE"
+                          title="Vídeo 3"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/51fRzDRGpOM"
+                          title="Vídeo 4"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/zleEK0uQh4U"
+                          title="Vídeo 5"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/uoHMzUJ-6z8"
+                          title="Vídeo 6"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+                      </>
+                    )}
+                  </figure>
+                  <figcaption className={styles.timelineCaption}>
+                      Biblioteca Pública Cassiano Ricardo — Encontro entre as prateleiras, sala de música, pátio interno (2023-2024).
+                    </figcaption>
+                </div>
+              </FadeInSection>
+
+              {/* Item 04 da linha do tempo */}
+              <FadeInSection className={styles.timelineItem} aria-labelledby="item04Title">
+                <div className={styles.timelineContent}>
+
+                  <Image
+                    src="/images/territorio/mappin.svg"
+                    alt="Ícone de bússola indicando o local"
+                    width={30}
+                    height={30}
+                    className={styles.timelineIcon}
+                  />
+
+                  <h3 id="item04Title" className={styles.timelineLocation}>
+                    CURITIBA | Casa Eliseu Voronkoff — 2025
+                  </h3>
+
+                  <figure>
+                    <Image
+                      src="/images/territorio/casaeliseuvoronkoff.png"
+                      alt="Área externa da Casa Eliseu Voronkoff"
+                      width={500}
+                      height={300}
+                      className={styles.timelineImage}
+                    />
+                  </figure>
+
+                  <figure className={styles.videoRow} aria-label="Vídeos dos encontros na Casa Eliseu Voronkoff">
+                    {isDesktop ? (
+                      <>
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/lGf1ek80Xhk")}>
+                          <Image
+                            src="/images/thumbs/thumb9_resized.jpg"
+                            alt="Casa Eliseu Voronkoff - Vídeo 1"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/FdBoOydtBUo")}>
+                          <Image
+                            src="/images/thumbs/thumb10_resized.jpg"
+                            alt="Casa Eliseu Voronkoff - Vídeo 2"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/ThA0YHQAapE")}>
+                          <Image
+                            src="/images/thumbs/thumb11_resized.jpg"
+                            alt="Casa Eliseu Voronkoff - Vídeo 3"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/lgjqDdSb-fQ")}>
+                          <Image
+                            src="/images/thumbs/thumb12_resized.jpg"
+                            alt="Casa Eliseu Voronkoff - Vídeo 4"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/7EcXjsRfPtg")}>
+                          <Image
+                            src="/images/thumbs/thumb13_resized.jpg"
+                            alt="Casa Eliseu Voronkoff - Vídeo 5"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/lGf1ek80Xhk"
+                          title="Casa Eliseu Voronkoff - Vídeo 1"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/FdBoOydtBUo"
+                          title="Casa Eliseu Voronkoff - Vídeo 2"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/ThA0YHQAapE"
+                          title="Casa Eliseu Voronkoff - Vídeo 3"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/lgjqDdSb-fQ"
+                          title="Casa Eliseu Voronkoff - Vídeo 4"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/7EcXjsRfPtg"
+                          title="Casa Eliseu Voronkoff - Vídeo 5"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+                      </>
+                    )}
+                  </figure>
+                  <figcaption className={styles.timelineCaption}>
+                    Casa Eliseu Voronkoff | Aquecimento e exercícios nos fundos da casa | 2025.
+                  </figcaption>
+                </div>
+            </FadeInSection>
+
+            {/* Item 05 da linha do tempo */}
+            <FadeInSection className={styles.timelineItem} aria-labelledby="item05Title">
+              <div className={styles.timelineContent}>
+
                 <Image
-                  src="/images/territorio/nucleo_experimental.jpg"
-                  alt="Ensaio fotográfico de Murillo Basso para exercício de abertura do Núcleo Experimental na Avenida Paulista"
-                  width={500}
-                  height={300}
-                  className={styles.timelineImage}
+                  src="/images/territorio/mappin.svg"
+                  alt="Ícone de bússola indicando o local"
+                  width={30}
+                  height={30}
+                  className={styles.timelineIcon}
                 />
-                <figcaption className={styles.timelineCaption}>
-                  Ensaio fotográfico de Murillo Basso — Núcleo Experimental: Rascunhos e Rasantes (Avenida Paulista).
-                </figcaption>
-              </figure>
 
-              <h3 className={styles.highlightedTitle}>Um território em ação</h3>
+                <h3 id="item05Title" className={styles.timelineLocation}>
+                  SÃO PAULO | Casa Florescer II
+                </h3>
 
-              <p>
-                O trabalho da oficina sempre se deu em <b>movimento</b>. A cada edição, deslocamos corpos e escutas para outros pontos dos Centros Culturais e Bibliotecas, criando presença <b>para além da sala de ensaio</b> habitual.
-              </p>
+                <figure>
+                  <Image
+                    src="/images/territorio/casaflorescer1.png"
+                    alt="Área externa da Casa Florescer II"
+                    width={500}
+                    height={300}
+                    className={styles.timelineImage}
+                  />
+                  <figcaption className={styles.timelineCaption}>
+                    Entrada da Casa Florescer II — São Paulo.
+                  </figcaption>
+                </figure>
 
-              <p>
-                Estar em <b>espaços culturais distintos dentro do mesmo território expandido</b> – bibliotecas, centros culturais, casas abertas – foi uma escolha metodológica e política. Cada deslocamento criava uma nova ambiência, revelava outras potências, instaurava encontros.
-              </p>
-
-              <p>
-                A seguir, excertos em vídeo mostram trechos das oficinas entre 2022 e 2025, sem cortes, para que conheçam a atmosfera de cada território e coletivo:
-              </p>
-
-              <p>
-                <b>Esses registros não são apenas documentação: são <u>gesto estético e político</u>. São presença. São paisagem. São território.</b>
-              </p>
-            </div>
-          </FadeInSection>
-
-          {/* Item 02 da linha do tempo */}
-          <FadeInSection className={styles.timelineItem} aria-labelledby="item02Title">
-            <div className={styles.timelineContent}>
-
-              <Image
-                src="/images/territorio/mappin.svg"
-                alt="Ícone de bússola indicando o local"
-                width={30}
-                height={30}
-                className={styles.timelineIcon}
-              />
-
-              <h3 id="item02Title" className={styles.timelineLocation}>
-                SÃO PAULO | Centro Cultural da Penha — 2022
-              </h3>
-
-              <figure>
-                <Image
-                  src="/images/territorio/centroculturaldapenha.png"
-                  alt="Centro Cultural da Penha - Encontro nos fundos do espaço cultural"
-                  width={500}
-                  height={300}
-                  className={styles.timelineImage}
-                />
-              </figure>
-
-              <figure className={styles.videoRow} aria-label="Vídeos do encontro no Centro Cultural da Penha">
-                {isDesktop ? (
-                  <>
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/HTd7ECPbQJI")}>
-                      <Image
-                        src="/images/thumbs/thumb1_resized.jpg"
-                        alt="Centro Cultural da Penha - Vídeo 1"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/NhR4dX222-Y")}>
-                      <Image
-                        src="/images/thumbs/thumb2_resized.jpg"
-                        alt="Centro Cultural da Penha - Vídeo 2"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/HTd7ECPbQJI"
-                      title="Centro Cultural da Penha - Vídeo 1"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                      loading="lazy"
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/NhR4dX222-Y"
-                      title="Centro Cultural da Penha - Vídeo 2"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                      loading="lazy"
-                    ></iframe>
-                  </>
-                )}
-              </figure>
-
-              <figcaption className={styles.timelineCaption}>
-                  Centro Cultural da Penha | Encontro nos fundos do CCP | 2022.
-                </figcaption>
-            </div>
-          </FadeInSection>
-
-          {/* Item 03 da linha do tempo */}
-          <FadeInSection className={styles.timelineItem} aria-labelledby="item03Title">
-            <div className={styles.timelineContent}>
-
-              <Image
-                src="/images/territorio/mappin.svg"
-                alt="Ícone de bússola indicando o local"
-                width={30}
-                height={30}
-                className={styles.timelineIcon}
-              />
-
-              <h3 id="item03Title" className={styles.timelineLocation}>
-                SÃO PAULO | Biblioteca Pública Cassiano Ricardo — 2023 e 2024
-              </h3>
-
-              <figure>
-                <Image
-                  src="/images/territorio/bibliotecacassianoricardo.png"
-                  alt="Biblioteca Pública Cassiano Ricardo, vista da área externa"
-                  width={500}
-                  height={300}
-                  className={styles.timelineImage}
-                />
-              </figure>
-
-              <figure className={styles.videoRow} aria-label="Vídeos dos encontros na Biblioteca Pública Cassiano Ricardo">
-                {isDesktop ? (
-                  <>
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/0C30aDrW0ow")}>
-                      <Image
-                        src="/images/thumbs/thumb3_resized.jpg"
-                        alt="Biblioteca Pública Cassiano Ricardo - Vídeo 1"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/ZO2Lj8r0cV4")}>
-                      <Image
-                        src="/images/thumbs/thumb4_resized.jpg"
-                        alt="Biblioteca Pública Cassiano Ricardo - Vídeo 2"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/zFEK2H7rauE")}>
-                      <Image
-                        src="/images/thumbs/thumb5_resized.jpg"
-                        alt="Biblioteca Pública Cassiano Ricardo - Vídeo 3"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/51fRzDRGpOM")}>
-                      <Image
-                        src="/images/thumbs/thumb6_resized.jpg"
-                        alt="Biblioteca Pública Cassiano Ricardo - Vídeo 4"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/zleEK0uQh4U")}>
-                      <Image
-                        src="/images/thumbs/thumb7_resized.jpg"
-                        alt="Biblioteca Pública Cassiano Ricardo - Vídeo 5"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/uoHMzUJ-6z8")}>
-                      <Image
-                        src="/images/thumbs/thumb8_resized.jpg"
-                        alt="Biblioteca Pública Cassiano Ricardo - Vídeo 6"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/0C30aDrW0ow"
-                      title="Vídeo 1"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/ZO2Lj8r0cV4"
-                      title="Vídeo 2"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/zFEK2H7rauE"
-                      title="Vídeo 3"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/51fRzDRGpOM"
-                      title="Vídeo 4"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/zleEK0uQh4U"
-                      title="Vídeo 5"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/uoHMzUJ-6z8"
-                      title="Vídeo 6"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-                  </>
-                )}
-              </figure>
-              <figcaption className={styles.timelineCaption}>
-                  Biblioteca Pública Cassiano Ricardo — Encontro entre as prateleiras, sala de música, pátio interno (2023-2024).
-                </figcaption>
-            </div>
-          </FadeInSection>
-
-          {/* Item 04 da linha do tempo */}
-          <FadeInSection className={styles.timelineItem} aria-labelledby="item04Title">
-            <div className={styles.timelineContent}>
-
-              <Image
-                src="/images/territorio/mappin.svg"
-                alt="Ícone de bússola indicando o local"
-                width={30}
-                height={30}
-                className={styles.timelineIcon}
-              />
-
-              <h3 id="item04Title" className={styles.timelineLocation}>
-                CURITIBA | Casa Eliseu Voronkoff — 2025
-              </h3>
-
-              <figure>
-                <Image
-                  src="/images/territorio/casaeliseuvoronkoff.png"
-                  alt="Área externa da Casa Eliseu Voronkoff"
-                  width={500}
-                  height={300}
-                  className={styles.timelineImage}
-                />
-              </figure>
-
-              <figure className={styles.videoRow} aria-label="Vídeos dos encontros na Casa Eliseu Voronkoff">
-                {isDesktop ? (
-                  <>
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/lGf1ek80Xhk")}>
-                      <Image
-                        src="/images/thumbs/thumb9_resized.jpg"
-                        alt="Casa Eliseu Voronkoff - Vídeo 1"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/FdBoOydtBUo")}>
-                      <Image
-                        src="/images/thumbs/thumb10_resized.jpg"
-                        alt="Casa Eliseu Voronkoff - Vídeo 2"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/ThA0YHQAapE")}>
-                      <Image
-                        src="/images/thumbs/thumb11_resized.jpg"
-                        alt="Casa Eliseu Voronkoff - Vídeo 3"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/lgjqDdSb-fQ")}>
-                      <Image
-                        src="/images/thumbs/thumb12_resized.jpg"
-                        alt="Casa Eliseu Voronkoff - Vídeo 4"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/7EcXjsRfPtg")}>
-                      <Image
-                        src="/images/thumbs/thumb13_resized.jpg"
-                        alt="Casa Eliseu Voronkoff - Vídeo 5"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/lGf1ek80Xhk"
-                      title="Casa Eliseu Voronkoff - Vídeo 1"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/FdBoOydtBUo"
-                      title="Casa Eliseu Voronkoff - Vídeo 2"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/ThA0YHQAapE"
-                      title="Casa Eliseu Voronkoff - Vídeo 3"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/lgjqDdSb-fQ"
-                      title="Casa Eliseu Voronkoff - Vídeo 4"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/7EcXjsRfPtg"
-                      title="Casa Eliseu Voronkoff - Vídeo 5"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-                  </>
-                )}
-              </figure>
-              <figcaption className={styles.timelineCaption}>
-                Casa Eliseu Voronkoff | Aquecimento e exercícios nos fundos da casa | 2025.
-              </figcaption>
-            </div>
-          </FadeInSection>
-
-          {/* Item 05 da linha do tempo */}
-          <FadeInSection className={styles.timelineItem} aria-labelledby="item05Title">
-            <div className={styles.timelineContent}>
-
-              <Image
-                src="/images/territorio/mappin.svg"
-                alt="Ícone de bússola indicando o local"
-                width={30}
-                height={30}
-                className={styles.timelineIcon}
-              />
-
-              <h3 id="item05Title" className={styles.timelineLocation}>
-                SÃO PAULO | Casa Florescer II
-              </h3>
-
-              <figure>
-                <Image
-                  src="/images/territorio/casaflorescer1.png"
-                  alt="Área externa da Casa Florescer II"
-                  width={500}
-                  height={300}
-                  className={styles.timelineImage}
-                />
-                <figcaption className={styles.timelineCaption}>
-                  Entrada da Casa Florescer II — São Paulo.
-                </figcaption>
-              </figure>
-
-              <p>
-                <b>Uma memória em um território</b>: Foi nesse lugar que percebi a importância de trabalhar o corpo e a relação com o espaço. 
-                Para facilitar as dinâmicas de memória, eu precisava primeiro trabalhar o pertencimento àquele lugar e, para isso, exercícios de aquecimento com <i>Viewpoints</i> foram essenciais.
-              </p>
-
-              <figure className={styles.videoRow} aria-label="Vídeos do encontro na Casa Florescer II">
-                {isDesktop ? (
-                  <>
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/IxNcY7KcU8g")}>
-                      <Image
-                        src="/images/thumbs/thumb14_resized.jpg"
-                        alt="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-
-                    <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/daCEcSOcPZw")}>
-                      <Image
-                        src="/images/thumbs/thumb15_resized.jpg"
-                        alt="Casa Florescer II — Wemerly se apresentando — 2019"
-                        width={500}
-                        height={315}
-                        className={styles.thumbnailImage}
-                      />
-                      <div className={styles.playOverlay}>▶</div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/IxNcY7KcU8g"
-                      title="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-
-                    <iframe
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/daCEcSOcPZw"
-                      title="Casa Florescer II — Wemerly se apresentando — 2019"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className={styles.timelineVideo}
-                    ></iframe>
-                  </>
-                )}
-              </figure>
-
-              <figure>
-                <Image
-                  src="/images/territorio/casaflorescer2.jpeg"
-                  alt="Registro de encontro na Casa Florescer II"
-                  width={500}
-                  height={300}
-                  className={styles.timelineImage}
-                />
-                <figcaption className={styles.timelineCaption}>
-                  Registros recuperados dos stories do perfil @marcelorodriguesmaia — Novembro e Dezembro de 2019.
-                </figcaption>
-              </figure>
-
-              <blockquote aria-label="Citação de Milton Santos sobre território">
                 <p>
-                  &quot;O território não é apenas o conjunto dos sistemas naturais e de sistemas de coisas superpostas. 
-                  O território tem que ser entendido como o território usado, não o território em si. 
-                  O território usado é o chão mais a identidade. A identidade é o sentimento de pertencer àquilo que nos pertence. 
-                  O território é o fundamento do trabalho, o lugar da residência, das trocas materiais e espirituais e do exercício da vida.&quot;
+                  <b>Uma memória em um território</b>: Foi nesse lugar que percebi a importância de trabalhar o corpo e a relação com o espaço. 
+                  Para facilitar as dinâmicas de memória, eu precisava primeiro trabalhar o pertencimento àquele lugar e, para isso, exercícios de aquecimento com <i>Viewpoints</i> foram essenciais.
                 </p>
-                <footer><b>Milton Santos</b></footer>
-              </blockquote>
-            </div>
-          </FadeInSection>
+
+                <figure className={styles.videoRow} aria-label="Vídeos do encontro na Casa Florescer II">
+                  {isDesktop ? (
+                    <>
+                      <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/IxNcY7KcU8g")}>
+                        <Image
+                          src="/images/thumbs/thumb14_resized.jpg"
+                          alt="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
+                          width={500}
+                          height={315}
+                          className={styles.thumbnailImage}
+                        />
+                        <div className={styles.playOverlay}>▶</div>
+                      </div>
+
+                      <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/daCEcSOcPZw")}>
+                        <Image
+                          src="/images/thumbs/thumb15_resized.jpg"
+                          alt="Casa Florescer II — Wemerly se apresentando — 2019"
+                          width={500}
+                          height={315}
+                          className={styles.thumbnailImage}
+                        />
+                        <div className={styles.playOverlay}>▶</div>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <iframe
+                        width="100%"
+                        height="315"
+                        src="https://www.youtube.com/embed/IxNcY7KcU8g"
+                        title="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className={styles.timelineVideo}
+                      ></iframe>
+
+                      <iframe
+                        width="100%"
+                        height="315"
+                        src="https://www.youtube.com/embed/daCEcSOcPZw"
+                        title="Casa Florescer II — Wemerly se apresentando — 2019"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className={styles.timelineVideo}
+                      ></iframe>
+                    </>
+                  )}
+                </figure>
+
+                <figure>
+                  <Image
+                    src="/images/territorio/casaflorescer2.jpeg"
+                    alt="Registro de encontro na Casa Florescer II"
+                    width={500}
+                    height={300}
+                    className={styles.timelineImage}
+                  />
+                  <figcaption className={styles.timelineCaption}>
+                    Registros recuperados dos stories do perfil @marcelorodriguesmaia — Novembro e Dezembro de 2019.
+                  </figcaption>
+                </figure>
+
+                <blockquote aria-label="Citação de Milton Santos sobre território">
+                  <p>
+                    &quot;O território não é apenas o conjunto dos sistemas naturais e de sistemas de coisas superpostas. 
+                    O território tem que ser entendido como o território usado, não o território em si. 
+                    O território usado é o chão mais a identidade. A identidade é o sentimento de pertencer àquilo que nos pertence. 
+                    O território é o fundamento do trabalho, o lugar da residência, das trocas materiais e espirituais e do exercício da vida.&quot;
+                  </p>
+                  <footer><b>Milton Santos</b></footer>
+                </blockquote>
+              </div>
+            </FadeInSection>
+          </div>
         </section>
 
         {/* Bloco Viewpoints e Composição */}

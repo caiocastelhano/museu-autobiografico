@@ -197,15 +197,19 @@
     padding: 10px 16px;
   }
   
-  /* Linha central */
+  .timelineWrapper {
+    position: relative;
+  }
+
   .timelineLine {
     position: absolute;
-    left: 50vw;
+    left: 50%;
+    top: 0;
     transform: translateX(-50%);
-    width: 4px;
+    width: 2px;
     height: 100%;
     background-color: black;
-    z-index: 1;
+    z-index: 2;
   }
 
   /* Bolinha no topo */
@@ -254,12 +258,12 @@
   
   /* ÍMPARES: aparecem na direita */
   .timelineItem:nth-of-type(odd) {
-    justify-content: flex-end;
-    padding-right: calc(50vw - 400px); /* 270px = 500/2 + 20px de distância da linha */
+    /*justify-content: flex-end;*/
+    /*padding-right: calc(50vw - 400px); /* 270px = 500/2 + 20px de distância da linha */
   }
   
   .timelineItem:nth-of-type(odd)::before {
-    right: 50%;
+    /*right: 50%;*/
     transform: translateX(50%);
   }
   
@@ -271,7 +275,7 @@
   /* PARES: aparecem na esquerda */
   .timelineItem:nth-of-type(even) {
     justify-content: flex-end;
-    padding-left: calc(50vw - 270px);
+    /*padding-left: calc(50vw - 270px);*/
   }
   
   .timelineItem:nth-of-type(even)::before {
@@ -286,10 +290,11 @@
   
   /* Conteúdo interno do item */
   .timelineContent {
-    width: 500px;
+    /*width: 500px;*/
+    width: 50%;
     padding: 24px;
     background-color: white;
-    border: 2px solid black;
+    border: 1.5px solid black;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -396,7 +401,351 @@
 
   @media (min-width: 1025px) and (max-width: 1199px) {
     .timelineItem:nth-of-type(even) {
-      padding-left: calc(50vw - 230px); /* ou outro valor que fique harmônico */
+      /*padding-left: calc(50vw - 230px); /* ou outro valor que fique harmônico */
     }
   }
-  
+
+  /* ===== BLOCO VIEWPOINTS E COMPOSIÇÃO ===== */
+.viewpointsSection {
+  padding: 60px 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.viewpointsSection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  text-transform: none;
+}
+
+.viewpointsSection h3 {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.viewpointsSection p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.viewpointsSection blockquote {
+  margin: 32px 0;
+  padding-left: 16px;
+  border-left: 3px solid black;
+  font-style: italic;
+  color: #333;
+}
+
+.viewpointsSection blockquote p {
+  margin-bottom: 8px;
+}
+
+.viewpointsSection blockquote footer {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.viewpointsSection figure {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.viewpointsSection .image {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+
+.viewpointsSection figcaption {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ===== TABLET (até 1080px) ===== */
+@media (max-width: 1080px) {
+  .viewpointsSection {
+    padding: 50px 24px;
+  }
+
+  .viewpointsSection h2 {
+    font-size: 1.4rem;
+  }
+
+  .viewpointsSection h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== MOBILE (até 768px) ===== */
+@media (max-width: 768px) {
+  .viewpointsSection {
+    padding: 40px 16px;
+  }
+
+  .viewpointsSection h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .viewpointsSection h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .viewpointsSection p {
+    font-size: 0.95rem;
+  }
+
+  .viewpointsSection blockquote {
+    margin: 24px 0;
+    padding-left: 12px;
+  }
+}
+
+/* ===== BLOCO TEMPO E ESPAÇO EM DUAS COLUNAS ===== */
+.twoColumnSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 32px;
+  max-width: 1000px;
+  margin: 0 auto 0 120px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.twoColumnSection .column {
+  flex: 1;
+  padding: 16px 24px;
+  border-left: 1px solid black;
+}
+
+.twoColumnSection .column:first-of-type {
+  border-left: none; /* Remove borda da primeira coluna */
+}
+
+.twoColumnSection h2 {
+  /* Visually hidden para acessibilidade */
+}
+
+.twoColumnSection h3 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.twoColumnSection h4 {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.twoColumnSection p {
+  margin-bottom: 16px;
+  text-indent: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1080px) {
+  .twoColumnSection {
+    flex-direction: column;
+    padding: 50px 24px;
+  }
+
+  .twoColumnSection .column {
+    border-left: none;
+    border-top: 1px solid black;
+    padding: 24px 0;
+  }
+
+  .twoColumnSection .column:first-of-type {
+    border-top: none;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .twoColumnSection {
+    padding: 40px 16px;
+  }
+
+  .twoColumnSection h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .twoColumnSection h4 {
+    font-size: 1rem;
+  }
+
+  .twoColumnSection p {
+    font-size: 0.9rem;
+    text-indent: 12px;
+  }
+}
+
+/* ===== BLOCO COMPOSIÇÃO COM CAIXA CENTRAL ===== */
+.centered {
+  display: flex;
+  justify-content: center;
+  padding: 60px 32px;
+  background-color: #fff;
+}
+
+.highlightBox {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 40px 32px;
+  max-width: 900px;
+  width: 100%;
+  line-height: 1.6;
+  box-shadow: 4px 4px 0px black;
+}
+
+.highlightBox h2 {
+  /* Visually hidden */
+}
+
+.highlightBox h3 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.highlightBox p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.highlightBox ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
+.highlightBox li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+.highlightBox figure {
+  margin-top: 32px;
+}
+
+.highlightBox .video {
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+.highlightBox figcaption {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1080px) {
+  .centered {
+    padding: 50px 24px;
+  }
+
+  .highlightBox {
+    padding: 32px 24px;
+  }
+
+  .highlightBox h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .centered {
+    padding: 40px 16px;
+  }
+
+  .highlightBox {
+    padding: 24px 16px;
+  }
+
+  .highlightBox h3 {
+    font-size: 1.1rem;
+  }
+
+  .highlightBox p,
+  .highlightBox li {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== BLOCO FINAL: TEXTO + CITAÇÃO ===== */
+.closingSection {
+  padding: 60px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.closingSection h2 {
+  /* Classe visuallyHidden já aplicada */
+}
+
+.closingSection p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.closingSection blockquote {
+  margin: 40px 0 0;
+  padding-left: 16px;
+  border-left: 3px solid black;
+  font-style: italic;
+  color: #333;
+}
+
+.closingSection blockquote p {
+  margin-bottom: 8px;
+}
+
+.closingSection blockquote footer {
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 8px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1080px) {
+  .closingSection {
+    padding: 50px 24px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .closingSection {
+    padding: 40px 16px;
+  }
+
+  .closingSection p {
+    font-size: 0.95rem;
+  }
+
+  .closingSection blockquote {
+    padding-left: 12px;
+    margin-top: 32px;
+  }
+}
+
+
+

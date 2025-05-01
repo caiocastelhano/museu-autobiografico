@@ -221,7 +221,7 @@
 
 .rightWrapper {
   max-width: 700px;
-  margin-right: -100px;
+  margin-right: 100px;
   margin-left: auto;
   padding: 0 20px;
   text-align: right;
@@ -554,7 +554,7 @@
 
 .rightAlignedWrapper {
   max-width: 1000px;
-  margin-right: -10px; /* ajuste fino para distanciar da borda direita */
+  margin-right: 100px; /* ajuste fino para distanciar da borda direita */
   text-align: left;
   display: flex;
   flex-direction: column;
