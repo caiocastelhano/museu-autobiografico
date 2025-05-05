@@ -132,7 +132,6 @@ export default function CorpoPage() {
                   <circle cx="3201" cy="420" r="3.75" fill="black" />
                   <image href="/images/star.png" x="3150" y="500" width="10" height="10" />
                   <image href="/images/star.png" x="3320" y="300" width="8" height="8" />
-                  <line x1="3201" y1="420" x2="3325" y2="50" stroke="black" strokeWidth="1.5" />
                 </svg>
               </div>
 
@@ -672,7 +671,6 @@ export default function CorpoPage() {
                     <circle cx="3050" cy="285" r="3" fill="black" />
                     <image href="/images/star.png" x="3180" y="170" width="10" height="10" />
                     <image href="/images/star.png" x="3100" y="50" width="9" height="9" />
-                    <line x1="3280" y1="150" x2="3050" y2="285" stroke="black" strokeWidth="1.25" />
                   </svg>
                 </div>
 
