@@ -56,8 +56,8 @@
 
   /* ===== INTRO SECTION ===== */
   .introSection {
-    margin: 80px auto;
-    padding: 0 16px;
+    margin: 50px auto 0 100px;
+    padding: 0 20px;
     max-width: 1200px;
   }
   
@@ -162,6 +162,17 @@
   
     .headerText h3 {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .introSection {
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+  
+    .introTextBlock {
+      width: 100%;
     }
   }
   
@@ -405,11 +416,21 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .timelineSection {
+      padding: 0 12px;
+    }
+  
+    .timelineContent {
+      padding: 16px 12px;
+    }
+  }
+
   /* ===== BLOCO VIEWPOINTS E COMPOSIÇÃO ===== */
 .viewpointsSection {
   padding: 60px 32px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 0 400px;
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -484,6 +505,7 @@
 @media (max-width: 768px) {
   .viewpointsSection {
     padding: 40px 16px;
+    margin: 0 auto;
   }
 
   .viewpointsSection h2 {
@@ -512,7 +534,7 @@
   justify-content: space-between;
   padding: 60px 32px;
   max-width: 1000px;
-  margin: 0 auto 0 120px;
+  margin: 0 auto 0 250px;
   border: 1px solid black;
   align-items: center;
 }
@@ -573,6 +595,7 @@
 @media (max-width: 768px) {
   .twoColumnSection {
     padding: 40px 16px;
+    margin: 0 auto;
   }
 
   .twoColumnSection h3 {
@@ -603,6 +626,7 @@
   border: 1px solid black;
   padding: 40px 32px;
   max-width: 900px;
+  margin: 0 auto 0 50px;
   width: 100%;
   line-height: 1.6;
   box-shadow: 4px 4px 0px black;
@@ -676,6 +700,7 @@
 
   .highlightBox {
     padding: 24px 16px;
+    margin: 0 auto;
   }
 
   .highlightBox h3 {
@@ -695,6 +720,7 @@
   margin: 0 auto;
   line-height: 1.6;
   font-size: 1rem;
+  margin: 0 auto 0 200px;
 }
 
 .closingSection h2 {
@@ -707,7 +733,7 @@
 }
 
 .closingSection blockquote {
-  margin: 40px 0 0;
+  margin: 0 auto 0 400px;
   padding-left: 16px;
   border-left: 3px solid black;
   font-style: italic;
@@ -735,6 +761,7 @@
 @media (max-width: 768px) {
   .closingSection {
     padding: 40px 16px;
+    margin: 0 auto;
   }
 
   .closingSection p {
@@ -744,6 +771,7 @@
   .closingSection blockquote {
     padding-left: 12px;
     margin-top: 32px;
+    margin: 32px auto;
   }
 }
 
