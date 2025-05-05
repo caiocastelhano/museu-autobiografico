@@ -182,11 +182,32 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 25px 16px;
+    position: relative;
   }
   
   .contextSection p {
     margin-bottom: 16px;
     line-height: 1.6;
+  }
+
+  .contextWrapper {
+    position: relative;
+    width: 100vw;
+    overflow: visible;
+    display: flex;
+    justify-content: center; /* centraliza o SVG */
+  }
+  
+  .floatingElements {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* centraliza o SVG com base no viewBox */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5000 / 800;
+    z-index: 0;
+    pointer-events: none;
   }
 
   /* ===== RESPONSIVIDADE: CONTEXT SECTION ===== */
@@ -472,6 +493,25 @@
   font-size: 0.9rem;
   margin-top: 8px;
   text-align: center;
+}
+
+.viewpointsWrapper {
+  position: relative;
+  width: 100vw;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+
+.floatingElements {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5000px;
+  height: 1600px;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* ===== TABLET (até 1080px) ===== */

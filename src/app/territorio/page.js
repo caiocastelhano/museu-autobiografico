@@ -129,23 +129,50 @@ export default function TerritorioPage() {
         </section>
 
         {/* Bloco de contextualização após o depoimento */}
-        <section className={styles.contextSection} aria-labelledby="contextTitle">
-          <h2 id="contextTitle" className={styles.visuallyHidden}>
-            Contextualização do depoimento de Jussara Dias
-          </h2>
+        <div className={styles.contextWrapper}>
+          <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 800"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMin meet"
+            aria-hidden="true"
+          >
+            {/* Lado esquerdo (x: 1850–2050 | y: 50–300) */}
+            <circle cx="1860" cy="80" r="1" fill="black" />
+            <circle cx="1900" cy="160" r="2.2" fill="black" />
+            <circle cx="1980" cy="100" r="2.4" fill="black" />
+            <circle cx="2020" cy="280" r="2" fill="black" />
+            <image href="/images/star.png" x="1880" y="60" width="5" height="5" />
+            <image href="/images/star.png" x="1970" y="210" width="8" height="8" />
 
-          <p>
-            Como parte do último encontro da terceira rodada da oficina realizada na Biblioteca Cassiano Ricardo em 2024, a participante <b>Jussara Dias, psicóloga e moradora de São Mateus</b>, leu seu pequeno texto, desenvolvido a partir do título: <i>Se eu encontrasse meu bairro na rua, eu diria o seguinte...</i>
-          </p>
+            {/* Lado direito (x: 2950–3200 | y: 50–300) */}
+            <circle cx="2960" cy="90" r="2.2" fill="black" />
+            <circle cx="3000" cy="150" r="1" fill="black" />
+            <circle cx="3080" cy="230" r="1.9" fill="black" />
+            <circle cx="3120" cy="70" r="2.5" fill="black" />
+            <circle cx="3190" cy="280" r="1.1" fill="black" />
+            <image href="/images/star.png" x="2975" y="120" width="11" height="11" />
+            <image href="/images/star.png" x="3170" y="220" width="10" height="10" />
+          </svg>
 
-          <p>
-            Para ela, a proposta de escrita foi uma oportunidade de <b>rememorar sua vida no bairro e compreender a mudança para sua nova casa, em outra região</b>.
-          </p>
+          <section className={styles.contextSection} aria-labelledby="contextTitle">
+            <h2 id="contextTitle" className={styles.visuallyHidden}>
+              Contextualização do depoimento de Jussara Dias
+            </h2>
 
-          <p>
-            As palavras de Jussara ecoam uma verdade: <b>o bairro não é só cenário, é personagem</b>. O <b>território pulsa</b>, escuta, transforma e é transformado.
-          </p>
-        </section>
+            <p>
+              Como parte do último encontro da terceira rodada da oficina realizada na Biblioteca Cassiano Ricardo em 2024, a participante <b>Jussara Dias, psicóloga e moradora de São Mateus</b>, leu seu pequeno texto, desenvolvido a partir do título: <i>Se eu encontrasse meu bairro na rua, eu diria o seguinte...</i>
+            </p>
+
+            <p>
+              Para ela, a proposta de escrita foi uma oportunidade de <b>rememorar sua vida no bairro e compreender a mudança para sua nova casa, em outra região</b>.
+            </p>
+
+            <p>
+              As palavras de Jussara ecoam uma verdade: <b>o bairro não é só cenário, é personagem</b>. O <b>território pulsa</b>, escuta, transforma e é transformado.
+            </p>
+          </section>
+        </div>
 
         {/* Bloco Linha do tempo */}
         <section className={styles.timelineSection} aria-labelledby="timelineTitle">
@@ -727,51 +754,83 @@ export default function TerritorioPage() {
         </section>
 
         {/* Bloco Viewpoints e Composição */}
-        <FadeInSection className={styles.viewpointsSection} aria-labelledby="viewpointsTitle">
-          <h2 id="viewpointsTitle">Viewpoints e Composição</h2>
+        <div className={styles.viewpointsWrapper}>
+          <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 1600"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            {/* Pontos lado esquerdo (distribuição irregular e natural) */}
+            <circle cx="1865" cy="120" r="2" fill="black" />
+            <circle cx="1910" cy="200" r="2.2" fill="black" />
+            <circle cx="1880" cy="310" r="1.8" fill="black" />
+            <circle cx="1970" cy="430" r="2.4" fill="black" />
+            <circle cx="1895" cy="570" r="2" fill="black" />
+            <circle cx="2025" cy="690" r="2.3" fill="black" />
+            <circle cx="1930" cy="850" r="1.7" fill="black" />
+            <circle cx="2005" cy="980" r="2.1" fill="black" />
+            <circle cx="1860" cy="1130" r="2" fill="black" />
+            <circle cx="1955" cy="1250" r="1.9" fill="black" />
+            <circle cx="1890" cy="1380" r="2.4" fill="black" />
+            <circle cx="2040" cy="1510" r="1.6" fill="black" />
 
-          <h3>Uma das mais relevantes bases criativas da oficina</h3>
+            {/* Estrelas PNG (posições intercaladas) */}
+            <image href="/images/star.png" x="1870" y="90" width="12" height="12" />
+            <image href="/images/star.png" x="1925" y="350" width="14" height="14" />
+            <image href="/images/star.png" x="1990" y="520" width="11" height="11" />
+            <image href="/images/star.png" x="1855" y="740" width="13" height="13" />
+            <image href="/images/star.png" x="1905" y="1120" width="12" height="12" />
+            <image href="/images/star.png" x="1980" y="1440" width="10" height="10" />
+          </svg>
 
-          <p>
-            Para chegar a esse trabalho coletivo, é essencial dar espaço ao trabalho com <b>Viewpoints e Composição</b>. Uma descoberta de um caminho potente de criação e escuta coletiva.
-          </p>
+          <FadeInSection className={styles.viewpointsSection} aria-labelledby="viewpointsTitle">
+            <h2 id="viewpointsTitle">Viewpoints e Composição</h2>
 
-          <p>
-            Essas práticas se incorporaram naturalmente à rotina dos encontros desde a primeira rodada da oficina – presentes nos <b>aquecimentos</b>, nos <b>jogos com o espaço</b> e, principalmente, nas <b>“cheganças”</b> a cada novo ambiente.
-          </p>
+            <h3>Uma das mais relevantes bases criativas da oficina</h3>
 
-          <p>
-            Mais do que técnica, Viewpoints <b>virou linguagem de pertencimento a um território e de criação compartilhada</b>.
-          </p>
-
-          <blockquote aria-label="Citação sobre Viewpoints">
             <p>
-              “<i>Viewpoints são uma série de nomes dados a certos princípios de movimento através do tempo e do espaço; esses nomes constituem uma linguagem para falar sobre o que acontece no palco.</i>”
+              Para chegar a esse trabalho coletivo, é essencial dar espaço ao trabalho com <b>Viewpoints e Composição</b>. Uma descoberta de um caminho potente de criação e escuta coletiva.
             </p>
-            <footer><b>— Anne Bogart e Tina Landau</b></footer>
-          </blockquote>
 
-          <p>
-            Desenvolvidas a partir dos <b>Six Viewpoints</b> de <i>Mary Overlie</i> (1970), e sistematizadas por Bogart e Landau, essas ferramentas estimulam a criação teatral a partir do corpo, da escuta e da improvisação. <b>Elas rompem com hierarquias tradicionais e fortalecem o coletivo</b>.
-          </p>
+            <p>
+              Essas práticas se incorporaram naturalmente à rotina dos encontros desde a primeira rodada da oficina – presentes nos <b>aquecimentos</b>, nos <b>jogos com o espaço</b> e, principalmente, nas <b>“cheganças”</b> a cada novo ambiente.
+            </p>
 
-          <p>
-            Durante minha formação, aprendi os <b>nove Viewpoints físicos</b>, divididos entre os eixos de <b>Tempo e Espaço</b>:
-          </p>
+            <p>
+              Mais do que técnica, Viewpoints <b>virou linguagem de pertencimento a um território e de criação compartilhada</b>.
+            </p>
 
-          <figure>
-            <Image
-              src="/images/territorio/aula_nucleoexperimental.jpg"
-              alt="Participantes do Núcleo Experimental de Artes Cênicas do SESI-SP montando composição coletiva no encerramento da turma, 2015"
-              width={500}
-              height={300}
-              className={styles.image}
-            />
-            <figcaption>
-              Fim de aula da 15ª turma do Núcleo Experimental de Artes Cênicas do SESI-SP montando composição coletiva (2015).
-            </figcaption>
-          </figure>
-        </FadeInSection>
+            <blockquote aria-label="Citação sobre Viewpoints">
+              <p>
+                “<i>Viewpoints são uma série de nomes dados a certos princípios de movimento através do tempo e do espaço; esses nomes constituem uma linguagem para falar sobre o que acontece no palco.</i>”
+              </p>
+              <footer><b>— Anne Bogart e Tina Landau</b></footer>
+            </blockquote>
+
+            <p>
+              Desenvolvidas a partir dos <b>Six Viewpoints</b> de <i>Mary Overlie</i> (1970), e sistematizadas por Bogart e Landau, essas ferramentas estimulam a criação teatral a partir do corpo, da escuta e da improvisação. <b>Elas rompem com hierarquias tradicionais e fortalecem o coletivo</b>.
+            </p>
+
+            <p>
+              Durante minha formação, aprendi os <b>nove Viewpoints físicos</b>, divididos entre os eixos de <b>Tempo e Espaço</b>:
+            </p>
+
+            <figure>
+              <Image
+                src="/images/territorio/aula_nucleoexperimental.jpg"
+                alt="Participantes do Núcleo Experimental de Artes Cênicas do SESI-SP montando composição coletiva no encerramento da turma, 2015"
+                width={500}
+                height={300}
+                className={styles.image}
+              />
+              <figcaption>
+                Fim de aula da 15ª turma do Núcleo Experimental de Artes Cênicas do SESI-SP montando composição coletiva (2015).
+              </figcaption>
+            </figure>
+          </FadeInSection>
+        </div>
 
         {/* Bloco Duas Colunas: Tempo e Espaço */}
         <FadeInSection className={styles.twoColumnSection} aria-labelledby="tempoEspacoTitle">
