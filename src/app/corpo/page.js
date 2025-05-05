@@ -876,6 +876,40 @@ export default function CorpoPage() {
                 </div>
               </FadeInSection>
 
+              <FadeInSection className={styles.participantTextsSection} aria-labelledby="participantTextsTitle">
+                <div className={styles.textWithFloatingImage}>
+                  <h2 id="cintiaTitle" className={styles.visuallyHidden}>
+                    Texto da participante Cintia
+                  </h2>
+                    <Image
+                      src="/images/corpo/foto18_cintia.png"
+                      alt="Estefani Moura"
+                      width={800}
+                      height={500}
+                      className={styles.floatingImage}
+                    />
+
+                  <h3>Cintia - sem título</h3>
+
+                  <p>
+                    O ano era 2019, em vários lugares do país ruas decoradas, famílias se organizando para mais um ano novo. Em uma casa não muito diferente uma família também se preparava para ir jantar como de costume na igreja. O sentimento que traduzia era “Ufa concluímos mais um ano”. Ao mesmo instante um deles triste, angustiado pelas circunstâncias da vida, antes de sair o mais novo enfezado “Bora”. 
+                  </p>
+                    
+                  <p>
+                    Tirar uma foto? os mais velhos não querendo muito, aceitaram. É comum em todo lar no final de ano tirar uma foto e guardar de recordação (recordação significa memória). Lembrança, é o que essa foto se tornou. 
+                  </p>
+
+                  <p>
+                    Um deles não está mais entre nós.
+                  </p>
+
+                  <p>
+                    No ano seguinte fomos surpreendidos com a COVID que se espalhou em vários países, uma quarentena que durou mais de um ano e milhares e milhares de mortes. Milhões de pessoas viraram lembranças como pássaros que ao descobrir o poder de voar tomam liberdade e voam para bem longe...
+                  </p>
+
+                </div>
+              </FadeInSection>
+
             {/* Bloco Playlist da Oficina */}
               <FadeInSection className={styles.playlistSection} aria-labelledby="playlistTitle">
                 <h2 id="playlistTitle" className={styles.visuallyHidden}>
