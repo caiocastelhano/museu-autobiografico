@@ -267,12 +267,6 @@
     transform: translateY(0);
   }
   
-  /* ÍMPARES: aparecem na direita */
-  .timelineItem:nth-of-type(odd) {
-    /*justify-content: flex-end;*/
-    /*padding-right: calc(50vw - 400px); /* 270px = 500/2 + 20px de distância da linha */
-  }
-  
   .timelineItem:nth-of-type(odd)::before {
     /*right: 50%;*/
     transform: translateX(50%);
@@ -410,12 +404,6 @@
     }
   }
 
-  @media (min-width: 1025px) and (max-width: 1199px) {
-    .timelineItem:nth-of-type(even) {
-      /*padding-left: calc(50vw - 230px); /* ou outro valor que fique harmônico */
-    }
-  }
-
   @media (max-width: 768px) {
     .timelineSection {
       padding: 0 12px;
@@ -549,10 +537,6 @@
   border-left: none; /* Remove borda da primeira coluna */
 }
 
-.twoColumnSection h2 {
-  /* Visually hidden para acessibilidade */
-}
-
 .twoColumnSection h3 {
   font-size: 1.3rem;
   margin-bottom: 24px;
@@ -630,10 +614,6 @@
   width: 100%;
   line-height: 1.6;
   box-shadow: 4px 4px 0px black;
-}
-
-.highlightBox h2 {
-  /* Visually hidden */
 }
 
 .highlightBox h3 {
@@ -721,10 +701,6 @@
   line-height: 1.6;
   font-size: 1rem;
   margin: 0 auto 0 200px;
-}
-
-.closingSection h2 {
-  /* Classe visuallyHidden já aplicada */
 }
 
 .closingSection p {
