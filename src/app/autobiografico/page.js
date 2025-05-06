@@ -90,6 +90,8 @@ export default function AutobiograficoPage() {
             Nesta página, não será tratada a experiência pessoal e profissional do criador da oficina.
           </p>
 
+          < br/>
+
           <p>
             Aqui você poderá assistir <b>excertos*</b> de experiências de <b>participantes em ação</b> e dos lugares pelos quais a oficina passou. <u>Compondo momentos registrados com a câmera do celular durante os encontros ou em gravações feitas por participantes ou terceiros para exercícios, o autobiográfico na experiência digital ganha um novo significado</u>, <b>relacionando momentos distintos vividos com exercícios propostos que, juntos, traduzem a relevância do experienciar a si mesmo em cena</b>.
           </p>
@@ -137,6 +139,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -176,6 +179,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -214,6 +218,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -252,6 +257,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -290,6 +296,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -328,6 +335,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -366,6 +374,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -404,6 +413,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -442,6 +452,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -480,6 +491,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -518,6 +530,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -556,6 +569,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -594,6 +608,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -632,6 +647,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -670,6 +686,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -708,6 +725,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -746,6 +764,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -784,6 +803,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -822,6 +842,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -860,6 +881,7 @@ export default function AutobiograficoPage() {
                     height={300}
                     className={styles.thumbnailImage}
                   />
+                  <div className={styles.playOverlay}>▶</div>
                 </div>
               ) : (
                 <iframe
@@ -884,18 +906,20 @@ export default function AutobiograficoPage() {
           <h2 id="finalNoteTitle" className={styles.visuallyHidden}>
             Link para mais vídeos
           </h2>
-          <ul>
-            <li>
-              Para conferir outros <b>excertos</b>, acesse a Playlist no Canal do YouTube:&nbsp;
+
+          <div className={styles.highlightBox}>
+            <p>
+              Para conferir outros <b>excertos</b>, acesse a&nbsp;
               <a
                 href="https://www.youtube.com/playlist?list=PLv-y-wxdAp-jgnHTqUI4TGP6vfPvDMWvm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://www.youtube.com/playlist?list=PLv-y-wxdAp-jgnHTqUI4TGP6vfPvDMWvm
+                Playlist no Canal do YouTube
               </a>
-            </li>
-          </ul>
+              .
+            </p>
+          </div>
         </section>
 
         {/* Citações que Lesteiam  */}
@@ -943,9 +967,11 @@ export default function AutobiograficoPage() {
           </div>
         </section>
 
-        {isModalOpen && (
-          <VideoModal videoSrc={currentVideoSrc} onClose={closeModal} />
-        )}
+        <VideoModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          videoSrc={currentVideoSrc}
+        />
 
       </main>
 
