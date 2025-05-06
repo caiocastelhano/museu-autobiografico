@@ -835,7 +835,7 @@ export default function MemoriaPage() {
                 >
                 {/* LADO ESQUERDO (x entre 1950 e 2400) */}
                 <circle cx="2000" cy="100" r="1.3" fill="black" />
-                <image href="/images/star.png" x="2150" y="140" width="10" height="10" />
+                <image href="/images/star.png" x="1900" y="140" width="10" height="10" />
 
                 {/* LADO DIREITO (x entre 3000 e 3400) */}
                 <circle cx="3050" cy="30" r="1.5" fill="black" />
@@ -848,12 +848,35 @@ export default function MemoriaPage() {
             </div>
 
             <h2 id="acknowledgementsTitle">
-                Memória: todas as pessoas que participaram de algum modo para que a Oficina acontecesse
+                <b><i>_Agradecimentos_</i></b>
             </h2>
 
-            <h4>_Agradecimentos_</h4>
+            <p>
+                <b>Dedico este trabalho às pessoas que participaram da oficina, ao meu avô Claudio Rodrigues e à minha bisavó Maria Gomes de Moura — a primeira contadora de memórias e histórias que conheci. in memoriam</b>
+            </p>
 
-            <p>_MEMÓRIA EM CONSTRUÇÃO_</p>
+            <p>
+                <b>Eu agradeço</b> à Graziela Kunsch, por me orientar sempre com gentileza e atenção, me fazendo desbravar caminhos que ainda não sabia percorrer em primeira pessoa.
+            </p>
+
+            <p>À Escola Superior de Artes Célia Helena, o lugar em que me formei ator e que também me deu a oportunidade de cursar o Mestrado em Artes da Cena. À Fundação Itaú por viabilizar a existência de um projeto que reúne professores e professoras referência em encontros que moveram a minha trajetória profissional. À Segunda Turma Especial do Laboratório em Artes da Cena. Em especial, minha colega e agora amiga, Ana Paula Frazão. Responsável por levar o Museu Autobiográfico para outros territórios, incentivando a continuidade do meu trabalho.</p>
+
+            <p>À Luaa Gabanini, Daves Otani e Miriam Rinaldi pelo olhar competente e empático com a minha oficina. Com papeis essenciais na minha formação como jovem artista, me sinto honrado em contar com o olhar dos três para meu amadurecimento como ator e mediador. A Valter Oliveira e Milena Faria, meus primeiros professores de teatro. De vocês ganhei meu primeiro desafio como ator e o primeiro livro de Stanislavski. A Douglas Sampaio, professor do curso de Educador Social no SENAC Aclimação, responsável por me guiar com muita paixão para um novo momento como mediador. A Fábio Ortolano, também professor do SENAC e colega de turma, essencial para a primeira forma de existência da oficina.</p>
+
+            <p>Ao Núcleo Experimental de Artes Cênicas do SESI-SP, que me proporcionou  integrar um grupo com artistas inesquecíveis. Às equipes gestoras, educativas, de segurança e de jovem monitoria do MIS – Museu da Imagem e do Som; da Casa Florescer 2; do Centro Cultural da Penha; da Biblioteca Cassiano Ricardo e da Casa Eliseu Voronkoff por me cederem espaços tão preciosos.</p>
+
+            <p>Aos meus amigos e amigas que se fizeram presentes mesmo quando eu estive ausente. Em especial, aos amigos Camila Freire, Letícia Benetti, Marina Michelis, Matheus Mazzo e Raíssa Carvalho. E pelo amor e fé na minha capacidade como artista, agradeço a Giovanna Siqueira.</p>
+
+            <p>Pela escuta de anos, agradeço ao profissional Felippe Lázaro Salomão.</p>
+
+            <p>Ao Caio Castelhano que, após embarcar em um ônibus comigo, ofereceu amor e cuidado nos momentos mais sensíveis, aceitando ainda desenvolver o site do projeto com afinco e dedicação total.</p>
+
+            <p>À minha família materna, que, além de habitar grande parte das minhas memórias, me fez perceber a importância de vir do lugar em que eu vim.</p>
+
+            <p>À minha mãe, Claudia Maria Rodrigues e a minha avó, Maria Izabel Tonelato Rodrigues, que, juntas, asseguraram que eu pudesse escolher os caminhos a percorrer sendo quem eu sou.</p>
+
+            <p>Novamente, agradeço e dedico este memorial a cada pessoa participante da oficina. Vocês estarão para sempre no meu museu pessoal.</p>
+
         </FadeInSection>
       </main>
 
