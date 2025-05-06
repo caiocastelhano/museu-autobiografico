@@ -81,34 +81,70 @@ export default function AutobiograficoPage() {
         </section>
 
         {/* Bloco de introdução textual com destaque e nota de rodapé */}
-        <section className={styles.autobioIntroTextSection} aria-labelledby="autobioIntroTitle">
-          <h2 id="autobioIntroTitle" className={styles.visuallyHidden}>
-            Introdução sobre a proposta da seção Autobiográfico
-          </h2>
+        <div className={styles.autobioIntroWrapper}>
+          <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 1200"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMin meet"
+            aria-hidden="true"
+          >
+            {/* LADO ESQUERDO — x: 250 a 1000 / y: 50 a 1150 */}
+            <circle cx="280" cy="90" r="2.1" fill="black" />
+            <circle cx="600" cy="200" r="10" fill="black" />
+            <circle cx="400" cy="600" r="13" fill="black" />
+            <circle cx="750" cy="150" r="17" fill="black" />
+            <circle cx="900" cy="950" r="20" fill="black" />
+            <circle cx="500" cy="1050" r="1.6" fill="black" />
+            <circle cx="990" cy="420" r="2.2" fill="black" />
+            <circle cx="350" cy="850" r="1.9" fill="black" />
+            <image href="/images/star.png" x="320" y="300" width="16" height="16" />
+            <image href="/images/star.png" x="870" y="720" width="25" height="25" />
+            <image href="/images/star.png" x="650" y="520" width="18" height="18" />
 
-          <p>
-            Nesta página, não será tratada a experiência pessoal e profissional do criador da oficina.
-          </p>
+            {/* LADO DIREITO — x: 4100 a 4800 / y: 50 a 1150 */}
+            <circle cx="4120" cy="250" r="10" fill="black" />
+            <circle cx="4200" cy="10" r="3" fill="black" />
+            <circle cx="4380" cy="400" r="2.4" fill="black" />
+            <circle cx="4550" cy="180" r="12" fill="black" />
+            <circle cx="4700" cy="1000" r="8.3" fill="black" />
+            <circle cx="4780" cy="650" r="6" fill="black" />
+            <circle cx="4300" cy="780" r="1.8" fill="black" />
+            <circle cx="4600" cy="300" r="15" fill="black" />
+            <image href="/images/star.png" x="4140" y="550" width="20" height="20" />
+            <image href="/images/star.png" x="4480" y="850" width="16" height="16" />
+            <image href="/images/star.png" x="4740" y="500" width="11" height="11" />
+          </svg>
 
-          < br/>
+          <section className={styles.autobioIntroTextSection} aria-labelledby="autobioIntroTitle">
+            <h2 id="autobioIntroTitle" className={styles.visuallyHidden}>
+              Introdução sobre a proposta da seção Autobiográfico
+            </h2>
 
-          <p>
-            Aqui você poderá assistir <b>excertos*</b> de experiências de <b>participantes em ação</b> e dos lugares pelos quais a oficina passou. <u>Compondo momentos registrados com a câmera do celular durante os encontros ou em gravações feitas por participantes ou terceiros para exercícios, o autobiográfico na experiência digital ganha um novo significado</u>, <b>relacionando momentos distintos vividos com exercícios propostos que, juntos, traduzem a relevância do experienciar a si mesmo em cena</b>.
-          </p>
+            <p>
+              Nesta página, não será tratada a experiência pessoal e profissional do criador da oficina.
+            </p>
 
-          < br/>
+            <br />
 
-          <p>
-            A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
-          </p>
+            <p>
+              Aqui você poderá assistir <b>excertos*</b> de experiências de <b>participantes em ação</b> e dos lugares pelos quais a oficina passou. <u>Compondo momentos registrados com a câmera do celular durante os encontros ou em gravações feitas por participantes ou terceiros para exercícios, o autobiográfico na experiência digital ganha um novo significado</u>, <b>relacionando momentos distintos vividos com exercícios propostos que, juntos, traduzem a relevância do experienciar a si mesmo em cena</b>.
+            </p>
 
-          <p className={styles.footnote} aria-label="Nota sobre o uso do termo excerto">
-            <sup>*</sup>
-            <u>
-              Sobre a escolha do termo <b>Excerto</b>: Pego o termo como referência ao trabalho da minha orientadora do mestrado, a Professora Doutora Graziela Kunsch. Sempre me encorajando a continuar, Grazi me sugeriu ler seu trabalho de pesquisa em audiovisual para que eu pudesse compreender que estes vídeos curtos, juntos, criam combinações únicas.
-            </u>
-          </p>
-        </section>
+            <br />
+
+            <p>
+              A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
+            </p>
+
+            <p className={styles.footnote} aria-label="Nota sobre o uso do termo excerto">
+              <sup>*</sup>
+              <u>
+                Sobre a escolha do termo <b>Excerto</b>: Pego o termo como referência ao trabalho da minha orientadora do mestrado, a Professora Doutora Graziela Kunsch. Sempre me encorajando a continuar, Grazi me sugeriu ler seu trabalho de pesquisa em audiovisual para que eu pudesse compreender que estes vídeos curtos, juntos, criam combinações únicas.
+              </u>
+            </p>
+          </section>
+        </div>
 
         {/* Galeria de vídeos com modais */}
         <section className={styles.videoGallerySection} aria-labelledby="autobioVideoGalleryTitle">

@@ -34,7 +34,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 16px;
+    padding: 20px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,62 +116,92 @@
 
   /* ===== INTRODUÇÃO TEXTUAL ===== */
 
-  .autobioIntroTextSection {
+  .autobioIntroWrapper {
+    position: relative;
+    width: 100vw;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .floatingElements {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    max-width: 800px;
+    height: auto;
+    aspect-ratio: 5000 / 1200;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .autobioIntroTextSection {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px 16px;
-    font-size: 1.1rem;
-    line-height: 1.7;
     text-align: justify;
+    box-sizing: border-box;
+    background-color: transparent;
   }
-
+  
   .autobioIntroTextSection b {
     font-weight: bold;
   }
-
+  
   .autobioIntroTextSection u {
     text-decoration: underline;
   }
-
+  
   .autobioIntroTextSection ul {
     margin-top: 16px;
     padding-left: 20px;
   }
-
+  
   .footnote {
     margin-top: 24px;
     font-size: 0.95rem;
     font-style: italic;
     line-height: 1.5;
     text-align: justify;
-  }
+  } 
 
    /* ===== RESPONSIVIDADE: INTRODUÇÃO TEXTUAL ===== */
 
-   @media (max-width: 768px) {
-    .autobioIntroTextSection {
-      padding: 40px 16px;
-      font-size: 1rem;
-    }
-  
-    .footnote {
-      font-size: 0.9rem;
-    }
+@media (max-width: 768px) {
+  .autobioIntroTextSection {
+    padding: 40px 16px;
+    font-size: 1rem;
+    line-height: 1.6; /* Adiciona legibilidade em mobile */
   }
 
-  @media (min-width: 769px) and (max-width: 1080px) {
-    .autobioIntroTextSection {
-      padding: 50px 24px;
-      font-size: 1.05rem;
-    }
-  
-    .footnote {
-      font-size: 0.95rem;
-    }
+  .footnote {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
-  /* ===== GALERIA DE VÍDEOS ===== */
+  .floatingElements {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .autobioIntroTextSection {
+    padding: 50px 24px;
+    font-size: 1.05rem;
+    line-height: 1.7; /* Mantém consistência visual */
+  }
+
+  .footnote {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+
+/* ===== GALERIA DE VÍDEOS ===== */
 
 .videoGallerySection {
   width: 100%;
