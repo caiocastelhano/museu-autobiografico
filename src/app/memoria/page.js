@@ -386,7 +386,7 @@ export default function MemoriaPage() {
                 <image href="/images/star.png" x="3050" y="2050" width="8" height="8" />
                 <image href="/images/star.png" x="3180" y="2300" width="11" height="11" />
 
-                <line x1="2980" y1="1350" x2="3270" y2="1700" stroke="black" strokeWidth="1.5" />
+                <line x1="2980" y1="1350" x2="3100" y2="1550" stroke="black" strokeWidth="1.5" />
                 </svg>
             </div>
 
@@ -743,15 +743,6 @@ export default function MemoriaPage() {
                 <image href="/images/star.png" x="2100" y="250" width="10" height="10" />
                 <image href="/images/star.png" x="2080" y="850" width="12" height="12" />
                 <image href="/images/star.png" x="2250" y="920" width="9" height="9" />
-
-                <line
-                    x1="2350"
-                    y1="400"
-                    x2="2200"
-                    y2="750"
-                    stroke="black"
-                    strokeWidth="2"
-                />
                 </svg>
             </div>
 
