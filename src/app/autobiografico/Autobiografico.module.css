@@ -73,6 +73,26 @@
     font-weight: bold;
   }
 
+  .introWrapper {
+    position: relative;
+    width: 100vw;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .floatingElements {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5000 / 1000;
+    z-index: 0;
+    pointer-events: none;
+  }
+
   /* ===== RESPONSIVIDADE: INTRO SECTION ===== */
 
   @media (max-width: 768px) {
@@ -92,6 +112,10 @@
   
     .bodyShape {
       width: 80%;
+    }
+
+    .floatingElements {
+      display: none;
     }
   }
 

@@ -44,41 +44,76 @@ export default function AutobiograficoPage() {
         <h1 className={styles.visuallyHidden}>Página Autobiográfico</h1>
 
         {/* Bloco inicial com figura e quote */}
-        <section className={styles.introSection} aria-labelledby="introTitle">
-          <h2 id="introTitle" className={styles.visuallyHidden}>
-            Introdução da página Autobiográfico
-          </h2>
+        <div className={styles.introWrapper}>
+          <svg
+            className={styles.floatingElements}
+            viewBox="0 0 5000 1000"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMin meet"
+            aria-hidden="true"
+          >
+            {/* Pontos dispersos */}
+            <circle cx="250" cy="180" r="18" fill="black" />
+            <circle cx="850" cy="90" r="8" fill="black" />
+            <circle cx="450" cy="600" r="7" fill="black" />
+            <circle cx="1990" cy="300" r="2.2" fill="black" />
+            <circle cx="2300" cy="920" r="1.7" fill="black" />
+            <circle cx="2760" cy="150" r="2" fill="black" />
+            <circle cx="3100" cy="400" r="13" fill="black" />
+            <circle cx="3500" cy="800" r="1.5" fill="black" />
+            <circle cx="3900" cy="200" r="14" fill="black" />
+            <circle cx="4300" cy="680" r="9" fill="black" />
+            <circle cx="4700" cy="350" r="1.9" fill="black" />
+            <circle cx="4500" cy="900" r="2" fill="black" />
 
-          <div className={styles.introContentWrapper}>
-            <svg
-              className={styles.bodyShape}
-              viewBox="450 50 300 250"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-labelledby="autobioSvgTitle"
-            >
-              <title id="autobioSvgTitle">Forma gráfica com a palavra autobiográfico</title>
-              <g className={styles.hoverText}>
-                <polygon points="546,94 654,112 672,196 600,232 528,178" fill="white" stroke="black" strokeWidth="1" />
-                <circle cx="546" cy="94" r="3" fill="black" />
-                <circle cx="654" cy="112" r="3.5" fill="black" />
-                <circle cx="672" cy="196" r="4" fill="black" />
-                <circle cx="600" cy="232" r="2.5" fill="black" />
-                <circle cx="528" cy="178" r="3" fill="black" />
-                <text x="600" y="162" className={styles.shapeText} textAnchor="middle">
-                  autobiográfico
-                </text>
-              </g>
-            </svg>
+            {/* Estrelas PNG */}
+            <image href="/images/star.png" x="600" y="900" width="15" height="15" />
+            <image href="/images/star.png" x="800" y="480" width="18" height="18" />
+            <image href="/images/star.png" x="2150" y="220" width="13" height="13" />
+            <image href="/images/star.png" x="2850" y="760" width="20" height="20" />
+            <image href="/images/star.png" x="3250" y="520" width="25" height="25" />
+            <image href="/images/star.png" x="3800" y="100" width="14" height="14" />
+            <image href="/images/star.png" x="4600" y="250" width="12" height="12" />
+            <image href="/images/star.png" x="4400" y="850" width="16" height="16" />
+          </svg>
 
-            <blockquote className={styles.introQuote}>
-              <p>
-                &quot;A autobiografia produz uma forma de enfrentamento político que para mim é importantíssimo. Ela é uma importante arma política.&quot;
-              </p>
-              <footer>— Édouard Louis</footer>
-            </blockquote>
-          </div>
-        </section>
+          <section className={styles.introSection} aria-labelledby="introTitle">
+            <h2 id="introTitle" className={styles.visuallyHidden}>
+              Introdução da página Autobiográfico
+            </h2>
+
+            <div className={styles.introContentWrapper}>
+              <svg
+                className={styles.bodyShape}
+                viewBox="450 50 300 250"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-labelledby="autobioSvgTitle"
+              >
+                <title id="autobioSvgTitle">Forma gráfica com a palavra autobiográfico</title>
+                <g className={styles.hoverText}>
+                  <polygon points="546,94 654,112 672,196 600,232 528,178" fill="white" stroke="black" strokeWidth="1" />
+                  <circle cx="546" cy="94" r="3" fill="black" />
+                  <circle cx="654" cy="112" r="3.5" fill="black" />
+                  <circle cx="672" cy="196" r="4" fill="black" />
+                  <circle cx="600" cy="232" r="2.5" fill="black" />
+                  <circle cx="528" cy="178" r="3" fill="black" />
+                  <text x="600" y="162" className={styles.shapeText} textAnchor="middle">
+                    autobiográfico
+                  </text>
+                </g>
+              </svg>
+
+              <blockquote className={styles.introQuote}>
+                <p>
+                  &quot;A autobiografia produz uma forma de enfrentamento político que para mim é importantíssimo.
+                  Ela é uma importante arma política.&quot;
+                </p>
+                <footer>— Édouard Louis</footer>
+              </blockquote>
+            </div>
+          </section>
+        </div>
 
         {/* Bloco de introdução textual com destaque e nota de rodapé */}
         <div className={styles.autobioIntroWrapper}>
