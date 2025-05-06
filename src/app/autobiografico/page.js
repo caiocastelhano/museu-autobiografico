@@ -75,7 +75,7 @@ export default function AutobiograficoPage() {
               <p>
                 &quot;A autobiografia produz uma forma de enfrentamento político que para mim é importantíssimo. Ela é uma importante arma política.&quot;
               </p>
-              <footer>— Edouard Louis</footer>
+              <footer>— Édouard Louis</footer>
             </blockquote>
           </div>
         </section>
@@ -96,11 +96,11 @@ export default function AutobiograficoPage() {
             Aqui você poderá assistir <b>excertos*</b> de experiências de <b>participantes em ação</b> e dos lugares pelos quais a oficina passou. <u>Compondo momentos registrados com a câmera do celular durante os encontros ou em gravações feitas por participantes ou terceiros para exercícios, o autobiográfico na experiência digital ganha um novo significado</u>, <b>relacionando momentos distintos vividos com exercícios propostos que, juntos, traduzem a relevância do experienciar a si mesmo em cena</b>.
           </p>
 
-          <ul>
-            <li>
-              A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
-            </li>
-          </ul>
+          < br/>
+
+          <p>
+            A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
+          </p>
 
           <p className={styles.footnote} aria-label="Nota sobre o uso do termo excerto">
             <sup>*</sup>
