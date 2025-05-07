@@ -1,6 +1,6 @@
 export const metadata = {
     title: "Corpo | Museu Autobiográfico e Território Leste",
-    description: "Texto de marcação.",
+    description: "Entre berço e cena, o corpo do oficineiro encontra outros corpos em exercícios, vídeos e memórias que ativam gesto como linguagem.",
     alternates: {
       canonical: "https://museuautobiografico.org/corpo",
     },

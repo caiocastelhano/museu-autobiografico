@@ -1,6 +1,6 @@
 export const metadata = {
     title: "Autobiográfico | Museu Autobiográfico e Território Leste",
-    description: "Texto de marcação.",
+    description: "Explore o autobiográfico como ferramenta de criação: relatos, excertos e exercícios que partem da própria história para virar teatro.",
     alternates: {
       canonical: "https://museuautobiografico.org/autobiografico",
     },
