@@ -59,7 +59,6 @@ export default function AutobiograficoPage() {
             <circle cx="1990" cy="300" r="2.2" fill="black" />
             <circle cx="2300" cy="920" r="1.7" fill="black" />
             <circle cx="2760" cy="150" r="2" fill="black" />
-            <circle cx="3100" cy="400" r="13" fill="black" />
             <circle cx="3500" cy="800" r="1.5" fill="black" />
             <circle cx="3900" cy="200" r="14" fill="black" />
             <circle cx="4300" cy="680" r="9" fill="black" />
@@ -70,8 +69,6 @@ export default function AutobiograficoPage() {
             <image href="/images/star.png" x="600" y="900" width="15" height="15" />
             <image href="/images/star.png" x="800" y="480" width="18" height="18" />
             <image href="/images/star.png" x="2150" y="220" width="13" height="13" />
-            <image href="/images/star.png" x="2850" y="760" width="20" height="20" />
-            <image href="/images/star.png" x="3250" y="520" width="25" height="25" />
             <image href="/images/star.png" x="3800" y="100" width="14" height="14" />
             <image href="/images/star.png" x="4600" y="250" width="12" height="12" />
             <image href="/images/star.png" x="4400" y="850" width="16" height="16" />
