@@ -19,7 +19,7 @@ export const metadata = {
     canonical: "https://museuautobiografico.org",
   },
   openGraph: {
-    title: "Museu Autobiográfico e Território Leste",
+    title: "Museu Autobiográfico e Território_Leste",
     description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
     url: "https://museuautobiografico.org",
     siteName: "Museu Autobiográfico",

@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Leste | Museu Autobiográfico e Território Leste",
+    title: "Leste | Museu Autobiográfico e Território_Leste",
     description: "Por que Leste? Uma reflexão autoral com fotos e memórias sobre o território que virou verbo, conceito e direção de criação.",
     alternates: {
       canonical: "https://museuautobiografico.org/leste",

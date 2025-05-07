@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Memória | Museu Autobiográfico e Território Leste",
+    title: "Memória | Museu Autobiográfico e Território_Leste",
     description: "Memórias compartilhadas em vídeos e textos: relatos de participantes que transformam lembrança em cena e presença.",
     alternates: {
       canonical: "https://museuautobiografico.org/memoria",

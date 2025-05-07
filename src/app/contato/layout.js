@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Contato | Museu Autobiográfico e Território Leste",
+    title: "Contato | Museu Autobiográfico e Território_Leste",
     description: "Converse com o Museu Autobiográfico: fale por e-mail, siga nas redes sociais e acompanhe novidades no canal do YouTube.",
     alternates: {
       canonical: "https://museuautobiografico.org/contato",
