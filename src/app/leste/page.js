@@ -17,20 +17,20 @@ export default function LestePage() {
         <h1 className={styles.visuallyHidden}>Página Leste</h1>
 
         <div className={styles.splitLayout}>
-        <div className={styles.leftColumn}>
-          <div className={styles.imageGrid}>
-            {[...Array(20)].map((_, index) => (
-              <Image
-              key={index}
-              src={`/images/leste/leste${index + 1}.jpeg`}
-              alt="Encontro no Centro Cultural da Penha | Fotos de 2022 feitas por participantes da oficina"
-              width={160}
-              height={115}
-              className={styles.gridImage}
-            />
-            ))}
+          <div className={styles.leftColumn}>
+            <div className={styles.imageGrid}>
+              {[...Array(20)].map((_, index) => (
+                <Image
+                key={index}
+                src={`/images/leste/leste${index + 1}.jpeg`}
+                alt="Encontro no Centro Cultural da Penha | Fotos de 2022 feitas por participantes da oficina"
+                width={120}
+                height={90}
+                className={styles.gridImage}
+              />
+              ))}
+            </div>
           </div>
-        </div>
 
           <div className={styles.rightColumn}>
 
