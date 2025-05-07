@@ -134,4 +134,56 @@
   height: auto;
 }
 
+/* === MODAL DE FOTOS AMPLIADAS === */
 
+.imageWrapper {
+  cursor: pointer;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  border: 2px solid black;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  background: white;
+  border: 2px solid black;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
