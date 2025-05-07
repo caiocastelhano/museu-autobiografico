@@ -6,13 +6,13 @@ import BackToHomeButton from "@/app/components/BackToHomeButton";
 import TopMenu from "@/app/components/TopMenu";
 import styles from "@/app/leste/Leste.module.css";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 export default function LestePage() {
   const totalImages = 20;
   const [currentIndex, setCurrentIndex] = useState(null);
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = useCallback((e) => {
     if (currentIndex !== null) {
       if (e.key === "Escape") {
         setCurrentIndex(null);
@@ -22,12 +22,12 @@ export default function LestePage() {
         setCurrentIndex(currentIndex - 1);
       }
     }
-  };
+  }, [currentIndex, totalImages]);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [currentIndex]);
+  }, [handleKeyDown]);
 
   return (
     <div className={styles.pageContainer}>
