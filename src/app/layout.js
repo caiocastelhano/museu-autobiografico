@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Museu Autobiográfico",
     images: [
       {
-        url: "https://museuautobiografico.org/images/og-image.jpg",
+        url: "https://museuautobiografico.org/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Imagem de compartilhamento do Museu Autobiográfico",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Museu Autobiográfico e Território Leste",
     description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
-    image: "https://museuautobiografico.org/images/og-image.jpg",
+    image: "https://museuautobiografico.org/og-image.jpg",
   },
 };
 
