@@ -39,7 +39,7 @@ export default function LestePage() {
 
         <div className={styles.splitLayout}>
           <div className={styles.leftColumn}>
-          <div className={styles.imageGrid}>
+            <div className={styles.imageGridDesktop}>
               {[...Array(20)].map((_, index) => (
                 <div
                   key={index}
@@ -91,6 +91,19 @@ export default function LestePage() {
                 <p>
                   Desde cedo, aliás, fui atravessado pela <u>sensação de ser fora de lugar</u>.
                 </p>
+
+                <div className={styles.imageGridMobile}>
+                  {[1, 4, 8, 14, 19].map((i) => (
+                    <Image
+                      key={i}
+                      src={`/images/leste/leste${i}.jpeg`}
+                      alt="Foto da oficina"
+                      width={600}
+                      height={400}
+                      className={styles.gridImageMobile}
+                    />
+                  ))}
+                </div>
 
                 <p>
                   E foi quando precisei atravessar meu ponto de partida em São Paulo para ser um <b>estudante de artes cênicas</b> que me senti ainda mais deslocado. <u>Meu corpo, minha origem, minha história pareciam não caber ali, me faziam parecer performar o estar ali</u>. A cultura, que tanto me formou, também me afastava. Falar bem, gostar de arte, querer ser artista parecia não combinar com o <b>CEP</b> que estava escrito no meu endereço e parecia ser algo decisivo para o meu sucesso ou insucesso.
@@ -150,6 +163,19 @@ export default function LestePage() {
                   O sublinhado indica pausa, pensamento, território simbólico. Porque o território não é só geográfico — é também emocional, relacional, político.
                 </p>
 
+                <div className={styles.imageGridMobile}>
+                  {[2, 7, 10, 13, 20].map((i) => (
+                    <Image
+                      key={i}
+                      src={`/images/leste/leste${i}.jpeg`}
+                      alt="Foto da oficina"
+                      width={600}
+                      height={400}
+                      className={styles.gridImageMobile}
+                    />
+                  ))}
+                </div>
+
                 <div className={styles.divider} aria-hidden="true" />
 
                 <blockquote>
@@ -191,7 +217,7 @@ export default function LestePage() {
                 <div className={styles.divider} aria-hidden="true" />
 
                 <p>
-                  <b>As memórias do mural ao lado são de autoria de Estefani Moura e Tyaxka.</b>
+                  <b>As memórias fotográficas desta página são de autoria de Estefani Moura e Tyaxka.</b>
                 </p>
               </div>
           </div>

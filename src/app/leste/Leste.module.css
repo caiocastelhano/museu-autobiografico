@@ -105,7 +105,7 @@
 
 /* === GRID DE IMAGENS === */
 
-.imageGrid {
+.imageGridDesktop {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 30px;
@@ -119,6 +119,10 @@
 .gridImage {
   border: 1px solid black;
   object-fit: cover;
+}
+
+.imageGridMobile {
+  display: none;
 }
 
 /* === FIGURA GEOMÉTRICA  === */
@@ -186,4 +190,50 @@
 
 .nextButton {
   right: 10px;
+}
+
+/* === RESPONSIVIDADE MOBILE === */
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding-top: 100px;
+  }
+
+  .pageContainer {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .footer {
+    position: relative !important;
+  }
+
+  .splitLayout {
+    flex-direction: column;
+  }
+
+  .imageGridDesktop {
+    display: none;
+  }
+
+  .imageGridMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .gridImageMobile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+    padding: 0 16px;
+  }
 }
