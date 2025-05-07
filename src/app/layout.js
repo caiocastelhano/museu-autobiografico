@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Museu Autobiográfico e Território Leste",
+  title: "Museu Autobiográfico e Território_Leste",
   description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
   alternates: {
     canonical: "https://museuautobiografico.org",
@@ -36,7 +36,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Museu Autobiográfico e Território Leste",
+    title: "Museu Autobiográfico e Território_Leste",
     description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
     image: "https://museuautobiografico.org/og-image.jpg",
   },
