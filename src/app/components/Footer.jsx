@@ -19,7 +19,7 @@ export default function Footer() {
         <span className={styles.break}>
           Criado por Marcelo Rodrigues Maia | Desenvolvido por{" "}
           <a
-            href="https://caiocastelhano.github.io/portfolio/"
+            href="https://www.caiocastelhano.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.footerLink}
