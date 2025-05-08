@@ -103,10 +103,9 @@ export default function AutobiograficoPage() {
 
               <blockquote className={styles.introQuote}>
                 <p>
-                  &quot;A autobiografia produz uma forma de enfrentamento político que para mim é importantíssimo.
-                  Ela é uma importante arma política.&quot;
+                  &quot;Além de ser um dos métodos de pesquisa mais importantes, a pesquisa (auto)biográfica também é interpretada como um meio que possibilita ao sujeito se revelar, ou seja, levá-lo a (auto)questionar, a refletir sobre sua condição, suas ações, seus conceitos, que se configuram assim em um processo de formação.&quot;
                 </p>
-                <footer>— Édouard Louis</footer>
+                <footer>— Luciana Pizzani</footer>
               </blockquote>
             </div>
           </section>
@@ -154,7 +153,7 @@ export default function AutobiograficoPage() {
             </h2>
 
             <p>
-              Nesta página, não será tratada a experiência pessoal e profissional do criador da oficina.
+              Quando o corpo é a casa, o autobiográfico se apresenta como uma ferramenta cênica para me conectar com outras histórias, personagens e até mesmo para pensar e ressignificar a própria trajetória. Como faço na página <Link href="/corpo" className={styles.inlineLink}>Corpo</Link>, parto de mim para encontrar formas de me conectar com outras histórias e pessoas, utilizando o recurso da autobiografia, criando cenas e novas narrativas para as pessoas participantes da oficina.
             </p>
 
             <br />
@@ -169,12 +168,6 @@ export default function AutobiograficoPage() {
               A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
             </p>
 
-            <p className={styles.footnote} aria-label="Nota sobre o uso do termo excerto">
-              <sup>*</sup>
-              <u>
-                Sobre a escolha do termo <b>Excerto</b>: Pego o termo como referência ao trabalho da minha orientadora do mestrado, a Professora Doutora Graziela Kunsch. Sempre me encorajando a continuar, Grazi me sugeriu ler seu trabalho de pesquisa em audiovisual para que eu pudesse compreender que estes vídeos curtos, juntos, criam combinações únicas.
-              </u>
-            </p>
           </section>
         </div>
 
@@ -1003,7 +996,7 @@ export default function AutobiograficoPage() {
 
             <blockquote>
               <p>
-                &quot;O centro da pesquisa autobiográfica encontra-se no ser humano que, em diferentes contextos e situações, autobiografa-se, quer narrando fatos de sua vida, quer refletindo sobre seu processo de autoformação. A pessoa, ao narrar, narra-se e, ao fazê-lo, ressignifica experiências, vivências, aprendizagens, dando-lhes novo significado.&quot;
+                O centro da pesquisa autobiográfica encontra-se no ser humano que, em diferentes contextos e situações, autobiografa-se, quer narrando fatos de sua vida, quer refletindo sobre seu processo de autoformação. A pessoa, ao narrar, narra-se e, ao fazê-lo, ressignifica experiências, vivências, aprendizagens, dando-lhes novo significado.
               </p>
               <footer>
                 — Lourdes Maria Bragagnolo Frison, Ana Margarida da Veiga Simão
@@ -1012,16 +1005,17 @@ export default function AutobiograficoPage() {
 
             <blockquote>
               <p>
-                &quot;Pode-se dizer que hoje um artista que se debruce sobre material autobiográfico tem diante de si este duplo desafio: questionar os modelos representacionais ainda fortemente ligados a essa teleologia da Bildung e, ao mesmo tempo, encontrar na experiência de uma criação autobiográfica o espaço de sua própria reelaboração abrindo possibilidades para verdadeiros saltos de &apos;experienciação&apos; e simbolização do self.&quot;
+                Pode-se dizer que hoje um artista que se debruce sobre material autobiográfico tem diante de si este duplo desafio: questionar os modelos representacionais ainda fortemente ligados a essa teleologia da Bildung e, ao mesmo tempo, encontrar na experiência de uma criação autobiográfica o espaço de sua própria reelaboração abrindo possibilidades para verdadeiros saltos de &apos;experienciação&apos; e simbolização do self.
               </p>
               <footer>— Janaina Leite</footer>
             </blockquote>
 
             <blockquote>
               <p>
-                &quot;Além de ser um dos métodos de pesquisa mais importantes, a pesquisa (auto)biográfica também é interpretada como um meio que possibilita ao sujeito se revelar, ou seja, levá-lo a (auto)questionar, a refletir sobre sua condição, suas ações, seus conceitos, que se configuram assim em um processo de formação.&quot;
+                A autobiografia produz uma forma de enfrentamento político que para mim é importantíssimo.
+                Ela é uma importante arma política.
               </p>
-              <footer>— Luciana Pizzani</footer>
+              <footer>— Édouard Louis</footer>
             </blockquote>
 
             <p className={styles.footnote} aria-label="Nota sobre o termo Lesteiam">
@@ -1033,6 +1027,13 @@ export default function AutobiograficoPage() {
                   do site</b>.
             </p>
           </div>
+        </section>
+
+        {/* Nota do criador do site */}
+        <section className={styles.authorNote}>
+          <p>
+            <b>Nota do criador do site</b>: *O uso do termo surge a partir da pesquisa de <b>Graziela Kunsch</b>, com seus sites -arquivos de &quot;excertos&quot; - vídeos formados por um único plano cada -, assumindo uma prática documentária contínua, processual e transformada pelo tempo, no lugar de documentários fechados.
+          </p>
         </section>
 
         <VideoModal

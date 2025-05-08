@@ -758,7 +758,7 @@ export default function TerritorioPage() {
         </section>
 
         {/* Bloco Casa Florescer */}
-        <section className={styles.florescerBlock} aria-labelledby="florescerTitle">
+        <FadeInSection className={styles.florescerBlock} aria-labelledby="florescerTitle">
           <h3 id="florescerTitle" className={styles.florescerTitle}>
             Experiência Formadora do Projeto: lembrança de onde começou a nascer a oficina
           </h3>
@@ -827,8 +827,7 @@ export default function TerritorioPage() {
             </p>
             <footer><b>Milton Santos</b></footer>
           </blockquote>
-        </section>
-
+        </FadeInSection>
 
         {/* Bloco Viewpoints e Composição */}
         <div className={styles.viewpointsWrapper}>

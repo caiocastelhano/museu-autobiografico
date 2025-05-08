@@ -183,14 +183,16 @@
     margin-top: 16px;
     padding-left: 20px;
   }
+
+  .inlineLink {
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+  }
   
-  .footnote {
-    margin-top: 24px;
-    font-size: 0.95rem;
-    font-style: italic;
-    line-height: 1.5;
-    text-align: justify;
-  } 
+  .inlineLink:hover {
+    text-decoration: none;
+  }  
 
    /* ===== RESPONSIVIDADE: INTRODUÇÃO TEXTUAL ===== */
 
@@ -446,7 +448,26 @@
   }
 }
 
+/* ===== NOTA DO CRIADOR DO SITE ===== */
 
+.authorNote {
+  margin: 48px auto 0 auto;
+  max-width: 800px;
+  padding: 0 30px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: black;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVIDADE: NOTA DO CRIADOR DO SITE ===== */
+
+@media (max-width: 768px) {
+  .authorNote {
+    padding: 0 16px;
+    font-size: 0.9rem;
+  }
+}
 
 
 

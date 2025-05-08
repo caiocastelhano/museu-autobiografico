@@ -147,7 +147,7 @@ export default function MemoriaPage() {
             </svg>
         </div>
 
-        <h2>Memórias do início do Projeto</h2>
+        <h2>Memórias do início do projeto</h2>
 
         <p>
             <i>
@@ -172,7 +172,7 @@ export default function MemoriaPage() {
             className={styles.image}
             />
             <figcaption className={styles.caption}>
-            Lista de Presença da primeira oficina do Museu Autobiográfico
+            Lista de Presença da primeira oficina do Museu Autobiográfico.
             </figcaption>
         </div>
 
@@ -234,12 +234,6 @@ export default function MemoriaPage() {
                 <b>Se eu fosse você</b>
             </p>
 
-            <p>
-                <u>
-                Como não há registros do exercício em si, encontrei fotos de exercícios de composição do grupo presente no dia da experiência.
-                </u>
-            </p>
-
             <figure className={styles.mediaBlock}>
                 <Image
                 src="/images/memoria/foto2_encontros1.jpg"
@@ -249,7 +243,7 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Grupo em exercício coletivo - oficina 2022
+                Grupo em exercício coletivo - oficina 2022.
                 </figcaption>
             </figure>
 
@@ -262,7 +256,7 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Exercício de improviso - oficina 2022
+                Exercício de improviso - oficina 2022.
                 </figcaption>
             </figure>
 
@@ -413,13 +407,9 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Gleice em frente à sua casa.
+                    Moradora da Penha, atriz formada pelo SENAC São Miguel Paulista, poeta, atua ainda com audiovisual em filmes publicitários.
                 </figcaption>
             </figure>
-
-            <p>
-                Moradora da <u>Penha</u>, atriz formada pelo SENAC São Miguel Paulista, poeta e, profissionalmente, atua com figuração em séries e filmes publicitários.
-            </p>
 
             <blockquote className={styles.testimonialBox}>
                 <p>
@@ -642,7 +632,7 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
+                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor.
                 </figcaption>
             </figure>
 
@@ -655,7 +645,7 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor
+                Digitalização de escrita em papel, 2022 | Fonte: Acervo do autor.
                 </figcaption>
             </figure>
 
@@ -689,7 +679,7 @@ export default function MemoriaPage() {
                 className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                Antes da Performance, de Edgar Degas
+                Antes da Performance, de Edgar Degas.
                 </figcaption>
             </figure>
 
@@ -765,7 +755,7 @@ export default function MemoriaPage() {
                     className={styles.image}
                 />
                 <figcaption className={styles.caption}>
-                    Foto que fiz no jardim da casa da minha tia Claudete
+                    Foto que fiz no jardim da casa da minha tia Claudete.
                 </figcaption>
                 </figure>
             </div>
@@ -842,19 +832,21 @@ export default function MemoriaPage() {
                 <b><i>_Agradecimentos_</i></b>
             </h2>
 
-            <p>
-                <b>Dedico este trabalho às pessoas que participaram da oficina, ao meu avô Claudio Rodrigues e à minha bisavó Maria Gomes de Moura — a primeira contadora de memórias e histórias que conheci. in memoriam</b>
-            </p>
+            <p><b>Eu agradeço</b> à Graziela Kunsch, por me orientar sempre com gentileza e atenção, me fazendo desbravar caminhos que ainda não sabia percorrer em primeira pessoa.</p>
 
-            <p>
-                <b>Eu agradeço</b> à Graziela Kunsch, por me orientar sempre com gentileza e atenção, me fazendo desbravar caminhos que ainda não sabia percorrer em primeira pessoa.
-            </p>
+            <p>À Escola Superior de Artes Célia Helena, o lugar em que me formei ator e que também me deu a oportunidade de cursar o Mestrado em Artes da Cena.</p>
 
-            <p>À Escola Superior de Artes Célia Helena, o lugar em que me formei ator e que também me deu a oportunidade de cursar o Mestrado em Artes da Cena. À Fundação Itaú por viabilizar a existência de um projeto que reúne professores e professoras referência em encontros que moveram a minha trajetória profissional. À Segunda Turma Especial do Laboratório em Artes da Cena. Em especial, minha colega e agora amiga, Ana Paula Frazão. Responsável por levar o Museu Autobiográfico para outros territórios, incentivando a continuidade do meu trabalho.</p>
+            <p>À Escola Fundação Itaú, por viabilizar a existência de um projeto que reúne professores e professoras de referência em encontros que moveram a minha trajetória profissional.</p>
 
-            <p>À Luaa Gabanini, Daves Otani e Miriam Rinaldi pelo olhar competente e empático com a minha oficina. Com papeis essenciais na minha formação como jovem artista, me sinto honrado em contar com o olhar dos três para meu amadurecimento como ator e mediador. A Valter Oliveira e Milena Faria, meus primeiros professores de teatro. De vocês ganhei meu primeiro desafio como ator e o primeiro livro de Stanislavski. A Douglas Sampaio, professor do curso de Educador Social no SENAC Aclimação, responsável por me guiar com muita paixão para um novo momento como mediador. A Fábio Ortolano, também professor do SENAC e colega de turma, essencial para a primeira forma de existência da oficina.</p>
+            <p>À Segunda Turma Especial do Laboratório em Artes da Cena. Em especial, minha colega e agora amiga, Ana Paula Frazão. Responsável por levar o Museu Autobiográfico para outros territórios, incentivando a continuidade do meu trabalho.</p>
 
-            <p>Ao Núcleo Experimental de Artes Cênicas do SESI-SP, que me proporcionou  integrar um grupo com artistas inesquecíveis. Às equipes gestoras, educativas, de segurança e de jovem monitoria do MIS – Museu da Imagem e do Som; da Casa Florescer 2; do Centro Cultural da Penha; da Biblioteca Cassiano Ricardo e da Casa Eliseu Voronkoff por me cederem espaços tão preciosos.</p>
+            <p>À Luaa Gabanini, Daves Otani e Miriam Rinaldi pelo olhar competente e empático com a minha oficina nas conversas de qualificação. Com papeis essenciais na minha formação como jovem artista, sinto-me honrado em contar com o olhar dos três para meu amadurecimento como ator e mediador.</p>
+
+            <p>A Valter Oliveira e Milena Faria, meus primeiros professores de teatro. De vocês ganhei meu primeiro desafio como ator e o primeiro livro de Stanislavski. A Douglas Sampaio, professor do curso de Educador Social no SENAC Aclimação, responsável por me guiar com muita paixão para um novo momento como mediador. A Fábio Ortolano, também professor do SENAC e colega de turma, essencial para a primeira forma de existência da oficina.</p>
+
+            <p>Ao Núcleo Experimental de Artes Cênicas do SESI-SP, que me proporcionou integrar um grupo com artistas inesquecíveis.</p>
+
+            <p>Às equipes gestoras, educativas, de segurança e de jovem monitoria do MIS – Museu da Imagem e do Som; da Casa Florescer 2; do Centro Cultural da Penha; da Biblioteca Cassiano Ricardo e da Casa Eliseu Voronkoff por me cederem espaços tão preciosos.</p>
 
             <p>Aos meus amigos e amigas que se fizeram presentes mesmo quando eu estive ausente. Em especial, aos amigos Camila Freire, Letícia Benetti, Marina Michelis, Matheus Mazzo e Raíssa Carvalho. E pelo amor e fé na minha capacidade como artista, agradeço a Giovanna Siqueira.</p>
 
@@ -862,11 +854,11 @@ export default function MemoriaPage() {
 
             <p>Ao Caio Castelhano que, após embarcar em um ônibus comigo, ofereceu amor e cuidado nos momentos mais sensíveis, aceitando ainda desenvolver o site do projeto com afinco e dedicação total.</p>
 
-            <p>À minha família materna, que, além de habitar grande parte das minhas memórias, me fez perceber a importância de vir do lugar em que eu vim.</p>
+            <p>À minha família materna, que, além de habitar grande parte das minhas memórias, me fez perceber a importância de vir do lugar de onde eu vim.</p>
 
-            <p>À minha mãe, Claudia Maria Rodrigues e a minha avó, Maria Izabel Tonelato Rodrigues, que, juntas, asseguraram que eu pudesse escolher os caminhos a percorrer sendo quem eu sou.</p>
+            <p>À minha mãe, Claudia Maria Rodrigues, e à minha avó, Maria Izabel Tonelato Rodrigues, que, juntas, asseguraram que eu pudesse escolher os caminhos a percorrer sendo quem eu sou.</p>
 
-            <p>Novamente, agradeço e dedico este memorial a cada pessoa participante da oficina. Vocês estarão para sempre no meu museu pessoal.</p>
+            <p>Novamente, agradeço e dedico este memorial a cada pessoa participante da oficina. <b>Vocês</b> estarão para sempre no meu museu pessoal.</p>
 
         </FadeInSection>
       </main>
