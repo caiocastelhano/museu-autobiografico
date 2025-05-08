@@ -197,6 +197,10 @@ export default function TerritorioPage() {
                     className={styles.timelineIcon}
                   />
 
+                  <h3 id="item02Title" className={styles.timelineLocation}>
+                    SÃO PAULO - SESI-SP Av. Paulista – 2015
+                  </h3>
+
                   <p id="item01Title">
                     Com esse depoimento, marco aqui o início da página sobre a <b>palavra Território</b>, que traz os locais pelos quais a oficina esteve e a prática de Viewpoints e Composição, que aprendi como ator quando fui aluno de <b>Miriam Rinaldi no Núcleo Experimental de Artes Cênicas do SESI-SP</b>.
                   </p>
@@ -786,12 +790,12 @@ export default function TerritorioPage() {
           </svg>
 
           <FadeInSection className={styles.viewpointsSection} aria-labelledby="viewpointsTitle">
-            <h2 id="viewpointsTitle">Viewpoints e Composição</h2>
+            <h2 id="viewpointsTitle"><i>Viewpoints</i> e Composição</h2>
 
             <h3>Uma das mais relevantes bases criativas da oficina</h3>
 
             <p>
-              Para chegar a esse trabalho coletivo, é essencial dar espaço ao trabalho com <b>Viewpoints e Composição</b>. Uma descoberta de um caminho potente de criação e escuta coletiva.
+              Para chegar a esse trabalho coletivo, é essencial dar espaço ao trabalho com <b><i>Viewpoints</i> e Composição</b>. Uma descoberta de um caminho potente de criação e escuta coletiva.
             </p>
 
             <p>
@@ -799,7 +803,7 @@ export default function TerritorioPage() {
             </p>
 
             <p>
-              Mais do que técnica, Viewpoints <b>virou linguagem de pertencimento a um território e de criação compartilhada</b>.
+              Mais do que técnica, <i>Viewpoints</i> <b>virou linguagem de pertencimento a um território e de criação compartilhada</b>.
             </p>
 
             <blockquote aria-label="Citação sobre Viewpoints">
@@ -814,7 +818,7 @@ export default function TerritorioPage() {
             </p>
 
             <p>
-              Durante minha formação, aprendi os <b>nove Viewpoints físicos</b>, divididos entre os eixos de <b>Tempo e Espaço</b>:
+              Durante minha formação, aprendi os <b>nove <i>Viewpoints</i> físicos</b>, divididos entre os eixos de <b>Tempo e Espaço</b>:
             </p>
 
             <figure>
