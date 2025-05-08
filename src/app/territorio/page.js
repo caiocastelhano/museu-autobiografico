@@ -644,7 +644,7 @@ export default function TerritorioPage() {
                 </div>
             </FadeInSection>
 
-            {/* Item 05 da linha do tempo */}
+            {/* Item 05 da linha do tempo 
             <FadeInSection className={styles.timelineItem} aria-labelledby="item05Title">
               <div className={styles.timelineContent}>
 
@@ -753,9 +753,82 @@ export default function TerritorioPage() {
                   <footer><b>Milton Santos</b></footer>
                 </blockquote>
               </div>
-            </FadeInSection>
+            </FadeInSection> */}
           </div>
         </section>
+
+        {/* Bloco Casa Florescer */}
+        <section className={styles.florescerBlock} aria-labelledby="florescerTitle">
+          <h3 id="florescerTitle" className={styles.florescerTitle}>
+            Experiência Formadora do Projeto: lembrança de onde começou a nascer a oficina
+          </h3>
+
+          <figure>
+            <Image
+              src="/images/territorio/casaflorescer1.png"
+              alt="Área externa da Casa Florescer II"
+              width={500}
+              height={300}
+              className={styles.florescerImage}
+            />
+            <figcaption className={styles.florescerCaption}>
+              Entrada da Casa Florescer II — São Paulo.
+            </figcaption>
+          </figure>
+
+          <p className={styles.florescerParagraph}>
+            <b>Uma memória em um território</b>: Foi nesse lugar que percebi a importância de trabalhar o corpo e a relação com o espaço. 
+            Para facilitar as dinâmicas de memória, eu precisava primeiro trabalhar o pertencimento àquele lugar e, para isso, exercícios de aquecimento com <i>Viewpoints</i> foram essenciais.
+          </p>
+
+          <figure className={styles.florescerVideoRow} aria-label="Vídeos do encontro na Casa Florescer II">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/IxNcY7KcU8g"
+              title="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className={styles.florescerVideo}
+            ></iframe>
+
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/daCEcSOcPZw"
+              title="Casa Florescer II — Wemerly se apresentando — 2019"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className={styles.florescerVideo}
+            ></iframe>
+          </figure>
+
+          <figure>
+            <Image
+              src="/images/territorio/casaflorescer2.jpeg"
+              alt="Registro de encontro na Casa Florescer II"
+              width={500}
+              height={300}
+              className={styles.florescerImage}
+            />
+            <figcaption className={styles.florescerCaption}>
+              Registros recuperados dos stories do perfil @marcelorodriguesmaia — Novembro e Dezembro de 2019.
+            </figcaption>
+          </figure>
+
+          <blockquote className={styles.florescerQuote} aria-label="Citação de Milton Santos sobre território">
+            <p>
+              &quot;O território não é apenas o conjunto dos sistemas naturais e de sistemas de coisas superpostas. 
+              O território tem que ser entendido como o território usado, não o território em si. 
+              O território usado é o chão mais a identidade. A identidade é o sentimento de pertencer àquilo que nos pertence. 
+              O território é o fundamento do trabalho, o lugar da residência, das trocas materiais e espirituais e do exercício da vida.&quot;
+            </p>
+            <footer><b>Milton Santos</b></footer>
+          </blockquote>
+        </section>
+
 
         {/* Bloco Viewpoints e Composição */}
         <div className={styles.viewpointsWrapper}>

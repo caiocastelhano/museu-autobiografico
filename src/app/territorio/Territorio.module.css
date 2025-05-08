@@ -435,6 +435,116 @@
     }
   }
 
+  /* ==== BLOCO CASA FLORESCER ===== */
+
+  .florescerBlock {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+  }
+  
+  .florescerTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 16px 0;
+  }
+  
+  .florescerImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 24px 0;
+  }
+
+  .florescerVideoRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin: 32px 0;
+  }
+  
+  .florescerVideo {
+    flex: 1 1 500px;
+    max-width: 500px;
+    height: 315px;
+    border: none;
+  }
+  
+  .florescerCaption {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 2px;
+    color: #444;
+  }
+
+  .florescerParagraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+    margin: 16px 0;
+  }
+
+  .florescerQuote {
+    max-width: 680px;
+    margin: 40px auto;
+    padding-left: 16px;
+    border-left: 2px solid black;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: black;
+    line-height: 1.6;
+  }
+  
+  /* ===== RESPONSIVIDADE: TIMELINE SECTION ===== */
+
+  @media (max-width: 768px) {
+    .florescerBlock {
+      padding: 0 16px;
+      margin: 40px auto;
+    }
+  
+    .florescerTitle {
+      font-size: 1.2rem;
+    }
+  
+    .florescerVideo {
+      flex: 1 1 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .florescerCaption {
+      font-size: 0.8rem;
+      margin-top: 4px;
+    }
+  
+    .florescerParagraph {
+      font-size: 0.95rem;
+    }
+  
+    .florescerQuote {
+      font-size: 0.9rem;
+      margin: 32px 0;
+      padding-left: 12px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1080px) {
+    .florescerBlock {
+      padding: 0 24px;
+    }
+  
+    .florescerVideo {
+      flex: 1 1 48%;
+    }
+  
+    .florescerParagraph {
+      font-size: 0.98rem;
+    }
+  }  
+
   /* ===== BLOCO VIEWPOINTS E COMPOSIÇÃO ===== */
 .viewpointsSection {
   padding: 60px 32px;
