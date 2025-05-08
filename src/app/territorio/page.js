@@ -198,7 +198,7 @@ export default function TerritorioPage() {
                   />
 
                   <h3 id="item02Title" className={styles.timelineLocation}>
-                    SÃO PAULO - SESI-SP Av. Paulista – 2015
+                    SÃO PAULO | SESI-SP Av. Paulista – 2015
                   </h3>
 
                   <p id="item01Title">

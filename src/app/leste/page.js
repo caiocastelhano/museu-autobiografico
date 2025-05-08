@@ -71,10 +71,17 @@ export default function LestePage() {
                     <polygon points="500,368 560,383 575,428 515,458 470,413" fill="white" stroke="black" strokeWidth="1" />
                     <circle cx="500" cy="368" r="2" fill="black" />
                     <circle cx="560" cy="383" r="2.5" fill="black" />
-                    <circle cx="575" cy="428" r="4" fill="black" />
+                    <circle cx="575" cy="428" r="3" fill="black" />
                     <circle cx="515" cy="458" r="1.5" fill="black" />
                     <circle cx="470" cy="413" r="3" fill="black" />
                     <text x="524" y="410" className={styles.shapeText} textAnchor="middle">leste</text>
+
+                    <circle cx="480" cy="370" r="1" fill="black" />
+                    <circle cx="585" cy="395" r="1.5" fill="black" />
+                    <circle cx="550" cy="455" r="2" fill="black" />
+                    <circle cx="465" cy="440" r="0.75" fill="black" />
+
+                    <image href="/images/star.png" x="570" y="370" width="4" height="4" />
                   </g>
                 </svg>
               </div>
