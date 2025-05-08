@@ -116,7 +116,7 @@ export default function MuseuPage() {
           </figure>
         </section>
 
-        {/* Bloco Um disparador da existência da oficina */}
+        {/* Bloco Um disparador da existência da oficina 
         <FadeInSection className={styles.projectTextSection}>
           <h2>
             Um disparador da existência da Oficina: O edital de oficineiros da Prefeitura de São Paulo
@@ -149,14 +149,14 @@ export default function MuseuPage() {
 
           <div className={styles.textBlockWrapper}>
 
-          {/* SVG de pontos e estrelas no lado esquerdo */}
+          
           <svg
             className={styles.floatingElementsLeft}
             viewBox="0 0 5000 1000"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
           >
-            {/* Pontinhos lado esquerdo */}
+            
             <circle cx="500" cy="200" r="21" fill="black" />
             <circle cx="150" cy="550" r="15" fill="black" />
             <circle cx="1200" cy="700" r="11" fill="black" />
@@ -164,12 +164,10 @@ export default function MuseuPage() {
             <line x1="150" y1="550" x2="1200" y2="700" stroke="black" strokeWidth="6" />
             <line x1="1200" y1="700" x2="500" y2="200" stroke="black" strokeWidth="6" />
 
-            {/* Estrelas lado esquerdo */}
             <image href="/images/star.png" x="200" y="250" width="25" height="25" />
             <image href="/images/star.png" x="1300" y="500" width="18" height="18" />
           </svg>
 
-          {/* O bloco de texto */}
           <blockquote>
             <p>
               <i>
@@ -185,8 +183,7 @@ export default function MuseuPage() {
             </p>
           </blockquote>
         </div>
-
-        </FadeInSection>
+        </FadeInSection> */}
 
         {/* Bloco O que é um museu? */}
         <FadeInSection className={styles.projectTextSection}>

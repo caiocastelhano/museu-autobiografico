@@ -19,7 +19,7 @@ export default function SobrePage() {
 
         <section className={styles.aboutIntroSection} aria-labelledby="sobreTitulo">
           <p>
-            <b>O Museu Autobiográfico e Território_Leste</b> é um espaço de criação, escuta e partilha. Um lugar onde memórias viram 
+            O <b>Museu Autobiográfico e Território_Leste</b> é um espaço de criação, escuta e partilha. Um lugar onde memórias viram 
             matéria cênica e onde o corpo é arquivo vivo de histórias.
           </p>
 
@@ -29,7 +29,7 @@ export default function SobrePage() {
           </p>
 
           <p>
-            Hoje, <b>expandido para o ambiente digital</b>, o Museu não apenas guarda suas histórias — ele as compartilha. <u>A 
+            Hoje, <b>expandido para o ambiente digital</b>, o Museu não apenas guarda suas histórias - ele as compartilha. <u>A 
             experiência online amplia o gesto da oficina: constrói-se no encontro entre trajetórias individuais, em 
             diálogo com o que é íntimo e coletivo</u>. Um espaço onde novos visitantes também são convidados a criar vínculos 
             com o que veem, ouvem e sentem.
@@ -76,10 +76,10 @@ export default function SobrePage() {
               Como produto final da pesquisa de mestrado profissional em Artes da Cena do idealizador<b>_Marcelo Rodrigues Maia</b>, <b>o site se organiza poeticamente como uma constelação</b>: <u>palavras, imagens, sons, textos, vídeos, depoimentos e registros de vivências se entrelaçam, expandindo o sentido do que pode ser uma experiência museal</u>.
             </p>
             <p>
-              Cada <b>componente que intitula a oficina atua como um ponto de luz</b>. Ao se articular com outros temas, forma um mapa sensível da experiência nos espaços. <u>Em vez de um arquivo linear, o site propõe uma confabulação de sentidos: os registros não se acumulam — eles se relacionam, se afetam, se transformam mutuamente</u>.
+              Cada <b>componente que intitula a oficina atua como um ponto de luz</b>. Ao se articular com outros temas, forma um mapa sensível da experiência nos espaços. <u>Em vez de um arquivo linear, o site propõe uma confabulação de sentidos: os registros não se acumulam - eles se relacionam, se afetam, se transformam mutuamente</u>.
             </p>
             <p>
-              O <b>Museu Autobiográfico e Território_Leste</b> digital é também um gesto de abertura: um convite a habitar a pesquisa como território compartilhado, apontando um novo leste — não apenas como ponto cardeal, mas como direção simbólica, que aponta para outras margens e novos <b>centros possíveis</b>.
+              O <b>Museu Autobiográfico e Território_Leste</b> digital é também um gesto de abertura: um convite a habitar a pesquisa como território compartilhado, apontando um novo leste - não apenas como ponto cardeal, mas como direção simbólica, que aponta para outras margens e <b>novos centros possíveis</b>.
             </p>
           </Accordion>
 
@@ -88,7 +88,7 @@ export default function SobrePage() {
               O Museu é uma proposta viva de musealização da experiência humana. Um <b>dispositivo cênico que, por meio do teatro autobiográfico</b>, transforma memórias e devaneios em presença e gesto.
             </p>
             <p>
-              <u>A cada edição, as pessoas participantes são convidadas a explorar suas próprias lembranças por meio de exercícios, improvisos, composições e escrita criativa</u>. A cena nasce do afeto, do conflito, do amor, do pertencimento — e de tudo aquilo que atravessa o corpo quando se conta a própria história.
+              <u>A cada edição, as pessoas participantes são convidadas a explorar suas próprias lembranças por meio de exercícios, improvisos, composições e escrita criativa</u>. A cena nasce do afeto, do conflito, do amor, do pertencimento - e de tudo aquilo que atravessa o corpo quando se conta a própria história.
             </p>
           </Accordion>
 
@@ -97,19 +97,19 @@ export default function SobrePage() {
               O nome nasce da união entre o desejo de escavar a própria história e a necessidade de reconhecer o território como parte dessa narrativa.
             </p>
             <p>
-              <b>__Museu Autobiográfico</b>, porque são os corpos que guardam os objetos — não os físicos, mas de carne, tempo e palavra.
+              <b>__Museu Autobiográfico</b>, porque são os corpos que guardam os objetos - não os físicos, mas de carne, tempo e palavra.
             </p>
             <p>
-              <b>__Território Leste</b>, porque é dali que falamos, escutamos e caminhamos — a partir das margens simbólicas, em direção a novos centros possíveis.
+              <b>__Território Leste</b>, porque é dali que falamos, escutamos e caminhamos - a partir das margens simbólicas, em direção a <b>outros modos de organização espacial</b>.
             </p>
           </Accordion>
 
-          <Accordion title="O que significa ser um museu feito de histórias, corpos e territórios?">
+          <Accordion title="O que significa ser um Museu feito de histórias, corpos e territórios?">
             <p>
-              É acreditar que cada pessoa carrega um <b>acervo precioso, ainda que invisível aos olhos</b>. Que nossos passos deixam rastros que merecem ser contados. Que os espaços que habitamos — nossas casas, as ruas, as bibliotecas, os centros culturais — são também dispositivos de memória.
+              É acreditar que cada pessoa carrega um <b>acervo precioso, ainda que invisível aos olhos</b>. Que nossos passos deixam rastros que merecem ser contados. Que os espaços que habitamos - nossas casas, as ruas, as bibliotecas, os centros culturais - são também dispositivos de memória.
             </p>
             <p>
-              Ser um museu assim é estar em movimento constante: criar presença no ato de contar — e recontar — a própria história.
+              Ser um museu assim é estar em movimento constante: criar presença no ato de contar - e recontar - a própria história.
             </p>
           </Accordion>
         </section>
@@ -174,25 +174,31 @@ export default function SobrePage() {
               A oficina também se nutre de experiências de mediação cultural no <b>Museu da Imagem e do Som – MIS Experience</b>. Foi nesse contexto, durante o período da pandemia de Covid-19, que escuta e afeto passaram a se consolidar como práticas pedagógicas e estéticas em propostas imersivas e mediações digitais.
             </p>
             <p>
-              Em 2020, o projeto ganhou corpo ao ser estruturado dentro dos critérios do <b>Edital de Oficineiros da Prefeitura de São Paulo</b>. Após ser habilitada, a oficina teve como primeira residência oficial o <b>Centro Cultural da Penha</b>, dentro dos critérios de oficina de média duração (4 meses).
+              <b>Em 2020, o projeto ganhou corpo ao ser estruturado dentro dos critérios do Edital de Oficineiros da Prefeitura de São Paulo. Após ser habilitada, a oficina teve como primeira residência oficial o Centro Cultural da Penha, dentro dos critérios de oficina de média duração (4 meses)</b>.
             </p>
             <p>
-              Com o início da pesquisa de mestrado, a oficina seguiu de forma independente e voluntária, sendo realizada entre 2023 e 2024 na <b>Biblioteca Pública Cassiano Ricardo</b>, no Tatuapé, zona leste de São Paulo.
+              Para a Habilitação do Projeto, os objetivos tiveram que ser muito bem pensados para corresponder aos critérios do Edital e, entre os tópicos apresentados, destaca-se o seguinte:
             </p>
             <p>
-              Mais recentemente, o projeto cruzou fronteiras geográficas e chegou a Curitiba, compondo a programação oficial do <b>Festival de Curitiba 2025</b>. Nesta edição, a oficina foi realizada na <b>Casa Eliseu Voronkoff</b>, espaço idealizado e gerido pela colega de mestrado em Artes da Cena, <b>Ana Paula Frazão</b>.
+              <u><i>&quot;Discutir a importância do museu dentro de nossa cultura, questionando o que nos afasta de equipamentos culturais muitas vezes elitizados. Possibilitar a ressignificação e pertencimentos aos espaços museais.&quot;</i></u>
+            </p>
+            <p>
+              Ainda como parte da inscrição no Edital, a justificativa feita em primeira pessoa, reforça o DNA do projeto, trazendo o universo que culmina em seu nome:
+            </p>
+            <p>
+              <i>&quot;Trabalhando com mediações dentro do <u>Museu</u> da Imagem e do Som Experience, notei que a experiência em teatro foi um ponto chave para aprofundar vivências em um <u>espaço culturalmente percebido como elitizado</u>. No percurso dos meses, compreendi que ferramentas e dispositivos teatrais performativos e os exercícios autobiográficos eram muito bem recebidos durante os encontros com escolas, grupos de centros de acolhimento, grupos de pessoas acima de 60 anos e grupos de pessoas com deficiência. Sendo assim, <u>realizar a oficina dentro de um equipamento cultural</u> será importante para proporcionar experiências afetivas individuais e coletivas com o território em que vivem, compartilhando experiências com outras pessoas que habitam o mesmo espaço.&quot;</i>
             </p>
           </Accordion>
 
           <Accordion title="Desenvolvimento do Projeto: da escrita de si à escrita-luta coletiva">
             <p>
-              Desde sua primeira edição, o <b>Museu Autobiográfico e Território_Leste</b> cresceu em profundidade e abrangência. Com <b>metodologias baseadas em técnicas de Viewpoints e Composição, jogos teatrais, improvisação e ações performativas, a oficina constroi uma pedagogia do afeto e da presença</b>. Mesmo fora do escopo do Edital de Oficineiros, ela segue viva — realizada quase sempre de forma voluntária —, reafirmando a potência do encontro e as brechas que se abrem na política pública para a criação de territórios afetivos.
+              Desde sua primeira edição, o <b>Museu Autobiográfico e Território_Leste</b> cresceu em profundidade e abrangência. Com <b>metodologias baseadas em técnicas de Viewpoints e Composição, jogos teatrais, improvisação e ações performativas, a oficina constroi uma pedagogia do afeto e da presença</b>. Mesmo fora do escopo do Edital de Oficineiros, ela segue viva - realizada quase sempre de forma voluntária -, reafirmando a potência do encontro e as brechas que se abrem na política pública para a criação de territórios afetivos.
             </p>
             <p>
-              Essa continuidade, apesar dos limites, não nasce apenas da insistência em manter o projeto ativo. <b>Ela também surge de um desejo mais íntimo e urgente: transformar o exercício da escrita de si em uma escrita-luta coletiva</b>. <u>A partir do momento em que assumi minha autobiografia como parte da própria metodologia da oficina, compreendi que a partilha de experiências pessoais — sejam elas lembranças, dores ou alegrias — pode se tornar ferramenta de mobilização e pertencimento</u>.
+              Essa continuidade, apesar dos limites, não nasce apenas da insistência em manter o projeto ativo. <b>Ela também surge de um desejo mais íntimo e urgente: transformar o exercício da escrita de si em uma escrita-luta coletiva</b>. <u>A partir do momento em que assumi minha autobiografia como parte da própria metodologia da oficina, compreendi que a partilha de experiências pessoais - sejam elas lembranças, dores ou alegrias - pode se tornar ferramenta de mobilização e pertencimento</u>.
             </p>
             <p>
-              O que aqui se apresenta como resultado de uma pesquisa é também um modo de dizer: <b>estamos aqui</b>. Continuamos criando, mediando, improvisando, mesmo diante da precarização dos trabalhos culturais e da invisibilidade que ainda recai sobre oficineiras e oficineiros. Frente ao desânimo pela desvalorização da profissão, me resta continuar — e afirmar a potência do que realizo.
+              O que aqui se apresenta como resultado de uma pesquisa é também um modo de dizer: <b>estamos aqui</b>. Continuamos criando, mediando, improvisando, mesmo diante da precarização dos trabalhos culturais e da invisibilidade que ainda recai sobre oficineiras e oficineiros. Frente ao desânimo pela desvalorização da profissão, me resta continuar - e afirmar a potência do que realizo.
             </p>
             <p>
               A oficina, assim como esta escrita, é uma tentativa de convocar outras pessoas que, como eu, enfrentam contradições e afetos fortes no exercício da mediação cultural. Que a intimidade compartilhada, nos jogos e nos textos, possa se tornar um gesto coletivo de escuta e afirmação. Que o museu feito de corpos, memórias e territórios também seja um espaço de resistência poética e pedagógica.
@@ -207,10 +213,10 @@ export default function SobrePage() {
               Com jogos de iniciação teatral, improvisos e exercícios performativos, <b>pessoas de diferentes idades e vivências são convidadas a experimentar o que chamamos de teatro documental/autobiográfico</b>. Durante os encontros, vivenciam práticas de escuta, escrita e criação teatral a partir de suas próprias memórias.
             </p>
             <p>
-              A oficina se organiza como um percurso sensível, onde o que é íntimo pode ganhar voz, forma e partilha. As atividades envolvem <b>jogos cênicos, criação de cenas, dinâmicas coletivas e apresentações abertas</b>. Ao longo dos encontros, também são realizadas rodas de conversa sobre a aproximação do indivíduo com o teatro, com o coletivo e com o espaço museal — muitas vezes percebido como distante ou inacessível para pessoas das periferias.
+              A oficina se organiza como um percurso sensível, onde o que é íntimo pode ganhar voz, forma e partilha. As atividades envolvem <b>jogos cênicos, criação de cenas, dinâmicas coletivas e apresentações abertas</b>. Ao longo dos encontros, também são realizadas rodas de conversa sobre a aproximação do indivíduo com o teatro, com o coletivo e com o espaço museal - muitas vezes percebido como distante ou inacessível para pessoas das periferias.
             </p>
             <p>
-              Não é necessário ter experiência prévia com teatro — basta o desejo de estar junto.
+              Não é necessário ter experiência prévia com teatro - basta o desejo de estar junto.
             </p>
             <p>
               A oficina é aberta para pessoas <b>a partir dos 14 anos de idade</b> e propõe uma especial atenção a públicos de regiões afastadas do centro e não iniciados nas artes cênicas.
@@ -228,7 +234,7 @@ export default function SobrePage() {
               <li>Valorizar saberes não-hegemônicos e trajetórias plurais.</li>
             </ul>
             <p>
-              Os impactos são sentidos em relatos poéticos, na criação de vínculos duradouros e na construção de uma cena onde cada corpo se torna documento vivo e que fica registrado como parte do museu..
+              Os impactos são sentidos em relatos poéticos, na criação de vínculos duradouros e na construção de uma cena onde cada corpo se torna documento vivo e que fica registrado como parte do museu.
             </p>
           </Accordion>
 
@@ -241,6 +247,7 @@ export default function SobrePage() {
               <li><b>Augusto Boal</b>, com o Teatro do Oprimido e o princípio da cena como ação transformadora.</li>
               <li><b>Cia Hiato</b>, no modo como atravessa fronteiras entre ficção e realidade.</li>
               <li><b>Eduardo Coutinho</b>, com sua ética da escuta radical e a valorização da palavra como construção coletiva de sentido, propondo um cinema de encontro onde o “real” se faz no espaço entre quem pergunta e quem responde, rompendo com hierarquias entre quem filma e quem é filmado.</li>
+              <li><b>Graziela Kunsch</b>, com seus sites-arquivos de &quot;excertos&quot; - vídeos formados por um único plano cada -, assumindo uma prática documentária contínua, processual e transformada pelo tempo, no lugar de documentários fechados.</li>
               <li><b>Janaína Leite</b>, em suas investigações do teatro autobiográfico.</li>
               <li><b>Jorge Larrosa Bondía</b>, com a ideia de experiência como algo que nos transforma, e da educação como espaço de escuta, pausa e acontecimento.</li>
               <li><b>Luaa Gabanini</b>, com sua pesquisa de corpo-gerúndio e Geografias Corpóreas, em que o corpo é território de experiência para insurgir paisagens.</li>
@@ -252,8 +259,8 @@ export default function SobrePage() {
               <li><b>Renata Felinto</b>, ao afirmar o corpo negro como potência estética, política e epistêmica, tensionando a colonialidade das artes e propondo práticas curatoriais e pedagógicas antirracistas.</li>
               <li><b>Sigmund Freud</b>, ao introduzir a escuta do inconsciente, a memória e a palavra como caminhos para acessar a subjetividade.</li>
               <li><b>Viola Spolin</b>, com seus jogos teatrais.</li>
-              <li><b>A noção de museologia social</b>, museus orgânicos e descolonização cultural, propondo uma curadoria feita pelo afeto e pelas margens.</li>
-              <li><b>A ideia de teatro documental e memória afetiva</b> como eixos de cena e de escuta.</li>
+              <li>No contexto da nova museologia, nasce a museologia social, materializada nos museus sociais, comunitários ou de favelas e nos ecomuseus, entre outros. O que eles têm em comum é uma ação educativa que coloca indivíduos de áreas rurais, periféricas e à margem como sujeitos que interagem com as coleções, os espaços e as palavras ditas e silenciadas.</li>
+              <li>Uso de recursos autobiográficos para o desenvolvimento de cenas e textos de participantes. A experiência da autobiografia nas oficinas surgem para que pessoas aprendam a narra a própria história, possibilitando novos significados de vida.</li>
             </ul>
             <p>
               <u>Ao constelar ideias diversas para formar os encontros, criam-se novos sentidos para as práticas, novos improvisos e uma nova força coletiva, agora compartilhada no site</u>.
@@ -275,7 +282,7 @@ export default function SobrePage() {
               Formado como Ator pelo Teatro-Escola Célia Helena, Comunicador pela Faculdade Cásper Líbero e Educador Social pelo SENAC Aclimação, acredita que a junção entre habilidades distintas <b>impulsionam a capacidade</b> de engajar diversos públicos com ferramentas diferentes. Sempre de maneira <b>leve, lúdica, com empatia</b>.
             </p>
             <p>
-              Em 2023, ingressou no <b>Mestrado Profissional em Artes da Cena – Turma Especial: Laboratório em Artes e Mediação Cultural</b>, uma parceria entre a Fundação Itaú Escola e a Escola Superior de Artes Célia Helena (ESCH). Sua pesquisa no mestrado parte de uma escrita de si para investigar como experiências autobiográficas podem se transformar em espaços de escuta, partilha e criação coletiva — especialmente por meio da oficina Museu Autobiográfico e Território Leste.
+              Em 2023, ingressou no <b>Mestrado Profissional em Artes da Cena - Turma Especial: Laboratório em Artes e Mediação Cultural</b>, uma parceria entre a Fundação Itaú Escola e a Escola Superior de Artes Célia Helena (ESCH). Sua pesquisa no mestrado parte de uma escrita de si para investigar como experiências autobiográficas podem se transformar em espaços de escuta, partilha e criação coletiva - especialmente por meio da oficina Museu Autobiográfico e Território Leste.
             </p>
             <p>
               Possui curso de extensão em interpretação para a câmera pela Escola de Atores Wolf Maya e integrou a 15ª turma do Núcleo Experimental de Artes Cênicas do SESI-SP, além de atuar no NAC – Núcleo de Artes Cênicas. Como ator, participou de diversas montagens, com destaque para a peça <i>Tiros em Osasco</i>, dirigida por Yara de Novaes (SESI-SP, 2016/2017), e para o elenco principal da série <i>Brilhante Futebol Clube</i>, exibida na TV Brasil e Nickelodeon (2013). Foi também assistente de Lígia Cortez na disciplina de Direção de Atores no curso de Audiovisual da USP.
@@ -380,7 +387,7 @@ export default function SobrePage() {
             <p>
               Este é um museu feito de encontros, um museu polifônico. 
               <br />
-              Feito de palavras que dançam, de histórias que se tocam, de corpos diversos que se lembram, se conectam e atuam, encontrando prazer em brincar sempre com o que é ficção e o que pode ser — ou é — realidade.
+              Feito de palavras que dançam, de histórias que se tocam, de corpos diversos que se lembram, se conectam e atuam, encontrando prazer em brincar sempre com o que é ficção e o que pode ser - ou é - realidade.
             </p>
 
             <p>

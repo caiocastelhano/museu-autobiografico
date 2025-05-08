@@ -220,7 +220,7 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 0; /* Atrás do texto */
+    z-index: 0;
   }
   
   /* ===== RESPONSIVIDADE ===== */
