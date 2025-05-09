@@ -578,10 +578,10 @@ export default function TerritorioPage() {
                           />
                           <div className={styles.playOverlay}>▶</div>
                         </div>
-                        {/* trocar vídeo e thumb abaixo */}
-                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/7EcXjsRfPtg")}>
+                        
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/K82982ta3b4")}>
                           <Image
-                            src="/images/thumbs/thumb13_resized.jpg"
+                            src="/images/thumbs/thumb16_resized.jpg"
                             alt="Casa Eliseu Voronkoff - Vídeo 6"
                             width={500}
                             height={315}
@@ -646,11 +646,11 @@ export default function TerritorioPage() {
                           allowFullScreen
                           className={styles.timelineVideo}
                         ></iframe>
-                        {/* trocar vídeo abaixo */}
+                        
                         <iframe
                           width="100%"
                           height="315"
-                          src="https://www.youtube.com/embed/7EcXjsRfPtg" 
+                          src="https://www.youtube.com/embed/K82982ta3b4" 
                           title="Casa Eliseu Voronkoff - Vídeo 6"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -666,116 +666,6 @@ export default function TerritorioPage() {
                 </div>
             </FadeInSection>
 
-            {/* Item 05 da linha do tempo 
-            <FadeInSection className={styles.timelineItem} aria-labelledby="item05Title">
-              <div className={styles.timelineContent}>
-
-                <Image
-                  src="/images/territorio/mappin.svg"
-                  alt="Ícone de bússola indicando o local"
-                  width={30}
-                  height={30}
-                  className={styles.timelineIcon}
-                />
-
-                <h3 id="item05Title" className={styles.timelineLocation}>
-                  SÃO PAULO | Casa Florescer II
-                </h3>
-
-                <figure>
-                  <Image
-                    src="/images/territorio/casaflorescer1.png"
-                    alt="Área externa da Casa Florescer II"
-                    width={500}
-                    height={300}
-                    className={styles.timelineImage}
-                  />
-                  <figcaption className={styles.timelineCaption}>
-                    Entrada da Casa Florescer II — São Paulo.
-                  </figcaption>
-                </figure>
-
-                <p>
-                  <b>Uma memória em um território</b>: Foi nesse lugar que percebi a importância de trabalhar o corpo e a relação com o espaço. 
-                  Para facilitar as dinâmicas de memória, eu precisava primeiro trabalhar o pertencimento àquele lugar e, para isso, exercícios de aquecimento com <i>Viewpoints</i> foram essenciais.
-                </p>
-
-                <figure className={styles.videoRow} aria-label="Vídeos do encontro na Casa Florescer II">
-                  {isDesktop ? (
-                    <>
-                      <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/IxNcY7KcU8g")}>
-                        <Image
-                          src="/images/thumbs/thumb14_resized.jpg"
-                          alt="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
-                          width={500}
-                          height={315}
-                          className={styles.thumbnailImage}
-                        />
-                        <div className={styles.playOverlay}>▶</div>
-                      </div>
-
-                      <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/daCEcSOcPZw")}>
-                        <Image
-                          src="/images/thumbs/thumb15_resized.jpg"
-                          alt="Casa Florescer II — Wemerly se apresentando — 2019"
-                          width={500}
-                          height={315}
-                          className={styles.thumbnailImage}
-                        />
-                        <div className={styles.playOverlay}>▶</div>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <iframe
-                        width="100%"
-                        height="315"
-                        src="https://www.youtube.com/embed/IxNcY7KcU8g"
-                        title="Casa Florescer II — Exercício de Composição com estudantes e moradoras — 2019"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className={styles.timelineVideo}
-                      ></iframe>
-
-                      <iframe
-                        width="100%"
-                        height="315"
-                        src="https://www.youtube.com/embed/daCEcSOcPZw"
-                        title="Casa Florescer II — Wemerly se apresentando — 2019"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className={styles.timelineVideo}
-                      ></iframe>
-                    </>
-                  )}
-                </figure>
-
-                <figure>
-                  <Image
-                    src="/images/territorio/casaflorescer2.jpeg"
-                    alt="Registro de encontro na Casa Florescer II"
-                    width={500}
-                    height={300}
-                    className={styles.timelineImage}
-                  />
-                  <figcaption className={styles.timelineCaption}>
-                    Registros recuperados dos stories do perfil @marcelorodriguesmaia — Novembro e Dezembro de 2019.
-                  </figcaption>
-                </figure>
-
-                <blockquote aria-label="Citação de Milton Santos sobre território">
-                  <p>
-                    &quot;O território não é apenas o conjunto dos sistemas naturais e de sistemas de coisas superpostas. 
-                    O território tem que ser entendido como o território usado, não o território em si. 
-                    O território usado é o chão mais a identidade. A identidade é o sentimento de pertencer àquilo que nos pertence. 
-                    O território é o fundamento do trabalho, o lugar da residência, das trocas materiais e espirituais e do exercício da vida.&quot;
-                  </p>
-                  <footer><b>Milton Santos</b></footer>
-                </blockquote>
-              </div>
-            </FadeInSection> */}
           </div>
         </section>
 
