@@ -192,9 +192,9 @@
   right: 10px;
 }
 
-/* === RESPONSIVIDADE MOBILE === */
+/* === RESPONSIVIDADE MOBILE E TABLET === */
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .mainContent {
     padding-top: 100px;
   }
