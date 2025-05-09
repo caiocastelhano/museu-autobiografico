@@ -125,7 +125,6 @@ export default function AutobiograficoPage() {
             <circle cx="600" cy="200" r="10" fill="black" />
             <circle cx="400" cy="600" r="13" fill="black" />
             <circle cx="750" cy="150" r="17" fill="black" />
-            <circle cx="900" cy="950" r="20" fill="black" />
             <circle cx="500" cy="1050" r="1.6" fill="black" />
             <circle cx="990" cy="420" r="2.2" fill="black" />
             <circle cx="350" cy="850" r="1.9" fill="black" />
@@ -153,16 +152,34 @@ export default function AutobiograficoPage() {
             </h2>
 
             <p>
-              Quando o corpo é a casa, o autobiográfico se apresenta como uma ferramenta cênica para me conectar com outras histórias, personagens e até mesmo para pensar e ressignificar a própria trajetória. Como faço na página <Link href="/corpo" className={styles.inlineLink}>Corpo</Link>, parto de mim para encontrar formas de me conectar com outras histórias e pessoas, utilizando o recurso da autobiografia, criando cenas e novas narrativas para as pessoas participantes da oficina.
+              Meu primeiro contato com o uso da autobiografia como recurso de criação teatral se deu como estudante da 15ª turma do Núcleo Experimental de Artes, um programa essencial para os rumos da minha vida e que, na época, era coordenado pela atriz, professora e pesquisadora <b>Miriam Rinaldi</b>. O <b>Núcleo</b>, como chamamos afetivamente, <u>é um programa que permite a jovens artistas da cena aprofundar e ampliar o repertório de criação, a partir de uma investigação dos diferentes graus de atuação</u>. O curso conecta diferentes artistas, de diferentes áreas da cena teatral, para ministrar os módulos: <i>Persona, Personagem e Narrador</i>.
             </p>
 
-            <br />
+            < br/>
+
+            <p>
+              No eixo <i>Persona</i>, os encontros - e enfrentamentos autobiográficos - foram com a professora <b>Janaína Fontes Leite</b>. A proposta de usar registros de vida para a criação de cenas teatrais me encantou. Na época, a experiência impactou muito o meu corpo, o corpo de um jovem da periferia.
+            </p>
+
+            < br/>
+
+            <p>
+              Em um exercício, levei um <u>vídeo meu bebê gravado pelo meu pai</u>, com quem não tenho contato. A cena/relato/performance era marcada pelo texto <i>Carta ao Pai</i>, de Franz Kafka, e contava com uma música da cantora Alice Caymmi, intitulada <i>Antes de tudo</i>. Ao fundo, o vídeo do <b>bebê-eu</b> me mostrava dentro de um <u>&quot;chiqueirinho&quot;, brincando com bexigas</u>.
+            </p>
+
+            < br/>
+
+            <p>
+              No ambiente físico, eu também brincava com as bexigas, escondendo-as e estourando dentro de uma grande camiseta, que sinalizava a minha infância com obesidade. Como Janaína sintetiza em sua dissertação de mestrado, trata-se de encontrar na experiência de uma criação autobiográfica o espaço de sua própria reelaboração, abrindo possibilidades para verdadeiros saltos de ‘experienciação’ e simbolização do <i>self</i>. <u><b>O sentimento de experienciar a mim mesmo em cena, em meio ao coletivo, está na base da oficina</b></u>.
+            </p>
+
+            < br/>
 
             <p>
               Aqui você poderá assistir <b>excertos*</b> de experiências de <b>participantes em ação</b> e dos lugares pelos quais a oficina passou. <u>Compondo momentos registrados com a câmera do celular durante os encontros ou em gravações feitas por participantes ou terceiros para exercícios, o autobiográfico na experiência digital ganha um novo significado</u>, <b>relacionando momentos distintos vividos com exercícios propostos que, juntos, traduzem a relevância do experienciar a si mesmo em cena</b>.
             </p>
 
-            <br />
+            < br/>
 
             <p>
               A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
@@ -970,7 +987,7 @@ export default function AutobiograficoPage() {
 
           <div className={styles.highlightBox}>
             <p>
-              Para conferir outros <b>excertos</b>, acesse a&nbsp;
+              Para conferir outros <b>excertos*</b>, acesse a&nbsp;
               <a
                 href="https://www.youtube.com/playlist?list=PLv-y-wxdAp-jgnHTqUI4TGP6vfPvDMWvm"
                 target="_blank"
@@ -1032,7 +1049,7 @@ export default function AutobiograficoPage() {
         {/* Nota do criador do site */}
         <section className={styles.authorNote}>
           <p>
-            <b>Nota do criador do site</b>: *O uso do termo surge a partir da pesquisa de <b>Graziela Kunsch</b>, com seus sites -arquivos de &quot;excertos&quot; - vídeos formados por um único plano cada -, assumindo uma prática documentária contínua, processual e transformada pelo tempo, no lugar de documentários fechados.
+            *Uso o termo &quot;excerto&quot; no sentido proposto por <b>Graziela Kunsch</b> na pesquisa <i>Projeto Mutirão</i>: um vídeo formado por um único plano, que pode ser visto individualmente, mas é parte de um todo, carente de articulação.
           </p>
         </section>
 

@@ -169,6 +169,7 @@
     text-align: justify;
     box-sizing: border-box;
     background-color: transparent;
+    line-height: 1.6;
   }
   
   .autobioIntroTextSection b {
