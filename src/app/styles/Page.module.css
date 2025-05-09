@@ -148,7 +148,9 @@
     width: 100%;
     height: auto;
     /* transform: scale(1.64); */
-    /* transform-origin: top center; */ 
+    /* transform-origin: top center; */
+    transform: scale(1.2);
+    transform-origin: top center; 
     overflow-x: hidden;
   }
 
