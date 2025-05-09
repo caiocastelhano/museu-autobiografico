@@ -6,10 +6,10 @@ export default function MobileConstellation() {
     <div className={styles.mainContent}>
       {/* Título oculto para leitores de tela */}
       <h1 className={styles.visuallyHidden}>Página inicial - Museu Autobiográfico (versão mobile)</h1>
-
+      {/* Mudei a altura para 1800 (antes era 1900), para tentar resolver o engasgo da home */}
       <svg
         className={styles.constellation}
-        viewBox="0 0 600 1900"
+        viewBox="0 0 600 1800"
         preserveAspectRatio="xMidYMid meet"
         aria-hidden="true"
       >
