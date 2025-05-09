@@ -742,8 +742,7 @@ export default function MemoriaPage() {
                 <p>_EM CONSTRUÇÃO_</p>
 
                 <p>
-                MEMÓRIAS DE COMO COMECEI A MEDIAR EM CASA ME RELACIONANDO COM MINHA TIA
-                CLAUDETE
+                    Foto da minha tia Claudete, a primeira pessoa que me ensinou a mediar o mundo.
                 </p>
 
                 <figure className={styles.mediaBlock}>
