@@ -101,12 +101,6 @@ export default function CorpoPage() {
                   </p>
                 </blockquote>
 
-                <p>
-                  <i>
-                    Texto retirado do Memorial de Marcelo Rodrigues Maia (eu mesmo), criador da oficina Museu Autobiográfico
-                    e Território_Leste
-                  </i>
-                </p>
               </div>
             </div>
           </section>
@@ -230,15 +224,13 @@ export default function CorpoPage() {
 
                 <p>
                   <i>
-                    O relato acima é o meu relato. Resultado de uma escrita em fluxo em <b>aula do Mestrado em Artes da Cena 
-                    na Escola Superior de Artes Célia Helena em parceria com a Escola Fundação Itaú.</b>
+                    O relato acima é o meu relato. Resultado de uma escrita em fluxo.
                   </i>
                 </p>
 
                 <p>
                   <i>
-                    Não desejo aqui, a partir de um relato singular fundado em minha experiência, reduzir o que é <b>corpo</b> a 
-                    um sentido apenas, mas pretendo intuir que é a partir da minha <b>exposição</b> que consigo transmitir o 
+                    A partir da minha <b>exposição</b> que consigo transmitir o 
                     estado de vulnerabilidade, <u>confiança mútua e segurança com o corpo de participantes nos encontros</u>. 
                     A partir da minha experiência, movo outras pessoas e seus corpos, gerando novas relações e poéticas. 
                     Parto de mim, caminho para as outras pessoas e, a partir disso, nós interagimos e crescemos com a oficina.
@@ -319,11 +311,7 @@ export default function CorpoPage() {
                 <i>
                   <b>Constelando os conteúdos</b> das oficinas realizadas, apresento nesta página alguns{" "}
                   <u>gestos, rostos, mãos, performances e depoimentos</u> que ficaram gravados em minha memória
-                  a partir do corpo de participantes. Para saber mais sobre os exercícios que resultaram nas
-                  imagens abaixo, acesse a página:{" "}
-                  <Link href="/museu" legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer"><u>Museu</u></a>
-                  </Link>.
+                  a partir do corpo de participantes.
                 </i>
               </p>
             </FadeInSection>

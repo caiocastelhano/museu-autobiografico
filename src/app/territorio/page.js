@@ -578,6 +578,17 @@ export default function TerritorioPage() {
                           />
                           <div className={styles.playOverlay}>▶</div>
                         </div>
+                        {/* trocar vídeo e thumb abaixo */}
+                        <div className={styles.videoThumbnail} onClick={() => openModal("https://www.youtube.com/embed/7EcXjsRfPtg")}>
+                          <Image
+                            src="/images/thumbs/thumb13_resized.jpg"
+                            alt="Casa Eliseu Voronkoff - Vídeo 6"
+                            width={500}
+                            height={315}
+                            className={styles.thumbnailImage}
+                          />
+                          <div className={styles.playOverlay}>▶</div>
+                        </div>
                       </>
                     ) : (
                       <>
@@ -630,6 +641,17 @@ export default function TerritorioPage() {
                           height="315"
                           src="https://www.youtube.com/embed/7EcXjsRfPtg"
                           title="Casa Eliseu Voronkoff - Vídeo 5"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className={styles.timelineVideo}
+                        ></iframe>
+                        {/* trocar vídeo abaixo */}
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src="https://www.youtube.com/embed/7EcXjsRfPtg" 
+                          title="Casa Eliseu Voronkoff - Vídeo 6"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
