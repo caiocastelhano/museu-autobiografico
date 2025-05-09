@@ -116,83 +116,12 @@ export default function MuseuPage() {
           </figure>
         </section>
 
-        {/* Bloco Um disparador da existência da oficina 
-        <FadeInSection className={styles.projectTextSection}>
-          <h2>
-            Um disparador da existência da Oficina: O edital de oficineiros da Prefeitura de São Paulo
-          </h2>
-
-          <p>
-            No dia 20 de novembro de 2020 a oficina tomou forma a partir de participação no <b>Edital de Oficineiros</b>. 
-            Um projeto da Prefeitura de São Paulo <b>que credencia pessoas interessadas a ministrar oficinas em equipamentos 
-            públicos da cidade</b>.
-          </p>
-
-          <p>
-            Para a <b>Habilitação do Projeto</b>, os objetivos tiveram que ser muito bem pensados para corresponder aos 
-            critérios do Edital e, entre os tópicos apresentados, destaca-se o seguinte:
-          </p>
-
-          <blockquote>
-            <p>
-              <u><i>
-                &quot;Discutir a importância do museu dentro de nossa cultura, questionando o que nos afasta de equipamentos 
-                culturais muitas vezes elitizados. Possibilitar a ressignificação e pertencimentos aos espaços museais.&quot;
-              </i></u>
-            </p>
-          </blockquote>
-
-          <p>
-            Ainda como parte da inscrição no Edital, a justificativa feita em primeira pessoa, reforça o DNA do projeto, 
-            trazendo o universo que culmina em seu nome:
-          </p>
-
-          <div className={styles.textBlockWrapper}>
-
-          
-          <svg
-            className={styles.floatingElementsLeft}
-            viewBox="0 0 5000 1000"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            
-            <circle cx="500" cy="200" r="21" fill="black" />
-            <circle cx="150" cy="550" r="15" fill="black" />
-            <circle cx="1200" cy="700" r="11" fill="black" />
-            <line x1="500" y1="200" x2="150" y2="550" stroke="black" strokeWidth="6" />
-            <line x1="150" y1="550" x2="1200" y2="700" stroke="black" strokeWidth="6" />
-            <line x1="1200" y1="700" x2="500" y2="200" stroke="black" strokeWidth="6" />
-
-            <image href="/images/star.png" x="200" y="250" width="25" height="25" />
-            <image href="/images/star.png" x="1300" y="500" width="18" height="18" />
-          </svg>
-
-          <blockquote>
-            <p>
-              <i>
-                &quot;Trabalhando com mediações dentro do <u>Museu</u> da Imagem e do Som Experience, notei que a experiência em teatro 
-                foi um ponto chave para aprofundar vivências em um <u>espaço culturalmente percebido como elitizado</u>. 
-                No percurso dos meses, compreendi que ferramentas e dispositivos teatrais performativos e os exercícios 
-                autobiográficos eram muito bem recebidos durante os encontros com escolas, grupos de centros de 
-                acolhimento, grupos de pessoas acima de 60 anos e grupos de pessoas com deficiência. Sendo assim, 
-                <u>realizar a oficina dentro de um equipamento cultural</u> será importante para proporcionar experiências 
-                afetivas individuais e coletivas com o território em que vivem, compartilhando experiências com outras 
-                pessoas que habitam o mesmo espaço
-              </i>.&quot;
-            </p>
-          </blockquote>
-        </div>
-        </FadeInSection> */}
-
         {/* Bloco O que é um museu? */}
         <FadeInSection className={styles.projectTextSection}>
           <h2>Mas o que é um Museu?</h2>
 
           <p>
-            Para fixar o que a oficina propõe ao criar um Museu de Si/Nós, compartilho abaixo excertos de aprendizados 
-            do Curso da Escola Fundação Itaú: <b>Experiências educativas em Museus Comunitários. Na aula: Museu de nós - 
-            nova museologia e museologia social no Brasil</b>.
+            Para fixar o que a oficina propõe ao criar um Museu de Si/Nós, compartilho abaixo o meu aprendizado no curso <i>Experiências Educativas em Museus Comunitários</i>, durante aula intitulada <i>Museu de Nós - nova museologia social no Brasil</i> (Escola Fundação Itaú).
           </p>
 
           <blockquote className={styles.highlightedQuote}>
@@ -338,13 +267,6 @@ export default function MuseuPage() {
             <figcaption id="video3-caption">Encontro no Centro Cultural da Penha, 2022.</figcaption>
           </figure>
 
-          <p>
-            Por fim, alguns exercícios de composição que podem ser conhecidos em mais detalhes na página:{" "}
-            <Link href="/memoria" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer"><u>Memória</u></a>
-            </Link>.
-          </p>
-
           <p>Abaixo, excertos de experiências de composição feitas em roda que geraram imagens coletivas significativas para minha memória:</p>
 
           <div className={styles.videoRow}>
@@ -407,15 +329,14 @@ export default function MuseuPage() {
 
           <p>
             <i>
-              Para você que está aqui conhecendo o Museu Autobiográfico, desejamos saber mais de sua história. Acesse a página:{" "}
+              Para você que está aqui conhecendo o Museu Autobiográfico, desejamos saber mais de sua história. Acesse a página{" "}
               <Link href="/contato" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer"><u>Contato</u></a>
               </Link>{" "}
-              e acrescente seus objetos e memórias de sua vida.
+              e envie seus objetos e memórias de vida.
             </i>
           </p>
 
-          <p><b>_Em breve: uma galeria digital de objetos pessoais_</b></p>
         </FadeInSection>
 
       </main>
