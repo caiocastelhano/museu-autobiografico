@@ -175,6 +175,8 @@ export default function AutobiograficoPage() {
 
             < br/>
 
+            <div className={styles.divider} aria-hidden="true" />
+
             <p>
               Aqui você poderá assistir <b>excertos*</b> de experiências de <b>participantes em ação</b> e dos lugares pelos quais a oficina passou. <u>Compondo momentos registrados com a câmera do celular durante os encontros ou em gravações feitas por participantes ou terceiros para exercícios, o autobiográfico na experiência digital ganha um novo significado</u>, <b>relacionando momentos distintos vividos com exercícios propostos que, juntos, traduzem a relevância do experienciar a si mesmo em cena</b>.
             </p>
@@ -1008,7 +1010,7 @@ export default function AutobiograficoPage() {
 
           <div className={styles.referencesContent}>
             <p>
-              Outras citações que <b>_Lesteiam_</b> a pesquisa do autobiográfico como ferramenta essencial da oficina:
+              Outras citações que <b>*_Lesteiam</b> a pesquisa do autobiográfico como ferramenta essencial da oficina:
             </p>
 
             <blockquote>

@@ -28,6 +28,14 @@
     border: 0;
   }
 
+  .divider {
+    height: 1.5px;
+    width: 100%;
+    margin: 40px 0;
+    background-color: black;
+    opacity: 0.5;
+  }
+
   /* ===== INTRO SECTION ===== */
 
   .introSection {
