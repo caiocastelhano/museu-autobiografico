@@ -1034,9 +1034,9 @@ export default function TerritorioPage() {
 
           <blockquote aria-label="Reflexão final de Marcelo, mediador da oficina">
             <p>
-              “No território do Museu Autobiográfico, é proposto um lugar onde novos corpos, gestos e histórias podem se desenvolver a partir do chão em que estão. Ao mover o corpo em um espaço, move-se também os pensamentos criativos que se unem, criando um coletivo com maior senso de pertencimento e confiança em contar a própria história.”
+              No território do Museu Autobiográfico, é proposto um lugar onde novos corpos, gestos e histórias podem se desenvolver a partir do chão em que estão. Ao mover o corpo em um espaço, move-se também os pensamentos criativos que se unem, criando um coletivo com maior senso de pertencimento e confiança em contar a própria história.
             </p>
-            <footer><b>— Marcelo, mediador da oficina</b></footer>
+            <footer><b>— Marcelo</b></footer>
           </blockquote>
         </FadeInSection>
 
