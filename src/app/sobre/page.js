@@ -73,7 +73,7 @@ export default function SobrePage() {
 
           <Accordion title="Da oficina presencial à experiência digital">
             <p>
-              Este site é o produto final da pesquisa de mestrado profissional em Artes da Cena de <b>Marcelo Rodrigues Maia e se organiza poeticamente como uma constelação</b>: <u>palavras, imagens, sons, textos, vídeos, depoimentos e registros de vivências se entrelaçam, expandindo o sentido do que pode ser uma experiência museal</u>.
+              Este site é o produto final da pesquisa de mestrado profissional em Artes da Cena de <b>Marcelo Rodrigues Maia</b> e se organiza poeticamente como uma constelação: <u>palavras, imagens, sons, textos, vídeos, depoimentos e registros de vivências se entrelaçam, expandindo o sentido do que pode ser uma experiência museal</u>.
             </p>
             <p>
               Cada <b>componente que intitula a oficina atua como um ponto de luz</b>. Ao se articular com outros temas, forma um mapa sensível da experiência nos espaços. <u>Em vez de um arquivo linear, o site propõe uma confabulação de sentidos: os registros não se acumulam - eles se relacionam, se afetam, se transformam mutuamente</u>.
