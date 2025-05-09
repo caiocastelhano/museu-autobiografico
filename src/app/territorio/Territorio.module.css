@@ -175,6 +175,13 @@
       width: 100%;
     }
   }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .introSection {
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+  }
   
   /* ===== CONTEXT SECTION ===== */
 
@@ -364,7 +371,7 @@
 
   /* Legenda da imagem */
   .timelineCaption {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     text-align: center;
     font-style: italic;
     margin-bottom: 8px;
@@ -454,7 +461,7 @@
     display: block;
     width: 100%;
     height: auto;
-    margin: 24px 0;
+    margin: 0 0 8px 0;
   }
 
   .florescerVideoRow {
@@ -475,7 +482,7 @@
   .florescerCaption {
     font-size: 0.85rem;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 0px;
     color: #444;
   }
 
@@ -547,7 +554,7 @@
 
   /* ===== BLOCO VIEWPOINTS E COMPOSIÇÃO ===== */
 .viewpointsSection {
-  padding: 60px 32px;
+  padding: 40px 32px;
   max-width: 1000px;
   margin: 0 auto 0 400px;
   line-height: 1.6;
@@ -589,20 +596,23 @@
 }
 
 .viewpointsSection figure {
-  margin-top: 40px;
+  margin-top: 24px;
   text-align: center;
 }
 
 .viewpointsSection .image {
+  display: block;
   width: 100%;
   height: auto;
   border: 2px solid black;
+  margin-bottom: 8px;
 }
 
 .viewpointsSection figcaption {
-  font-size: 0.9rem;
-  margin-top: 8px;
+  font-size: 0.85rem;
+  margin-top: 0px;
   text-align: center;
+  color: #444;
 }
 
 .viewpointsWrapper {
@@ -636,6 +646,13 @@
 
   .viewpointsSection h3 {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .viewpointsSection {
+    margin: 0 auto;
+    padding: 50px 24px;
   }
 }
 
@@ -708,10 +725,12 @@
 }
 
 /* ===== TABLET ===== */
-@media (max-width: 1080px) {
+@media (min-width: 769px) and (max-width: 1080px) {
   .twoColumnSection {
     flex-direction: column;
-    padding: 50px 24px;
+    padding: 48px 40px;
+    margin: 0 auto;
+    max-width: 720px;
   }
 
   .twoColumnSection .column {
@@ -728,6 +747,7 @@
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .twoColumnSection {
+    width: calc(100% - 32px);
     padding: 40px 16px;
     margin: 0 auto;
   }
@@ -802,9 +822,10 @@
 }
 
 .highlightBox figcaption {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-top: 8px;
   text-align: center;
+  color: #444;
 }
 
 /* ===== TABLET ===== */
@@ -877,9 +898,15 @@
 }
 
 /* ===== TABLET ===== */
-@media (max-width: 1080px) {
+@media (min-width: 769px) and (max-width: 1080px) {
   .closingSection {
-    padding: 50px 24px;
+    padding: 50px 32px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .closingSection blockquote {
+    margin: 32px auto;
   }
 }
 
