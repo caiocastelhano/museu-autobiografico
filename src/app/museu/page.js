@@ -137,15 +137,15 @@ export default function MuseuPage() {
           </blockquote>
 
           <p>
-            <b>Do reconhecimento de que quanto mais diversidade, menor o risco de as memórias serem hierarquizadas e 
-            tratadas como inferiores e insignificantes para os rumos da história, <u>emerge uma nova museologia</u>.</b>
+            Do reconhecimento de que quanto mais diversidade, menor o risco de as memórias serem hierarquizadas e 
+            tratadas como inferiores e insignificantes para os rumos da história, <u>emerge uma nova museologia</u>.
           </p>
 
           <p>
             No contexto de <b>uma nova museologia</b>, nasce a <b>museologia social</b>, materializada nos museus sociais, 
-            comunitários ou de favelas e nos ecomuseus, entre outros. <b><u>O que eles têm em comum é uma ação educativa 
+            comunitários ou de favelas e nos ecomuseus, entre outros. <u>O que eles têm em comum é uma ação educativa 
             que coloca indivíduos de áreas rurais, periféricas e à margem como sujeitos que interagem com as 
-            coleções, os espaços e as palavras ditas e silenciadas</u></b>.
+            coleções, os espaços e as palavras ditas e silenciadas</u>.
           </p>
 
           <p>
@@ -225,9 +225,9 @@ export default function MuseuPage() {
           espaço</b> sabendo que podem e devem fazer parte dele para que, em segundo lugar, apreciem e experienciem 
           uma visita em um espaço cultural.</p>
 
-          <p>Com a proposta de exercícios em diversas linguagens (texto, cena, fotografia, performance), o <b><u>museu autobiográfico</u></b> propõe que participantes reúnam e apresentem seus objetos e memórias, fazendo com que o museu ganhe um caráter de aproximação e familiaridade, conectando histórias de participantes e de <b><u>seus grupos, comunidades, bairros e cidades</u></b>.</p>
+          <p>Com a proposta de exercícios em diversas linguagens (texto, cena, fotografia, performance), o <b><u>museu autobiográfico</u></b> propõe que participantes reúnam e apresentem seus objetos e memórias, fazendo com que o museu ganhe um caráter de aproximação e familiaridade, conectando histórias de participantes e de <u>seus grupos, comunidades, bairros e cidades</u>.</p>
 
-          <p><b><u>Abaixo, confira a proposta do exercício <i>Uma noite no Museu</i>, adaptado a partir do trabalho e pesquisa de Viola Spolin</u></b>:</p>
+          <p><u>Abaixo, confira a proposta do exercício <i>Uma noite no Museu</i>, adaptado a partir do trabalho e pesquisa de Viola Spolin</u>:</p>
 
           <figure>
             <iframe
