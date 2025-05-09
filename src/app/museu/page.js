@@ -296,9 +296,9 @@ export default function MuseuPage() {
           espaço</b> sabendo que podem e devem fazer parte dele para que, em segundo lugar, apreciem e experienciem 
           uma visita em um espaço cultural.</p>
 
-          <p>Com a proposta de exercícios em diversas linguagens (texto, cena, fotografia, performance) o <b><u>museu autobiográfico</u></b> propõe que participantes reúnam e apresentem seus objetos e memórias, fazendo com que o museu ganhe um caráter de aproximação e familiaridade, conectando histórias de participantes e de <b><u>seus grupos, comunidades, bairros e cidades</u></b>.</p>
+          <p>Com a proposta de exercícios em diversas linguagens (texto, cena, fotografia, performance), o <b><u>museu autobiográfico</u></b> propõe que participantes reúnam e apresentem seus objetos e memórias, fazendo com que o museu ganhe um caráter de aproximação e familiaridade, conectando histórias de participantes e de <b><u>seus grupos, comunidades, bairros e cidades</u></b>.</p>
 
-          <p><b><u>Abaixo, confira a proposta do exercício do exercício Uma noite no Museu, adaptado a partir do trabalho e pesquisa de Viola Spolin</u></b>:</p>
+          <p><b><u>Abaixo, confira a proposta do exercício <i>Uma noite no Museu</i>, adaptado a partir do trabalho e pesquisa de Viola Spolin</u></b>:</p>
 
           <figure>
             <iframe
