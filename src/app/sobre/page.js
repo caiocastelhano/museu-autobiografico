@@ -73,13 +73,13 @@ export default function SobrePage() {
 
           <Accordion title="Da oficina presencial à experiência digital">
             <p>
-              Como produto final da pesquisa de mestrado profissional em Artes da Cena do idealizador<b>_Marcelo Rodrigues Maia</b>, <b>o site se organiza poeticamente como uma constelação</b>: <u>palavras, imagens, sons, textos, vídeos, depoimentos e registros de vivências se entrelaçam, expandindo o sentido do que pode ser uma experiência museal</u>.
+              Este site é o produto final da pesquisa de mestrado profissional em Artes da Cena de <b>Marcelo Rodrigues Maia e se organiza poeticamente como uma constelação</b>: <u>palavras, imagens, sons, textos, vídeos, depoimentos e registros de vivências se entrelaçam, expandindo o sentido do que pode ser uma experiência museal</u>.
             </p>
             <p>
               Cada <b>componente que intitula a oficina atua como um ponto de luz</b>. Ao se articular com outros temas, forma um mapa sensível da experiência nos espaços. <u>Em vez de um arquivo linear, o site propõe uma confabulação de sentidos: os registros não se acumulam - eles se relacionam, se afetam, se transformam mutuamente</u>.
             </p>
             <p>
-              O <b>Museu Autobiográfico e Território_Leste</b> digital é também um gesto de abertura: um convite a habitar a pesquisa como território compartilhado, apontando um novo leste - não apenas como ponto cardeal, mas como direção simbólica, que aponta para outras margens e <b>novos centros possíveis</b>.
+              O <b>Museu Autobiográfico e Território_Leste</b> digital é também um gesto de abertura: um convite a habitar a pesquisa como território compartilhado, apontando um novo leste - não apenas como ponto cardeal, mas como direção simbólica.
             </p>
           </Accordion>
 
@@ -171,10 +171,10 @@ export default function SobrePage() {
               Essa primeira edição contou com a parceria do <b>Professor Doutor Fabio Ortolano, também colega de turma no SENAC</b>. Desde então, o projeto vem sendo atravessado por uma inquietação constante com os limites da representação e por um desejo de ativar potências reais no encontro com o outro.
             </p>
             <p>
-              A oficina também se nutre de experiências de mediação cultural no <b>Museu da Imagem e do Som – MIS Experience</b>. Foi nesse contexto, durante o período da pandemia de Covid-19, que escuta e afeto passaram a se consolidar como práticas pedagógicas e estéticas em propostas imersivas e mediações digitais.
+              A oficina também se nutre de experiências de mediação cultural no Museu da Imagem e do Som – MIS Experience. Foi nesse contexto, durante o período da pandemia de Covid-19, que escuta e afeto passaram a se consolidar como práticas pedagógicas e estéticas em propostas imersivas e mediações digitais.
             </p>
             <p>
-              <b>Em 2020, o projeto ganhou corpo ao ser estruturado dentro dos critérios do Edital de Oficineiros da Prefeitura de São Paulo. Após ser habilitada, a oficina teve como primeira residência oficial o Centro Cultural da Penha, dentro dos critérios de oficina de média duração (4 meses)</b>.
+              Em 2020, o projeto ganhou corpo ao ser estruturado dentro dos critérios do Edital de Oficineiros da Prefeitura de São Paulo. Após ser habilitada, a oficina teve como primeira residência oficial o Centro Cultural da Penha, dentro dos critérios de oficina de média duração (4 meses).
             </p>
             <p>
               Para a Habilitação do Projeto, os objetivos tiveram que ser muito bem pensados para corresponder aos critérios do Edital e, entre os tópicos apresentados, destaca-se o seguinte:
@@ -398,7 +398,7 @@ export default function SobrePage() {
 
             <br />
 
-            <p>Marcelo</p>
+            <p>— Marcelo</p>
           </div>
         </section>
 
