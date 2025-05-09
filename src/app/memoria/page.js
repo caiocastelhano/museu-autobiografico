@@ -847,7 +847,7 @@ export default function MemoriaPage() {
 
             <p>Às equipes gestoras, educativas, de segurança e de jovem monitoria do MIS – Museu da Imagem e do Som; da Casa Florescer 2; do Centro Cultural da Penha; da Biblioteca Cassiano Ricardo e da Casa Eliseu Voronkoff por me cederem espaços tão preciosos.</p>
 
-            <p>Aos meus amigos e amigas que se fizeram presentes mesmo quando eu estive ausente. Em especial, aos amigos Camila Freire, Letícia Benetti, Marina Michelis, Matheus Mazzo e Raíssa Carvalho. E pelo amor e fé na minha capacidade como artista, agradeço a Giovanna Siqueira.</p>
+            <p>Aos meus amigos e amigas que se fizeram presentes mesmo quando eu estive ausente. Em especial, aos amigos Camila Freire, Letícia Benetti, Marina Michelis, Matheus Mazzo e Raíssa Carvalho. E pelo amor e fé na minha capacidade como artista, agradeço a Giovanna Siqueira. E por apoiar a ideia do projeto como oficina enquanto atuava no MIS, agradeço ao Diogo Barros.</p>
 
             <p>Pela escuta de anos, agradeço ao profissional Felippe Lázaro Salomão.</p>
 
