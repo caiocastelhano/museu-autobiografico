@@ -76,16 +76,10 @@ export default function ContatoPage() {
           <div className={styles.leftColumn}>
             <section className={styles.textBlock}>
               <p>
-                O <b>museu autobiográfico</b> é parte do percurso de uma <b><u>oficina teatral</u></b> e do trabalho de oficineiro,
-                nascido e criado na Zona Leste de São Paulo.
+                O <b>Museu Autobiográfico</b> é parte do percurso de uma oficina teatral e, ao ganhar sua versão digital, também se abre a <b>novos desdobramentos e parcerias</b>. O site surge como ferramenta que ajuda uma voz individual a se tornar, cada vez mais, uma voz coletiva, ampliando territórios físicos e criando <b>novos pontos de contato entre pessoas de diferentes regiões do Brasil</b>.
               </p>
               <p>
-                <b>Ampliado para experiência digital</b>, torna-se também <b>um espaço aberto a novos desdobramentos e
-                parcerias</b>, expandindo territórios físicos e proporcionando novos pontos de contato com pessoas de todo o Brasil.
-              </p>
-              <p>
-                <u>Se quiser saber mais sobre o projeto, propor uma oficina em parceria, colaborar ou compartilhar sua
-                experiência, preencha o formulário:</u>
+                <u>Se quiser saber mais sobre o projeto, propor uma oficina em parceria, colaborar ou compartilhar sua experiência, preencha o formulário</u>:
               </p>
             </section>
 
