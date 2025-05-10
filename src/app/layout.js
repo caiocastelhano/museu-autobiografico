@@ -14,14 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Museu Autobiográfico e Território_Leste",
-  description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
+  title: "Museu Autobiográfico e Território Leste",
+  description: "Site oficial do Museu Autobiográfico e Território Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
+  keywords: [
+    "museu autobiográfico",
+    "território leste",
+    "oficinas teatrais",
+    "memória",
+    "arte",
+    "cultura",
+  ],
   alternates: {
     canonical: "https://museuautobiografico.org",
   },
   openGraph: {
-    title: "Museu Autobiográfico e Território_Leste",
-    description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
+    title: "Museu Autobiográfico e Território Leste",
+    description: "Site oficial do Museu Autobiográfico e Território Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
     url: "https://museuautobiografico.org",
     siteName: "Museu Autobiográfico",
     images: [
@@ -37,8 +45,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Museu Autobiográfico e Território_Leste",
-    description: "Site oficial do Museu Autobiográfico e Território_Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
+    title: "Museu Autobiográfico e Território Leste",
+    description: "Site oficial do Museu Autobiográfico e Território Leste: registros, memórias e experiências de oficinas teatrais em diferentes territórios.",
     image: "https://museuautobiografico.org/og-image.jpg",
   },
 };
