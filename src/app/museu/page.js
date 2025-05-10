@@ -167,6 +167,10 @@ export default function MuseuPage() {
           </p>
 
           <p>
+            Em outras palavras, quem participa desse museu pode se sentir pertencente e mesmo parte de sua construção, em contraste com a lógica dos museus tradicionais, que ainda operam como dispositivos de ordenação social, apagamento de memórias marginais e validação de uma cultura hegemônica.
+          </p>
+
+          <p>
             Ao propor um novo olhar sobre o que é um museu, um movimento de <b>descolonização e decolonização é 
             estabelecido</b>, confrontando narrativas, ressignificando objetos e ampliando visões e histórias 
             individuais que, quando apresentadas coletivamente, ressignificam a história de um bairro ou cidade.

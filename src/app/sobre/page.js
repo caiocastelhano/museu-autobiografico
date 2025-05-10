@@ -108,37 +108,8 @@ export default function SobrePage() {
             <p>
               É acreditar que cada pessoa carrega um <b>acervo precioso, ainda que invisível aos olhos</b>. Que nossos passos deixam rastros que merecem ser contados. Que os espaços que habitamos - nossas casas, as ruas, as bibliotecas, os centros culturais - são também dispositivos de memória.
             </p>
-            <p>
-              Ser um museu assim é estar em movimento constante: criar presença no ato de contar - e recontar - a própria história.
-            </p>
-          </Accordion>
-        </section>
 
-        <section className={styles.officeTwoSection} aria-labelledby="officeTwoTitle">
-          <h2 id="officeTwoTitle" className={styles.visuallyHidden}>
-            Registro visual da oficina 2
-          </h2>
-
-          <div className={styles.bgOfficeTwo} aria-hidden="true">
-            <svg
-              className={styles.floatingElements}
-              viewBox="0 0 5000 1600"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="900" cy="500" r="8" fill="black" />
-              <circle cx="1200" cy="950" r="9" fill="black" />
-              <circle cx="1100" cy="1400" r="6" fill="black" />
-              <image href="/images/star.png" x="500" y="200" width="20" height="20" />
-              
-              <circle cx="4420" cy="300" r="4" fill="black" />
-              <circle cx="3900" cy="670" r="5.5" fill="black" />
-              <circle cx="3700" cy="1200" r="2.8" fill="black" />
-              <circle cx="4600" cy="900" r="6" fill="black" />
-              <image href="/images/star.png" x="3980" y="1400" width="12" height="12" />
-            </svg>
-          </div>
-
-          <figure className={styles.officeTwoFigure}>
+            <figure className={styles.officeTwoFigure}>
               <Image
                 src="/images/sobre/foto3.jpg"
                 alt="Participantes da oficina 2"
@@ -148,13 +119,16 @@ export default function SobrePage() {
                 loading="lazy"
               />
 
-            <figcaption className={styles.officeTwoCaption}>
-              Biblioteca Pública Cassiano Ricardo, 2023.
-            </figcaption> 
-          </figure>
-        </section>
+              <figcaption className={styles.officeTwoCaption}>
+                Biblioteca Pública Cassiano Ricardo, 2023.
+              </figcaption> 
+            </figure>
 
-        <section className={styles.accordionSection} aria-labelledby="accordionSectionTitle">
+            <p>
+              Ser um museu assim é estar em movimento constante: criar presença no ato de contar - e recontar - a própria história.
+            </p>
+          </Accordion>
+
           <Accordion title="Origem e Histórico da Oficina">
             <p>
               O projeto teve sua primeira versão em 2019, como trabalho final do curso de Educador Social no SENAC Aclimação. Intitulada <i>Museu Biográfico e Pertencimento à Cidade</i>, a oficina aconteceu na Casa Florescer II (foto abaixo), espaço de acolhimento para mulheres trans, travestis e pessoas não binárias. Entre conversas, jogos teatrais e partilhas íntimas, nasceu ali a ideia do que viria a se tornar o <b>Museu Autobiográfico</b>: uma oficina sobre pertencimento, memória e a potência criativa a partir de si.
@@ -267,7 +241,7 @@ export default function SobrePage() {
             </p>
           </Accordion>
 
-          <Accordion title="Quem idealizou o Museu">
+          <Accordion title="Quem iniciou o museu">
             <Image
               src="/images/sobre/foto_marcelo.jpeg"
               alt="Foto de Marcelo Rodrigues Maia"
@@ -289,9 +263,6 @@ export default function SobrePage() {
             </p>
             <p>
               Na área da educação e mediação cultural, realizou oficinas de teatro da memória na Casa Florescer II e, entre 2019 e 2021, atuou como educador de teatro no MIS Experience – Exposição <i>Leonardo da Vinci</i>, desenvolvendo oficinas e mediações presenciais e online para escolas de todo o Brasil. Em 2022, por meio do Edital de Oficineiros da Prefeitura de São Paulo, realizou no Centro Cultural da Penha a oficina teatral Museu Autobiográfico. Entre 2023 e 2024, mediou mais duas oficinas na Biblioteca Pública Cassiano Ricardo no Tatuapé, também em São Paulo. Em 2025, o projeto fez parte da programação oficial do Festival de Curitiba, estando presente na Casa Eliseu Voronkoff, no Paraná.
-            </p>
-            <p>
-              <b>Confira o currículo acadêmico de Marcelo</b>: _EM CONSTRUÇÃO_
             </p>
           </Accordion>
         </section>
