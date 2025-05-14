@@ -231,10 +231,6 @@ export default function TerritorioPage() {
                   <p>
                     A seguir, excertos em vídeo mostram trechos das oficinas entre 2022 e 2025, sem cortes, para que conheçam a atmosfera de cada território e coletivo:
                   </p>
-
-                  <p>
-                    <b>Esses registros não são apenas documentação: são <u>gesto estético e político</u>. São presença. São paisagem. São território.</b>
-                  </p>
                 </div>
               </FadeInSection>
 
