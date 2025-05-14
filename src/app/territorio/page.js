@@ -109,7 +109,7 @@ export default function TerritorioPage() {
                     className={styles.audio}
                     aria-label="Áudio do depoimento de Jussara Dias, participante da oficina de memória em São Mateus"
                   >
-                    <source src="/audio/audiojussara.ogg" type="audio/mpeg" />
+                    <source src="/audio/audiojussara.mp3" type="audio/mpeg" />
                     Seu navegador não suporta o elemento de áudio.
                   </audio>
                 </figure>

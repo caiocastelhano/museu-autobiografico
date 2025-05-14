@@ -387,10 +387,13 @@
 .audioPlayer {
   width: 100%;
   max-width: 600px;
-  background-color: black;
+  height: 32px; /* fixa altura padrão segura */
+  background-color: black; /* mantém a barra preta */
   border: none;
   border-radius: 0;
-  padding: 8px;
+  padding: 0; /* remove excesso de altura causado pelo padding */
+  display: block;
+  margin: 0 auto;
 }
 
 .quoteBox {
