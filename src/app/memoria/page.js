@@ -313,7 +313,7 @@ export default function MemoriaPage() {
                 className={styles.audioPlayer}
                 aria-label="Áudio da primeira mediação na terceira rodada da oficina na Biblioteca Cassiano Ricardo em 2024"
                 >
-                <source src="/audio/audio_para_leticia.ogg" type="audio/ogg" />
+                <source src="/audio/audio_para_leticia.mp3" type="audio/mpeg" />
                 Seu navegador não suporta o elemento de áudio.
                 </audio>
                 <figcaption className={styles.caption}>
