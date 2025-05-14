@@ -95,10 +95,14 @@
   
   .audio {
     width: 100%;
-    background-color: black;
+    max-width: 600px;
+    height: 32px; /* fixa altura padrão segura */
+    background-color: black; /* mantém a barra preta */
     border: none;
     border-radius: 0;
-    padding: 8px;
+    padding: 0; /* evita altura desnecessária */
+    display: block;
+    margin: 0 auto;
   }
   
   .introAudioQuoteWrapper blockquote {
@@ -174,6 +178,10 @@
     .introTextBlock {
       width: 100%;
     }
+
+    .audio {
+    height: auto;
+  }
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
