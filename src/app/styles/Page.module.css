@@ -153,9 +153,10 @@
   .constellation {
     width: 100%;
     height: auto;
-    transform: scale(1.4); /* mexi aqui para aumentar a constelação no mobile */
+    transform: scale(1.5);
     transform-origin: top center;
     overflow-x: hidden;
+    will-change: transform;
   }
 
   .shapeText {
