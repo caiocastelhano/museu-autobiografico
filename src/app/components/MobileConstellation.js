@@ -13,39 +13,8 @@ export default function MobileConstellation() {
         preserveAspectRatio="xMidYMid meet"
         aria-hidden="true"
       >
-        {/* Pontinhos variados 
-        <circle cx="60" cy="970" r="5" fill="black"  />
-        <circle cx="170" cy="1350" r="4" fill="black"  />
-        <circle cx="480" cy="470" r="1.2" fill="black"  />
-        <circle cx="550" cy="770" r="2" fill="black"  />
-        <circle cx="230" cy="160" r="2.2" fill="black"  />
-        <circle cx="220" cy="970" r="2.2" fill="black" />
-        <circle cx="70" cy="1010" r="1.5" fill="black"  />
-        <circle cx="480" cy="66" r="4.5" fill="black"  />
-        <circle cx="290" cy="1150" r="1.62" fill="black"  />
-        <circle cx="130" cy="700" r="2.5" fill="black"  />
-        <circle cx="590" cy="1300" r="2.5" fill="black"  />
-        <circle cx="420" cy="1240" r="2.3" fill="black" />
-        <circle cx="180" cy="690" r="2.13" fill="black"  />
-        <circle cx="195" cy="533" r="1.16" fill="black"  />
-        <circle cx="66" cy="640" r="4" fill="black" />
-        <circle cx="100" cy="660" r="1.57" fill="black"  />
-        <circle cx="240" cy="710" r="1.6" fill="black" />
-        <circle cx="118" cy="244" r="1.89" fill="black"  />
-        <circle cx="500" cy="690" r="1.76" fill="black"  />
-        <circle cx="600" cy="910" r="1.16" fill="black" />
-        <circle cx="380" cy="1210" r="1.78" fill="black" />
-        <circle cx="580" cy="1440" r="3" fill="black"  />
-        <circle cx="50" cy="720" r="4" fill="black" />
-        <circle cx="570" cy="1120" r="2.39" fill="black" />
-        <circle cx="520" cy="1225" r="1.92" fill="black"  />
-        <circle cx="150" cy="1600" r="4" fill="black"  />
-        <circle cx="470" cy="1600" r="2.8" fill="black" />
-        <circle cx="120" cy="1680" r="2.5" fill="black" />
-        <circle cx="480" cy="1680" r="1" fill="black" /> */}
-
         <circle cx="230" cy="160" r="2.2" fill="black" />     
-        <circle cx="480" cy="66" r="4.5" fill="black" />     
+        <circle cx="480" cy="100" r="4" fill="black" />     
         <circle cx="118" cy="244" r="2" fill="black" />    
         <circle cx="195" cy="533" r="1.16" fill="black" />    
         <circle cx="550" cy="770" r="2" fill="black" />       
@@ -54,20 +23,6 @@ export default function MobileConstellation() {
         <circle cx="590" cy="1300" r="2.5" fill="black" /> 
         <circle cx="120" cy="1680" r="2.5" fill="black" />
         <circle cx="470" cy="1600" r="2.8" fill="black" />
-
-        {/* Estrelinhas PNG 
-        <image href="/images/star.png" x="100" y="40" width="12" height="12"  />
-        <image href="/images/star.png" x="20" y="200" width="12" height="12" />
-        <image href="/images/star.png" x="500" y="350" width="15" height="15" />
-        <image href="/images/star.png" x="250" y="440" width="12" height="12" />
-        <image href="/images/star.png" x="400" y="670" width="12" height="12" />
-        <image href="/images/star.png" x="60" y="750" width="12" height="12" />
-        <image href="/images/star.png" x="150" y="900" width="12" height="12" />
-        <image href="/images/star.png" x="480" y="1050" width="12" height="12" />
-        <image href="/images/star.png" x="100" y="1150" width="12" height="12" />
-        <image href="/images/star.png" x="300" y="1300" width="18" height="18" />
-        <image href="/images/star.png" x="280" y="1750" width="12" height="12" />
-        <image href="/images/star.png" x="100" y="1800" width="12" height="12" /> */}
 
         <image href="/images/star.png" x="100" y="40" width="12" height="12" />
         <image href="/images/star.png" x="500" y="350" width="15" height="15" />
