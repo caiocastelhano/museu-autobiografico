@@ -153,7 +153,7 @@
   .constellation {
     width: 100%;
     height: auto;
-    transform: scale(1.4); /* mexi aqui para aumentar a constelação no mobile */
+    transform: scale(1.65); /* mexi aqui para aumentar a constelação no mobile */
     transform-origin: top center;
     overflow-x: hidden;
   }
@@ -176,13 +176,6 @@
   .menuWrapperInterna {
     top: 24px;      /* mais próximo do topo no mobile */
     right: 16px;    /* alinhado com o padding da navbar mobile */
-  }
-
-  .blinkingStar1,
-  .blinkingStar2,
-  .blinkingStar3,
-  .blinkingStar4 {
-    animation: none !important; /* deixa os pontos sem piscar no mobile */
   }
 }
 
