@@ -425,6 +425,10 @@
   .audioMemorySection p {
     text-align: center;
   }
+
+  .audioPlayer {
+    height: auto;
+  }
 }
 
 /* ===== SEÇÃO 4: DEPOIMENTOS COLETIVOS ===== */
