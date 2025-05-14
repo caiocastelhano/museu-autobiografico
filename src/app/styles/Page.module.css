@@ -153,7 +153,7 @@
   .constellation {
     width: 100%;
     height: auto;
-    transform: scale(1.64); /* mexi aqui para aumentar a constelação no mobile */
+    transform: scale(1.4); /* mexi aqui para aumentar a constelação no mobile */
     transform-origin: top center;
     overflow-x: hidden;
   }
