@@ -344,7 +344,7 @@ export default function SobrePage() {
             </div>
 
             <figcaption className={styles.officeFourCaption}>
-              Oficina no Festival de Curitiba, Casa Eliseu Voronkoff, 2025.
+              Oficina no Festival de Curitiba, Casa Eliseu Voronkoff, 2025. Fotos de Carlos Poly.
             </figcaption> 
           </figure>
         </section>
