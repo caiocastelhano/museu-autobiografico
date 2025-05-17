@@ -152,7 +152,7 @@ export default function AutobiograficoPage() {
             </h2>
 
             <p>
-              Meu primeiro contato com o uso da autobiografia como recurso de criação teatral se deu como estudante da 15ª turma do Núcleo Experimental de Artes, um programa essencial para os rumos da minha vida e que, na época, era coordenado pela atriz, professora e pesquisadora <b>Miriam Rinaldi</b>. O <b>Núcleo</b>, como chamamos afetivamente, <u>é um programa que permite a jovens artistas da cena aprofundar e ampliar o repertório de criação, a partir de uma investigação dos diferentes graus de atuação</u>. O curso conecta diferentes artistas, de diferentes áreas da cena teatral, para ministrar os módulos: <i>Persona, Personagem e Narrador</i>.
+              Meu primeiro contato com o uso da autobiografia como recurso de criação teatral se deu como estudante da 15ª turma do Núcleo Experimental de Artes, um programa essencial para os rumos da minha vida e que, na época, era coordenado pela atriz, professora e pesquisadora <b>Miriam Rinaldi</b>. O <b>Núcleo</b>, como chamamos afetivamente, <u>é um programa que permite a jovens artistas da cena aprofundar e ampliar o repertório de criação, a partir de uma investigação dos diferentes graus de atuação</u>. O curso conecta diferentes artistas, de diferentes áreas da cena teatral, para ministrar os módulos <i>Persona, Personagem e Narrador</i>.
             </p>
 
             < br/>
