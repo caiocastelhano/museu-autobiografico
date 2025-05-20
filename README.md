@@ -10,8 +10,7 @@ O **Museu Autobiográfico** é uma iniciativa do setor cultural que propõe uma 
 
 - **Next.js** (com App Router)  
 - **React**  
-- **CSS Modules**  
-- **Sanity.io** *(para gerenciamento de conteúdo)*  
+- **CSS Modules**   
 - **Git/GitHub**  
 
 ---
@@ -19,7 +18,7 @@ O **Museu Autobiográfico** é uma iniciativa do setor cultural que propõe uma 
 ## 🗂️ Estrutura do Site
 
 - **Home**: Página principal com **6 seções representadas por constelações interativas**.  
-- **Sobre / About**: Informações sobre o projeto.  
+- **Sobre / About**: Informações sobre o projeto e o idealizador do projeto.  
 - **Contato / Contact**: Formas de contato e links para redes sociais.  
 - **Museu, Autobiográfico, Território, Leste, Corpo, Memória**: Páginas com **fotos, vídeos, textos, gifs e áudios**.  
 - **Agradecimentos**: Sub-seção dentro da página *Memória*, destacando contribuições especiais.  
@@ -36,12 +35,14 @@ Desenvolvido por **Caio Castelhano**.
 
 ---
 
-## 🚧 Status do Projeto
+## ✅ Status do Projeto
 
-**Em desenvolvimento** – *Atualizado em abril de 2025*.
+**Projeto finalizado** – *Última atualização: maio de 2025*.
 
 ---
 
 ## 🚀 Deploy
 
-O site será hospedado e publicado através da plataforma **[Vercel](https://vercel.com/)**, garantindo **deploy contínuo**, **alta performance** e suporte completo para aplicações **Next.js**.
+O site está hospedado na **[Vercel](https://vercel.com/)**, com **deploy contínuo**, **alta performance** e suporte completo para aplicações **Next.js**.
+
+Acesse em: **[https://museuautobiografico.org](https://museuautobiografico.org)**
