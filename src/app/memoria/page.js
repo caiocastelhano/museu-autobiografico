@@ -849,7 +849,7 @@ export default function MemoriaPage() {
 
             <p>Aos meus amigos e amigas que se fizeram presentes mesmo quando eu estive ausente. Em especial, aos amigos Camila Freire, Letícia Benetti, Marina Michelis, Matheus Mazzo e Raíssa Carvalho. E pelo amor e fé na minha capacidade como artista, agradeço a Giovanna Siqueira. E por apoiar a ideia do projeto como oficina enquanto atuava no MIS, agradeço ao Diogo Barros.</p>
 
-            <p>Pela escuta de anos, agradeço ao profissional Felippe Lázaro Salomão.</p>
+            <p>Pela escuta de anos, agradeço ao Felippe Lázaro Salomão.</p>
 
             <p>Ao Caio Castelhano que, após embarcar em um ônibus comigo, ofereceu amor e cuidado nos momentos mais sensíveis, aceitando ainda desenvolver o site do projeto com afinco e dedicação total.</p>
 
