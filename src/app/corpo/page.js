@@ -878,11 +878,11 @@ export default function CorpoPage() {
                   <h3>Cintia - sem título</h3>
 
                   <p>
-                    O ano era 2019, em vários lugares do país ruas decoradas, famílias se organizando para mais um ano novo. Em uma casa não muito diferente uma família também se preparava para ir jantar como de costume na igreja. O sentimento que traduzia era “Ufa concluímos mais um ano”. Ao mesmo instante um deles triste, angustiado pelas circunstâncias da vida, antes de sair o mais novo enfezado “Bora”. 
+                    O ano era 2019, em vários lugares do país ruas decoradas, famílias se organizando para mais um ano novo. Em uma casa não muito diferente, uma família também se preparava para ir jantar como de costume na igreja. O sentimento que traduzia era “ufa, concluímos mais um ano”. Ao mesmo instante um deles triste, angustiado pelas circunstâncias da vida, antes de sair o mais novo enfezado “bora”. 
                   </p>
                     
                   <p>
-                    Tirar uma foto? os mais velhos não querendo muito, aceitaram. É comum em todo lar no final de ano tirar uma foto e guardar de recordação (recordação significa memória). Lembrança, é o que essa foto se tornou. 
+                    Tirar uma foto? Os mais velhos não querendo muito, aceitaram. É comum em todo lar no final de ano tirar uma foto e guardar de recordação (recordação significa memória). Lembrança, é o que essa foto se tornou. 
                   </p>
 
                   <p>
@@ -890,7 +890,7 @@ export default function CorpoPage() {
                   </p>
 
                   <p>
-                    No ano seguinte fomos surpreendidos com a COVID que se espalhou em vários países, uma quarentena que durou mais de um ano e milhares e milhares de mortes. Milhões de pessoas viraram lembranças como pássaros que ao descobrir o poder de voar tomam liberdade e voam para bem longe...
+                    No ano seguinte, fomos surpreendidos com a COVID que se espalhou em vários países, uma quarentena que durou mais de um ano e milhares e milhares de mortes. Milhões de pessoas viraram lembranças como pássaros que ao descobrir o poder de voar tomam liberdade e voam para bem longe...
                   </p>
 
                 </div>
