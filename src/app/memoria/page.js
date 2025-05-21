@@ -177,8 +177,8 @@ export default function MemoriaPage() {
         </div>
 
         <p>
-            Por ser um período ainda de pandemia, participantes ainda utilizavam <b>máscaras</b> e, como <b>mediador</b>, as questões
-            de saúde e distanciamento social ainda se apresentavam como partes que compunham os relacionamentos.
+            Por ser um período ainda de pandemia, participantes utilizavam <b>máscaras</b> e, como <b>mediador</b>, as questões
+            de saúde e distanciamento social se apresentavam como partes que compunham os relacionamentos.
         </p>
 
         <figure className={styles.mediaBlock}>
@@ -264,8 +264,8 @@ export default function MemoriaPage() {
                 <p>
                 Utilizando destes e de outros questionamentos, improvisei no primeiro encontro o jogo &quot;Se eu fosse você&quot;. 
                 Inspirado no documentário <i>Jogo de Cena</i>, do diretor e documentarista Eduardo Coutinho (2007), a 
-                experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando:
-                o que o fez chegar à oficina; qual o seu bairro; a sua idade; os seus desejos como artista e o que 
+                experiência/proposta de jogo foi a seguinte: em roda, o primeiro participante se apresenta, contando
+                o que o fez chegar à oficina, qual o seu bairro, a sua idade, os seus desejos como artista e o que 
                 mais julgar pertinente. Em seguida, o segundo participante se apresenta como quiser. Apresentados os 
                 relatos dos dois primeiros participantes, eu proponho a troca de papéis.
                 </p>
@@ -304,7 +304,7 @@ export default function MemoriaPage() {
             <h2 id="memoria2024Title">Memória de 2024</h2>
 
             <p>
-                Registro em Áudio da <u>1ª Mediação na 3ª rodada</u> da Oficina na Biblioteca Pública Cassiano Ricardo, no Tatuapé
+                Registro em áudio da <u>1ª mediação na 3ª rodada</u> da Oficina na Biblioteca Pública Cassiano Ricardo, no Tatuapé:
             </p>
 
             <figure className={styles.mediaBlock}>
