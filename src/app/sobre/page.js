@@ -92,7 +92,7 @@ export default function SobrePage() {
             </p>
           </Accordion>
 
-          <Accordion title="Por que ele tem este nome?">
+          <Accordion title="Por que este nome?">
             <p>
               O nome nasce da união entre o desejo de escavar a própria história e a necessidade de reconhecer o território como parte dessa narrativa.
             </p>
@@ -256,7 +256,7 @@ export default function SobrePage() {
               Formado como Ator pelo Teatro-Escola Célia Helena, Comunicador pela Faculdade Cásper Líbero e Educador Social pelo SENAC Aclimação, acredita que a junção entre habilidades distintas <b>impulsionam a capacidade</b> de engajar diversos públicos com ferramentas diferentes. Sempre de maneira <b>leve, lúdica, com empatia</b>.
             </p>
             <p>
-              Em 2023, ingressou no <b>Mestrado Profissional em Artes da Cena - Turma Especial: Laboratório em Artes e Mediação Cultural</b>, uma parceria entre a Fundação Itaú Escola e a Escola Superior de Artes Célia Helena (ESCH). Sua pesquisa no mestrado parte de uma escrita de si para investigar como experiências autobiográficas podem se transformar em espaços de escuta, partilha e criação coletiva - especialmente por meio da oficina Museu Autobiográfico e Território Leste.
+              Em 2023, ingressou no Mestrado Profissional em Artes da Cena, da Escola Superior de Artes Célia Helena (ESCH), na turma especial Laboratório em Artes e Mediação Cultural, uma parceria entre a ESCH e a Escola Fundação Itaú. Sua pesquisa no mestrado parte de uma escrita de si para investigar como experiências autobiográficas podem se transformar em espaços de escuta, partilha e criação coletiva - especialmente por meio da oficina Museu Autobiográfico e Território Leste.
             </p>
             <p>
               Possui curso de extensão em interpretação para a câmera pela Escola de Atores Wolf Maya e integrou a 15ª turma do Núcleo Experimental de Artes Cênicas do SESI-SP, além de atuar no NAC – Núcleo de Artes Cênicas. Como ator, participou de diversas montagens, com destaque para a peça <i>Tiros em Osasco</i>, dirigida por Yara de Novaes (SESI-SP, 2016/2017), e para o elenco principal da série <i>Brilhante Futebol Clube</i>, exibida na TV Brasil e Nickelodeon (2013). Foi também assistente de Lígia Cortez na disciplina de Direção de Atores no curso de Audiovisual da USP.
