@@ -88,9 +88,9 @@ export default function MemoriaPage() {
                 <blockquote>
                 <p>
                     <i>
-                    &quot;Por que alguém se <u>recorda vividamente</u> de alguns eventos e personagens
+                    Por que alguém se <u>recorda vividamente</u> de alguns eventos e personagens
                     enquanto outros não? Como a mente é capaz de selecionar aquilo que se
-                    sedimenta fundo na memória e aquilo que ela permite flutuar na superfície?&quot;
+                    sedimenta fundo na memória e aquilo que ela permite flutuar na superfície?
                     </i>
                 </p>
                 </blockquote>

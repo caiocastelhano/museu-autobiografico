@@ -184,7 +184,7 @@ export default function AutobiograficoPage() {
             < br/>
 
             <p>
-              A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sintam um pouco da história de quem faz a oficina acontecer</b>. Guiem o olhar de vocês para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
+              A cada vídeo, convido você a imaginar o <u>antes e depois que geraram os momentos</u> registrados de forma improvisada ou encenada, mas, para todos os vídeos, desejo que, principalmente, <b>sinta um pouco da história de quem faz a oficina acontecer</b>. Guie o seu olhar para imaginar o mundo interno de cada pessoa. <b>É neste mundo interno que reside o precioso museu de cada participante e sua autenticidade</b>.
             </p>
 
           </section>
@@ -1024,7 +1024,7 @@ export default function AutobiograficoPage() {
 
             <blockquote>
               <p>
-                Pode-se dizer que hoje um artista que se debruce sobre material autobiográfico tem diante de si este duplo desafio: questionar os modelos representacionais ainda fortemente ligados a essa teleologia da Bildung e, ao mesmo tempo, encontrar na experiência de uma criação autobiográfica o espaço de sua própria reelaboração abrindo possibilidades para verdadeiros saltos de &apos;experienciação&apos; e simbolização do self.
+                Pode-se dizer que hoje um artista que se debruce sobre material autobiográfico tem diante de si este duplo desafio: questionar os modelos representacionais ainda fortemente ligados a essa teleologia da Bildung [formação cultural] e, ao mesmo tempo, encontrar na experiência de uma criação autobiográfica o espaço de sua própria reelaboração abrindo possibilidades para verdadeiros saltos de &apos;experienciação&apos; e simbolização do self.
               </p>
               <footer>— Janaina Leite</footer>
             </blockquote>

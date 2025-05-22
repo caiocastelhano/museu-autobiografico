@@ -552,7 +552,7 @@ export default function CorpoPage() {
                 <h2 id="dancingBodiesTitle">Corpos dançantes em uma Biblioteca Pública</h2>
 
                 <p>
-                  No dia desse exercício realizado, ainda não sabia, mas estava com dengue. <u>Me lembro que</u>, ao chegar no 
+                  No dia da realização desse exercício, ainda não sabia, mas estava com dengue. <u>Me lembro que</u>, ao chegar no 
                   espaço, a sala de ensaio tradicional havia sido emprestada para outra pessoa sem meu aviso e meu <b>corpo 
                   doía</b>.
                 </p>
@@ -682,9 +682,9 @@ export default function CorpoPage() {
                 <p>
                   Com essa vivência, palavras-chave ficaram latentes:{" "}
                   <b>
-                    Pertencimento; Vínculo; Afeto; Resistência; Memórias e Corpo. 
+                    pertencimento; vínculo; afeto; resistência; memórias e corpo. 
                   </b>{" "}
-                  Abaixo, os textos produzidos por duas participantes:
+                  Abaixo, os textos produzidos por três participantes:
                 </p>
               </FadeInSection>
 
