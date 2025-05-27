@@ -116,11 +116,11 @@ export default function TerritorioPage() {
 
                 <blockquote>
                   <p>
-                    &quot;<i>Se eu encontrasse o meu bairro na rua, diria que estou de mudança e venho refletindo… como vou andar pela cidade? Meu ponto de partida sempre foi aqui. Mas demorei muito para perceber que não era apenas um ponto de partida – era também um destino.</i>
+                    &quot;<i>Se eu encontrasse o meu bairro na rua, diria que estou de mudança e venho refletindo… Como vou andar pela cidade? Meu ponto de partida sempre foi aqui. Me situo a partir deste território. Apesar de todas as suas fragilidades, que escancaravam a minha realidade, mostrava o meu lugar no cantinho da cidade, hoje, com mais maturidade, consigo enxergar suas potencialidades: a sua história, a sua presença política e, principalmente, as pessoas que te construíram.</i>
                   </p>
                   <br />
                   <p>
-                    <i>Hoje, com mais maturidade, consigo enxergar suas potencialidades: a sua história, a sua presença política e principalmente as pessoas que têm e que as mesmas construíram.</i>&quot;
+                    <i>Bom, quanto a mim, penso que terei que traçar novas rotas e construir um novo ponto de partida.</i>&quot;
                   </p>
                 </blockquote>
               </div>
