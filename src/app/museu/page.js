@@ -97,24 +97,22 @@ export default function MuseuPage() {
           </div>
         </section>
 
-        {/* Bloco vídeo inicial */}
-        <section className={styles.singleVideoSection}>
-          <figure>
-            <iframe
-              width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/GhAhzhhG7D0"
-              title="O lugar de onde vim"
-              frameBorder="0"
-              allowFullScreen
-              className={styles.video}
-              aria-describedby="video1-caption"
-            ></iframe>
-            <figcaption id="video1-caption">
-              Lugar de onde vim | Ermelino Matarazzo, Parque Boturussú.
-            </figcaption>
-          </figure>
-        </section>
+       {/* Bloco imagem inicial */}
+          <section className={styles.initialImageSection}>
+            <figure>
+              <Image
+                src="/images/museu/deondeeuvim.png"
+                alt="Lugar de onde vim - Ermelino Matarazzo, Parque Boturussú"
+                width={1400}
+                height={800}
+                className={styles.initialImage}
+                priority
+              />
+              <figcaption className={styles.caption}>
+                Lugar de onde vim | Ermelino Matarazzo, Parque Boturussú.
+              </figcaption>
+            </figure>
+          </section>
 
         {/* Bloco O que é um museu? */}
         <FadeInSection className={styles.projectTextSection}>

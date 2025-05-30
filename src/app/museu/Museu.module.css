@@ -115,62 +115,63 @@
     }
   }
 
-  /* ===== BLOCO DE VÍDEO INICIAL ===== */
+/* ===== BLOCO DE IMAGEM INICIAL ===== */
 
-.singleVideoSection {
-    width: 100%;
-    max-width: 1400px;
-    margin: 30px auto;
-    padding: 0 16px;
+.initialImageSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.initialImageSection figure {
+  margin: 0;
+}
+
+.initialImage {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .initialImage {
+    max-height: 480px;
   }
-  
-  .singleVideoSection figure {
-    margin: 0;
+
+  .initialImageSection {
+    padding: 0 8px;
+    margin: 40px auto;
   }
-  
-  .video {
-    width: 100%;
-    height: 400px;
-    border: none;
-    display: block;
-  }
-  
-  .singleVideoSection figcaption {
-    margin-top: 12px;
+
+  .caption {
     font-size: 0.85rem;
-    text-align: center;
+    padding: 0 8px;
     color: #666;
-    font-style: italic;
-    line-height: 1.4;
   }
-  
-  /* ===== RESPONSIVIDADE ===== */
-  @media (max-width: 768px) {
-    .video {
-      height: 240px;
-    }
-  
-    .singleVideoSection {
-      padding: 0 8px;
-      margin: 40px auto;
-    }
-  
-    .singleVideoSection figcaption {
-      font-size: 0.85rem;
-      padding: 0 8px;
-      color: #666;
-    }
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+  .initialImage {
+    max-height: 640px;
   }
-  
-  @media (min-width: 769px) and (max-width: 1080px) {
-    .video {
-      height: 320px;
-    }
-  
-    .singleVideoSection {
-      padding: 0 24px;
-    }
+
+  .initialImageSection {
+    padding: 0 24px;
   }
+}
 
   /* ===== BLOCO DE TEXTO PADRÃO COM TÍTULO ===== */
 
